@@ -2386,3 +2386,9 @@ body.divisions-series-page .topic-grid {
 }
 
 /* AETHEROS_GLOBAL_VERTICAL_SPACING_CLEANUP_END */
+
+/* SymTech homepage research cards: remove exterior shadows without changing other cards. */
+.homepage-ecosystem-section .cards-3 > .card,
+.homepage-ecosystem-section .cards-3 > .card:hover {
+  box-shadow: none !important;
+}
