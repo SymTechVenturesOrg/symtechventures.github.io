@@ -17,7 +17,7 @@ The website is not a start-up fundraising pitch, a claim of commercial technolog
 | Role | Primary responsibility | Evidence/output | Must not do without explicit approval |
 | --- | --- | --- | --- |
 | **Chat** | **Continuous project lead and main execution environment:** source-grounded audit, research/document drafting, GitHub plans and Issues, decisions, reviews, DTSUs and owner-approved release coordination | Approved briefs, page copy, GitHub evidence and hand-off decisions | Claim final owner approval or bypass the review process |
-| **Work** | **Intermittent editorial/visual specialist:** selective asset review, scientific/educational accuracy checks, the BridgePoint pilot and genuine render acceptance when supported | Short evidence-based reviews, checked copy and concise hand-backs | Compete with Codex on implementation files; publish or merge |
+| **Work** | **Intermittent editorial/visual specialist:** selective asset review, site-wide scientific/editorial wording checks and genuine render acceptance when supported; lesson authorship is out of scope | Short evidence-based reviews, checked copy and concise hand-backs | Compete with Codex on implementation files; publish or merge |
 | **Codex** | **Intermittent engineering specialist:** desktop/mobile prototype, HTML/CSS/JS construction and final technical QA; owns implementation files during its stage | Feature-branch PR, reproducible tests and true browser screenshots | Change `main`, merge/deploy without authorisation, or rewrite research claims independently |
 | **GitHub** | Source control, issues, pull requests, review history, reproducible code and publishing workflow | Versioned artefacts, PRs, deployment status | Automatically promote unapproved drafts to the website |
 | **Project owner** | Accept research framing, approve content, approve design and approve merges | Explicit approval recorded in conversation/PR | N/A |
@@ -32,7 +32,7 @@ Roles describe an intended operating workflow, not promises that every environme
 4. **Stage 4 — Chat + Codex (Luna):** Chat supplies the approved design brief; Codex builds and renders one homepage prototype.
 5. **Stage 5 — Chat + Work (Luna):** Chat drafts core copy; Work checks scientific accuracy, clarity and evidential wording.
 6. **Stage 6 — Chat + Codex (Luna):** Codex implements the replacement site from approved content on its own feature branch/PR; Chat reviews and directs.
-7. **Stage 7 — Chat + Work (Luna):** Work reviews one complete BridgePoint pilot lesson and remaining integrated content for correctness.
+7. **Stage 7 — Chat first, Work optional:** review website copy, research-status accuracy, visuals and programme labels; all 16 BridgePoint lessons remain Planned, with no authored pilot lesson required.
 8. **Stage 8 — Chat + Codex (Luna):** Codex runs technical/accessibility/regression checks and completes targeted fixes.
 9. **Stage 9 — Chat only by default:** Chat obtains a separate explicit owner approval, coordinates GitHub release and verifies live pages. Any specialist troubleshooting requires a new bounded request.
 
