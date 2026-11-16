@@ -72,7 +72,7 @@ Show **five companion engineering projects** of four phases each (20 total): EFP
 
 ### BridgePoint — new `/pages/bridgepoint.html`
 
-Use the approved **four categories × four lesson titles** (16 total). Each lesson card may have a plain-language objective, prerequisite tag and honest **Planned** status. For the initial release, link only **one fully written and reviewed pilot lesson**; no empty article links. The lesson design should include a short introduction, definitions, notation guide, worked example, common misunderstanding, recap and optional *Going Deeper* material.
+Use the approved **four categories × four lesson titles** (16 total). Each lesson card may have a plain-language objective, prerequisite tag and honest **Planned** status. **For the initial website release, all 16 lessons remain Planned.** Do not create active lesson links, completed lesson content or placeholder lesson pages. Individual lessons will be developed separately after the website upgrade.
 
 ## Discussion Papers and Publications: deliberately separate
 
