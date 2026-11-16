@@ -29,13 +29,13 @@ Full process: [WEBSITE_DEVELOPMENT_WORKFLOW.md](docs/WEBSITE_DEVELOPMENT_WORKFLO
 4. Keep `sitemap.xml`, canonical URLs and existing article paths accurate, including on any page restructuring.
 5. Label speculative scientific proposals, reproducible simulations and empirical findings distinctly.
 6. Do not claim working space-propulsion technologies or confirmed SYMMETRIA predictions.
-7. BridgePoint: 4×4 lessons; NSRP: 4×4 proposed research targets; SEIP: 4×4 proposed engineering targets; do **not** auto-publish drafts.
+7. BridgePoint: **4 categories × 4 lessons**; NSRP: **5 research projects × 4 phases**; SEIP: **5 engineering companion projects × 4 phases**. These are different models; do **not** auto-publish drafts.
 8. For significant work, report DTSU progress with a defensible percentage, the actual local time, evidence and an estimated ETA.
 9. Keep private research files and unfinished manuscripts out of this public repository unless separately reviewed and approved.
 
 ## Current planning documents
 
 - [Space-first information architecture](docs/SPACE_FIRST_SITE_PLAN.md)
-- [4×4 series outlines](docs/CONTENT_SERIES_4X4.md)
+- [BridgePoint 4×4 and NSRP/SEIP 5×4 programme structures](docs/PROGRAMME_SERIES_STRUCTURE.md)
 
 These are proposals, **not changes to the current live website**.
