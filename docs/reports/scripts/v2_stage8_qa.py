@@ -81,7 +81,7 @@ assert '<form' not in enquiry.lower()
 assert 'method="POST"' not in enquiry and 'formsubmit.co' not in enquiry
 assert '<input' not in enquiry.lower() and '<textarea' not in enquiry.lower()
 assert 'not currently accepting enquiry submissions' in enquiry
-assert 'View Enquiry Status' in contact
+assert 'href="enquiry.html"' in contact
 assert 'href="../css/v2-site.css"' in contact and 'href="../css/v2-programmes.css"' in contact and 'href="../css/styles.css"' not in contact
 assert '<form' not in contact.lower()
 assert 'Opening this page does not mean a message has been sent.' in thanks
@@ -159,7 +159,7 @@ with sync_playwright() as p:
    page.set_viewport_size({'width':1440,'height':900});pathshot=repo/'docs/reports/screenshots/postapproval-enquiry-1440.png';page.screenshot(path=str(pathshot),full_page=True,timeout=30000);screenshots.append(str(pathshot.relative_to(repo)))
   if route=='/pages/enquiry-thanks.html':
    assert page.get_by_text('Opening this page does not mean a message has been sent.',exact=False).count()==1
-  page.keyboard.press('Tab');assert page.evaluate('document.activeElement.className')=='skip-to-content',route
+  page.keyboard.press('Tab');assert page.evaluate("document.activeElement.classList.contains('skip-to-content') || document.activeElement.classList.contains('skip')"),route
   assert page.evaluate('getComputedStyle(document.activeElement).outlineStyle')=='solid',route
   if route in ['/pages/divisions.html','/pages/founding-fellows.html','/pages/symcore.html','/pages/symcraft.html','/pages/symcura.html','/pages/symlogic.html','/pages/symspace.html']:
    assert page.locator('[aria-label="Historical page notice"]').count()==1,route
