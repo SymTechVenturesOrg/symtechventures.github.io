@@ -7,11 +7,7 @@
 
 [Codex Stage 6 full-site implementation handover](../handovers/V2_STAGE_06_CODEX_SITE_BUILD.md)
 
-**Model request:** GPT-6 Luna (`gpt-6-luna`)  
-**Reasoning effort:** Medium  
-**Execution speed:** Standard/default  
-**Terra:** Not authorised without explicit owner approval.  
-**Execution:** A future Codex run must select these settings in the Codex interface where available; they were not configured remotely by Chat.
+**Operator settings (given to the user in Chat, NOT to Codex in the handover):** GPT-6 Luna; Medium reasoning effort; Standard execution speed. Terra is not authorised without explicit approval. The user selects these controls in the Codex interface before launching the task.
 
 ## Verified preparation
 
@@ -19,13 +15,14 @@
 - Reopened the existing handover, the Stage 5 page-copy candidate and review, programme structure and website workflow from the planning branch.
 - Reconciled the eight key source links and project boundaries against draft planning PR #2 and prototype PR #4; both remained unmerged at preparation.
 - Updated the handover to specify a fresh branch off `main`, **one unmerged draft implementation PR**, four bounded internal milestones, required page and programme counts, starfield accessibility, source-integrity checks and the COPY TO CHAT stop condition.
-- Read back the updated handover from GitHub exactly: commit `402748f18d953e0eb73bf932b6da80c3820ceb96`; handover blob `72e421581db92f77c737042fbc4dd2481ff8fc52`.
+- **Correction requested by the owner:** removed all model, effort and execution-speed settings from the Codex handover. These are user-controlled settings communicated separately in Chat; the handover now contains only work instructions, required evidence, DTSUs and stopping conditions.
+- Read back the updated execution-only handover from GitHub exactly: commit `19f6f8e1d1fc53867e8e23780cf1c65e9ed34865`; handover blob `a26dfc80d37e42f911034439ac4fe67390c93c9b`.
 - Planning PR #2 remained draft and **all its changed files were Markdown documentation or `AGENTS.md`** (13 tracked changes as checked).
 - Production `main` still displayed the old Silicon Valley-start-up homepage; **no implementation, merge or deployment took place**.
 - Issue #3 now records the intended model and effort and that Stage 6 execution remains pending.
 
 ## Next action
 
-Launch the **single bounded Codex/Luna Medium/Standard Stage 6 run** using the link above. Codex must submit a draft PR, real verification evidence and a concise COPY TO CHAT handback, then stop. No production change is authorised by this preparation report.
+The owner first selects **Luna / Medium / Standard** in Codex, then submits the **task-only Stage 6 handover**. Codex must submit a draft PR, real verification evidence and a concise COPY TO CHAT handback, then stop. No production change is authorised by this preparation report.
 
 This completion concerns the **handover-preparation task only**, not the website implementation stage.
