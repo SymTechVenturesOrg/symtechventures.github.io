@@ -108,4 +108,6 @@ The following is a proposed runbook, **not an instruction to execute now**:
 
 **Stages 8F-A / 8F-B:** Stage 8F-A integrated regression passed at `db3a92d92d327ded3a83e020495ea99261ca8ad4`. Stage 8F-B committed at `336b14b9442010d546e6f032185987de83e5376d`: **automated accessibility BLOCKED**, with limited 390 px manual browser coverage. The outstanding audit must not be described as passing, and the site is not release-ready on the strength of these checks alone.
 
+**Stage 8F-C prepared (not executed):** [New focused Codex axe handover](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/docs/handovers/V2_STAGE_08FC_CODEX_AXE_ACCESSIBILITY_RECOVERY_20261116.md) permits a temporary **test-only** axe-core installation outside the repository and calls for 6 routes × 2 widths, native mobile-menu accessible-name verification and a committed evidence report. **No axe scan result exists from Stage 8F-C yet.**
+
 **Stage 9 status: prepared for review, NOT approved to release.**
