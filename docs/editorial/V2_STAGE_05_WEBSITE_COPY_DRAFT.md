@@ -237,7 +237,7 @@
 | No. | Source title | Source destination | Public label |
 | --- | --- | --- | --- |
 | 1 | Why Physics Still Needs a Unified Framework | `/articles/symmetria/symmetria-paper-01.html` | Available online — discussion paper |
-| 2 | Symmetry — Nature's Hidden Language | `/articles/symmetria/symmetria-paper-02.html` | Available online — discussion paper |
+| 2 | Symmetry - Nature's Hidden Language | `/articles/symmetria/symmetria-paper-02.html` | Available online — discussion paper |
 | 3 | The Nilpotent Foundation | `/articles/symmetria/symmetria-paper-03.html` | Available online — discussion paper |
 | 4 | Mathematics, Elegance and Reality | `/articles/symmetria/symmetria-paper-04.html` | Available online — discussion paper |
 
