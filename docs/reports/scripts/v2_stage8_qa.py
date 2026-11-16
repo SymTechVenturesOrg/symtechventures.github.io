@@ -138,6 +138,8 @@ with sync_playwright() as p:
   if route=='/pages/enquiry.html':
    assert page.locator('form,input,textarea,button[type=submit]').count()==0
    assert page.get_by_text('Online enquiries are temporarily unavailable').count()==1
+   assert page.get_by_role('link',name='Back to Contact').count()==1
+   page.set_viewport_size({'width':1440,'height':900});pathshot=repo/'docs/reports/screenshots/postapproval-enquiry-1440.png';page.screenshot(path=str(pathshot),full_page=True,timeout=30000);screenshots.append(str(pathshot.relative_to(repo)))
   if route=='/pages/enquiry-thanks.html':
    assert page.get_by_text('Opening this page does not mean a message has been sent.',exact=False).count()==1
   page.keyboard.press('Tab');assert page.evaluate('document.activeElement.className')=='skip-to-content',route
