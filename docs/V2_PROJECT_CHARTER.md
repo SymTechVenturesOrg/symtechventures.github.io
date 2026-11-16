@@ -17,7 +17,7 @@ We distinguish established physics, existing literature, speculative SYMMETRIA h
 - New accessible, responsive visual identity, homepage, navigation, common page shell and footer.
 - Space-focused research overview, with SYMMETRIA, NSRP and SEIP explained separately.
 - **SYMMETRIA:** preserve its existing 4×4 discussion series, with the complete readable content, illustrations and public URLs of **Papers 1–4**.
-- **BridgePoint:** 4 categories × 4 planned mathematics/physics lessons (**16 titles**), plus **one written and reviewed pilot lesson**.
+- **BridgePoint:** 4 categories × 4 planned mathematics/physics lessons (**16 titles**), **no full lesson in the initial website release**; all 16 entries remain Planned.
 - **NSRP:** five original research stage projects × four phases (**20 phases**) as an evidence-labelled work plan; no fictitious results.
 - **SEIP:** five engineering companion stage projects × four phases (**20 phases**), describing reproducible modelling questions and constraints rather than validated devices.
 - **Discussion Papers** index for the existing accessible essays and clearly marked future entries.
@@ -28,7 +28,7 @@ We distinguish established physics, existing literature, speculative SYMMETRIA h
 
 ## Explicit exclusions
 
-Do **not** copy the entire old website design, archive, Drive repositories or Aletheia Core; do not write all sixteen full BridgePoint lessons during first launch; do not invent completed NSRP/SEIP studies or create a commercial sales/funding website.
+Do **not** copy the entire old website design, archive, Drive repositories or Aletheia Core; do not write any full BridgePoint lesson during the website upgrade; do not invent completed NSRP/SEIP studies or create a commercial sales/funding website.
 
 ## Four immutable paper paths
 
@@ -50,7 +50,7 @@ Each article must preserve its substantive body and source images unless separat
 - Stage 4 **Codex (Luna)** — genuine desktop/mobile homepage prototype.
 - Stage 5 **Work (Luna)** — targeted scientific/editorial quality review.
 - Stage 6 **Codex (Luna)** — implement the replacement website on a separate feature branch and PR.
-- Stage 7 **Work (Luna)** — one BridgePoint pilot and integrated content acceptance.
+- Stage 7 **Chat-led website review** — content, claims and visual acceptance; optional narrowly scoped Work review only when genuinely useful; lesson writing deferred.
 - Stage 8 **Codex (Luna)** — technical, accessibility, navigation and link regression checks.
 
 Stages **1, 3 and 9** are Chat-only by default. Luna is selected wherever available, and **Terra is not authorised by default**. Any escalation requires a specific blocked case and the owner's consent. Work and Codex must not modify the same site files concurrently.
@@ -69,7 +69,7 @@ Stages **1, 3 and 9** are Chat-only by default. Luna is selected wherever availa
 
 1. After Stage 3: page architecture, statuses and content scope.
 2. After Stage 4: actual browser-rendered desktop and mobile homepage prototype.
-3. After Stage 7: programme structure, discussion-paper integration and BridgePoint pilot.
+3. After Stage 7: programme structure, discussion-paper integration and site-wide wording/design acceptance, with all BridgePoint lessons Planned.
 4. After Stage 8: test evidence and complete release checklist.
 
 **Stage 9 publication additionally requires explicit merge approval**, even if earlier content/design stages were approved.
