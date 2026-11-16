@@ -44,9 +44,18 @@ hashes=[];after_hashes=[]
 for i,expected in enumerate(['390a8676189542fc9044c1dabbbf344ad10e69f6','ec70f57a24f160e5971bad5fa4567529ef54bb79','90385bd2da97c75d0da3ebe17355753e762599ee','702e47f1883335c4a4202d71e10ad8da431a9d87'],1):
  f=repo/f'articles/symmetria/symmetria-paper-{i:02d}.html';actual=subprocess.check_output(['git','-C',str(repo),'hash-object',str(f)]).decode().strip();assert actual!=expected
  old=subprocess.check_output(['git','-C',str(repo),'show',f'origin/main:{f.relative_to(repo)}']).decode('utf8')
- normalized=f.read_text(encoding='utf8');normalized=re.sub(r'\n<a class="skip-to-content" href="#main-content">Skip to main content</a>','',normalized);normalized=re.sub(r'<main id="main-content">','<main>',normalized,count=1);assert normalized==old
- article=f.read_text(errors='ignore');imgs=re.findall(r'<img[^>]+src=[\"\']([^\"\']+)',article,re.I);assert len(imgs)==13
- for src in imgs: assert (f.parent/src).exists(),(f,src)
+ article=f.read_text(encoding='utf8')
+ old_main=re.search(r'<main(?:\s+[^>]*)?>[\s\S]*?</main>',old)
+ new_main=re.search(r'<main(?:\s+[^>]*)?>[\s\S]*?</main>',article)
+ assert old_main and new_main,('missing main block',i)
+ normalized_main=re.sub(r'<main(?:\s+[^>]*)?>','<main>',new_main.group(),count=1)
+ assert normalized_main==old_main.group(),('paper text or figure changed',i)
+ old_imgs=re.findall(r'<img[^>]+src=["\']([^"\']+)',old_main.group(),re.I)
+ main_imgs=re.findall(r'<img[^>]+src=["\']([^"\']+)',new_main.group(),re.I)
+ assert len(main_imgs)==7 and main_imgs==old_imgs,('paper illustration mismatch',i)
+ assert article.count('class="site-header"')==1 and 'href="../../css/v2-articles.css"' in article,('missing v2 paper shell',i)
+ assert 'class="aetheros-site-header"' not in article,('legacy paper header remains',i)
+ for src in main_imgs:assert (f.parent/src).exists(),(f,src)
  hashes.append(expected);after_hashes.append(actual)
 assert hashlib.sha256((repo/'CNAME').read_bytes()).hexdigest()=='01fe0273a99a8860d0f04ae48187b76388f0dfaf709972e19d6fa3c22c98275f'
 smap=ET.parse(repo/'sitemap.xml').getroot();locs=[x.text for x in smap.findall('.//{*}loc')];assert len(locs)==16 and len(set(locs))==16
@@ -73,13 +82,15 @@ assert 'method="POST"' not in enquiry and 'formsubmit.co' not in enquiry
 assert '<input' not in enquiry.lower() and '<textarea' not in enquiry.lower()
 assert 'not currently accepting enquiry submissions' in enquiry
 assert 'View Enquiry Status' in contact
+assert 'href="../css/v2-site.css"' in contact and 'href="../css/v2-programmes.css"' in contact and 'href="../css/styles.css"' not in contact
+assert '<form' not in contact.lower()
 assert 'Opening this page does not mean a message has been sent.' in thanks
 assert '<meta name="robots" content="noindex,follow">' in thanks
 assert 'createAetherosShimmerHardReset' not in (repo/'js/main.js').read_text(encoding='utf8')
 assert 'main p,.site-footer p{text-align:justify' in (repo/'css/v2-site.css').read_text(encoding='utf8')
 
 # Actual Chromium checks over the full v2 shell and representative long paper at four widths.
-principal=['/','/pages/research.html','/pages/symmetria.html','/pages/nsrp.html','/pages/seip.html','/pages/bridgepoint.html','/pages/discussion-series.html','/pages/publications.html','/pages/about.html','/articles/symmetria/symmetria-paper-01.html']
+principal=['/','/pages/research.html','/pages/symmetria.html','/pages/nsrp.html','/pages/seip.html','/pages/bridgepoint.html','/pages/discussion-series.html','/pages/publications.html','/pages/about.html','/pages/contact.html']+[f'/articles/symmetria/symmetria-paper-{i:02d}.html' for i in range(1,5)]
 widths=[320,390,768,1440]; errors=[]; failed=[]; screenshots=[]; headings={}
 with sync_playwright() as p:
  browser=p.chromium.launch(headless=True,executable_path='/usr/bin/chromium',args=['--no-sandbox'])
@@ -90,22 +101,28 @@ with sync_playwright() as p:
   response=page.goto(base+route,wait_until='networkidle');assert response.status==200,route
   title=page.title();assert title
   if route.startswith('/pages/') or route=='/':assert page.locator('h1').count()==1,(route,page.locator('h1').count())
-  if route in ['/','/pages/research.html','/pages/symmetria.html','/pages/nsrp.html','/pages/seip.html','/pages/bridgepoint.html','/pages/discussion-series.html','/pages/publications.html','/pages/about.html']:
+  if route in ['/','/pages/research.html','/pages/symmetria.html','/pages/nsrp.html','/pages/seip.html','/pages/bridgepoint.html','/pages/discussion-series.html','/pages/publications.html','/pages/about.html','/pages/contact.html']:
    expected=['Home','Research','BridgePoint','Discussion Papers','Publications','About']; got=[x.inner_text().strip() for x in page.locator('.main-nav a').all()];assert got==expected,(route,got)
    canonical=page.locator('link[rel=canonical]').get_attribute('href');assert canonical and canonical.startswith('https://www.symtechventures.com/'),(route,canonical);assert page.locator('meta[name=description]').get_attribute('content'),route
   headings[route]=page.locator('h1').count()
+  if route.startswith('/articles/symmetria/'):
+   assert page.locator('.main-nav a').count()==6,('paper navigation',route)
+   assert page.locator('.paper-content img').count()==7,('paper figures',route)
+  if route=='/pages/contact.html':
+   assert page.locator('.main-nav a').count()==6
+   assert page.locator('form,input,textarea').count()==0
   assert page.locator('canvas').count()==0,('unexpected canvas/starfield',route)
   if route=='/':
    assert page.locator('main p').first.evaluate('(x)=>getComputedStyle(x).textAlign')=='justify'
    assert page.locator('.hero').evaluate('(x)=>getComputedStyle(x,"::before").backgroundImage')=='none'
-  if route in ['/','/pages/research.html','/pages/symmetria.html','/pages/nsrp.html','/pages/seip.html','/pages/bridgepoint.html','/pages/discussion-series.html','/pages/publications.html','/pages/about.html','/articles/symmetria/symmetria-paper-01.html']:
+  if route in principal:
    levels=page.locator('h1,h2,h3,h4,h5,h6').evaluate_all('(els)=>els.map(e=>Number(e.tagName[1]))');assert levels and levels[0]==1 and max([b-a for a,b in zip(levels,levels[1:])] or [0])<=1,(route,levels)
   for w in widths:
    page.set_viewport_size({'width':w,'height':900 if w>500 else 844}); page.wait_for_timeout(50)
    dims=page.evaluate('({client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth})');assert dims['client']==dims['scroll'],(route,w,dims)
-   if w==390 and route in ['/','/pages/about.html','/pages/publications.html','/pages/discussion-series.html','/articles/symmetria/symmetria-paper-01.html']:
+   if w==390 and route in ['/','/pages/about.html','/pages/contact.html','/pages/publications.html','/pages/discussion-series.html']+[f'/articles/symmetria/symmetria-paper-{i:02d}.html' for i in range(1,5)]:
     filename='postapproval-'+('home' if route=='/' else route.strip('/').replace('/','-').replace('.html',''))+'-390.png';dest=repo/'docs/reports/screenshots'/filename;page.screenshot(path=str(dest),full_page=True,timeout=30000);screenshots.append(str(dest.relative_to(repo)))
-   if w==1440 and route in ['/','/pages/about.html','/pages/publications.html','/pages/discussion-series.html','/articles/symmetria/symmetria-paper-01.html']:
+   if w==1440 and route in ['/','/pages/about.html','/pages/contact.html','/pages/publications.html','/pages/discussion-series.html']+[f'/articles/symmetria/symmetria-paper-{i:02d}.html' for i in range(1,5)]:
     filename='postapproval-'+('home' if route=='/' else route.strip('/').replace('/','-').replace('.html',''))+'-1440.png';dest=repo/'docs/reports/screenshots'/filename;page.screenshot(path=str(dest),full_page=True,timeout=30000);screenshots.append(str(dest.relative_to(repo)))
   # Keyboard disclosure test at phone width: skip link -> brand -> summary, open, Escape closes and restores focus.
   if route=='/pages/about.html':
@@ -133,7 +150,7 @@ with sync_playwright() as p:
  legacy_paths=['/pages/divisions.html','/pages/founding-fellows.html','/pages/symcore.html','/pages/symcraft.html','/pages/symcura.html','/pages/symlogic.html','/pages/symspace.html','/pages/contact.html','/pages/enquiry.html','/pages/enquiry-thanks.html']+[f'/articles/symmetria/symmetria-paper-{i:02d}.html' for i in range(1,5)]
  for route in legacy_paths:
   response=page.goto(base+route,wait_until='networkidle');assert response.status==200,route
-  assert page.locator('.skip-to-content').count()==1,route
+  assert page.locator('.skip' if route=='/pages/contact.html' else '.skip-to-content').count()==1,route
   assert page.locator('canvas').count()==0,('unexpected canvas',route)
   if route=='/pages/enquiry.html':
    assert page.locator('form,input,textarea,button[type=submit]').count()==0
