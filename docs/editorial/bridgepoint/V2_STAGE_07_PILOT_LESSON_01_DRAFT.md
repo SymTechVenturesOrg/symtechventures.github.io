@@ -1,8 +1,10 @@
 # BridgePoint — Lesson 01: The Language of Mathematics
 
+> **DEFERRED — DO NOT REVIEW, INTEGRATE OR PUBLISH.** On 16 November 2026 the owner judged this lesson too basic and instructed the project to stop lesson development while completing the website. Keep all 16 BridgePoint lesson entries marked **Planned**. This draft is retained solely as a historical exploratory draft, not a launch deliverable.
+
 **Category:** 1 — The Mathematical Toolkit  
 **Lesson:** 01 of 16  
-**Status:** **Draft for editorial and mathematical review — not published**  
+**Status:** **Shelved at owner request — not approved or published**  
 **Audience:** interested beginners; no advanced mathematical background assumed  
 **Learning outcome:** Interpret variables, functions, powers, equations and scientific notation  
 **Source for title/outcome:** [SymTech programme series catalogue](../../PROGRAMME_SERIES_STRUCTURE.md)
