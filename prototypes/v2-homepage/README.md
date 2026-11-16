@@ -4,7 +4,7 @@
 **Status:** Review requested; **not the production homepage**  
 **Date:** 16 November 2026 (GMT)  
 **Prepared by:** Chat (the Codex tool was not available directly in this conversation; no Codex or Work tokens were consumed)  
-**Related:** [Stage 3 design brief](../../docs/V2_STAGE_03_INFORMATION_ARCHITECTURE.md) is on the separate planning branch; [planning PR #2](https://github.com/SymTechVenturesOrg/symtechventures.github.io/pull/2) and [tracker #3](https://github.com/SymTechVenturesOrg/symtechventures.github.io/issues/3).
+**Related:** [Stage 3 design brief](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/planning/space-first-research-website-20261116/docs/V2_STAGE_03_INFORMATION_ARCHITECTURE.md) is on the separate planning branch; [planning PR #2](https://github.com/SymTechVenturesOrg/symtechventures.github.io/pull/2) and [tracker #3](https://github.com/SymTechVenturesOrg/symtechventures.github.io/issues/3).
 
 ## Prototype file
 
