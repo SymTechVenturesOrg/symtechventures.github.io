@@ -1,7 +1,7 @@
 # SymTech Ventures v2.0 — Stage 8C Codex/Luna Pre-Release Assurance
 
 **Date:** 16 November 2026 (GMT)  
-**Owner instruction:** Final, bounded pre-release technical assignment; **Luna only wherever model selection is supported**. Do **not** escalate to Terra without explicit owner consent.  
+**Owner instruction:** Final, bounded pre-release technical assignment. **The project owner independently sets Codex model, effort and speed in the interface before starting. Codex cannot select, change or escalate those settings.** This handover does not instruct Codex to select Luna or any other configuration.  
 **Repository:** `SymTechVenturesOrg/symtechventures.github.io`  
 **Existing implementation branch:** `feature/v2-space-research-website`  
 **Existing draft implementation PR:** [#5](https://github.com/SymTechVenturesOrg/symtechventures.github.io/pull/5)  
@@ -60,12 +60,12 @@ Use the **current actual head** of PR #5, not an old or assumed checkout. Record
 - **Do not send test enquiries, personal data, emails, or third-party messages**, and do not reactivate the suspended enquiry processor.
 - No copyright/permission assumptions, no mathematics validation claims without rigorous source review, no claims that SYMMETRIA is experimentally established.
 - No new external images, stock photos, generated replacements or unapproved packages committed to production.
-- No Work or Terra engagement and no broader site redesign. Treat the website as an independent exploratory research project primarily interested in space exploration.
+- No Work engagement and no broader site redesign. Model, effort and speed are controlled solely by the project owner, outside Codex's control. Treat the website as an independent exploratory research project primarily interested in space exploration.
 - Preserve UK English, static current styling, existing links, article content and all original public paper routes.
 
 ## Reporting and acceptance
 
-Use **Luna** for the Codex engagement if the UI offers a model selector; if unavailable, disclose the actual model selection and do not self-escalate to Terra. Send visible genuine-time DTSUs in Europe/London, beginning 0% and including percentage, evidence and ETA in the format: `[HH:MM:SS] NN% — factual work update; ETA ~remaining time`. If ETA is impossible, use `ETA unknown`. Do not fabricate intermediate timestamps or percentages.
+The project owner selects model, effort and speed before initiating Codex; Codex must not be instructed to select or change these settings. Send visible genuine-time DTSUs in Europe/London, beginning 0% and including percentage, evidence and ETA in the format: `[HH:MM:SS] NN% — factual work update; ETA ~remaining time`. If ETA is impossible, use `ETA unknown`. Do not fabricate intermediate timestamps or percentages.
 
 At completion, provide one short **COPY TO CHAT** summary with:
 - PR #5 URL, branch and exact final commit SHA;
