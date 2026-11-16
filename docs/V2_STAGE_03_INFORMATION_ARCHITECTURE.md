@@ -47,7 +47,9 @@ The primary navigation must remain usable on smartphone portrait. On narrow scre
 - Minimal, contemporary research-library presentation: dark midnight blue / near-black, restrained cool blue and subtle gold highlights, generous whitespace, readable off-white body text.
 - Retain existing `images/logos/symtech.webp` (source/rights to be confirmed), and use the abstract `images/heroes/symmetria_hero.webp` as optional **secondary research imagery**.
 - **Do not** reuse the current Golden Gate / Silicon Valley hero, staged lab photograph-like visuals or fictional wormhole spaceship as the actual homepage's claim of capability.
-- For the homepage hero, start with modest CSS starfield/space gradients or a suitably licensed genuine astronomical image **only after source and rights checks**. Do not invent a real scientific result through imagery.
+- **Approved on 16 November 2026:** Retain the existing website's recognisable **starfield background** as part of the v2.0 visual identity throughout the site. The original implementation is an animated canvas starfield in `js/main.js` (`aetheros-starfield`) with an additional shimmer layer. Reuse or simplify the **visual effect**, not obsolete AetherOS branding or unnecessary scripts; preserve clear text contrast and avoid obscuring articles.
+- Refine the starfield with restrained twinkling or slow motion; offer a static/reduced-motion presentation for visitors who request it, and limit rendering cost on smartphones. The prototype currently uses CSS star points; full-site integration of the retained visual effect belongs to Stage 6, with accessibility/performance checks in Stage 8.
+- For the homepage hero, retain the approved starfield/space gradients; a genuine astronomical image is optional **only after source and rights checks**. Do not invent a real scientific result through imagery.
 - Responsive from ~360px mobile portrait upward; avoid relying on tiny text baked into large illustrations for essential information.
 
 ## Research overview and programme child briefs
