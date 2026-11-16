@@ -2408,3 +2408,8 @@ body.divisions-series-page .topic-grid {
   content: none !important;
   display: none !important;
 }
+
+
+/* Keyboard skip link shared by preserved legacy pages and article shells. */
+.skip-to-content{position:absolute;z-index:1000;left:-10000px;top:1rem;padding:.75rem 1rem;background:#fff;color:#07101e;font-weight:700;border:2px solid #07101e}
+.skip-to-content:focus{left:1rem;outline:3px solid #efc38b;outline-offset:3px}
