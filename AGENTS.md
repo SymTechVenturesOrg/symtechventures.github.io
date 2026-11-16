@@ -11,15 +11,17 @@ This file governs changes to the public `SymTechVenturesOrg/symtechventures.gith
 - Preserve existing discussion-paper URLs. Do not conflate "available online discussion paper" with peer-reviewed/formally published research.
 - The project owner's public LinkedIn link, when requested on About/footer, is `https://www.linkedin.com/in/drgeoffthomas`. Do not invent affiliations, titles or personal details.
 
-## Work allocation
+## Work allocation — Chat-led, specialist-token efficient
 
-- **Chat:** confirm research/website priorities and secure the project owner's approval.
-- **Work:** source review, scientific/editorial content, accessible lesson writing, rendered-page evaluation.
-- **Codex:** HTML/CSS/JS implementation, responsive layouts, static-site checks and PR preparation.
-- Avoid Work and Codex editing the same HTML/CSS files in parallel; agree hand-off boundaries.
+- **Chat is the continuous lead** and does the primary scoping, source-grounded content drafting, straightforward GitHub/documentation updates, review, status and final owner-approved release coordination.
+- **Work supports only stages 2, 5 and 7:** existing content/image assessment, focused scientific/editorial review and the BridgePoint pilot/acceptance. Use **Luna** wherever selectable.
+- **Codex supports only stages 4, 6 and 8:** live-renderable prototype, HTML/CSS/JS implementation and technical/browser QA. Use **Luna** wherever selectable.
+- **Stages 1, 3 and 9 are Chat-only by default**. The specialist engagement sequence is **Work → Codex → Work → Codex → Work → Codex**.
+- **Terra has zero planned use**. Request owner authorisation before any evidence-based escalation.
+- Work and Codex must not edit the same HTML/CSS/JS files concurrently. End each specialist stage with verification, a concise COPY TO CHAT and a DTSU including a grounded ETA.
 - **The project owner must explicitly approve each production merge or deployment.**
 
-Full process: [WEBSITE_DEVELOPMENT_WORKFLOW.md](docs/WEBSITE_DEVELOPMENT_WORKFLOW.md).
+Read the [nine-stage Chat-led workplan](docs/WEBSITE_V2_WORKPLAN.md) and the [development workflow](docs/WEBSITE_DEVELOPMENT_WORKFLOW.md). These documents describe planned roles, not guaranteed tool capabilities or live production changes.
 
 ## Coding and content checks
 
@@ -35,6 +37,7 @@ Full process: [WEBSITE_DEVELOPMENT_WORKFLOW.md](docs/WEBSITE_DEVELOPMENT_WORKFLO
 
 ## Current planning documents
 
+- [Chat-led v2.0 workplan](docs/WEBSITE_V2_WORKPLAN.md)
 - [Space-first information architecture](docs/SPACE_FIRST_SITE_PLAN.md)
 - [BridgePoint 4×4 and NSRP/SEIP 5×4 programme structures](docs/PROGRAMME_SERIES_STRUCTURE.md)
 
