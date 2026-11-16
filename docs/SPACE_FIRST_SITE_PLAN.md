@@ -29,8 +29,8 @@ The word "Ventures" is retained as the existing project name and domain, **not**
 
 On the Research landing page link to:
 - `/pages/symmetria.html` — formulation, hypotheses and discussion
-- `/pages/nsrp.html` — sixteen *proposed research targets* grouped 4×4
-- `/pages/seip.html` — sixteen *proposed engineering/computation targets* grouped 4×4
+- `/pages/nsrp.html` — **five existing stage projects, each with four proposed research phases** (20 phases total)
+- `/pages/seip.html` — **five existing stage projects, each with four proposed engineering/computation phases** (20 phases total)
 
 The homepage should feature four equally presented **programme overview cards**: SYMMETRIA, BridgePoint, NSRP, SEIP. Their sequence should make the audience path comprehensible, while the site headline remains **space exploration**.
 
@@ -43,11 +43,18 @@ The homepage should feature four equally presented **programme overview cards**:
 - Reframe the five historical "divisions" as *possible application areas* (with space exploration foregrounded); do not present them as operating departments. Preserve legacy `pages/divisions.html` and child URLs until a deliberate navigation and redirect decision.
 - Remove visible references to a "proposed Silicon Valley start-up", venture fundraising, recruitment of founding leads and unearned technology capability. Preserve existing legacy URLs and archive/historical context where appropriate.
 
-## Structured 4×4 content programme
+## Programme structures — retain their distinct models
 
-See [`CONTENT_SERIES_4X4.md`](CONTENT_SERIES_4X4.md) for **16 BridgePoint lesson titles, 16 NSRP research targets and 16 SEIP engineering targets**, each arranged into four groups of four.
+See [`PROGRAMME_SERIES_STRUCTURE.md`](PROGRAMME_SERIES_STRUCTURE.md) for the adapted structures:
 
-**Status:** All 48 new items are *proposed*, not delivered, completed, verified or published.
+- **SYMMETRIA:** 4 categories × 4 existing discussion papers (16 total).
+- **BridgePoint:** 4 categories × 4 planned lessons (16 total).
+- **NSRP:** 5 historical research projects × 4 phases (20 phases total).
+- **SEIP:** 5 historical engineering projects × 4 phases (20 phases total), paired with NSRP.
+
+NSRP and SEIP **must not be converted to 4×4**. Show five project sections with four phase entries each. Space exploration is the primary site context, but does not justify replacing the underlying programme structure.
+
+**Status:** The BridgePoint lessons and NSRP/SEIP phase catalogue are descriptions and intentions, not claims that new lessons, results or technologies have been delivered, completed, verified or published.
 
 The SYMMETRIA Discussion Series already has a separate 16-item/4-category manifest. **Retain the existing series**, but review legacy page-level wording for consistency with a space-first, independent-research identity.
 
@@ -72,8 +79,8 @@ Place a clearly labelled external LinkedIn link on the **About** page and in the
 
 - UK English, plain speech first, mathematics explained progressively.
 - BridgePoint lessons should show prerequisites, objectives, a short worked example, symbol-by-symbol explanations, a recap and *Going Deeper* optional content.
-- NSRP items are **targets/questions** with acceptance/failure criteria, not scientific conclusions.
-- SEIP items are **proposed targets** with runnable baseline or reproducibility criteria, not verified spacecraft engineering.
+- NSRP's **five projects and four phases per project** describe research targets/questions with acceptance/failure criteria, not scientific conclusions.
+- SEIP's **five companion projects and four phases per project** describe proposed engineering work with runnable baselines or reproducibility criteria, not verified spacecraft engineering.
 - Include status metadata: `proposed`, `in progress`, `available online — discussion`, `tested`, `independently verified` only with evidence.
 - Avoid implying university/institutional affiliation or funding.
 
