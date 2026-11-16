@@ -182,3 +182,4 @@ body.symmetria-article-page{
   .symmetria-article-page .paper-content p,
   .symmetria-article-page .paper-content li{line-height:1.75}
 }
+.symmetria-article-page .paper-content table:focus-visible{outline:3px solid #f4c88b;outline-offset:3px}

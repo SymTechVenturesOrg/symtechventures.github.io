@@ -23,3 +23,13 @@ document.querySelectorAll(".mobile-nav").forEach(function (menu) {
     }
   });
 });
+
+// Make only horizontally overflowing paper tables keyboard-scrollable.
+function updatePaperTableFocus() {
+  document.querySelectorAll('.symmetria-article-page .paper-content table').forEach(function (table) {
+    if (table.scrollWidth > table.clientWidth + 1) table.setAttribute('tabindex', '0');
+    else table.removeAttribute('tabindex');
+  });
+}
+updatePaperTableFocus();
+window.addEventListener('resize', updatePaperTableFocus);
