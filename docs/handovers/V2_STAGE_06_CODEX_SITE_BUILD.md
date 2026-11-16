@@ -1,175 +1,141 @@
-# SymTech Ventures v2.0 — Codex Stage 6 Implementation Handover
+# SymTech Ventures v2.0 — Stage 6 Website Implementation
 
-**Handover revision:** 1.1 — Chat-led, Luna-first, token-conscious  
-**Prepared:** 16 November 2026 (UK)  
-**Execution:** **Not started**. This document instructs a future, bounded Codex implementation task.  
-**Owner and project lead:** Chat, with the project owner approving release  
-**Specialist:** Codex — implementation and implementation-stage checks only  
-**Issue:** [SymTech v2 development tracker #3](https://github.com/SymTechVenturesOrg/symtechventures.github.io/issues/3)
+**Task:** Build the v2.0 website on a separate GitHub branch and return a verified draft pull request.  
+**Repository:** `SymTechVenturesOrg/symtechventures.github.io`  
+**Tracker:** [Issue #3](https://github.com/SymTechVenturesOrg/symtechventures.github.io/issues/3)  
+**Status:** Handover prepared; implementation not yet started.
 
-## Codex run configuration — explicit settings
+## 1. Read the approved sources
 
-| Setting | Selection |
+Use these exact GitHub sources before changing files:
+
+1. [Approved website architecture and visual requirements](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/planning/space-first-research-website-20261116/docs/V2_STAGE_03_INFORMATION_ARCHITECTURE.md) — page hierarchy, routes, navigation and starfield.
+2. [Stage 5 website copy](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/planning/space-first-research-website-20261116/docs/editorial/V2_STAGE_05_WEBSITE_COPY_DRAFT.md) — page introductions, copy and evidence-status wording.
+3. [Programme structures and phase titles](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/planning/space-first-research-website-20261116/docs/PROGRAMME_SERIES_STRUCTURE.md) — authoritative website catalogue for 16 BridgePoint lesson titles and 20 phases each for NSRP and SEIP.
+4. [Scientific/editorial review and cautions](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/planning/space-first-research-website-20261116/docs/reports/V2_STAGE_05_EDITORIAL_REVIEW_20261116.md) — wording boundaries and open issues.
+5. [Image reuse and legacy content audit](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/planning/space-first-research-website-20261116/docs/reports/V2_STAGE_02_ASSET_AUDIT_20261116.md).
+6. [Approved homepage prototype](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/prototype/space-first-homepage-20261116/prototypes/v2-homepage/index.html) and [its verification notes](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/prototype/space-first-homepage-20261116/prototypes/v2-homepage/README.md).
+7. [DTSU — Dr T Style Updates](https://github.com/SymTechVenturesOrg/symtech-ventures/blob/design/clean-slate-foundation-20261115/docs/standards/DTSU_Dr_T_Style_Updates.md) — read and follow during execution.
+
+The design and content sources are on the **planning** and **prototype** branches, not on production `main`. Read them directly from their links. The Stage 5 text is an editorial draft: implement it as specified without inventing scientific findings, and flag material ambiguities.
+
+## 2. Branch and pull request
+
+- Fetch the latest `main` and record its starting commit SHA.
+- Create `feature/v2-space-research-website` from `main` (use a unique suffix if already present).
+- Recreate/adapt the approved prototype in the actual production page structure; do **not** merge the prototype or planning pull requests as a shortcut.
+- Make focused commits and open **one draft pull request against `main`**.
+- Do **not** push directly to `main`, merge any PR, deploy the website or contact external parties.
+- Avoid unrelated refactors, generated placeholder articles and bulk migration of Google Drive materials.
+
+## 3. Implement the website
+
+SymTech Ventures is now an **independent research project focused primarily on space exploration**, not a Silicon Valley start-up. Use the approved dark, elegant research-library design, UK English and accessible layouts.
+
+| Route | Required result |
 | --- | --- |
-| Model | **GPT-6 Luna** (\`gpt-6-luna\` in Codex CLI, if available) |
-| Reasoning effort | **Medium** |
-| Execution speed / power | **Standard/default**, not an accelerated or Ultra multi-agent run |
-| Advanced/Max/Ultra | **Off** / not requested |
-| Terra | **Not authorised**; do not switch models without asking the owner |
-| Working mode | Single focused Codex implementation run, one feature branch and one draft PR |
-| DTSU | **Required** before and throughout execution, using actual Europe/London clock time |
-| Working language | UK English for user-visible pages, documentation and handback |
+| `/index.html` | New homepage, six main navigation links, four programme cards, links to four original papers and honest project description |
+| `/pages/research.html` | Research overview explaining SYMMETRIA, NSRP, SEIP and their relationship to space exploration |
+| `/pages/symmetria.html` | Clearly exploratory theoretical framework, linked to discussion papers |
+| `/pages/nsrp.html` | **5 named research projects × 4 phases = 20**, with unverified work labelled planned |
+| `/pages/seip.html` | **5 engineering companion projects × 4 phases = 20**, with no completed technical results invented |
+| `/pages/bridgepoint.html` | **4 lesson categories × 4 lessons = 16**; all unwritten lessons marked planned |
+| `/pages/discussion-series.html` | Four existing online discussion papers plus twelve planned entries |
+| `/pages/publications.html` | **Zero formal publication entries** and a short empty-state explanation |
+| `/pages/about.html` | Independent-project purpose, research limitations and LinkedIn link |
+| `/pages/contact.html` | Existing contact route remains reachable; do not silently change the enquiry service |
 
-Select model/effort using the Codex interface where available; these settings are **requirements for the handover**, not a claim that Chat has changed your account's Codex settings. If Luna is unavailable, **stop and report the model constraint**, rather than silently using Terra.
+**Primary navigation:** Home · Research · BridgePoint · Discussion Papers · Publications · About. Contact should be reachable from About and the footer. Use the supplied LinkedIn URL: `https://www.linkedin.com/in/drgeoffthomas`.
 
-**Why Medium:** this is multi-page static-site coding with specified page copy, responsive layouts and integrity tests, but not an open-ended research task. Reuse the approved visual design; don't spend tokens redesigning, brainstorming alternatives or importing unrelated assets. If stuck, reduce the problem to a small reproducible test and report it. No automatic reasoning-effort escalation.
+Build reusable site CSS, navigation, page layouts and footer. The homepage prototype establishes the approved appearance; replace its prototype-only anchor destinations with actual page routes.
 
-## Reference versions and GitHub boundaries
+**Do not write or link to a fictitious completed BridgePoint lesson.** A full pilot lesson is a subsequent task. Build a reusable lesson layout only if it is useful without adding false content.
 
-**Website repository:** \`SymTechVenturesOrg/symtechventures.github.io\` (public GitHub Pages source).
+## 4. Preserve existing research material and URLs
 
-**Baseline:** create a new branch \`feature/v2-space-research-website\` from the current \`main\` commit. At handover preparation, \`main\` was **\`248feb5084745ebcffca5957ca5c517baa8ba7e0\`**; check for changes before starting. If the branch name already exists, use a distinct suffix instead of overwriting.
+These original URLs must remain valid and their substantive article content and paper illustrations must be preserved:
 
-**Planning PR #2:** [Chat-led roadmap and source content](https://github.com/SymTechVenturesOrg/symtechventures.github.io/pull/2), **draft / unmerged** as of preparation. Fetch documents at \`planning/space-first-research-website-20261116\`.
+- `/articles/symmetria/symmetria-paper-01.html`
+- `/articles/symmetria/symmetria-paper-02.html`
+- `/articles/symmetria/symmetria-paper-03.html`
+- `/articles/symmetria/symmetria-paper-04.html`
 
-**Prototype PR #4:** [approved Stage 4 homepage design](https://github.com/SymTechVenturesOrg/symtechventures.github.io/pull/4), **draft / unmerged** as of preparation. Fetch \`prototypes/v2-homepage/index.html\` and \`README.md\` from \`prototype/space-first-homepage-20261116\`. **Do not merge this PR** to obtain the template.
+Record the existing Git blob SHA of each before work begins. **Prefer leaving the article HTML files unchanged** during this stage. If changes are essential for compatibility, document exact before/after differences and preserve article text, images, URLs and navigation between papers.
 
-**Source priority (highest first):**
-1. [Owner-approved site map and layout specification](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/planning/space-first-research-website-20261116/docs/V2_STAGE_03_INFORMATION_ARCHITECTURE.md) — six navigation items, space-first identity, approved permanent starfield.
-2. [Stage 5 page-copy candidate](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/planning/space-first-research-website-20261116/docs/editorial/V2_STAGE_05_WEBSITE_COPY_DRAFT.md) — nine page-slot drafts; **editorial draft, not owner-authorised published findings**.
-3. [Canonical website programme series plan](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/planning/space-first-research-website-20261116/docs/PROGRAMME_SERIES_STRUCTURE.md) — source of titles and **4×4 / 5×4** structure. Do not invent alternative phase titles.
-4. [Stage 5 review and open questions](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/planning/space-first-research-website-20261116/docs/reports/V2_STAGE_05_EDITORIAL_REVIEW_20261116.md) — caveats, provisional NCP phase headings, image/mathematical risks.
-5. [Stage 2 source and image audit](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/planning/space-first-research-website-20261116/docs/reports/V2_STAGE_02_ASSET_AUDIT_20261116.md) — selected image candidates and rights uncertainty.
-6. [Site governance and DTSU instructions](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/planning/space-first-research-website-20261116/docs/WEBSITE_DEVELOPMENT_WORKFLOW.md).
-7. [Source DTSU — Dr T Style Updates](https://github.com/SymTechVenturesOrg/symtech-ventures/blob/design/clean-slate-foundation-20261115/docs/standards/DTSU_Dr_T_Style_Updates.md) — reread before executing.
+The four accessible papers are **discussion essays**, not automatically peer-reviewed research publications. Papers 5–16 remain planned.
 
-**Only this implementation PR may change production-bound HTML/CSS/JS** on its own branch. Do not alter either source-planning branch or the site's live \`main\` branch. **Do not merge, publish, deploy, contact users or create external accounts.** Stage 9 requires a separate, explicit owner decision.
+Preserve functioning legacy URLs, including divisions, founding fellows, enquiry and thank-you pages, unless an explicit redirect/historical route is implemented and tested. Keep `CNAME` intact. Update `sitemap.xml` and page metadata only for real implemented pages; keep original paper canonical destinations.
 
-## Objective and scope
+## 5. Retain the starfield
 
-Create the full **v2.0 replacement website in an unmerged draft PR**, preserving the existing domain and GitHub Pages implementation model. Replace the Silicon Valley/start-up pitch with an **independent research project focused primarily on space exploration**, carefully distinguishing scientific questions from supported results.
+The existing website's recognisable starfield is an **approved design requirement**. Reimplement the effect in a small, appropriately named shared v2 component; do not copy old AetherOS code or branding indiscriminately.
 
-Use the Stage 4 prototype as the **approved visual direction**, not as a mandate to copy its prototype-only anchor links or placeholder text uncritically. Preserve the requested elegant dark styling, spacious typography and **recognisable site-wide starfield**.
+- Keep the effect subtle and visually present on principal pages, without obscuring reading.
+- Treat visual canvases as decoration (not focusable or announced by screen readers).
+- Honour `prefers-reduced-motion: reduce` with static stars or disabled animation.
+- Reduce particle density and rendering cost on mobile.
+- Pause or throttle animation when the page is hidden.
+- Ensure adequate contrast and readable long-form article surfaces.
 
-### Required pages and content
+Do not claim full accessibility or mobile performance verification until actual tests have been run.
 
-| Route | Acceptance target |
-| --- | --- |
-| \`/index.html\` | Approved space-first homepage, six working top-level links, four programme cards, four genuine discussion-paper links, status note and footer |
-| \`/pages/research.html\` | Plain-language programme relationships, space focus, honest evidence ladder |
-| \`/pages/symmetria.html\` | Exploratory theory description, not validated unification; link to Discussion Papers |
-| \`/pages/nsrp.html\` | **Five projects × four phases = 20**; NCP, SEP, SDEP, SVP, SMP; phases labelled planned/provisional unless evidenced |
-| \`/pages/seip.html\` | **Five engineering projects × four phases = 20**; EFP, SEP, SDP, SVP, SMP; not presented as completed experiments or devices |
-| \`/pages/bridgepoint.html\` | **Four learning categories × four lesson titles = 16**; only genuinely complete lessons can have active lesson links |
-| \`/pages/discussion-series.html\` | **Four available online essays**, **12 planned**; distinguish from formal publications |
-| \`/pages/publications.html\` | **Zero formal publication entries**, with an explicit empty state |
-| \`/pages/about.html\` | Independent-project mission, evidence ethos, LinkedIn link |
-| \`/pages/contact.html\` | Keep reachable; do not silently alter the existing third-party enquiry service or expose new personal contact information |
+## 6. Scientific, asset and privacy safeguards
 
-**BridgePoint lesson 1 is not a completed deliverable for Stage 6.** Build an accessible lesson-page pattern or template if useful, but only Stage 7 will write, review and approve one genuine pilot lesson. All remaining lessons stay **Planned** without dead links.
+- Distinguish **established physics**, **exploratory hypotheses**, **planned research**, **simulations** and **empirical findings**.
+- Do not imply verified unified-field physics, new space propulsion, operational laboratories or funded divisions.
+- The existing logo, abstract hero and paper artwork may be reused only within their documented existing context or after appropriate rights review. Do not introduce unclear new image rights or use fictitious wormhole/laboratory pictures as evidence of real facilities.
+- Do not rewrite the four original scientific papers as part of website styling.
+- Keep planned NSRP/SEIP phases marked as plans; the NCP phase wording is provisional in the source catalogue.
+- Retain the original Contact/enquiry behaviour unless reviewed. Avoid exposing additional private email addresses or external form details.
 
-**Expected permanent navigation:** Home · Research · BridgePoint · Discussion Papers · Publications · About. Contact is accessible via About and footer.
+## 7. Implementation checkpoints
 
-## Preservation register — non-negotiable
+1. **Shared design:** site shell, responsive navigation, footer, approved homepage styling and starfield.
+2. **Research pages:** Research, SYMMETRIA, NSRP, SEIP, BridgePoint; verify exact **16 / 20 / 20** catalogue counts.
+3. **Reading and support pages:** Discussion Papers, empty Publications, About and preserved Contact/legacy paths.
+4. **Initial technical verification:** desktop/mobile renders, keyboard access, link and resource checks, reduced-motion behaviour, sitemap and article preservation.
 
-The following four **existing, complete** SYMMETRIA article URLs must continue to resolve, with their substantive bodies, figures and discussion status preserved:
+Use one branch and one draft PR. Keep changes bounded to the requirements above and stop after reporting verified implementation results; do not begin subsequent editorial or release stages.
 
-- \`/articles/symmetria/symmetria-paper-01.html\`
-- \`/articles/symmetria/symmetria-paper-02.html\`
-- \`/articles/symmetria/symmetria-paper-03.html\`
-- \`/articles/symmetria/symmetria-paper-04.html\`
+## 8. Verification evidence required
 
-Before editing any of these files, record their **Git blob SHAs** and content/image-path inventories from \`main\`. **Preferred:** leave all four article files untouched during Stage 6, then update their surrounding shared site navigation only by a separately reviewable, evidence-backed change if required. If changed, give the exact file/section and original-versus-replacement diff; never silently rewrite the science.
+Record actual commands and outcomes (passed, failed, skipped or blocked) in a versioned `docs/reports/` report in the draft PR.
 
-Protect the original SYMMETRIA manifest's meaning: the first four papers are **available on the website as discussion papers**, not certified peer-reviewed formal publications. Planned papers 5–16 must not acquire broken destination URLs or false published status.
+- All required routes exist and the six main nav links resolve.
+- **BridgePoint:** 4 groups/16 lesson titles; **NSRP:** 5 projects/20 phases; **SEIP:** 5 projects/20 phases.
+- **Discussion Papers:** exactly four available online and twelve planned. **Publications:** zero formal entries.
+- Existing four article URLs, bodies, key image references and pagination preserved.
+- Keyboard navigation, focus visibility, headings, image descriptions and functional mobile menu checked.
+- Real desktop and smartphone browser screenshots; test horizontal overflow at **320px and 390px**.
+- Basic starfield reduced-motion and hidden-tab behaviour checked and reported.
+- Broken links, console errors, missing resources and unresolved privacy/image-rights concerns listed.
+- Confirm the implementation branch is isolated and `main` has not changed.
 
-Do not delete the old \`pages/divisions.html\`, \`pages/founding-fellows.html\`, related division pages, \`pages/contact.html\`, \`pages/enquiry.html\` or \`pages/enquiry-thanks.html\` without a specific compatibility/redirect decision and tests. Identify existing inbound links and sitemap entries first. Retire their primary navigation prominence and obsolete start-up copy on new pages, but preserve functioning paths.
+This is the initial implementation check; a separate later stage conducts comprehensive regression and accessibility verification.
 
-Keep \`CNAME\` and the site's domain configuration intact. If modifying \`sitemap.xml\` or metadata, add only implemented URLs and preserve existing article canonical destinations; no fake last-modified dates.
+## 9. Required progress updates — DTSU v1.1
 
-## Retained starfield — owner-approved
+Read the linked DTSU standard before starting. Send **visible user-facing** updates in this form, at real Europe/London time:
 
-The original \`main:js/main.js\` creates \`aetheros-starfield\` and \`aetheros-shimmer-layer\` canvases. Stage 5 found its own diagnostic note **"No reduced-motion bypass"**. Do **not** copy the entire legacy JavaScript or AetherOS naming into the new site.
+```text
+[HH:MM:SS] NN% — Concrete whole-task progress and evidence; ETA ~remaining duration.
+```
 
-Build a minimal, shared v2 starfield module (CSS or small JavaScript) with these checks:
+- Give a **0%** update before making changes.
+- Update at genuine 10% milestones, or every 10–20% if steps finish quickly, and every 3–5 minutes on longer intervals.
+- Include an **ETA in every update**; use `ETA unknown` if genuinely impossible to estimate.
+- Report failures and blockers without inflating progress.
+- Give **100% / ETA 0 minutes** only after validating deliverables and handing back the draft PR.
+- Do not substitute private logs for visible updates or fabricate timestamps and test results.
 
-- Recognisably **spacey but restrained** on all principal v2 pages, not only the homepage.
-- Decorative only: \`aria-hidden\` or equivalent, no focus, never covers text/click controls.
-- **Reduced motion:** if \`prefers-reduced-motion: reduce\`, render a static starfield or disable movement; adapt if the preference changes.
-- **Mobile performance:** reduce star density and animation frequency; cap device pixel ratio and limit repaints.
-- **Tab visibility:** stop unnecessary animation when the page is hidden; resume safely.
-- **Readability:** solid/opaque article and text surfaces as needed; no bright moving particles through long-form paragraphs.
-- No claim that an untested starfield passes accessibility/performance review. Stage 8 performs full verification.
+## 10. Final COPY TO CHAT handback
 
-## Asset and scientific integrity rules
+Finish with a short, paste-ready **COPY TO CHAT** report giving:
 
-- Do not reuse the Golden Gate startup hero, fictional staffed-laboratory hero or wormhole/spacecraft promotional imagery as apparent evidence of facilities or research accomplishments.
-- The original project logo, abstract SYMMETRIA hero and existing paper images are **candidates**, but their attribution/rights and the formulae embedded in art were **not independently verified**. Prefer a self-contained CSS starfield at first; use existing paper illustrations only in their already existing article context unless cleared.
-- No claim of working propulsion technology, new gravitational effect, unified physics validation, funded laboratory, registered startup or operational five-division team.
-- Public research status labels should be \`Planned\`, \`Exploratory\`, \`Available online — discussion paper\`, etc., matched to actual source evidence.
-- Preserve UK English and mathematical terminology; do not independently edit theoretical arguments.
-- The external third-party contact-form handler in the old site requires a privacy and operational check. **Do not copy recipient email addresses or service configuration into new pages** unnecessarily.
-- LinkedIn: \`https://www.linkedin.com/in/drgeoffthomas\`; use a clear accessible label, optional new-tab \`rel="noopener noreferrer"\`.
+- Draft PR URL, feature branch, exact final commit SHA and list of changed areas.
+- Tests actually performed, outcomes, and screenshot/report paths.
+- Four article integrity findings, programme counts, empty Publications confirmation and starfield checks.
+- Remaining blockers, risks and specific questions for the next content-review stage.
+- Confirmation that **nothing was merged or deployed**.
 
-## Token-efficient delivery — four bounded internal checkpoints
-
-**Chat remains project lead; Codex is an implementation specialist.** Do not perform an open-ended visual redesign, long external literature searches or unrelated refactoring.
-
-1. **Shell and navigation:** establish shared CSS, starfield, header/footer and homepage. Provide one desktop and mobile screenshot and a narrow smoke test. Reuse approved prototype design.
-2. **Programme pages:** implement Research, SYMMETRIA, NSRP, SEIP and BridgePoint from source copy; verify **16 / 20 / 20** counts. No full lesson writing.
-3. **Reading and supporting pages:** Discussion Papers, deliberately empty Publications and About/Contact; keep original four articles and legacy paths working. Update only necessary sitemap/metadata.
-4. **Initial build verification and draft PR:** keyboard/menu functionality, real browser pages, 320/390px no-horizontal-overflow check, link integrity and at least basic reduced-motion starfield check. Stop and hand back for Chat and Stage 7 review.
-
-Prefer **one cohesive draft PR** with checkpoints or small commits, not several simultaneous branches or duplicate Work/Codex edits. Report the checkpoints with factual DTSUs; do not expend tokens on unscheduled marketing, design variants or additional pages.
-
-### Acceptance checks (actual test evidence required)
-
-| Check | Expected result |
-| --- | --- |
-| Page existence | Ten route groups listed above available on the implementation branch |
-| Navigation | Six top-level destinations resolve to implemented pages; mobile navigation opens by keyboard |
-| SYMMETRIA articles | Four original paths resolve; bodies and image paths intact |
-| SYMMETRIA series | Four readable + twelve planned, with honest labels |
-| BridgePoint | Exactly sixteen **planned** lesson slots in four groups, no dead lesson links |
-| NSRP | Exactly five projects and twenty phase entries |
-| SEIP | Exactly five projects and twenty phase entries |
-| Publications | Exactly **zero** research publication entries |
-| Visual/UX | Actual browser-generated desktop and smartphone screenshots, legible starfield, no horizontal overflow at 320/390px |
-| Accessibility | Semantic headings, descriptive links and image alt, visible keyboard focus, reduced-motion fallback |
-| Technical | Actual local HTML/link checks, report JS console errors and missing resources |
-| GitHub safety | Changes confined to one feature branch / draft PR; no changes to \`main\` |
-
-Record pass, fail, skipped and blockers separately; do not turn an untested item into a claimed pass. **Stage 6 checks are smoke tests only**; formal end-to-end accessibility and regression review occurs in Stage 8.
-
-## Required v1.1 DTSUs — visible, clock-verified
-
-Read the linked **DTSU — Dr T Style Updates** standard before coding. Issue updates in visible Codex/Chat messages, using actual Europe/London local time:
-
-\`\`\`text
-[HH:MM:SS] NN% — Factual, 10–20-word whole-task status; ETA ~remaining duration.
-\`\`\`
-
-- **0% before any coding/actions**, using a real clock read, not prefilled time.
-- Update at genuine **10% milestones** where possible (at minimum each 10–20% when work moves quickly), and every **3–5 minutes** if longer work continues.
-- Every message includes **ETA**; if remaining time is genuinely incalculable, write \`ETA unknown\`.
-- **100%, ETA 0 minutes** only after actual files, tests, report and PR handback are verified.
-- On blocking failures, report **blocked** with the true percentage and \`ETA unknown\`.
-- DTSUs are **user-visible messages**, not just background logs or a Markdown report.
-- Never fabricate timestamps, test outcomes or a promise to send future updates from an unattended session.
-
-Do not assume model/effort selection is enforceable through a Markdown file. If the selected configuration differs, disclose it in the first DTSU.
-
-## Stop, report and COPY TO CHAT
-
-Deliver **one concise handback** after Stage 6 (not Stage 7/8/9):
-
-- Exact branch and **draft PR URL**; final commit SHA.
-- Files changed and explicit confirmation that \`main\` remains untouched.
-- Milestone results with actual commands/browser dimensions; link to a versioned \`docs/reports/\` verification report in the PR.
-- Actual desktop/mobile screenshot references or a truthful reason they could not be captured.
-- Four article integrity results; 16/20/20 programme counts; zero formal publications; starfield reduced-motion observation.
-- Failure list, security/privacy and asset-rights blockers, and concrete Stage 7 review requests.
-- Concise **COPY TO CHAT** plain-text summary, not a second long set of instructions.
-- Stop. **Do not merge PRs, deploy GitHub Pages, publish scientific work or start Stage 7 autonomously.**
-
-**This handover is ready for an explicit Codex run, but preparation of the handover is not execution of the website build.**
+**Stop after the handback. No publication or merge is authorised by this task.**
