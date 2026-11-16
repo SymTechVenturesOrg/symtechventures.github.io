@@ -70,3 +70,24 @@ Finish with a concise **COPY TO CHAT** containing: PR #5 URL, branch, final SHA,
 ## 7. Release protection
 
 PR #5 **must remain draft and unmerged**. **No deployment, publication, DNS changes, live user-data submission, changes to `main`, or new PR**. Owner's permission to run a temporary dev-only scanner is **not** permission to merge or release.
+
+
+---
+
+## Stage 8F-C follow-up: one controlled npm cache-path recovery
+
+**Added after the 8F-C blocked handback of 16 November 2026.** The [committed blocked report](../reports/V2_STAGE_08FC_AXE_ACCESSIBILITY_SCAN_20261116.md) records **npm exit 1, ENOENT while creating `/home/agent/.npm/_cacache`**. This is a **cache-path setup error**, not evidence of an axe accessibility result or a website defect. The first attempt complied with its one-attempt bound; the following is a newly bounded **single recovery** authorised as a narrow continuation by Chat, not a request to restart from scratch.
+
+If Codex is asked to continue, use a **fresh temporary directory for both npm cache and installation prefix**, never the environment's broken default `/home/agent/.npm`:
+
+```sh
+AUDIT_TMP=$(mktemp -d /tmp/axe-stage8fc-recovery.XXXXXX)
+mkdir -p "$AUDIT_TMP/npm-cache" "$AUDIT_TMP/pkg"
+NPM_CONFIG_CACHE="$AUDIT_TMP/npm-cache" npm install --prefix "$AUDIT_TMP/pkg" --no-save --no-package-lock --ignore-scripts axe-core
+```
+
+Record **the exact exit code, stdout/stderr and installed axe version** (or the specific new failure), rather than extrapolating success. Point Playwright's `page.add_script_tag(path=...)` at `"$AUDIT_TMP/pkg/node_modules/axe-core/axe.min.js"` when present, and execute actual `axe.run` on the same six real local-checkout pages at 390/1440 px plus Research's open-menu state as specified above.
+
+Avoid persisting npm packages or cache under the repository. Clean up only the task-specific temporary directory, **after** gathering evidence. If the cache-isolated install fails (for example because npm registry access is blocked), **stop retrying package installation**. You may still perform the actual-browser manual checks already requested, recording observed names/state and marking the automated scan **BLOCKED**.
+
+Update the **existing** `docs/reports/V2_STAGE_08FC_AXE_ACCESSIBILITY_SCAN_20261116.md` with an explicitly dated **recovery attempt/results section**. Preserve the initial blocked run as history, distinguishing the first and second attempts; do not rewrite it as if the first attempt passed. Include any genuine scan results, route/width coverage, keyboard/menu checks, relevant fixes and rerun of the 8F-A integration script **only if website source code changes**. Finish with report/PR readback, COPY TO CHAT, real-time DTSUs and no merge/deployment.
