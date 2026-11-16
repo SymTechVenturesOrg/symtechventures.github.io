@@ -1,85 +1,73 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.symtechventures.com/</loc>
-    <lastmod>2026-06-22</lastmod>
     <priority>1.00</priority>
-  </url><url>
-    <loc>https://www.symtechventures.com/articles/symmetria/symmetria-paper-01.html</loc>
-    <lastmod>2026-07-01</lastmod>
-    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.symtechventures.com/articles/symmetria/symmetria-paper-02.html</loc>
-    <lastmod>2026-08-01</lastmod>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://www.symtechventures.com/articles/symmetria/symmetria-paper-03.html</loc>
-    <lastmod>2026-09-28</lastmod>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://www.symtechventures.com/articles/symmetria/symmetria-paper-04.html</loc>
-    <lastmod>2026-10-07</lastmod>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://www.symtechventures.com/pages/contact.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.symtechventures.com/pages/divisions.html</loc>
-    <lastmod>2026-06-21</lastmod>
-    <priority>0.80</priority>
-  </url><url>
-    <loc>https://www.symtechventures.com/pages/enquiry.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.symtechventures.com/pages/founding-fellows.html</loc>
-    <lastmod>2026-06-21</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.symtechventures.com/pages/nsrp.html</loc>
-    <lastmod>2026-06-22</lastmod>
-    <priority>0.80</priority>
-  </url><url>
-    <loc>https://www.symtechventures.com/pages/symcore.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.symtechventures.com/pages/symcraft.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.symtechventures.com/pages/symcura.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.symtechventures.com/pages/symlogic.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.symtechventures.com/pages/research.html</loc>
   </url>
   <url>
     <loc>https://www.symtechventures.com/pages/symmetria.html</loc>
-    <lastmod>2026-06-21</lastmod>
-    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.symtechventures.com/pages/nsrp.html</loc>
+  </url>
+  <url>
+    <loc>https://www.symtechventures.com/pages/seip.html</loc>
+  </url>
+  <url>
+    <loc>https://www.symtechventures.com/pages/bridgepoint.html</loc>
   </url>
   <url>
     <loc>https://www.symtechventures.com/pages/discussion-series.html</loc>
-    <lastmod>2026-10-07</lastmod>
-    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.symtechventures.com/pages/publications.html</loc>
+  </url>
+  <url>
+    <loc>https://www.symtechventures.com/pages/about.html</loc>
+  </url>
+  <url>
+    <loc>https://www.symtechventures.com/pages/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://www.symtechventures.com/pages/enquiry.html</loc>
+  </url>
+  <url>
+    <loc>https://www.symtechventures.com/pages/enquiry-thanks.html</loc>
+  </url>
+  <url>
+    <loc>https://www.symtechventures.com/pages/divisions.html</loc>
+  </url>
+  <url>
+    <loc>https://www.symtechventures.com/pages/founding-fellows.html</loc>
+  </url>
+  <url>
+    <loc>https://www.symtechventures.com/pages/symcore.html</loc>
+  </url>
+  <url>
+    <loc>https://www.symtechventures.com/pages/symcraft.html</loc>
+  </url>
+  <url>
+    <loc>https://www.symtechventures.com/pages/symcura.html</loc>
+  </url>
+  <url>
+    <loc>https://www.symtechventures.com/pages/symlogic.html</loc>
   </url>
   <url>
     <loc>https://www.symtechventures.com/pages/symspace.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.symtechventures.com/articles/symmetria/symmetria-paper-01.html</loc>
+  </url>
+  <url>
+    <loc>https://www.symtechventures.com/articles/symmetria/symmetria-paper-02.html</loc>
+  </url>
+  <url>
+    <loc>https://www.symtechventures.com/articles/symmetria/symmetria-paper-03.html</loc>
+  </url>
+  <url>
+    <loc>https://www.symtechventures.com/articles/symmetria/symmetria-paper-04.html</loc>
   </url>
 </urlset>
