@@ -93,3 +93,22 @@ The retained historical division and Contact pages also refer to other pre-exist
 - Technical figure wording must be checked separately where diagrams convey mathematical or physical claims. A rights check is not the same as scientific validation.
 
 **No website HTML, images, rights metadata or deployment configuration was changed by producing this register.**
+
+## Initial visual scientific spot-check — **not** a complete 28-figure review
+
+Two figure files were opened and visually inspected from GitHub on 16 November 2026. The following issues require review **before** making a general claim that the illustrated mathematics and physics are correct. Nothing was edited in the image files or paper HTML.
+
+### Paper 2: `02_noether_symmetry_conservation.webp`
+
+- Its **time reversal** panel states that the laws remain the same whether time moves forwards or backwards. This is **not universally valid** in particle physics; time-reversal (T) symmetry violation is experimentally documented by CERN's CPLEAR work. Source: [CERN, Time's arrow](https://home.cern/times-arrow-particles-cannot-go-back-to-the-future/).
+- Its **reflection** panel implies all laws remain unchanged under mirror-image situations, also **not universally valid**: parity (P) symmetry is violated in weak interactions. Source: [American Physical Society, fall of parity conservation](https://www.aps.org/apsnews/2001/12/fall-parity-conservation-1956).
+- The graphic groups reflection and time reversal together with time/space translations and rotations. **Noether's standard first theorem associates conserved currents/quantities with continuous variational symmetries; the discrete transformations P and T do not themselves yield the usual Noether charges.** Source: [Noether discussion and limitations](https://philsci-archive.pitt.edu/18285/1/Noether_20_.pdf). The adjacent paper caption correctly says `continuous symmetries`, but the overall graphic needs nuance.
+- Recommended action: clarify/replace the blanket mirror/time-reversal assertions, or add a visually adjacent explicit caveat before treating the diagram as authoritative educational material. No claim is made that the full paper has been independently peer reviewed.
+
+### Paper 3: `03_dirac_nilpotent_structure.webp`
+
+- Contains the recognisable Dirac equation and a generic nilpotent relation `N² = 0`. Their appearance alone is **not a derivation** of the subsequent statements.
+- Claims mathematical equivalence between the nilpotent formulation and standard Dirac structure, with deeper relationships and particle/antiparticle structure. These claims may be defensible in a carefully defined formalism, but **the picture does not establish the claimed equivalence**; the precise definitions, assumptions and a scholarly source or derivation should be checked.
+- Recommended action: keep clearly marked as a conceptual schematic and require a citation/derivation or qualify the equivalence statement before presenting it as established.
+
+**Status:** This spot-check identified specific accuracy issues, so the pending release review should cover **scientific wording in existing illustrations**, not only file ownership. There are **26 other paper illustrations not yet visually checked in this stage**. Further audit would be required for a full figure sign-off.
