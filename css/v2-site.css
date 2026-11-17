@@ -19,3 +19,21 @@
 .pending{font-size:.62em;color:#efc38b;white-space:nowrap}
 /* Owner-approved full justification for website prose; headings, controls and navigation retain natural alignment. */
 main p,.site-footer p{text-align:justify;text-justify:inter-word;hyphens:auto;overflow-wrap:break-word}
+
+/* Phase 2 review: approved full-width Earthrise direction. Original inline orbital SVG remains in index.html for rollback. */
+.main-nav{gap:19px}
+.main-nav a{font-size:1rem;line-height:1.5}
+.v2-earthrise .site-header{background:#07131dd9;border-bottom:1px solid #c0d4e026}
+.v2-earthrise .hero{background-image:linear-gradient(90deg,#06101c 0%,#06101c 27%,#06101c 43%,#06101cf2 51%,#06101c95 60%,transparent 79%),linear-gradient(180deg,#06101c55 0%,transparent 35%,#06101c22 100%),url("../images/heroes/v2_earthrise_fullbleed.webp");background-size:cover;background-position:center center;background-repeat:no-repeat}
+.v2-earthrise .hero-inner{display:flex;align-items:center;justify-content:flex-start;min-height:calc(100svh - 85px);padding-block:55px 95px}
+.v2-earthrise .hero-copy{max-width:590px;position:relative;z-index:1}
+.v2-earthrise .hero h1{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:clamp(3.2rem,5.3vw,5.35rem);font-weight:750;line-height:1.04;letter-spacing:-.04em}
+.v2-earthrise .hero h1 em{font-weight:750;font-style:normal;color:var(--gold)}
+.v2-earthrise .hero-lead{font-size:clamp(1rem,1.34vw,1.21rem);line-height:1.7;color:#d4dde7}
+.v2-earthrise .hero-caption{font-size:.79rem;color:#c5d5e1}
+.v2-earthrise .orbit-wrap{display:none}
+@media(max-width:1080px){.main-nav{gap:12px}.main-nav a{font-size:.9rem}.v2-earthrise .hero-copy{max-width:54%}}
+@media(max-width:919px){.main-nav{display:none}.mobile-nav{display:block;position:relative}.mobile-nav summary{cursor:pointer;font-weight:700;font-size:.83rem;list-style:none;padding:9px 12px;border:1px solid #4a6174;border-radius:5px}.mobile-nav summary::-webkit-details-marker{display:none}.mobile-nav[open] .mobile-list{position:absolute;right:0;top:43px;min-width:230px;padding:10px 0;background:#122337;border:1px solid #476178;border-radius:7px;box-shadow:0 15px 40px #0009;z-index:20}.mobile-list a{display:block;padding:9px 18px;font-size:.87rem;text-decoration:none}.mobile-list a[aria-current="page"]{background:#1c354d;color:#fff;font-weight:700;box-shadow:inset 3px 0 0 var(--gold)}}
+@media(max-width:740px){.v2-earthrise .hero{background-image:linear-gradient(180deg,#06101cf2 0%,#06101ce8 30%,#06101cb8 59%,#06101c30 80%,#06101c48 100%),url("../images/heroes/v2_earthrise_fullbleed.webp");background-position:62% 100%;background-size:auto 100%}.v2-earthrise .hero-inner{display:block;min-height:max(850px,calc(100svh - 70px));padding-block:75px 285px}.v2-earthrise .hero-copy{max-width:100%}.v2-earthrise .hero h1{font-size:clamp(2.75rem,11.5vw,4.3rem)}.v2-earthrise .hero-caption{display:inline-flex;background:#06101cf4;border-left:2px solid var(--gold);padding:8px 10px;border-radius:3px;color:#e0eaf2}}
+@media(max-width:460px){.v2-earthrise .hero-inner{min-height:max(830px,calc(100svh - 70px));padding-block:67px 295px}.v2-earthrise .hero h1{font-size:clamp(2.55rem,12.4vw,3.6rem)}.v2-earthrise .hero-buttons{flex-direction:column;align-items:stretch}.v2-earthrise .hero{background-position:62% 100%}}
+@media(prefers-reduced-motion:reduce){.v2-earthrise .hero{background-attachment:scroll}}
