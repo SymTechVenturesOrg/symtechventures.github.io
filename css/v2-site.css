@@ -37,3 +37,13 @@ main p,.site-footer p{text-align:justify;text-justify:inter-word;hyphens:auto;ov
 @media(max-width:740px){.v2-earthrise .hero{background-image:linear-gradient(180deg,#06101cf2 0%,#06101ce8 30%,#06101cb8 59%,#06101c30 80%,#06101c48 100%),url("../images/heroes/v2_earthrise_fullbleed.webp");background-position:62% 100%;background-size:auto 100%}.v2-earthrise .hero-inner{display:block;min-height:max(850px,calc(100svh - 70px));padding-block:75px 285px}.v2-earthrise .hero-copy{max-width:100%}.v2-earthrise .hero h1{font-size:clamp(2.75rem,11.5vw,4.3rem)}.v2-earthrise .hero-caption{display:inline-flex;background:#06101cf4;border-left:2px solid var(--gold);padding:8px 10px;border-radius:3px;color:#e0eaf2}}
 @media(max-width:460px){.v2-earthrise .hero-inner{min-height:max(830px,calc(100svh - 70px));padding-block:67px 295px}.v2-earthrise .hero h1{font-size:clamp(2.55rem,12.4vw,3.6rem)}.v2-earthrise .hero-buttons{flex-direction:column;align-items:stretch}.v2-earthrise .hero{background-position:62% 100%}}
 @media(prefers-reduced-motion:reduce){.v2-earthrise .hero{background-attachment:scroll}}
+
+/* Continuous backdrop includes the homepage navigation; no animation or parallax. */
+body.v2-earthrise{position:relative;isolation:isolate}
+body.v2-earthrise::before,body.v2-earthrise::after{content:"";position:absolute;left:0;right:0;top:0;height:max(950px,100svh);z-index:0;pointer-events:none}
+body.v2-earthrise::before{background:#07101e url("../images/heroes/v2_earthrise_fullbleed.webp") center top / cover no-repeat}
+body.v2-earthrise::after{background:linear-gradient(90deg,#06101c 0%,#06101c 26%,#06101cf5 43%,#06101cc6 54%,#06101c74 64%,transparent 79%)}
+body.v2-earthrise > .site-header,body.v2-earthrise > main{position:relative;z-index:1}
+body.v2-earthrise .site-header{background:#07131d82}
+body.v2-earthrise .hero{background:transparent}
+@media(max-width:740px){body.v2-earthrise::before{background-position:62% bottom;background-size:auto 100%}body.v2-earthrise::after{background:linear-gradient(180deg,#06101cf5 0%,#06101ceb 34%,#06101cb8 60%,#06101c35 83%,#06101c50 100%)}}
