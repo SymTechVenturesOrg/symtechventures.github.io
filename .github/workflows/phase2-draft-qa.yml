@@ -1,0 +1,114 @@
+name: Phase 2 draft-only website QA
+
+on:
+  push:
+    branches:
+      - feature/v2-space-research-website
+    paths:
+      - index.html
+      - css/**
+      - js/**
+      - images/heroes/v2_earthrise_fullbleed.webp
+      - .github/workflows/phase2-draft-qa.yml
+      - docs/reports/scripts/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Checkout exact feature branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Playwright and headless Chromium
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+          CHROME_PATH=$(python -c 'from playwright.sync_api import sync_playwright; p=sync_playwright().start(); print(p.chromium.executable_path); p.stop()')
+          sudo ln -sf "$CHROME_PATH" /usr/bin/chromium
+      - name: Run full exact-branch website regression
+        run: |
+          mkdir -p phase2-qa-artifacts
+          python -u docs/reports/scripts/v2_stage8_qa.py 2>&1 | tee phase2-qa-artifacts/full-regression.log
+      - name: Run detailed full-bleed and navigation breakpoint QA
+        run: |
+          python - <<'PY' | tee phase2-qa-artifacts/phase2-breakpoints.json
+          import json, threading
+          from pathlib import Path
+          from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
+          from functools import partial
+          from playwright.sync_api import sync_playwright
+          root=Path('.').resolve()
+          server=ThreadingHTTPServer(('127.0.0.1',0), partial(SimpleHTTPRequestHandler,directory=str(root)))
+          threading.Thread(target=server.serve_forever,daemon=True).start()
+          url=f'http://127.0.0.1:{server.server_port}/'
+          output=root/'phase2-qa-artifacts'
+          widths=[320,390,768,919,920,960,1080,1280,1440]
+          results=[]
+          with sync_playwright() as p:
+            browser=p.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox'])
+            for w in widths:
+              page=browser.new_page(viewport={'width':w,'height':844 if w<500 else 900},reduced_motion='reduce')
+              response=page.goto(url,wait_until='networkidle')
+              page.screenshot(path=str(output/f'home-{w}.png'),full_page=False)
+              data=page.evaluate("""() => {
+                const d=document.documentElement,nav=document.querySelector('.main-nav'),
+                mob=document.querySelector('.mobile-nav'),hero=document.querySelector('.hero'),
+                b= getComputedStyle(document.body,'::before');
+                return {client:d.clientWidth,scroll:d.scrollWidth,
+                  nav:getComputedStyle(nav).display, mobile:getComputedStyle(mob).display,
+                  links:nav.querySelectorAll('a').length,
+                  heroImage:getComputedStyle(hero).backgroundImage,
+                  bodyImage:b.backgroundImage,
+                  heroText:document.querySelector('.hero h1').textContent.trim(),
+                  imageLoad: performance.getEntriesByType('resource').some(x=>x.name.includes('v2_earthrise_fullbleed.webp')),
+                  headerHeight:document.querySelector('.site-header').getBoundingClientRect().height
+                };
+              }""")
+              data.update({'width':w,'status':response.status,'overflow':data['scroll']>data['client']})
+              assert not data['overflow'],(w,data)
+              assert data['links']==6 and data['status']==200,data
+              assert 'v2_earthrise_fullbleed.webp' in data['bodyImage'],(w,data)
+              assert data['imageLoad'],(w,data)
+              if w<=919: assert data['nav']=='none' and data['mobile']!='none',data
+              if w>=920: assert data['nav']!='none' and data['mobile']=='none',data
+              results.append(data)
+              page.close()
+            browser.close()
+          server.shutdown()
+          print(json.dumps({'commit':str(__import__('subprocess').check_output(['git','rev-parse','HEAD']).decode().strip()),'viewports':results},indent=2))
+          PY
+      - name: Bundle full draft site for owner offline review
+        if: always()
+        run: |
+          python - <<'PY'
+          from zipfile import ZipFile,ZIP_DEFLATED
+          from pathlib import Path
+          root=Path('.')
+          include=['index.html','CNAME','robots.txt','sitemap.xml']
+          with ZipFile('phase2-qa-artifacts/symtech-v2-draft-website.zip','w',ZIP_DEFLATED,compresslevel=6) as z:
+            for name in include:
+              f=root/name
+              if f.is_file():z.write(f,str(f))
+            for name in ['pages','articles','css','js','images']:
+              for f in (root/name).rglob('*'):
+                if f.is_file():z.write(f,str(f))
+          PY
+      - name: Upload exact-branch screenshots, logs and offline preview
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: symtech-phase2-review-${{ github.sha }}
+          path: phase2-qa-artifacts/
+          if-no-files-found: warn
+          retention-days: 30
