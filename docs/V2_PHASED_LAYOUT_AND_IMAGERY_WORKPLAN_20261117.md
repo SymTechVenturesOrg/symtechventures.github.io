@@ -96,11 +96,11 @@ The [actual 28-file scientific and caption review](reports/V2_STAGE_09_SYMMETRIA
 
 | Phase | Status | Evidence required for completion |
 | --- | --- | --- |
-| **1A — audit and image-slot plan** | **IN PROGRESS (17 Nov 2026)** | Source/screenshot audit committed; specific layout priorities and provisional image slots |
-| **1B — layout refinement** | Not started | Narrow changed-file evidence and real full regression if any code changes |
+| **1A — audit and image-slot plan** | **FIRST PASS COMPLETE (17 Nov 2026)** | [Committed source/screenshot audit and provisional slots](reports/V2_PHASE_01A_LAYOUT_AUDIT_AND_IMAGE_SLOTS_20261117.md), pending owner review |
+| **1B — layout refinement** | **IN PROGRESS — source checked, browser QA pending** | Four long-page jump indexes and CSS committed on PR #5, [source QA report](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/docs/reports/V2_PHASE_01B_JUMP_NAV_SOURCE_QA_20261117.md); [Codex real-browser handover](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/docs/handovers/V2_PHASE_01B_CODEX_LAYOUT_BROWSER_QA_20261117.md) ready; full regression not yet run on changed code |
 | **1C — owner layout approval** | Not started | Explicit visual approval and frozen image-slot register |
 | **2 — website images** | Not started | Approved actual WebP assets, render QA and owner acceptance |
 | **3 — selected paper figures** | Not started | Approved corrected images/captions, revised integrity baseline and QA |
 | **Final publication** | On hold | Separate Stage 9 owner authorisation and release checklist |
 
-**Next immediate deliverable:** [Phase 1A website-layout audit and image-slot specification](reports/V2_PHASE_01A_LAYOUT_AUDIT_AND_IMAGE_SLOTS_20261117.md). No paper or image assets will be altered during that audit.
+**Current checkpoint:** [Phase 1A website-layout audit](reports/V2_PHASE_01A_LAYOUT_AUDIT_AND_IMAGE_SLOTS_20261117.md) committed; initial Phase 1B navigation improvements implemented with source-level checks. **Phase 1B browser and full regression validation remain pending** via the existing feature-branch handover. No paper or image assets were altered.
