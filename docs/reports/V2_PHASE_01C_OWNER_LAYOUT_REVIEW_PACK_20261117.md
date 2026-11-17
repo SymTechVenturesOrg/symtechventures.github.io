@@ -67,3 +67,24 @@ Phase 1C may be marked **LAYOUT ACCEPTED** only after:
 5. If any site HTML/CSS changes are made, a **new post-change full regression** is run and recorded; otherwise existing Phase 1B regression exit 0 stands as evidence.
 
 **No Phase 2 generation, paper-figure replacements, merges, deployments or scientific-publication claims have been authorised.** The owner alone decides when to advance.
+
+
+## 17 November 2026 — actual post-change typography QA and refreshed screenshots
+
+The approved typography adjustment has now been checked in an **actual browser** against the feature checkout. The [Phase 1C verification report](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/docs/reports/V2_PHASE_01C_INTRO_TYPOGRAPHY_QA_20261117.md) records **full regression exit 0** across 36 files and 27 browser visits, with expected research-paper integrity and programme counts.
+
+Computed `.page-lead` readings across six representative pages:
+- **320 / 390 / 740px:** **16px** text, **27.2px** line height, fully justified and full parent width (286 / 356 / 706px respectively).
+- **768 / 1440px:** **18.08px** text, **31.64px** line height, justified and full parent width (720 / 980px).
+- Zero horizontal document overflow in all sampled cases. **The desktop Discussion lead now reaches the 980px page-content column**, rather than being artificially capped at 820px.
+
+**Fresh post-change Chromium viewport captures**, replacing the outdated typography evidence for these specific pages:
+- [Discussion Series — 390px](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/docs/reports/screenshots/phase1c-discussion-series-390.png) · [1440px](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/docs/reports/screenshots/phase1c-discussion-series-1440.png)
+- [About — 390px](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/docs/reports/screenshots/phase1c-about-390.png) · [1440px](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/docs/reports/screenshots/phase1c-about-1440.png)
+- [BridgePoint — 390px](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/docs/reports/screenshots/phase1c-bridgepoint-390.png)
+
+**Chat visual inspection:** The new Discussion Series 1440px lead aligns with the width of the index/category content below; at 390px, smaller lead text results in more compact lines. The refreshed About screenshot shows that some word spacing remains visibly uneven because full justification is still active. This is an **aesthetic observation**, not a failed code test or permission to override owner styling.
+
+**Navigation clarification:** Phase 1B-3's keyboard/deep-link/reduced-motion report had one contradictory NSRP entry (target top outside viewport). The Phase 1C regression report independently rechecked **NSRP #proj-5 at 390×844** and measured `scrollY=4067`, target top **100.36px**, bottom **169.45px**: target visibly within viewport. Other earlier keyboard tests remain scoped to the links actually checked.
+
+**Current decision gate:** Phase 1C typography is **implemented and technically verified**. Site-wide final visual acceptance, approval of remaining mobile justified spacing and **exact homepage / optional image slot choices** are still for the owner. **Phase 2 imagery is NOT yet approved.**
