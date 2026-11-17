@@ -88,3 +88,11 @@ Computed `.page-lead` readings across six representative pages:
 **Navigation clarification:** Phase 1B-3's keyboard/deep-link/reduced-motion report had one contradictory NSRP entry (target top outside viewport). The Phase 1C regression report independently rechecked **NSRP #proj-5 at 390×844** and measured `scrollY=4067`, target top **100.36px**, bottom **169.45px**: target visibly within viewport. Other earlier keyboard tests remain scoped to the links actually checked.
 
 **Current decision gate:** Phase 1C typography is **implemented and technically verified**. Site-wide final visual acceptance, approval of remaining mobile justified spacing and **exact homepage / optional image slot choices** are still for the owner. **Phase 2 imagery is NOT yet approved.**
+
+---
+
+## Owner approves Phase 1 layout — 17 November 2026
+
+The owner reviewed the updated design and explicitly replied **“Approved. Continue. 😄”**. This **supersedes the earlier pending Phase 1C design decision** in this historical review pack. The dark space-first layout, current navigation/cards, full-width introductory paragraphs and 16px mobile lead font with retained justification are now **owner-approved**. [Formal layout freeze](../V2_PHASE_01_LAYOUT_FREEZE_20261117.md) records the accepted baseline and test evidence.
+
+Phase 2 may proceed with *proposed artwork for the existing Home hero slot*; this is **not** individual approval of a new image or of optional Research/BridgePoint imagery. The [Phase 2 image brief](V2_PHASE_02_SITE_ARTWORK_BRIEF_20261117.md) and [pilot attempt record](V2_PHASE_02_HOME_PILOT_OUTCOME_20261117.md) are now active. The current orbital SVG remains in the site until a suitable rendered replacement receives owner approval and browser QA. Phase 3 papers, release, merge and deployment remain on hold.
