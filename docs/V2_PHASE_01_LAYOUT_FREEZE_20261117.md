@@ -22,3 +22,7 @@ Phase 1C's acceptance **authorises progressing to image concept preparation**, n
 An image added after this freeze is a **new website change** and must be separately tested by real Chromium/Playwright and full `python3 -u docs/reports/scripts/v2_stage8_qa.py` on the precise post-change commit. Existing screen-reader/WCAG limits and Stage 9 release requirements remain independent. **No PR merge, deployment, publication or DNS change authorised.**
 
 **Status:** Phase 1 **complete/approved**. Phase 2 **active at visual pilot stage**; Phase 3 **not started**.
+
+## Post-freeze visual clarification — 17 November 2026
+
+After the Phase 2 Earthrise concept review, the owner clarified that the **starfield animation**, not stars inside individual **static space illustrations**, was the feature removed from the website design. The phrase “no starfield” above therefore means **no animated, page-wide or site-wide starfield background**. Static stars and Milky Way texture in a standalone conceptual image are permitted. This clarification does **not** reopen the accepted Phase 1 layout or approve any particular raster asset or site implementation. See the updated [Phase 2 pilot brief](reports/V2_PHASE_02_SITE_ARTWORK_BRIEF_20261117.md).
