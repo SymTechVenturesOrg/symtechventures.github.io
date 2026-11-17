@@ -81,6 +81,15 @@ The [actual 28-file scientific and caption review](reports/V2_STAGE_09_SYMMETRIA
 
 **Indicative effort:** ~**5–12 active hours** for the three priority redraws plus mapping/QA; additional redraws add time. Number of final image-generation iterations is not predictable upfront.
 
+## Phase 1C owner-approved introductory typography change (17 November 2026)
+
+The owner explicitly approved letting **introductory paragraphs use the full `.page-content` width**, instead of an arbitrary 820px cap, and reducing mobile intro text to minimise excessive gaps caused by the required justified prose. Chat committed the shared CSS edit in `css/v2-programmes.css` on feature PR #5:
+- `.page-lead{max-width:100%}` (main container already limited to 980px);
+- `@media(max-width:740px){.page-lead{font-size:1rem;line-height:1.7}}` (about **16px**, versus 18px desktop);
+- **no change** to global justification, original discussion-paper bodies or any illustrations.
+
+This is an **approved small layout change**, **not** final approval of the full site, an image decision, or release. The old 16 screenshots in Phase 1B predate the edit. [Codex Phase 1C exact-branch typography/browser regression handover](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/docs/handovers/V2_PHASE_01C_TYPOGRAPHY_REGRESSION_20261117.md) requires actual screenshots, computed font/width checks at 320/390/740/768/1440px and a **new post-change full regression**; it has been **prepared, not executed**.
+
 ## Phase boundaries, provenance, and deployment
 
 **Total planning estimate: 13–30 active hours for the three phases**, not guaranteed wall-clock duration. These are planning allowances; the actual route may be shorter if the owner retains more existing artwork, or longer if image revisions require multiple attempts. Use measured progress to refine ETA estimates at each work pass.
@@ -98,7 +107,7 @@ The [actual 28-file scientific and caption review](reports/V2_STAGE_09_SYMMETRIA
 | --- | --- | --- |
 | **1A — audit and image-slot plan** | **FIRST PASS COMPLETE (17 Nov 2026)** | [Committed source/screenshot audit and provisional slots](reports/V2_PHASE_01A_LAYOUT_AUDIT_AND_IMAGE_SLOTS_20261117.md), pending owner review |
 | **1B — layout refinement** | **FULL REGRESSION PASS; 18/18 mobile pointer anchors PASS; keyboard/settled scroll pending** | [Phase 1B browser QA](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/docs/reports/V2_PHASE_01B_LAYOUT_BROWSER_QA_20261117.md) records full regression **exit 0** (36 files/27 visits/320–1440px) and 16 current screenshots. [Phase 1B-2 report](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/docs/reports/V2_PHASE_01B2_ANCHOR_ACTIVATION_VERIFICATION_20261117.md) records **18/18 real pointer link activations at 390px** with correct URL fragments and target visibility, zero overflow, no code edits. **Keyboard, four desktop links and reduced-motion remain unverified.** The previous test waited for viewport entry rather than full smooth-scroll settling (targets 554–838px from top). A [final bounded Phase 1B-3 test handover](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/docs/handovers/V2_PHASE_01B3_CODEX_KEYBOARD_AND_SCROLL_SETTLEMENT_20261117.md) is prepared, **not executed**. |
-| **1C — owner layout approval** | **REVIEW PACK READY; owner decision pending** | [Current 390/1440 screenshots and suggested layout/image-slot decisions](reports/V2_PHASE_01C_OWNER_LAYOUT_REVIEW_PACK_20261117.md). Owner to decide mobile justified-text spacing and homepage hero slot; not yet approved. |
+| **1C — owner layout approval** | **INTRO TYPOGRAPHY DECISION IMPLEMENTED; remaining visual decisions open** | Owner approved full-width `.page-lead` and 16px mobile lead text with justification retained; CSS committed. [Owner review pack](reports/V2_PHASE_01C_OWNER_LAYOUT_REVIEW_PACK_20261117.md) updated. [Post-change real-browser QA/regression handover](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/docs/handovers/V2_PHASE_01C_TYPOGRAPHY_REGRESSION_20261117.md) pending, as are final image slot and overall visual acceptance. |
 | **2 — website images** | Not started | Approved actual WebP assets, render QA and owner acceptance |
 | **3 — selected paper figures** | Not started | Approved corrected images/captions, revised integrity baseline and QA |
 | **Final publication** | On hold | Separate Stage 9 owner authorisation and release checklist |
