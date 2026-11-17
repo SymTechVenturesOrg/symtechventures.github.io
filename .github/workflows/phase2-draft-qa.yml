@@ -11,6 +11,7 @@ on:
       - images/heroes/v2_earthrise_fullbleed.webp
       - .github/workflows/phase2-draft-qa.yml
       - docs/reports/scripts/**
+      - articles/symmetria/**
   workflow_dispatch:
 
 permissions:

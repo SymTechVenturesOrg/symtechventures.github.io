@@ -49,7 +49,15 @@ for i,expected in enumerate(['390a8676189542fc9044c1dabbbf344ad10e69f6','ec70f57
  new_main=re.search(r'<main(?:\s+[^>]*)?>[\s\S]*?</main>',article)
  assert old_main and new_main,('missing main block',i)
  normalized_main=re.sub(r'<main(?:\s+[^>]*)?>','<main>',new_main.group(),count=1)
- assert normalized_main==old_main.group(),('paper text or figure changed',i)
+
+ # Owner-approved Phase 2 cleanup removes only the repeated return button. Match all remaining paper body bytes to main.
+ parent_nav_re=re.compile(r'\n<!-- AETHEROS:PARENT_NAV:START -->\n<section class="parent-nav-section">[\s\S]*?</section>\n<!-- AETHEROS:PARENT_NAV:END -->')
+ assert len(parent_nav_re.findall(old_main.group()))==1,('main-branch return-navigation baseline missing',i)
+ assert not parent_nav_re.search(normalized_main),('redundant return-navigation section remains',i)
+ expected_main=parent_nav_re.sub('',old_main.group(),count=1)
+ assert normalized_main==expected_main,('paper main changed beyond approved return-navigation removal',i)
+ assert 'Back to SYMMETRIA Discussion Series' not in article,('redundant return button remains',i)
+ assert '<a href="../../pages/discussion-series.html">Discussion Papers</a>' in article,('discussion-series footer link missing',i)
  old_imgs=re.findall(r'<img[^>]+src=["\']([^"\']+)',old_main.group(),re.I)
  main_imgs=re.findall(r'<img[^>]+src=["\']([^"\']+)',new_main.group(),re.I)
  assert len(main_imgs)==7 and main_imgs==old_imgs,('paper illustration mismatch',i)
