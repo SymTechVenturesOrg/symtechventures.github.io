@@ -29,3 +29,11 @@ Once the user chooses a suitable image, use Codex (Luna Medium / Standard) for d
 ## Current state
 
 **Phase 1 layout: owner-approved. Phase 2: design brief and first technical pilot complete, no approved raster image. Phase 3: not started.** No website source/paper figure changes, no merge and no deployment.
+
+## 17 November 2026 — follow-up artwork generation (Chat continuation)
+
+Following the Phase 1-approved handover, four further image-generation attempts were made to obtain the one standalone homepage Earthrise image. **All four were rejected**: they produced complete marketing/website hero mock-ups with baked-in branding, headings, navigation or CTAs, starfields and/or broad technology claims, despite the explicit Phase 2 exclusion of these elements. They are not suitable for insertion into the existing `.orbit-wrap` art slot, and none is owner-approved.
+
+**Decision:** no image integration, no WebP conversion of a selected asset, no site HTML/CSS/JS updates and no release action. Keep the current orbital SVG on feature PR #5. A future suitable image must be a clean, text-free, star-free **standalone Earthrise illustration**; it should be reviewed as artwork before conversion or integration. The Phase 1 layout approval remains intact and is not reopened.
+
+**Status after this continuation:** Phase 1 frozen/approved; Phase 2 image selection remains open with no approved raster; Phase 3 not started. The generated mock-ups are rejected examples, not production assets and not evidence of website or research capabilities.
