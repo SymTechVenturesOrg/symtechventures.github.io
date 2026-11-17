@@ -20,3 +20,11 @@
 4. PR #5 stays draft and unmerged, no deployment, no Phase 3 scientific-figure corrections. A later owner decision governs merge/release.
 
 **Evidence:** Await the GitHub Actions run on the final Phase 2 polish commit; prior Phase 2 QA exits cannot be reused for this changed main block.
+
+## Verified post-cleanup regression — 17 November 2026
+
+GitHub Actions [Phase 2 draft-only website QA run #44181287458](https://github.com/SymTechVenturesOrg/symtechventures.github.io/actions/runs/44181287458) completed **successfully** against exact source commit `5ad5cb4d6919ea78655f5b3fff5b4913f08a7e5f`. The full `v2_stage8_qa.py` exact-branch regression step succeeded, including strict original-paper text and seven-figure preservation after the *sole permitted navigation deletion*. The additional nine-breakpoint homepage/navigation check succeeded, and the complete-site review ZIP packaging step succeeded. This validates source integrity and browser regression, **not** release authorisation.
+
+A refreshed owner-side ZIP `SymTech_Ventures_Phase2_Final_Review_2026-11-17.zip` was created by surgically updating the four exact pre-change GitHub-blobs in the previous complete-site archive. Each replacement HTML file's Git blob hash matches the **current feature-branch** file SHA; all remaining archive files were copied unchanged. ZIP integrity check passed. The archive is available in the owner's Chat, not committed to GitHub.
+
+**Status:** This final Phase 2 UI-polish correction is complete and tested. PR #5 remains open and draft, unmerged and unpublished; Phase 3 scientific illustrations have not started.
