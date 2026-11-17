@@ -13,7 +13,7 @@ The owner explicitly said **“Approved. Continue. 😄”** following Phase 1C 
 
 - Brand: **SymTech Ventures**, independent exploratory research motivated by space exploration, mathematics and fundamental physics.
 - Visuals: restrained midnight navy/near-black background, cool cyan-blue and restrained warm gold accents; scientific elegance, physically plausible cosmic imagery **without suggesting actual spacecraft, experiments or confirmed new theory**.
-- No starfield, random dots, glow overload, sci-fi interface labels, embedded AI-generated equations or text, NASA badges/crests, watermarks, logos of other institutions, model-generated claims of real photographs or existing missions.
+- **No animated or site-wide starfield background.** Static stars and restrained galactic texture are welcome **inside space illustrations**. Avoid artificial UI dots, excessive glow, sci-fi interface labels, embedded AI-generated equations or text, NASA badges/crests, watermarks, logos of other institutions, and claims that conceptual imagery depicts real photographs or existing missions.
 - Preserve all existing technical structure: current Home responsive two-column hero / mobile stack, accessible nav, status notes, and the four Rowlands-inspired reference-free SYMMETRIA discussion papers.
 - Use genuine AI-generated conceptual artwork with **owner-confirmed provenance**; the *composition* may evoke an Earthrise from a lunar-orbital perspective, but **do not reproduce a specific historic Apollo/NASA Earthrise photograph or imply documentary authenticity**.
 
@@ -21,7 +21,7 @@ The owner explicitly said **“Approved. Continue. 😄”** following Phase 1C 
 
 **Location:** `index.html`, the existing right-hand hero art container `.orbit-wrap`, currently housing an approved **inline orbital SVG**. This SVG **must remain in place** until a separately approved image integration pass.
 
-**Concept:** **Earthrise / planetary horizon as a metaphor for scientific exploration**, with a richly shaded curved lunar or cratered rocky foreground, a luminous physically believable Earth rising above its edge, expansive clear near-black/navy cosmic negative space (no stars), controlled cyan atmosphere and one subtle amber light on the horizon, depth and editorial calm. Should feel like **original fine-art science illustration**, not stock astrophotography or a movie poster.
+**Concept:** **Earthrise / planetary horizon as a metaphor for scientific exploration**, with a richly shaded curved lunar or cratered rocky foreground, a luminous physically believable Earth rising above its edge, expansive near-black/navy cosmic negative space with **optional static stars or a restrained Milky Way texture**, controlled cyan atmosphere and one subtle amber light on the horizon, depth and editorial calm. Should feel like **original fine-art science illustration**, not stock astrophotography or a movie poster.
 
 **Composition requirements:** main planet/horizon centred toward the right half of frame, subject and interesting luminosity away from all edges for responsive `contain` or modest crop; allow quiet dark negative space around silhouette; no captions/text. Preview at landscape **approximately 1.45–1.50:1**, e.g. a source 1536×1024 leading to a tested **716×494 px** WebP variant if visually appropriate. The existing SVG region is near-square, so **do not assume a 716×494 replacement can be inserted without a small owner-reviewed fit rule**; check real 390 and 1440px placement before integration.
 
@@ -51,3 +51,11 @@ The owner explicitly said **“Approved. Continue. 😄”** following Phase 1C 
 5. The owner separately decides whether Research/BridgePoint slots are worthwhile; completion of one Home asset does **not** automatically authorise all other images.
 
 **PR #5 remains draft and unmerged. No live deployment, release, document citation requirement or scientific-paper modification is authorised by this brief.**
+
+## 6. Owner design clarification and selected visual direction — 17 November 2026
+
+The owner clarified: **“I think the first image was closest to what I wanted. Don't worry about including stars in the images, we're a space focused company after all. The starfield animation was what we decided to ditch.”** The exclusion applies to **animated starfield backgrounds**, **not** stars within static imagery. The first generated full-width Earthrise *website mock-up* is now the **preferred artistic reference**, not an approved final website implementation or source for embedded web copy.
+
+A non-destructive **art-only review crop** of that first AI-generated visual has been produced locally in Chat: source frame 1672 × 941 px, cropped at (810,185)-(1672,767) to a clean text-free **862 × 582 PNG (872,124 bytes)** and resized to a **716 × 484 WebP (65,914 bytes, encoder quality 80, method 6)**. The crop depicts a luminous conceptual Earthrise, cratered rocky lunar foreground, a static starfield, cyan rim and warm amber horizon glow. This is an **AI-generated conceptual illustration**, not documentary astrophotography; rendered surface detail and city lights should not be treated as empirical data. Neutral alt text proposal: **“Conceptual illustration of Earth rising above a cratered lunar landscape under a starry sky.”**
+
+The user has expressed a **visual preference**, not yet an explicit decision to replace the approved `.orbit-wrap` SVG. The image remains a **review candidate**; the Chat-local PNG/WebP files are not stored in GitHub. The website must not link to transient Chat assets. If individually approved, use a separate engineering pass to store the binary via a supported path, integrate it in the approved two-column layout (without baking headers or buttons into the art), and run 320/390/768/1440px QA and the entire exact-branch regression before requesting any merge approval. Static artwork needs no animation or parallax.
