@@ -85,3 +85,18 @@ The **article captions are usually more cautious** than statements embedded in s
 5. **Maintain release hold:** finish approved Earthrise asset decision, final owner visual acceptance and release-specific rights/attribution exception screening. A confirmed ChatGPT origin does not establish scientific validity or release approval.
 
 **Current decision:** **HOLD scientific-figure clearance** pending the user's prioritisation/approval of corrections. **No files in the implementation branch, no image assets, and no protected article content were modified in this review. No merge or deployment.**
+
+
+---
+
+## Owner clarification: discussion papers, no reference lists (17 November 2026)
+
+The owner has now clarified that the four SYMMETRIA papers are **discussion papers without references**, built upon **Dr Peter Rowlands' nilpotent approach to physical theory**. This clarification **supersedes the earlier review's implication that an academic bibliography or formally cited derivation must be added to each paper**. It does not supersede actual visual observations or the need to avoid false universal scientific statements.
+
+**Correct review standard:** maintain accessible, exploratory explanations; informally attribute Rowlands' influence where already relevant (the Paper 3 narrative does so); distinguish known physics from Rowlands' proposed algebraic interpretation and SYMMETRIA speculation; correct demonstrable mistakes and mislabelled graphics; **do not require a bibliography, formal citations, peer-review claims or academic-paper formatting.**
+
+**Specific revised interpretation:** The Paper 3 nilpotent/Dirac graphic should be **qualified as an algebraic reformulation within Rowlands' particular construction**, not dismissed as unsupported speculation; a generic `N²=0` alone does not demonstrate equivalence. The Paper 1 anticommutator `NA+AN=0` still needs its extra conditions, and the Paper 2 blanket P/T invariance remains incorrect. These corrections can be explained in concise, reference-free language.
+
+**Actionable, owner-reviewable plan:** [Minimal editorial corrections and image/caption reconciliation — no public references required](V2_STAGE_09_ROWLANDS_DISCUSSION_PAPER_MINIMAL_EDITORIAL_PLAN_20261117.md). Its proposals include swapping four mismatched Paper 3 image references **only if expressly approved**, instead of broadly rewriting the papers.
+
+**Status:** This is an updated editorial standard and a proposal, not approval to modify protected paper content or image binaries. The original 28-figure factual inventory above remains useful as evidence; its more demanding scholarly-reference recommendations are historical and **not public-paper requirements**.
