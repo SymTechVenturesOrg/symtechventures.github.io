@@ -7,6 +7,10 @@
 **Repository:** `SymTechVenturesOrg/symtechventures.github.io`  
 **Related documents:** [Work/Chat/Codex workflow](WEBSITE_DEVELOPMENT_WORKFLOW.md), [space-first site plan](SPACE_FIRST_SITE_PLAN.md), [programme structure](PROGRAMME_SERIES_STRUCTURE.md).
 
+## 17 November 2026 — post-implementation three-phase sequence
+
+The earlier nine-stage schedule below is the **historical website-build programme**. For the **next active work after Stage 8F-E**, the owner approved a more specific phase sequence, now tracked in the [layout-first, site-imagery-second, selective-paper-corrections-third workplan](V2_PHASED_LAYOUT_AND_IMAGERY_WORKPLAN_20261117.md). **Phase 1A audit is committed and Phase 1B has started with in-page jump navigation, awaiting exact-branch browser QA.** Phase 2 and Phase 3 must not start before their preceding owner gate; none of these plans authorises merging PR #5.
+
 ## Core operating decision
 
 **Chat is the continuous lead, organiser and primary working environment.** Chat performs as much of the research inventory, source-grounded planning, page copy, small document changes, GitHub organisation, review and status reporting as available tools permit.
