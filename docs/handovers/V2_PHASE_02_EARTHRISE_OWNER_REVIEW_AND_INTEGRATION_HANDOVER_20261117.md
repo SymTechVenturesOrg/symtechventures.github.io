@@ -37,3 +37,14 @@ A local stand-alone HTML mock-up uses the **first** OpenAI-generated 1672 × 941
 ## Next owner decision
 
 Review the **full-width Earthrise visual** and decide **accept, refine or reject**. The Chat preview is evidence of a promising direction, **not the final integration-approved website**.
+
+## Owner-directed navigation typography refinement — 17 November 2026
+
+The owner reviewed a screenshot showing the six primary desktop links (**Home, Research, BridgePoint, Discussion Papers, Publications, About**) and asked for them to be slightly larger. A Chat-local full-width Earthrise HTML preview was updated:
+
+- Primary navigation link size increased from **0.83rem (about 13.3px)** to **1rem (16px)** at widths above 1080px, retaining the same link order, wording and destinations.
+- At intermediate widths, the prior **0.72rem (11.5px)** fallback was increased to **0.9rem (14.4px)** up to 1080px.
+- Since the wider labels previously wrapped awkwardly near tablet width, the preview now uses the existing **mobile disclosure menu at 919px and below** (the prior design used it only at 750px and below); the actual small-screen 750px menu rules are unchanged.
+- Local Chromium checked the adjusted stand-alone preview at **320, 390, 768, 960, 1024, 1080, 1100, 1180, 1280 and 1440px**, and found **no horizontal overflow**. At 960px and above, all six links stay on one row. Screenshots were rendered at 1440px, 960px, 768px and 390px. Browser testing covers the local stand-alone preview only, **not the GitHub implementation branch**.
+
+Review files (Chat-local, not GitHub): `symtech_phase2_fullbleed_larger_navigation_preview.html` and `symtech_phase2_larger_navigation_{1440,960,768,390}px.png`. **This is a minor review variant, not a Phase 1C implementation change or an authorisation to merge/deploy**. Future implementation should use these sizes and recheck all navigation links, keyboard disclosure, focus visibility and full regression on the branch.
