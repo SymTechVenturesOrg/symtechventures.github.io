@@ -1,6 +1,6 @@
 # SymTech Ventures v2.0 — Image Provenance and Figure Clearance Register
 
-**Created:** 16 November 2026 · **Status:** Owner clarification required, **not a licence certificate**.
+**Created:** 16 November 2026 · **Updated:** 17 November 2026 · **Status:** Creation method owner-attested for 46 inventoried raster assets; **not a licence or scientific-accuracy certificate**.
 
 **Implementation:** [draft PR #5](https://github.com/SymTechVenturesOrg/symtechventures.github.io/pull/5), branch `feature/v2-space-research-website`, Stage 8B QA passed at `4dc5c4252ae0a3fc59ec9caf3bc64c67ba7e003c`.
 
@@ -21,12 +21,12 @@ Do **not** infer an image's creation rights from its GitHub presence, filename, 
 
 | Image | Provenance (owner to confirm) |
 | --- | --- |
-| [contact](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/logos/contact.webp) | **Unknown / awaiting confirmation** |
-| [divisions](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/logos/divisions.webp) | **Unknown / awaiting confirmation** |
-| [fellows](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/logos/fellows.webp) | **Unknown / awaiting confirmation** |
-| [nsrp](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/logos/nsrp.webp) | **Unknown / awaiting confirmation** |
-| [symmetria](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/logos/symmetria.webp) | **Unknown / awaiting confirmation** |
-| [symtech](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/logos/symtech.webp) | **Unknown / awaiting confirmation** |
+| [contact](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/logos/contact.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** |
+| [divisions](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/logos/divisions.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** |
+| [fellows](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/logos/fellows.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** |
+| [nsrp](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/logos/nsrp.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** |
+| [symmetria](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/logos/symmetria.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** |
+| [symtech](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/logos/symtech.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** |
 
 ## Paper illustrations — 28 unique assets
 
@@ -34,56 +34,80 @@ Do **not** infer an image's creation rights from its GitHub presence, filename, 
 
 | Illustration | Provenance (owner to confirm) | Embedded maths review |
 | --- | --- | --- |
-| [unified framework cover](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-01/01_unified_framework_cover.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [historical progression physics](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-01/01_historical_progression_physics.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [modern physics challenges](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-01/01_modern_physics_challenges.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [search for unification](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-01/01_search_for_unification.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [current physics limitations](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-01/01_current_physics_limitations.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [symmetria perspective](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-01/01_symmetria_perspective.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [future research roadmap](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-01/01_future_research_roadmap.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
+| [unified framework cover](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-01/01_unified_framework_cover.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [historical progression physics](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-01/01_historical_progression_physics.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [modern physics challenges](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-01/01_modern_physics_challenges.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [search for unification](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-01/01_search_for_unification.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [current physics limitations](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-01/01_current_physics_limitations.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [symmetria perspective](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-01/01_symmetria_perspective.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [future research roadmap](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-01/01_future_research_roadmap.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
 
 
 ### Discussion Paper 2: articles/symmetria/symmetria-paper-02.html
 
 | Illustration | Provenance (owner to confirm) | Embedded maths review |
 | --- | --- | --- |
-| [symmetry cover](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-02/02_symmetry_cover.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [symmetry nature physics](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-02/02_symmetry_nature_physics.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [natural symmetry patterns](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-02/02_natural_symmetry_patterns.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [mathematical symmetry invariance](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-02/02_mathematical_symmetry_invariance.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [noether symmetry conservation](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-02/02_noether_symmetry_conservation.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [broken symmetry emergence](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-02/02_broken_symmetry_emergence.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [symmetria symmetry perspective](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-02/02_symmetria_symmetry_perspective.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
+| [symmetry cover](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-02/02_symmetry_cover.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [symmetry nature physics](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-02/02_symmetry_nature_physics.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [natural symmetry patterns](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-02/02_natural_symmetry_patterns.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [mathematical symmetry invariance](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-02/02_mathematical_symmetry_invariance.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [noether symmetry conservation](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-02/02_noether_symmetry_conservation.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [broken symmetry emergence](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-02/02_broken_symmetry_emergence.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [symmetria symmetry perspective](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-02/02_symmetria_symmetry_perspective.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
 
 
 ### Discussion Paper 3: articles/symmetria/symmetria-paper-03.html
 
 | Illustration | Provenance (owner to confirm) | Embedded maths review |
 | --- | --- | --- |
-| [nilpotent foundation cover](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-03/03_nilpotent_foundation_cover.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [symmetry to nilpotence](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-03/03_symmetry_to_nilpotence.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [nilpotence intuition](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-03/03_nilpotence_intuition.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [rowlands conceptual route](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-03/03_rowlands_conceptual_route.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [dirac nilpotent structure](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-03/03_dirac_nilpotent_structure.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [zero totality vacuum](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-03/03_zero_totality_vacuum.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [nilpotence to mathematics and reality](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-03/03_nilpotence_to_mathematics_and_reality.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
+| [nilpotent foundation cover](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-03/03_nilpotent_foundation_cover.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [symmetry to nilpotence](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-03/03_symmetry_to_nilpotence.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [nilpotence intuition](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-03/03_nilpotence_intuition.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [rowlands conceptual route](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-03/03_rowlands_conceptual_route.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [dirac nilpotent structure](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-03/03_dirac_nilpotent_structure.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [zero totality vacuum](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-03/03_zero_totality_vacuum.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [nilpotence to mathematics and reality](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-03/03_nilpotence_to_mathematics_and_reality.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
 
 
 ### Discussion Paper 4: articles/symmetria/symmetria-paper-04.html
 
 | Illustration | Provenance (owner to confirm) | Embedded maths review |
 | --- | --- | --- |
-| [mathematics elegance reality cover](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-04/04_mathematics_elegance_reality_cover.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [mathematics and evidence pathways](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-04/04_mathematics_and_evidence_pathways.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [mathematics to physical consequences](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-04/04_mathematics_to_physical_consequences.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [components of theoretical elegance](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-04/04_components_of_theoretical_elegance.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [elegance requires empirical test](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-04/04_elegance_requires_empirical_test.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [symmetria research obligations](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-04/04_symmetria_research_obligations.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
-| [mathematical structure to emergence](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-04/04_mathematical_structure_to_emergence.webp) | **Unknown / awaiting confirmation** | **Not independently checked** |
+| [mathematics elegance reality cover](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-04/04_mathematics_elegance_reality_cover.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [mathematics and evidence pathways](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-04/04_mathematics_and_evidence_pathways.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [mathematics to physical consequences](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-04/04_mathematics_to_physical_consequences.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [components of theoretical elegance](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-04/04_components_of_theoretical_elegance.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [elegance requires empirical test](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-04/04_elegance_requires_empirical_test.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [symmetria research obligations](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-04/04_symmetria_research_obligations.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+| [mathematical structure to emergence](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/images/symmetria/paper-04/04_mathematical_structure_to_emergence.webp) | ****ChatGPT-generated — owner-attested 17 Nov 2026**** | **Not independently checked** |
+
+## 17 November owner-wide image-origin confirmation
+
+The owner stated in the SymTech Ventures Chat conversation: **“Great!!! All images are AI generated by ChatGPT.”** This explicitly extends the earlier 16 November confirmation of the 28 paper figures and six shared logos to the **12 additional historical assets** listed below. The quoted statement is an **owner attestation of the creation method**, not an independent file-by-file generation, licence, or scientific accuracy audit. Full wording and chronology: [Owner AI artwork provenance note](V2_STAGE_09_OWNER_AI_ARTWORK_PROVENANCE_20261116.md).
+
+| Additional historical raster image from the Stage 8C inventory | Creator/tool (owner attestation) |
+| --- | --- |
+| `images/divisions/symcore_energy_banner.webp` | **ChatGPT generated — confirmed 17 Nov 2026** |
+| `images/divisions/symcraft_nano_banner.webp` | **ChatGPT generated — confirmed 17 Nov 2026** |
+| `images/divisions/symcura_health_banner.webp` | **ChatGPT generated — confirmed 17 Nov 2026** |
+| `images/divisions/symlogic_compute_banner.webp` | **ChatGPT generated — confirmed 17 Nov 2026** |
+| `images/divisions/symspace_dynamics_banner.webp` | **ChatGPT generated — confirmed 17 Nov 2026** |
+| `images/heroes/divisions_hero.webp` | **ChatGPT generated — confirmed 17 Nov 2026** |
+| `images/heroes/founding_fellows_hero.webp` | **ChatGPT generated — confirmed 17 Nov 2026** |
+| `images/icons/symcore_energy.webp` | **ChatGPT generated — confirmed 17 Nov 2026** |
+| `images/icons/symcraft_nano.webp` | **ChatGPT generated — confirmed 17 Nov 2026** |
+| `images/icons/symcura_health.webp` | **ChatGPT generated — confirmed 17 Nov 2026** |
+| `images/icons/symlogic_compute.webp` | **ChatGPT generated — confirmed 17 Nov 2026** |
+| `images/icons/symspace_dynamics.webp` | **ChatGPT generated — confirmed 17 Nov 2026** |
+
+**Inventory reconciliation:** 28 paper-specific illustrations + six shared logos + 12 historical banners, heroes and icons = **46 referenced raster assets**, all covered by the owner's general creation-method attestation. The 34 entries listed above have been updated from `Unknown` to `ChatGPT-generated — owner-attested`.
+
+**Remaining checks are separate:** original generated output can still raise questions if it incorporated protected external material or a third-party source asset; this statement does not certify copyright/licence/attribution in all jurisdictions, and it does not validate mathematical or physical claims in any graphic. The proposed missing Earthrise raster is not a verified asset in the Stage 8C repo checkout and must be inspected separately if supplied/used.
+
 
 ## Other preserved historical imagery
 
-The retained historical division and Contact pages also refer to other pre-existing logos, banners and icons. The Stage 2 audit deliberately did not perform a complete rights check of every original visual. All seven historical division/fellows pages now have `noindex,follow`, but **noindex does not stop their images being publicly accessible**. If third-party image rights remain unclear, extend this register to those historical pages before clearing the entire public website.
+The retained historical pages display the 12 inventoried banners, heroes and icons above, now confirmed by the owner as ChatGPT-generated. All seven historical division/fellows pages retain `noindex,follow`, but **noindex does not stop their images being publicly accessible**. Source inputs, embedded third-party elements, applicable rights and scientific claims (where relevant) remain distinct from creation-method attestation.
 
 ## Release decision rule
 
