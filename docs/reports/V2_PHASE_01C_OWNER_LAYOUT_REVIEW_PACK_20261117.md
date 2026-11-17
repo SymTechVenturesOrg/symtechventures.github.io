@@ -44,12 +44,25 @@ These are recommendations for consideration, **not owner-approved selections**.
 
 **Phase 2 output count is intentionally not fixed until the owner accepts image positions and aspect-ratio slots.** WebP quality 80 applies later to actual approved image outputs; it is encoder quality, not a guaranteed file-size reduction.
 
+## 17 November 2026 — Owner-approved introductory typography refinement
+
+After reviewing a 1440px screenshot of Discussion Series, the owner explicitly approved **introductory paragraphs using the entire main content width**, rather than stopping short at `max-width:820px`, and a **smaller mobile intro font** to reduce the unsightly gaps caused by fully justified lines. The owner did **not** retract the global fully-justified prose preference.
+
+Chat implemented both narrow edits in the existing feature branch at [`css/v2-programmes.css`](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/css/v2-programmes.css):
+- `.page-lead` now has `max-width:100%` within the pre-existing maximum **980px** `.page-content` container. This applies consistently to redesigned programme and introductory pages.
+- At **viewport widths of 740px or less**, `.page-lead` uses `font-size:1rem` (typically **16px** rather than 18.08px), `line-height:1.7`; wider viewports retain `1.13rem`, `line-height:1.75`.
+- The shared `text-align:justify; hyphens:auto; overflow-wrap:break-word` CSS is **unchanged**. The homepage's distinct `.hero-lead` was **not** altered.
+
+**Status:** source was fetched and checked; CSS braces balanced; no paper HTML or image changed. **The 16 screenshot links earlier in this file pre-date the CSS adjustment.** Do not present them as post-change evidence. The [focused Codex browser/regression handover](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/feature/v2-space-research-website/docs/handovers/V2_PHASE_01C_TYPOGRAPHY_REGRESSION_20261117.md) is prepared, **not yet executed**; fresh before/after screenshots and a new full regression are required before declaring the revised look tested.
+
+This closes **one typography policy question**, not overall owner layout approval, all page-specific design decisions, or Phase 2 image-slot authorisation.
+
 ## 4. Phase 1C review/acceptance gate
 
 Phase 1C may be marked **LAYOUT ACCEPTED** only after:
 1. The owner reviews the current screenshot evidence and any narrow refinements.
 2. The final native-jump-link keyboard/settled scroll/desktop checks are either verified or consciously recorded as a residual acceptance limitation — not silently declared PASS.
-3. The owner states whether full justification stays on 320/390px or authorises a specific readability adjustment.
+3. The owner has **approved retaining justification while reducing mobile introductory `.page-lead` text to 1rem**; inspect the actual post-change screenshots to decide whether the visual result is accepted. Any further changes to other body prose require separate approval.
 4. The owner approves the **homepage hero image slot** (placement/aspect/crop) and decides whether the remaining optional slots actually belong in the layout.
 5. If any site HTML/CSS changes are made, a **new post-change full regression** is run and recorded; otherwise existing Phase 1B regression exit 0 stands as evidence.
 
