@@ -190,3 +190,20 @@ body.symmetria-article-page{padding-top:0!important;overflow-x:clip!important;ov
 
 /* sticky current-generation paper header must override legacy article layout rules. */
 body.symmetria-article-page > header.site-header{position:sticky;top:0;z-index:100;background:#071522ed}
+
+
+/* Widescreen SYMMETRIA reading layout: use 94% of available width at 100% zoom. */
+@media (min-width:1200px){
+  .symmetria-article-page .article-body>.wrap,
+  .symmetria-article-page .prelude-caution>.wrap,
+  .symmetria-article-page .parent-nav-section>.wrap{
+    width:94vw;
+    max-width:none;
+  }
+  .symmetria-article-page .article-body .panel.paper-content{width:100%;max-width:none}
+  .symmetria-article-page .paper-content p,
+  .symmetria-article-page .paper-content li{
+    font-size:clamp(1.1rem,1.13vw,1.45rem);
+    line-height:1.82;
+  }
+}

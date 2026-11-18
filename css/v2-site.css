@@ -77,3 +77,14 @@ section[id],main[id],.category[id],.project [id^="proj-"]{scroll-margin-top:100p
   html{scroll-padding-top:82px}
   section[id],main[id],.category[id],.project [id^="proj-"]{scroll-margin-top:82px}
 }
+
+
+/* Desktop 100%-zoom width correction: use the available viewport rather than a 1480px island. */
+@media (min-width:1200px){
+  :root{--max:94vw}
+  .container{width:94vw;max-width:none}
+  body.v2-earthrise .hero-copy{max-width:min(45vw,940px)}
+  body.v2-earthrise .hero h1{font-size:clamp(4rem,5.2vw,7.6rem)}
+  .programme-card h3{font-size:clamp(1.3rem,1.15vw,1.7rem)}
+  .programme-card p{font-size:clamp(.87rem,.83vw,1.08rem)}
+}
