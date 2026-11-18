@@ -9,6 +9,7 @@ on:
       - css/**
       - js/**
       - images/heroes/v2_earthrise_fullbleed.webp
+      - images/logos/symtech_earthrise_emblem.webp
       - .github/workflows/phase2-draft-qa.yml
       - docs/reports/scripts/**
       - articles/symmetria/**
@@ -88,6 +89,43 @@ jobs:
             browser.close()
           server.shutdown()
           print(json.dumps({'commit':str(__import__('subprocess').check_output(['git','rev-parse','HEAD']).decode().strip()),'viewports':results},indent=2))
+          PY
+      - name: Verify emblem and programme arrows across pages and widths
+        run: |
+          python - <<'PY' | tee phase2-qa-artifacts/brand-arrow-check.json
+          import json,threading
+          from pathlib import Path
+          from functools import partial
+          from http.server import SimpleHTTPRequestHandler,ThreadingHTTPServer
+          from playwright.sync_api import sync_playwright
+          root=Path('.').resolve()
+          server=ThreadingHTTPServer(('127.0.0.1',0),partial(SimpleHTTPRequestHandler,directory=str(root)))
+          threading.Thread(target=server.serve_forever,daemon=True).start()
+          origin=f'http://127.0.0.1:{server.server_port}'
+          checked=[]
+          with sync_playwright() as p:
+            browser=p.chromium.launch(headless=True,executable_path='/usr/bin/chromium',args=['--no-sandbox'])
+            for w in [320,390,768,920,1440]:
+              for route in ['/','/pages/research.html','/pages/about.html','/articles/symmetria/symmetria-paper-01.html']:
+                page=browser.new_page(viewport={'width':w,'height':844 if w<500 else 900})
+                response=page.goto(origin+route,wait_until='networkidle')
+                assert response.status==200,(route,w,response.status)
+                emblem=page.locator('.brand-emblem')
+                assert emblem.count()==1,(route,w,'brand missing')
+                style=emblem.evaluate('(el)=>({bg:getComputedStyle(el).backgroundImage,w:el.getBoundingClientRect().width,h:el.getBoundingClientRect().height})')
+                assert 'symtech_earthrise_emblem.webp' in style['bg'] and style['w']>=30 and style['h']>=30,(route,w,style)
+                assert page.evaluate("performance.getEntriesByType('resource').some(r=>r.name.includes('symtech_earthrise_emblem.webp'))"),(route,w,'emblem not requested')
+                if route=='/':
+                  links=page.locator('.programme-card .card-footer a')
+                  assert links.count()==4,(w,'card links')
+                  assert links.all_inner_texts()==['Read overview →','See pathway →','Read overview →','Read overview →'],(w,links.all_inner_texts())
+                  assert links.evaluate_all("(els)=>els.every(a=>getComputedStyle(a).whiteSpace==='nowrap' && a.getBoundingClientRect().right<=a.closest('.programme-card').getBoundingClientRect().right+1)"),(w,'card link clipped')
+                assert page.evaluate("document.documentElement.scrollWidth===document.documentElement.clientWidth"),(route,w,'horizontal overflow')
+                checked.append([route,w])
+                page.close()
+            browser.close()
+          server.shutdown()
+          print(json.dumps({'status':'PASS','route_width_checks':len(checked),'routes_and_widths':checked}))
           PY
       - name: Bundle full draft site for owner offline review
         if: always()

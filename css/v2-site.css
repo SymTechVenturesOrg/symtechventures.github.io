@@ -43,3 +43,9 @@ body.v2-earthrise .orbit-wrap{display:none}
 @media(max-width:740px){body.v2-earthrise::before,body.v2-earthrise::after{height:max(1010px,100svh)}body.v2-earthrise::before{background-position:62% bottom;background-size:auto 100%}body.v2-earthrise::after{background:linear-gradient(180deg,#06101ced 0%,#06101cd8 27%,#06101c9a 52%,#06101c22 83%,#06101c50 100%)}body.v2-earthrise .hero-inner{display:block;min-height:max(850px,calc(100svh - 70px));padding-block:75px 285px}body.v2-earthrise .hero-copy{max-width:100%}body.v2-earthrise .hero h1{font-size:clamp(2.75rem,11.5vw,4.3rem)}body.v2-earthrise .hero-caption{display:inline-flex;background:#06101cf4;border-left:2px solid var(--gold);padding:8px 10px;border-radius:3px;color:#e0eaf2}}
 @media(max-width:460px){body.v2-earthrise .hero-inner{min-height:max(830px,calc(100svh - 70px));padding-block:67px 295px}body.v2-earthrise .hero h1{font-size:clamp(2.55rem,12.4vw,3.6rem)}body.v2-earthrise .hero-buttons{flex-direction:column;align-items:stretch}body.v2-earthrise::before{background-position:62% bottom}}
 @media(prefers-reduced-motion:reduce){body.v2-earthrise::before{background-attachment:scroll}}
+
+/* Owner-selected Earthrise S mark replaces the generic placeholder across the shared header. */
+.brand-emblem{background:transparent url("../images/logos/symtech_earthrise_emblem.webp") center/contain no-repeat;border:0;box-shadow:none;font-size:0;color:transparent}
+/* Programme actions consistently navigate right; never split arrow from label. */
+.programme-card .card-footer{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;column-gap:9px}
+.programme-card .card-footer a{display:inline-flex;align-items:center;white-space:nowrap;text-align:right}
