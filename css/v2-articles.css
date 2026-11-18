@@ -210,7 +210,7 @@ body.symmetria-article-page > header.site-header{position:sticky;top:0;z-index:1
 
 /* Widescreen scientific figures scale with their parent article, not just their native pixel dimensions. */
 @media (min-width:1200px){
-  .symmetria-article-page .paper-content img.article-image{
+  .symmetria-article-page .paper-content img{
     display:block;
     width:100%;
     max-width:100%;

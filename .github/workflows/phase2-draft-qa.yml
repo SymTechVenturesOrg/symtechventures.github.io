@@ -220,7 +220,7 @@ jobs:
                   const doc=document.documentElement;
                   const main=rect('.container');
                   const article=rect('.symmetria-article-page .article-body>.wrap');
-                  const image=rect('.symmetria-article-page .paper-content img.article-image');
+                  const image=rect('.symmetria-article-page .paper-content img');
                   const header=rect('header.site-header');
                   return {viewport:innerWidth,scrollWidth:doc.scrollWidth,content:main?.width,
                     paper:article?.width,figureWidth:image?.width,headerTop:header?.top,headerPos:getComputedStyle(document.querySelector('header.site-header')).position,
