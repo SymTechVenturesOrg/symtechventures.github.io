@@ -22,3 +22,6 @@ button:focus-visible,a:focus-visible,.image-stage:focus-visible{outline:3px soli
 @media(max-width:600px){.figure-viewer-header{padding:7px 10px;gap:5px}.viewer-title{flex-basis:100%}.viewer-kicker{font-size:.6rem}.viewer-title h1{font-size:.92rem}.viewer-controls{gap:5px;width:100%}.viewer-controls button,.viewer-controls a{min-height:39px;min-width:40px;padding:7px 9px;font-size:.82rem}.viewer-controls output{min-width:44px}.viewer-help{padding:6px 10px;gap:3px;font-size:.67rem}}
 @media(max-height:450px){.figure-viewer-header{padding-block:4px}.viewer-title{flex-basis:180px}.viewer-help{padding-block:4px}.viewer-controls button,.viewer-controls a{min-height:34px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+/* Honour hidden on controls even when component CSS sets display:inline-flex. */
+[hidden]{display:none!important}
