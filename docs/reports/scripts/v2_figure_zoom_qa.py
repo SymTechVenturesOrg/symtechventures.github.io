@@ -69,6 +69,7 @@ with sync_playwright() as playwright:
                 opened.mouse.wheel(0,500)
                 assert viewerImage.bounding_box()['width']<initial*1.25,(route,mode,'wheel zoom-out failed')
                 opened.locator('#zoom-actual').click()
+                opened.locator('#zoom-in').click()
                 before=viewerImage.bounding_box()['x']
                 rect=stage.bounding_box()
                 opened.mouse.move(rect['x']+rect['width']/2,rect['y']+rect['height']/2)
