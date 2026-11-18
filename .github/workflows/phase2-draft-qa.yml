@@ -246,69 +246,10 @@ jobs:
           srv.shutdown()
           print(json.dumps({'status':'PASS','cases':len(results),'results':results},indent=2))
           PY
-      - name: Verify paper image opening in separate tabs on desktop and mobile
+      - name: Verify interactive full-resolution zoom and independent image viewing
         run: |
           set -euo pipefail
-          python - <<'PY' | tee phase2-qa-artifacts/paper-image-new-tab-check.json
-          import json, threading
-          from functools import partial
-          from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
-          from pathlib import Path
-          from playwright.sync_api import sync_playwright
-          root=Path('.').resolve()
-          srv=ThreadingHTTPServer(('127.0.0.1',0),partial(SimpleHTTPRequestHandler,directory=str(root)))
-          threading.Thread(target=srv.serve_forever,daemon=True).start()
-          origin=f'http://127.0.0.1:{srv.server_port}'
-          cases=[('desktop',1440,900,False),('portrait',390,844,True),('landscape',844,390,True)]
-          results=[]
-          with sync_playwright() as p:
-            browser=p.chromium.launch(headless=True,executable_path='/usr/bin/chromium',args=['--no-sandbox'])
-            for name,width,height,is_mobile in cases:
-              context=browser.new_context(viewport={'width':width,'height':height},is_mobile=is_mobile,has_touch=is_mobile,device_scale_factor=1)
-              for number in range(1,5):
-                route=f'/articles/symmetria/symmetria-paper-{number:02d}.html'
-                page=context.new_page()
-                response=page.goto(origin+route,wait_until='networkidle')
-                assert response.status==200,(route,name,'HTTP',response.status)
-                figures=page.locator('.paper-content img')
-                links=page.locator('.paper-content a.paper-figure-open')
-                assert figures.count()==7 and links.count()==7,(route,name,figures.count(),links.count())
-                data=page.evaluate("""() => [...document.querySelectorAll('.paper-content a.paper-figure-open')].map(a=>({
-                  href:a.href,target:a.target,rel:a.rel,label:a.getAttribute('aria-label'),
-                  imageSrc:a.querySelector('img')?.src,imageAlt:a.querySelector('img')?.alt,
-                  hint:a.querySelector('.paper-figure-open-label')?.textContent.trim()
-                }))""")
-                assert all(x['href']==x['imageSrc'] and x['target']=='_blank' and 'noopener' in x['rel'] and x['label'].startswith('Open full-size image in a new tab: ') and x['imageAlt'] and x['hint']=='Open full-size image ↗' for x in data),(route,name,'link metadata')
-                assert all('/images/symmetria/paper-' in x['href'] and x['href'].endswith('.webp') for x in data),(route,name,'source URL')
-                assert page.evaluate('document.documentElement.scrollWidth<=document.documentElement.clientWidth'),(route,name,'horizontal overflow')
-                first=links.first
-                first.scroll_into_view_if_needed()
-                if number==2 and name in ['portrait','landscape']:
-                  page.screenshot(path=str(root/'phase2-qa-artifacts'/f'paper02-open-image-{name}-{width}x{height}.png'),full_page=False)
-                current_url=page.url
-                if is_mobile:
-                  with page.expect_popup() as popup:
-                    first.tap()
-                else:
-                  first.focus()
-                  assert first.evaluate('(el)=>el===document.activeElement'),(route,name,'keyboard focus')
-                  with page.expect_popup() as popup:
-                    page.keyboard.press('Enter')
-                opened=popup.value
-                opened.wait_for_load_state('load')
-                assert opened.url==data[0]['href'],(route,name,'wrong independent figure',opened.url,data[0]['href'])
-                assert page.url==current_url,(route,name,'paper tab navigated')
-                img=opened.locator('img')
-                assert img.count()>0 and img.first.evaluate('(el)=>el.complete && el.naturalWidth>0 && el.naturalHeight>0'),(route,name,'image not decoded')
-                natural=img.first.evaluate('(el)=>({w:el.naturalWidth,h:el.naturalHeight})')
-                opened.close()
-                results.append({'route':route,'mode':name,'width':width,'height':height,'figures':len(data),'popupImage':natural})
-                page.close()
-              context.close()
-            browser.close()
-          srv.shutdown()
-          print(json.dumps({'result':'PASS','cases':len(results),'total_figure_links_tested':sum(x['figures'] for x in results),'details':results},indent=2))
-          PY
+          python -u docs/reports/scripts/v2_figure_zoom_qa.py | tee phase2-qa-artifacts/interactive-figure-zoom-check.json
       - name: Bundle full draft site for owner offline review
         if: always()
         run: |

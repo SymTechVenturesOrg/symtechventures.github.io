@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07101e">
+<meta name="robots" content="noindex,follow">
+<meta name="description" content="Full-resolution SYMMETRIA figure viewer with mouse-wheel zoom, drag-to-pan and mobile pinch gestures.">
+<title>SYMMETRIA Image Viewer | SymTech Ventures</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../css/v2-figure-viewer.css">
+<script src="../js/v2-figure-viewer.js" defer></script>
+</head>
+<body>
+<div class="figure-viewer-shell">
+<header class="figure-viewer-header">
+ <div class="viewer-title">
+  <span class="viewer-kicker">SymTech Ventures / SYMMETRIA</span>
+  <h1 id="figure-title">Full-size figure viewer</h1>
+ </div>
+ <nav class="viewer-controls" aria-label="Image controls">
+  <button id="zoom-out" type="button" aria-label="Zoom out" title="Zoom out (−)">−</button>
+  <output id="zoom-value" aria-label="Current image zoom" for="zoom-out zoom-in">Fit</output>
+  <button id="zoom-in" type="button" aria-label="Zoom in" title="Zoom in (+)">+</button>
+  <button id="zoom-fit" type="button" title="Fit image to window (0)">Fit</button>
+  <button id="zoom-actual" type="button" title="Show at original pixel size (1)">100%</button>
+  <a id="original-image" href="#" target="_blank" rel="noopener" hidden>Original image ↗</a>
+ </nav>
+</header>
+<main id="image-stage" class="image-stage" tabindex="0" role="region" aria-label="Interactive full-resolution image. Use the mouse wheel or plus and minus keys to zoom; drag to pan. On touch devices, pinch to zoom and drag.">
+ <img id="full-image" src="" alt="" draggable="false" hidden>
+ <p id="viewer-error" class="viewer-error" hidden>This image link is unavailable. Please return to the discussion paper and try another figure.</p>
+</main>
+<footer class="viewer-help">
+ <span>Mouse wheel: zoom · Drag: pan · + / −: zoom · 0: fit</span>
+ <span>On mobile, rotate to landscape and pinch to zoom. Close this tab to return to the paper.</span>
+</footer>
+</div>
+</body>
+</html>

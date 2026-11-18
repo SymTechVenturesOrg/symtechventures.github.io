@@ -42,16 +42,19 @@ document.querySelectorAll(".symmetria-article-page .paper-content img").forEach(
 
   const link = document.createElement("a");
   link.className = "paper-figure-open";
-  link.href = source;
+  const viewer = new URL("../../pages/figure-viewer.html", document.baseURI);
+  viewer.searchParams.set("src", source.slice(6));
+  viewer.searchParams.set("alt", figure.getAttribute("alt") || "SYMMETRIA figure");
+  link.href = viewer.href;
   link.target = "_blank";
   link.rel = "noopener";
-  link.setAttribute("aria-label", "Open full-size image in a new tab: " + (figure.getAttribute("alt") || "SYMMETRIA figure"));
-  link.title = "Open the original image in a new tab to zoom. Rotate your phone for landscape.";
+  link.setAttribute("aria-label", "Open interactive image viewer in a new tab: " + (figure.getAttribute("alt") || "SYMMETRIA figure"));
+  link.title = "Mouse wheel or pinch to zoom; drag to pan. Original image available in the viewer.";
 
   const label = document.createElement("span");
   label.className = "paper-figure-open-label";
   label.setAttribute("aria-hidden", "true");
-  label.textContent = "Open full-size image ↗";
+  label.textContent = "Open interactive image viewer ↗";
 
   figure.parentNode.insertBefore(link, figure);
   link.appendChild(figure);
