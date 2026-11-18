@@ -115,8 +115,8 @@ jobs:
                 assert response.status==200,(route,w,response.status)
                 emblem=page.locator('.brand-emblem')
                 assert emblem.count()==1,(route,w,'brand missing')
-                style=emblem.evaluate('(el)=>({bg:getComputedStyle(el).backgroundImage,w:el.getBoundingClientRect().width,h:el.getBoundingClientRect().height})')
-                assert 'symtech_earthrise_emblem.webp' in style['bg'] and style['w']>=30 and style['h']>=30,(route,w,style)
+                style=emblem.evaluate('(el)=>({bg:getComputedStyle(el).backgroundImage,w:el.getBoundingClientRect().width,h:el.getBoundingClientRect().height,font:getComputedStyle(el).fontSize,display:getComputedStyle(el).display})')
+                assert 'symtech_earthrise_emblem.webp' in style['bg'] and style['w']>=30 and style['h']>=30 and style['font']=='0px',(route,w,style)
                 assert page.evaluate("performance.getEntriesByType('resource').some(r=>r.name.includes('symtech_earthrise_emblem.webp'))"),(route,w,'emblem not requested')
                 if route=='/':
                   links=page.locator('.programme-card .card-footer a')
