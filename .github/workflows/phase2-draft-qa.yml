@@ -130,6 +130,68 @@ jobs:
           server.shutdown()
           print(json.dumps({'status':'PASS','route_width_checks':len(checked),'routes_and_widths':checked}))
           PY
+      - name: Verify sticky navigation and wide-desktop 16:9 layout
+        run: |
+          set -euo pipefail
+          python - <<'PY' | tee phase2-qa-artifacts/sticky-and-16by9-check.json
+          import json,threading
+          from pathlib import Path
+          from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
+          from functools import partial
+          from playwright.sync_api import sync_playwright
+          root=Path('.').resolve()
+          srv=ThreadingHTTPServer(('127.0.0.1',0),partial(SimpleHTTPRequestHandler,directory=str(root)))
+          threading.Thread(target=srv.serve_forever,daemon=True).start()
+          origin=f'http://127.0.0.1:{srv.server_port}'
+          routes=['/','/pages/research.html','/pages/bridgepoint.html','/pages/discussion-series.html','/pages/about.html','/articles/symmetria/symmetria-paper-01.html','/articles/symmetria/symmetria-paper-02.html']
+          sizes=[(1920,1080),(2560,1440),(1366,768),(390,844),(320,720)]
+          output=root/'phase2-qa-artifacts'
+          tested=[]
+          with sync_playwright() as p:
+            browser=p.chromium.launch(headless=True,executable_path='/usr/bin/chromium',args=['--no-sandbox'])
+            for w,h in sizes:
+              for route in routes:
+                page=browser.new_page(viewport={'width':w,'height':h},device_scale_factor=1,reduced_motion='reduce')
+                response=page.goto(origin+route,wait_until='networkidle')
+                assert response.status==200,(route,w,response.status)
+                info=page.evaluate("""() => {
+                  const head=document.querySelector('header.site-header');
+                  const rect=head.getBoundingClientRect();
+                  const doc=document.documentElement;
+                  return {position:getComputedStyle(head).position,top:rect.top,
+                    height:rect.height,headerWidth:rect.width,
+                    viewport:doc.clientWidth,scrollWidth:doc.scrollWidth,
+                    bodyHeight:doc.scrollHeight,
+                    hero:document.querySelector('.hero')?.getBoundingClientRect().height || null,
+                    contentWidth:document.querySelector('.container')?.getBoundingClientRect().width || null};
+                }""")
+                assert info['position']=='sticky' and abs(info['top'])<=2,(route,w,'initial sticky position',info)
+                assert info['scrollWidth']<=info['viewport'],(route,w,'overflow',info)
+                page.evaluate('window.scrollTo(0,Math.min(850,document.documentElement.scrollHeight-innerHeight-1))')
+                page.wait_for_timeout(150)
+                after=page.evaluate("({scrollY, top:document.querySelector('header.site-header').getBoundingClientRect().top, pos:getComputedStyle(document.querySelector('header.site-header')).position})")
+                if info['bodyHeight']>h+200:
+                  assert after['scrollY']>100,(route,w,'page not scrolling',after)
+                  assert abs(after['top'])<=2,(route,w,'header not fixed at top during scrolling',after)
+                if w<=919:
+                  summary=page.locator('.mobile-nav summary')
+                  assert summary.is_visible(),(route,w,'mobile menu unavailable')
+                  summary.click()
+                  assert page.locator('.mobile-nav').evaluate('(el)=>el.open'),(route,w,'mobile menu not opening after scroll')
+                  page.keyboard.press('Escape')
+                  assert not page.locator('.mobile-nav').evaluate('(el)=>el.open'),(route,w,'mobile menu not closing')
+                else:
+                  assert page.locator('.main-nav').is_visible(),(route,w,'desktop links hidden')
+                if route=='/' and (w,h) in [(1920,1080),(2560,1440),(1366,768),(390,844)]:
+                  page.evaluate('window.scrollTo(0,0)')
+                  page.screenshot(path=str(output/f'home-sticky-{w}x{h}.png'),full_page=False)
+                info.update({'route':route,'width':w,'height':h,'scroll':after})
+                tested.append(info)
+                page.close()
+            browser.close()
+          srv.shutdown()
+          print(json.dumps({'status':'PASS','route_viewport_cases':len(tested),'results':tested},indent=2))
+          PY
       - name: Bundle full draft site for owner offline review
         if: always()
         run: |

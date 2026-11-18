@@ -49,3 +49,31 @@ body.v2-earthrise .orbit-wrap{display:none}
 /* Programme actions consistently navigate right; never split arrow from label. */
 .programme-card .card-footer{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;column-gap:9px}
 .programme-card .card-footer a{display:inline-flex;align-items:center;white-space:nowrap;text-align:right}
+
+/* Phase 2 viewport polish: maintain legible 100% zoom at 16:9 desktop resolutions. */
+body > header.site-header{position:sticky;top:0;z-index:100;background:#071522ed;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+body.v2-earthrise > header.site-header{position:sticky;top:0;z-index:100;background:#071522d9}
+html{scroll-padding-top:100px}
+section[id],main[id],.category[id],.project [id^="proj-"]{scroll-margin-top:100px}
+/* 16:9 100% zoom visual scale: increase content presence at 1920x1080 and larger, without stretching images. */
+@media (min-width:1600px) and (min-height:800px){
+  :root{--max:1480px}
+  .header-content{min-height:92px}
+  .brand-emblem{height:52px;width:52px}
+  .brand-name{font-size:1.22rem}
+  .brand-description{font-size:.71rem}
+  .main-nav{gap:23px}
+  .main-nav a{font-size:1.06rem}
+  body.v2-earthrise .hero-inner{min-height:calc(100svh - 92px);padding-block:58px 84px}
+  body.v2-earthrise .hero-copy{max-width:685px}
+  body.v2-earthrise .hero h1{font-size:clamp(5rem,5.55vw,6.65rem)}
+  body.v2-earthrise .hero-lead{font-size:clamp(1.18rem,1.3vw,1.45rem);max-width:670px}
+  body.v2-earthrise .hero-caption{font-size:.85rem}
+}
+@media(max-width:919px){
+  body > header.site-header{backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+}
+@media(max-width:740px){
+  html{scroll-padding-top:82px}
+  section[id],main[id],.category[id],.project [id^="proj-"]{scroll-margin-top:82px}
+}
