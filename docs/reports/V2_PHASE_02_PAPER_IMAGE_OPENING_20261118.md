@@ -17,3 +17,17 @@
 A new exact-commit GitHub Actions Playwright step must verify four papers at desktop (1440×900), mobile portrait (390×844) and landscape (844×390), **84 enhanced image links**, real new-tab creation by keyboard Enter/touch tap, original page remaining open, full-resolution decoded WebP, and no horizontal overflow. The existing 36-page regression, sticky nav, 100%-zoom responsive width checks, scientific content integrity and all previous Phase 2 tests must remain successful.
 
 **Release:** Only draft PR #5; no merge or publication. Phase 3 figure accuracy changes remain unstarted. Browser-specific image zoom may require device acceptance testing by the owner.
+
+
+## Verified final QA — 18 November 2026
+
+**Exact verified source commit:** `1e19539791b089eec3f20d6267d0b0da3dd81ce7`  
+**GitHub Actions run:** [#44335322026](https://github.com/SymTechVenturesOrg/symtechventures.github.io/actions/runs/44335322026), **all steps succeeded**. No deployment or merge.
+
+The complete existing regression (36 HTML files), nine-breakpoint Earthrise responsive tests, enlarged brand/arrow checks, sticky-header scroll tests and 100%-zoom desktop width checks all passed unchanged. The dedicated `Verify paper image opening in separate tabs on desktop and mobile` step returned `result: PASS` with **12 route/viewport combinations** (Papers 1–4 × desktop 1440×900, portrait 390×844 and landscape 844×390), **84 link-instance assertions** (7 per paper in every mode), all with no horizontal overflow. For the first image of each paper, the browser actually opened a popup/new tab by Enter on desktop or tap on mobile, verified its URL matched the original source WebP, verified its native decoded dimensions were non-zero, then checked that the original paper tab remained on its URL.
+
+**Review evidence:** GitHub Action artifact `symtech-phase2-review-1e19539791b089eec3f20d6267d0b0da3dd81ce7` includes the standalone report `paper-image-new-tab-check.json`, screenshots of Paper 2 in both mobile orientations, the original full site ZIP and overall QA logs. The 28-file artifact ZIP passed its CRC integrity check; the embedded 108-file complete website ZIP also passed. The corresponding screenshot shows the clearly labelled **Open full-size image ↗** action below the figure, preserving the adjacent original caption.
+
+**Browser-device caveat:** the site reliably opens the original image as its own tab, but zoom/pan gestures and landscape rotation are provided by browser/OS and should be personally checked in Chrome/Edge/Safari on physical hardware; we did not automate pinch gestures, forced rotation or iOS/Safari. The image data are unchanged and no new lightbox/gesture code is required.
+
+**Current Phase 2 status:** owner-requested image-opening feature implementation and automated browser checks complete. Draft PR #5 remains unmerged and unpublished, and no Phase 3 content has been edited.
