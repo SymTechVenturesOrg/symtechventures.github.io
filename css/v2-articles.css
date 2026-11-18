@@ -217,3 +217,38 @@ body.symmetria-article-page > header.site-header{position:sticky;top:0;z-index:1
     height:auto;
   }
 }
+
+
+/* Image-only new-tab links: browser-native zoom and mobile landscape work without a site lightbox. */
+.symmetria-article-page .paper-content .paper-figure-open{
+  display:block;
+  max-width:100%;
+  margin:1.7rem 0 1.2rem;
+  color:#a9e4ff;
+  text-decoration:none;
+  cursor:zoom-in;
+  border-radius:8px;
+}
+.symmetria-article-page .paper-content .paper-figure-open img{
+  margin:0 auto;
+}
+.symmetria-article-page .paper-content .paper-figure-open-label{
+  display:block;
+  padding:.45rem .25rem .15rem;
+  font:700 .86rem/1.45 Inter,ui-sans-serif,system-ui,sans-serif;
+  text-align:right;
+  color:#a9e4ff;
+  text-decoration:underline;
+  text-underline-offset:3px;
+  letter-spacing:.01em;
+}
+.symmetria-article-page .paper-content .paper-figure-open:hover img{
+  border-color:#9bdcf4;
+}
+.symmetria-article-page .paper-content .paper-figure-open:hover .paper-figure-open-label{
+  color:#fff;
+}
+.symmetria-article-page .paper-content .paper-figure-open:focus-visible{
+  outline:3px solid #f4c88b;
+  outline-offset:5px;
+}

@@ -33,3 +33,27 @@ function updatePaperTableFocus() {
 }
 updatePaperTableFocus();
 window.addEventListener('resize', updatePaperTableFocus);
+
+
+/* Add separate-tab full-resolution image links without editing the original paper text or figure markup. */
+document.querySelectorAll(".symmetria-article-page .paper-content img").forEach(function (figure) {
+  const source = figure.getAttribute("src");
+  if (!source || !/^\.\.\/\.\.\/images\/symmetria\/paper-0[1-4]\/[a-zA-Z0-9_-]+\.webp$/.test(source) || figure.closest("a")) return;
+
+  const link = document.createElement("a");
+  link.className = "paper-figure-open";
+  link.href = source;
+  link.target = "_blank";
+  link.rel = "noopener";
+  link.setAttribute("aria-label", "Open full-size image in a new tab: " + (figure.getAttribute("alt") || "SYMMETRIA figure"));
+  link.title = "Open the original image in a new tab to zoom. Rotate your phone for landscape.";
+
+  const label = document.createElement("span");
+  label.className = "paper-figure-open-label";
+  label.setAttribute("aria-hidden", "true");
+  label.textContent = "Open full-size image ↗";
+
+  figure.parentNode.insertBefore(link, figure);
+  link.appendChild(figure);
+  link.appendChild(label);
+});
