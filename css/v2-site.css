@@ -45,7 +45,7 @@ body.v2-earthrise .orbit-wrap{display:none}
 @media(prefers-reduced-motion:reduce){body.v2-earthrise::before{background-attachment:scroll}}
 
 /* Owner-selected Earthrise S mark replaces the generic placeholder across the shared header. */
-.brand-emblem{background:transparent url("../images/logos/symtech_earthrise_emblem.webp") center/contain no-repeat;border:0;box-shadow:none;font-size:0;color:transparent}
+.site-header .brand .brand-emblem{display:block;background:transparent url("../images/logos/symtech_earthrise_emblem.webp") center/contain no-repeat;border:0;box-shadow:none;font-size:0;line-height:0;color:transparent;flex-shrink:0}
 /* Programme actions consistently navigate right; never split arrow from label. */
 .programme-card .card-footer{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;column-gap:9px}
 .programme-card .card-footer a{display:inline-flex;align-items:center;white-space:nowrap;text-align:right}
