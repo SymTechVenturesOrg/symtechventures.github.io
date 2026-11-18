@@ -183,3 +183,7 @@ body.symmetria-article-page{
   .symmetria-article-page .paper-content li{line-height:1.75}
 }
 .symmetria-article-page .paper-content table:focus-visible{outline:3px solid #f4c88b;outline-offset:3px}
+
+/* Restore the current six-link article header against the old AetherOS hard-reset rules. */
+body.symmetria-article-page > header.site-header{display:block!important}
+@media(max-width:900px){body.symmetria-article-page{padding-top:0!important}}
