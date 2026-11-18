@@ -207,3 +207,13 @@ body.symmetria-article-page > header.site-header{position:sticky;top:0;z-index:1
     line-height:1.82;
   }
 }
+
+/* Widescreen scientific figures scale with their parent article, not just their native pixel dimensions. */
+@media (min-width:1200px){
+  .symmetria-article-page .paper-content img.article-image{
+    display:block;
+    width:100%;
+    max-width:100%;
+    height:auto;
+  }
+}
