@@ -40,10 +40,12 @@ jobs:
           sudo ln -sf "$CHROME_PATH" /usr/bin/chromium
       - name: Run full exact-branch website regression
         run: |
+          set -euo pipefail
           mkdir -p phase2-qa-artifacts
           python -u docs/reports/scripts/v2_stage8_qa.py 2>&1 | tee phase2-qa-artifacts/full-regression.log
       - name: Run detailed full-bleed and navigation breakpoint QA
         run: |
+          set -euo pipefail
           python - <<'PY' | tee phase2-qa-artifacts/phase2-breakpoints.json
           import json, threading
           from pathlib import Path
@@ -92,6 +94,7 @@ jobs:
           PY
       - name: Verify emblem and programme arrows across pages and widths
         run: |
+          set -euo pipefail
           python - <<'PY' | tee phase2-qa-artifacts/brand-arrow-check.json
           import json,threading
           from pathlib import Path
@@ -118,7 +121,7 @@ jobs:
                 if route=='/':
                   links=page.locator('.programme-card .card-footer a')
                   assert links.count()==4,(w,'card links')
-                  assert links.all_inner_texts()==['Read overview →','See pathway →','Read overview →','Read overview →'],(w,links.all_inner_texts())
+                  assert links.all_text_contents()==['Read overview →','See pathway →','Read overview →','Read overview →'],(w,links.all_text_contents())
                   assert links.evaluate_all("(els)=>els.every(a=>getComputedStyle(a).whiteSpace==='nowrap' && a.getBoundingClientRect().right<=a.closest('.programme-card').getBoundingClientRect().right+1)"),(w,'card link clipped')
                 assert page.evaluate("document.documentElement.scrollWidth===document.documentElement.clientWidth"),(route,w,'horizontal overflow')
                 checked.append([route,w])
