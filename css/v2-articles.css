@@ -186,7 +186,7 @@ body.symmetria-article-page{
 
 /* Restore the current six-link article header against the old AetherOS hard-reset rules. */
 body.symmetria-article-page > header.site-header{display:block!important}
-@media(max-width:900px){body.symmetria-article-page{padding-top:0!important}}
+body.symmetria-article-page{padding-top:0!important}
 
 /* sticky current-generation paper header must override legacy article layout rules. */
 body.symmetria-article-page > header.site-header{position:sticky;top:0;z-index:100;background:#071522ed}
