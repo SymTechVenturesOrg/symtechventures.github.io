@@ -52,6 +52,8 @@ This document **supersedes the limited-figure implementation scope** in the earl
 
 **Honesty principle:** the original figure-generation engine is not proven from GitHub; the current tool may not expose a stable build number, hidden parameters or a deterministic seed. Replaying a prompt may yield a *similar* image, not byte-identical pixels. The purpose of the documentation is consistent, auditable production—not a fictitious promise of exact repeatability.
 
+**Portrait continuity requirement (owner amendment, 19 November):** Use the [cross-paper scientist likeness/placement standard](standards/SYMMETRIA_PERSON_IDENTITY_AND_PORTRAIT_PLACEMENT_v1_20261119.md). Do not reuse a person across every image; specific Paper 1 portrait roles are restricted to Figure 1.1 and optionally 2.1 for Einstein/Dirac, and 5.1 for Rowlands. Fresh full-image generation only; any generic three-physicist montage is a failed figure proof, irrespective of its attractiveness. The approved 16:9 format and source scientific corrections remain unchanged. The prior seven Paper 1 proof-C images are **rejected for current portrait/content identity consistency** and must not be installed; this does not change the original source papers.
+
 ## 3. Phase gates, deliverables and conditions to proceed
 
 | Gate | Task and lead | Required deliverables | Proceed only when |
