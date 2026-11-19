@@ -9,13 +9,13 @@
 
 | Paper | Slot | Currently published figure basename | Original Git blob prefix | Subject-reference figure after approved P3 swaps | Proposed v3 filename | Generation |
 |---:|---|---|---|---|---|---|
-| 1 | Cover | `01_unified_framework_cover.webp` | `6a8aaa0edb49` | `01_unified_framework_cover.webp` | `p01_cover_illustration_v3.webp` | NOT STARTED |
-| 1 | Fig 1.1 | `01_historical_progression_physics.webp` | `b1534d926dc3` | `01_historical_progression_physics.webp` | `p01_fig_1_1_illustration_v3.webp` | NOT STARTED |
-| 1 | Fig 2.1 | `01_modern_physics_challenges.webp` | `cb8a575c186a` | `01_modern_physics_challenges.webp` | `p01_fig_2_1_illustration_v3.webp` | NOT STARTED |
-| 1 | Fig 3.1 | `01_search_for_unification.webp` | `c6ca2f610595` | `01_search_for_unification.webp` | `p01_fig_3_1_illustration_v3.webp` | NOT STARTED |
-| 1 | Fig 4.1 | `01_current_physics_limitations.webp` | `ea947f864462` | `01_current_physics_limitations.webp` | `p01_fig_4_1_illustration_v3.webp` | NOT STARTED |
-| 1 | Fig 5.1 | `01_symmetria_perspective.webp` | `b0334e5aa0c4` | `01_symmetria_perspective.webp` | `p01_fig_5_1_illustration_v3.webp` | NOT STARTED |
-| 1 | Fig 6.1 | `01_future_research_roadmap.webp` | `5acb11e9579b` | `01_future_research_roadmap.webp` | `p01_fig_6_1_illustration_v3.webp` | NOT STARTED |
+| 1 | Cover | `01_unified_framework_cover.webp` | `6a8aaa0edb49` | `01_unified_framework_cover.webp` | `p01_cover_illustration_v3.webp` | REVISION REQUIRED — remove embedded paper/figure numbers |
+| 1 | Fig 1.1 | `01_historical_progression_physics.webp` | `b1534d926dc3` | `01_historical_progression_physics.webp` | `p01_fig_1_1_illustration_v3.webp` | REVISION REQUIRED — remove embedded paper/figure numbers |
+| 1 | Fig 2.1 | `01_modern_physics_challenges.webp` | `cb8a575c186a` | `01_modern_physics_challenges.webp` | `p01_fig_2_1_illustration_v3.webp` | REVISION REQUIRED — remove embedded paper/figure numbers |
+| 1 | Fig 3.1 | `01_search_for_unification.webp` | `c6ca2f610595` | `01_search_for_unification.webp` | `p01_fig_3_1_illustration_v3.webp` | REVISION REQUIRED — remove embedded paper/figure numbers |
+| 1 | Fig 4.1 | `01_current_physics_limitations.webp` | `ea947f864462` | `01_current_physics_limitations.webp` | `p01_fig_4_1_illustration_v3.webp` | REVISION REQUIRED — remove embedded paper/figure numbers |
+| 1 | Fig 5.1 | `01_symmetria_perspective.webp` | `b0334e5aa0c4` | `01_symmetria_perspective.webp` | `p01_fig_5_1_illustration_v3.webp` | REVISION REQUIRED — remove embedded paper/figure numbers |
+| 1 | Fig 6.1 | `01_future_research_roadmap.webp` | `5acb11e9579b` | `01_future_research_roadmap.webp` | `p01_fig_6_1_illustration_v3.webp` | REVISION REQUIRED — remove embedded paper/figure numbers |
 | 2 | Cover | `02_symmetry_cover.webp` | `376eb4bcd148` | `02_symmetry_cover.webp` | `p02_cover_illustration_v3.webp` | NOT STARTED |
 | 2 | Fig 1.1 | `02_symmetry_nature_physics.webp` | `927a73426881` | `02_symmetry_nature_physics.webp` | `p02_fig_1_1_illustration_v3.webp` | NOT STARTED |
 | 2 | Fig 2.1 | `02_natural_symmetry_patterns.webp` | `4abb539e9763` | `02_natural_symmetry_patterns.webp` | `p02_fig_2_1_illustration_v3.webp` | NOT STARTED |
@@ -58,3 +58,19 @@
 2. **One paper at a time**, 7 source-based prompts and 7 human-checked proof/manifest sets; owner can reject individual figures without changing source HTML.
 3. **Final consistency/contact sheet** across the 28, text/math QA, provenance and before/after alignment.
 4. **Integration is separate:** exact owner-accepted source deltas on feature PR #5 with all existing regression and interactive image-viewer checks green, and four original URLs retained. Keep draft, no merge or deployment.
+
+## Paper 1 first-pass draft QA — owner title directive, 19 November 2026
+
+The seven Paper 1 slots have generated **draft proofs**, but **none of the seven is accepted for website integration** under the owner's clarified artwork-title rule. The six newer native AI renders are 1672×941 PNG; the pilot P1 Fig 3.1 has a 1920×1080 reviewed export. Their source concept, style and scientific labels may be reused only after exact inspection and correction. Do not confuse an approved **style direction** with acceptance of embedded title labels or publication approval.
+
+| Slot | Existing draft file in conversation workspace (not GitHub) | Reason not final | Permitted subject heading inside artwork |
+| --- | --- | --- | --- |
+| Cover | `symmetria_towards_a_unified_framework.png` | **REVISION REQUIRED** — remove “Discussion Paper 1” and/or “Figure x.x” entirely from artwork | **TOWARDS A DEEPER UNIFIED FRAMEWORK** |
+| Fig 1.1 | `symmetria_foundations_of_modern_physics.png` | **REVISION REQUIRED** — remove “Discussion Paper 1” and/or “Figure x.x” entirely from artwork | **FOUNDATIONS OF MODERN PHYSICS** |
+| Fig 2.1 | `symmetria_the_unification_challenge.png` | **REVISION REQUIRED** — remove “Discussion Paper 1” and/or “Figure x.x” entirely from artwork | **QUANTUM THEORY AND GENERAL RELATIVITY** |
+| Fig 3.1 | `SymTech_Phase3_Master_Style_Pilot_A/p01_fig_3_1_illustration_v3_proof_A.png` | **REVISION REQUIRED** — remove “Discussion Paper 1” and/or “Figure x.x” entirely from artwork | **MODERN PHYSICS AND THE SEARCH FOR UNIFICATION** |
+| Fig 4.1 | `symmetria_limitations_of_the_current_view.png` | **REVISION REQUIRED** — remove “Discussion Paper 1” and/or “Figure x.x” entirely from artwork | **LIMITATIONS OF THE CURRENT VIEW** |
+| Fig 5.1 | `symmetria_cosmic_symmetry_framework.png` | **REVISION REQUIRED** — remove “Discussion Paper 1” and/or “Figure x.x” entirely from artwork | **THE SYMMETRIA PERSPECTIVE** |
+| Fig 6.1 | `symmetria_a_research_programme.png` | **REVISION REQUIRED** — remove “Discussion Paper 1” and/or “Figure x.x” entirely from artwork | **A RESEARCH PROGRAMME** |
+
+**Non-negotiable title QA:** no “Figure 1.1” or other figure identifier, no “Discussion Paper 1” or other paper identifier, no equivalent numbers in mastheads, badges, subtitles or footers. The image title is the **subject only**, optionally with the *unnumbered* wordmark “SYMMETRIA”. Paper and figure identifiers are supplied by the existing HTML and the separate caption, not the PNG/WebP pixels. All seven proofs require visual/label revision before figure acceptance. No feature-branch images or source references were changed by updating this register.
