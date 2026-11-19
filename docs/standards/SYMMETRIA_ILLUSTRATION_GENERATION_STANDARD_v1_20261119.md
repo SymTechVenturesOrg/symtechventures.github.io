@@ -1,3 +1,5 @@
+> **Superseded for new figure production:** The owner approved **1920×1080 (16:9)** as the illustration output standard on 19 November 2026. Use [v1.1](SYMMETRIA_ILLUSTRATION_GENERATION_STANDARD_v1_1_20261119.md); this v1.0 file remains as a historical record of the previous 1536×1024 (3:2) proposal.
+
 # SYMMETRIA — Illustration generation and provenance standard (v1.0)
 
 **Date:** 19 November 2026 · **Scope:** all 28 figures of the first four SYMMETRIA discussion papers and future series illustrations.  
