@@ -41,3 +41,7 @@
 **G1 = PENDING OWNER REVIEW**, **G2 = NOT STARTED**, **accepted finals = 0/28**.
 
 Recommended decision: owner inspects the side-by-side comparison, **accepts the concept or requests a cooler/more source-faithful visual revision** before any batch is produced. Do not start the remaining 27 images on the assumption this artwork defines the family. Keep both PR #2 and PR #5 unmerged/unpublished.
+
+## 4. Owner title amendment — 19 November 2026
+
+Owner subsequently clarified that **no embedded figure number, 'Figure x.x', 'Discussion Paper x', or paper numbering may appear anywhere in the artwork**. The original first pilot includes a 'Discussion Paper 1' masthead and therefore **does not pass the new artwork-title acceptance requirement** despite its earlier style approval. Retain its rich style as an **aesthetic reference only**; before any site integration, produce a **label-corrected master proof** whose image heading names only the subject (an unnumbered 'SYMMETRIA' wordmark may remain). Check all other Paper 1 generated drafts for both paper and figure identifiers and mark those with such labels as **REVISION REQUIRED**. The website's adjacent HTML captions continue to supply figure numbers. No implementation image has been replaced by this note.

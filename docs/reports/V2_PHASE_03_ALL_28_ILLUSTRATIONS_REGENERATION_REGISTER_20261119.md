@@ -1,6 +1,7 @@
 # Phase 3 — Complete 28-figure regeneration register
 
 **19 November 2026 · All 28 requested for a consistent new generator and documented settings.**
+**Owner-approved title amendment:** **NO in-image figure numbers, paper numbers, 'Discussion Paper x' or 'Figure x.x' labels anywhere.** Each new v3 figure receives its scientific subject heading (optional unnumbered SYMMETRIA brand); the HTML heading/caption owns all paper and figure numbering. Existing generated Paper 1 draft proofs containing numeric identifiers require revision and are **not approved for site insertion**.
 **Owner-approved output resolution amendment:** **1920×1080, 16:9 Full HD** for every new v3 figure. Existing source assets retain their original 3:2 dimensions until reviewed and replaced. The **28-slot source-to-new-asset mappings remain unchanged**.
 **Pinned source SHA:** `f6d8284f8399bcc73928d4c2f92ae8bac6c9a92f`; **draft PR #5 unchanged/unmerged/unpublished**. Method: [SYMMETRIA image-generation standard v1.1](../standards/SYMMETRIA_ILLUSTRATION_GENERATION_STANDARD_v1_1_20261119.md). New filenames are **reserved**, not yet created; every status below is genuinely **NOT STARTED** as of this register's creation.
 

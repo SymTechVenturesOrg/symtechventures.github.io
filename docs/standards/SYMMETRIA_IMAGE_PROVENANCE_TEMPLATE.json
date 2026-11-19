@@ -68,5 +68,18 @@
   "approved_new_caption": null,
   "originals_retained": true,
   "owner_approved_for_site_integration": false,
-  "integration_commit": null
+  "integration_commit": null,
+  "artwork_title_policy": {
+    "human_readable_subject_heading_only": true,
+    "allow_unnumbered_symmetria_brand": true,
+    "forbidden_strings_and_patterns": [
+      "Figure x.x",
+      "Fig. x.x",
+      "Discussion Paper x",
+      "PAPER n",
+      "in-image paper or figure ordinal"
+    ],
+    "paper_and_figure_numbers_external_html_only": true,
+    "internal_title_qa_status": "pending"
+  }
 }
