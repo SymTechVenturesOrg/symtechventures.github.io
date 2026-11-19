@@ -1,7 +1,8 @@
 # Phase 3 — Complete 28-figure regeneration register
 
 **19 November 2026 · All 28 requested for a consistent new generator and documented settings.**
-**Pinned source SHA:** `f6d8284f8399bcc73928d4c2f92ae8bac6c9a92f`; **draft PR #5 unchanged/unmerged/unpublished**. Method: [SYMMETRIA image-generation standard v1.0](../standards/SYMMETRIA_ILLUSTRATION_GENERATION_STANDARD_v1_20261119.md). New filenames are **reserved**, not yet created; every status below is genuinely **NOT STARTED** as of this register's creation.
+**Owner-approved output resolution amendment:** **1920×1080, 16:9 Full HD** for every new v3 figure. Existing source assets retain their original 3:2 dimensions until reviewed and replaced. The **28-slot source-to-new-asset mappings remain unchanged**.
+**Pinned source SHA:** `f6d8284f8399bcc73928d4c2f92ae8bac6c9a92f`; **draft PR #5 unchanged/unmerged/unpublished**. Method: [SYMMETRIA image-generation standard v1.1](../standards/SYMMETRIA_ILLUSTRATION_GENERATION_STANDARD_v1_1_20261119.md). New filenames are **reserved**, not yet created; every status below is genuinely **NOT STARTED** as of this register's creation.
 
 ## Canonical paper slots
 
@@ -48,7 +49,7 @@
 - P4 Fig 4.1: the owner-selected **elegance versus evidence** image, no speculative nilpotent cosmic application diagram.
 - Other mismatched figures (especially P2 1.1–3.1 and P4 3.1,6.1): create the new artwork for the actual section topic, and review new caption/alts for agreement.
 
-**Mandatory outcome:** exactly 28 image proofs, all anchored to one owner-approved golden master. Existing binary assets kept unmodified and versioned; every generated file gets a per-image record using [the template](../standards/SYMMETRIA_IMAGE_PROVENANCE_TEMPLATE.json).
+**Mandatory outcome:** exactly 28 image proofs, each exported at **1920×1080 (16:9)** and anchored to one owner-approved golden master. Existing binary assets kept unmodified and versioned; every generated file gets a per-image record using [the template](../standards/SYMMETRIA_IMAGE_PROVENANCE_TEMPLATE.json).
 
 ## Review and release gates
 
