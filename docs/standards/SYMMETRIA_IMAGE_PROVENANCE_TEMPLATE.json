@@ -1,0 +1,68 @@
+{
+  "schema": "symtech-illustration-provenance/1.0",
+  "paper": null,
+  "figure": null,
+  "figure_slot": null,
+  "original_html_sha": null,
+  "original_source_path": null,
+  "original_git_blob_sha": null,
+  "concept_source_path_after_approved_swaps": null,
+  "concept_source_blob_sha": null,
+  "generation_method": "ChatGPT built-in image generation (image_gen.text2im); use the same visual style brief and approved master reference",
+  "generation_date_utc": null,
+  "tool_interface": "image_gen.text2im",
+  "exact_underlying_model_version": "not exposed by tool",
+  "reproducible_random_seed": "not exposed by tool",
+  "request_fields": {
+    "size": "1536x1024",
+    "n": 1,
+    "transparent_background": false,
+    "animation": "none/static",
+    "is_style_transfer": "set true if transforming a supplied reference",
+    "prompt": "tool-managed; human-authored visual brief recorded separately"
+  },
+  "human_authored_prompt": null,
+  "style_master_file": null,
+  "style_master_sha256": null,
+  "reference_files_and_hashes": [],
+  "image_generation_output_file": null,
+  "image_generation_output_sha256": null,
+  "generation_id_if_exposed": null,
+  "iterations": [],
+  "math_typesetting_or_wording_rework": {
+    "needed": null,
+    "method": null,
+    "equations": null,
+    "source_file": null,
+    "qa_checked_by": null
+  },
+  "export": {
+    "format": "WebP",
+    "target_dimensions": [
+      1536,
+      1024
+    ],
+    "quality_setting": 85,
+    "icc": "sRGB",
+    "metadata_strategy": "record outside asset",
+    "sha256": null,
+    "bytes": null
+  },
+  "verification": {
+    "visual_style": "pending",
+    "scientific_claims": "pending",
+    "text_exactness": "pending",
+    "caption_alignment": "pending",
+    "desktop_zoom": "pending",
+    "mobile_zoom": "pending",
+    "alt": "pending",
+    "original_provenance": "pending",
+    "human_owner_acceptance": "pending",
+    "github_regression": "pending"
+  },
+  "approved_new_alt": null,
+  "approved_new_caption": null,
+  "originals_retained": true,
+  "owner_approved_for_site_integration": false,
+  "integration_commit": null
+}
