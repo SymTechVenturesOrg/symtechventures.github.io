@@ -9,13 +9,13 @@
 
 | Paper | Slot | Currently published figure basename | Original Git blob prefix | Subject-reference figure after approved P3 swaps | Proposed v3 filename | Generation |
 |---:|---|---|---|---|---|---|
-| 1 | Cover | `01_unified_framework_cover.webp` | `6a8aaa0edb49` | `01_unified_framework_cover.webp` | `p01_cover_illustration_v3.webp` | REVISION REQUIRED — remove embedded paper/figure numbers |
-| 1 | Fig 1.1 | `01_historical_progression_physics.webp` | `b1534d926dc3` | `01_historical_progression_physics.webp` | `p01_fig_1_1_illustration_v3.webp` | REVISION REQUIRED — remove embedded paper/figure numbers |
-| 1 | Fig 2.1 | `01_modern_physics_challenges.webp` | `cb8a575c186a` | `01_modern_physics_challenges.webp` | `p01_fig_2_1_illustration_v3.webp` | REVISION REQUIRED — remove embedded paper/figure numbers |
-| 1 | Fig 3.1 | `01_search_for_unification.webp` | `c6ca2f610595` | `01_search_for_unification.webp` | `p01_fig_3_1_illustration_v3.webp` | REVISION REQUIRED — remove embedded paper/figure numbers |
-| 1 | Fig 4.1 | `01_current_physics_limitations.webp` | `ea947f864462` | `01_current_physics_limitations.webp` | `p01_fig_4_1_illustration_v3.webp` | REVISION REQUIRED — remove embedded paper/figure numbers |
-| 1 | Fig 5.1 | `01_symmetria_perspective.webp` | `b0334e5aa0c4` | `01_symmetria_perspective.webp` | `p01_fig_5_1_illustration_v3.webp` | REVISION REQUIRED — remove embedded paper/figure numbers |
-| 1 | Fig 6.1 | `01_future_research_roadmap.webp` | `5acb11e9579b` | `01_future_research_roadmap.webp` | `p01_fig_6_1_illustration_v3.webp` | REVISION REQUIRED — remove embedded paper/figure numbers |
+| 1 | Cover | `01_unified_framework_cover.webp` | `6a8aaa0edb49` | `01_unified_framework_cover.webp` | `p01_cover_illustration_v3.webp` | PROOF C GENERATED — numbering removed; owner/science QA pending |
+| 1 | Fig 1.1 | `01_historical_progression_physics.webp` | `b1534d926dc3` | `01_historical_progression_physics.webp` | `p01_fig_1_1_illustration_v3.webp` | PROOF C GENERATED — numbering removed; owner/science QA pending |
+| 1 | Fig 2.1 | `01_modern_physics_challenges.webp` | `cb8a575c186a` | `01_modern_physics_challenges.webp` | `p01_fig_2_1_illustration_v3.webp` | PROOF C GENERATED — numbering removed; owner/science QA pending |
+| 1 | Fig 3.1 | `01_search_for_unification.webp` | `c6ca2f610595` | `01_search_for_unification.webp` | `p01_fig_3_1_illustration_v3.webp` | PROOF C GENERATED — numbering removed; owner/science QA pending |
+| 1 | Fig 4.1 | `01_current_physics_limitations.webp` | `ea947f864462` | `01_current_physics_limitations.webp` | `p01_fig_4_1_illustration_v3.webp` | PROOF C GENERATED — numbering removed; owner/science QA pending |
+| 1 | Fig 5.1 | `01_symmetria_perspective.webp` | `b0334e5aa0c4` | `01_symmetria_perspective.webp` | `p01_fig_5_1_illustration_v3.webp` | PROOF C GENERATED — numbering removed; owner/science QA pending |
+| 1 | Fig 6.1 | `01_future_research_roadmap.webp` | `5acb11e9579b` | `01_future_research_roadmap.webp` | `p01_fig_6_1_illustration_v3.webp` | PROOF C GENERATED — numbering removed; owner/science QA pending |
 | 2 | Cover | `02_symmetry_cover.webp` | `376eb4bcd148` | `02_symmetry_cover.webp` | `p02_cover_illustration_v3.webp` | NOT STARTED |
 | 2 | Fig 1.1 | `02_symmetry_nature_physics.webp` | `927a73426881` | `02_symmetry_nature_physics.webp` | `p02_fig_1_1_illustration_v3.webp` | NOT STARTED |
 | 2 | Fig 2.1 | `02_natural_symmetry_patterns.webp` | `4abb539e9763` | `02_natural_symmetry_patterns.webp` | `p02_fig_2_1_illustration_v3.webp` | NOT STARTED |
@@ -74,3 +74,11 @@ The seven Paper 1 slots have generated **draft proofs**, but **none of the seven
 | Fig 6.1 | `symmetria_a_research_programme.png` | **REVISION REQUIRED** — remove “Discussion Paper 1” and/or “Figure x.x” entirely from artwork | **A RESEARCH PROGRAMME** |
 
 **Non-negotiable title QA:** no “Figure 1.1” or other figure identifier, no “Discussion Paper 1” or other paper identifier, no equivalent numbers in mastheads, badges, subtitles or footers. The image title is the **subject only**, optionally with the *unnumbered* wordmark “SYMMETRIA”. Paper and figure identifiers are supplied by the existing HTML and the separate caption, not the PNG/WebP pixels. All seven proofs require visual/label revision before figure acceptance. No feature-branch images or source references were changed by updating this register.
+
+## Paper 1 proof C — numbering cleanup and review status (19 November 2026)
+
+All **seven** Paper 1 subject-specific AI-generated draft images now have controlled text cleanup removing **“Discussion Paper 1”, “Figure x.x” and equivalent embedded identifiers**, while preserving the top plain **SYMMETRIA** wordmark and each subject title. They were exported as Full HD (1920×1080) WebP quality 85, with PNG masters, source hashes, and a 7-up contact sheet. **The binaries are supplied to the owner as a conversation download; they are not committed to the website or production assets.**
+
+[Full proof-C provenance and review report](V2_PHASE_03_PAPER_01_SEVEN_NUMBER_FREE_PROOFS_20261119.md)
+
+**Current status:** 7/7 numbered-label removals visually checked; **0/28 final artwork images formally approved**; scientific/mathematical detail QA and owner acceptance pending. The existing implementation branch was unchanged.
