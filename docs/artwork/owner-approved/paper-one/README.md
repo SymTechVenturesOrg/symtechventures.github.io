@@ -22,7 +22,7 @@ Once GitHub binary upload and independent re-fetch are verified, **all future QA
 | 5.1 | `P1_Figure_5_1_OWNER_VISUALLY_APPROVED_1920x1080.png` | 3079962 | `945a5061c67bd52300cc4823f9664579380c85b36363daadcc7ef88496687b1c` |
 | 6.1 | `P1_Figure_6_1_OWNER_VISUALLY_APPROVED_1920x1080.png` | 3073681 | `a1c9c939c6195a97106a3e4c8a49398a48b27baf108a8ef7b21bdc0ed09e896f` |
 
-The project figure-production standard remains at [`main/docs/reports/V2_PHASE_03_SYMMETRIA_LOCKED_CINEMATIC_ARTWORK_GATE_20261120.md`](../../reports/V2_PHASE_03_SYMMETRIA_LOCKED_CINEMATIC_ARTWORK_GATE_20261120.md). The article source remains `articles/symmetria/symmetria-paper-01.html` on existing website implementation PR #5.
+The project figure-production standard remains at [`main/docs/reports/V2_PHASE_03_SYMMETRIA_LOCKED_CINEMATIC_ARTWORK_GATE_20261120.md`](../../../reports/V2_PHASE_03_SYMMETRIA_LOCKED_CINEMATIC_ARTWORK_GATE_20261120.md). The article source remains `articles/symmetria/symmetria-paper-01.html` on existing website implementation PR #5.
 
 ### Hard boundaries
 
