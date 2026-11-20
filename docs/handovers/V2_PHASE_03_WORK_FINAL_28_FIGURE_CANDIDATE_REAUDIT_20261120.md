@@ -1,5 +1,8 @@
 # SYMMETRIA Phase 3 — Work Handover: Independent Re-Audit of 28 Candidate Figures
 
+> **WITHDRAWN / SUPERSEDED — 20 November 2026. DO NOT EXECUTE THIS HANDOVER OR INTEGRATE THE ATTACHED 28-IMAGE PACKAGE.** Owner rejected the image set for failure to match the original Papers One/Two fully AI-generated cinematic style. The mandatory replacement method and visual owner-approval gate are in [Locked Cinematic AI-Illustration Style](../reports/V2_PHASE_03_SYMMETRIA_LOCKED_CINEMATIC_ARTWORK_GATE_20261120.md). The numerical audit findings may inform new content QA, but the old images are not current approval candidates.
+
+
 **Date:** 20 November 2026 (Europe/London)  
 **Scope:** ONE finite **read-only** scientific, visual and editorial re-audit of the complete 28-image candidate collection.  
 **Recommended execution:** **Luna High · Standard Speed** (when available); follow DTSU v1.1 throughout and finish with a **COPY TO CHAT** handback.  
