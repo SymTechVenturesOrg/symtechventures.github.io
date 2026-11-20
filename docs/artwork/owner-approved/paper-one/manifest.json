@@ -1,0 +1,96 @@
+{
+  "set_id": "SYMMETRIA-PAPER-ONE-SEVEN-OWNER-VISUAL-APPROVALS-20261120",
+  "status": "PENDING_GITHUB_BINARY_COMMIT",
+  "status_note": "This GitHub branch initially contains manifests and a Work handover only; source image originals have not been uploaded to these repo paths.",
+  "expected_count": 7,
+  "source_provenance": "Seven owner-visually-approved Chat-generated PNG originals, verified locally against pre-existing QA SHA-256 manifest",
+  "temporary_transfer_source": "https://chatgpt.com/space/page_7df6e2e9901081918b1f2a29309dd7d4",
+  "target_branch": "docs/symmetria-paper-one-seven-approved-binaries-20261120",
+  "target_folder": "docs/artwork/owner-approved/paper-one",
+  "dimensions": {
+    "width": 1920,
+    "height": 1080
+  },
+  "owner_approval": "VISUAL_ONLY",
+  "science_editorial_qa": "PENDING",
+  "website_integration": "NOT_AUTHORISED",
+  "entries": [
+    {
+      "slot": "Cover",
+      "path": "docs/artwork/owner-approved/paper-one/P1_Cover_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "filename": "P1_Cover_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "bytes": 3089586,
+      "sha256": "3eeba0f6bfcefd2a63b5867cad0442ac9a6d356526cc1fed31e057d3de9e95a8",
+      "github_binary_present": false,
+      "github_readback_verified": false,
+      "owner_visual_approved": true,
+      "scientific_qa_status": "PENDING"
+    },
+    {
+      "slot": "1.1",
+      "path": "docs/artwork/owner-approved/paper-one/P1_Figure_1_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "filename": "P1_Figure_1_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "bytes": 2972672,
+      "sha256": "4a16ac9219d3fd46be7291b35d033c19508d8be85f4417510e63bc4373718675",
+      "github_binary_present": false,
+      "github_readback_verified": false,
+      "owner_visual_approved": true,
+      "scientific_qa_status": "PENDING"
+    },
+    {
+      "slot": "2.1",
+      "path": "docs/artwork/owner-approved/paper-one/P1_Figure_2_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "filename": "P1_Figure_2_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "bytes": 3062802,
+      "sha256": "446af968d82601de428bf719aef9c6a18c837d6b91626955edc04e14613f58e4",
+      "github_binary_present": false,
+      "github_readback_verified": false,
+      "owner_visual_approved": true,
+      "scientific_qa_status": "PENDING"
+    },
+    {
+      "slot": "3.1",
+      "path": "docs/artwork/owner-approved/paper-one/P1_Figure_3_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "filename": "P1_Figure_3_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "bytes": 3384953,
+      "sha256": "62af2ce4790324056dff019c9d1617bd7c9d734b9a9201e40131a0329d1bc317",
+      "github_binary_present": false,
+      "github_readback_verified": false,
+      "owner_visual_approved": true,
+      "scientific_qa_status": "PENDING"
+    },
+    {
+      "slot": "4.1",
+      "path": "docs/artwork/owner-approved/paper-one/P1_Figure_4_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "filename": "P1_Figure_4_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "bytes": 3244273,
+      "sha256": "788e68dc507c1e408428380b86816e594301384ed29331a3ab9aa9c29cdb9238",
+      "github_binary_present": false,
+      "github_readback_verified": false,
+      "owner_visual_approved": true,
+      "scientific_qa_status": "PENDING"
+    },
+    {
+      "slot": "5.1",
+      "path": "docs/artwork/owner-approved/paper-one/P1_Figure_5_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "filename": "P1_Figure_5_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "bytes": 3079962,
+      "sha256": "945a5061c67bd52300cc4823f9664579380c85b36363daadcc7ef88496687b1c",
+      "github_binary_present": false,
+      "github_readback_verified": false,
+      "owner_visual_approved": true,
+      "scientific_qa_status": "PENDING"
+    },
+    {
+      "slot": "6.1",
+      "path": "docs/artwork/owner-approved/paper-one/P1_Figure_6_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "filename": "P1_Figure_6_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "bytes": 3073681,
+      "sha256": "a1c9c939c6195a97106a3e4c8a49398a48b27baf108a8ef7b21bdc0ed09e896f",
+      "github_binary_present": false,
+      "github_readback_verified": false,
+      "owner_visual_approved": true,
+      "scientific_qa_status": "PENDING"
+    }
+  ]
+}
