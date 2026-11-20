@@ -1,5 +1,8 @@
 # SYMMETRIA — Phase 3 Work Handover: Independent Scientific/Editorial QA of Seven Visually Approved Paper One Illustrations
 
+> **SUPERSEDED FOR FILE TRANSPORT — 20 November 2026.** The owner has explicitly rejected downloading and reattaching a ZIP between Chat and Work. **Do NOT follow this handover's “Required ZIP attachment” step.** The current handover is [GitHub-native original PNG import and independent science QA](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/docs/symmetria-paper-one-seven-approved-binaries-20261120/docs/handovers/V2_PHASE_03_WORK_GITHUB_NATIVE_PAPER_ONE_IMAGE_IMPORT_AND_SCIENCE_QA_20261120.md) on draft [PR #9](https://github.com/SymTechVenturesOrg/symtechventures.github.io/pull/9). This older document's seven-figure **scientific rubric remains valid**, but the new workflow must verify original PNG bytes inside GitHub first and audit from a pinned GitHub commit; no owner manual ZIP hand-off.
+
+
 **Date:** 20 November 2026 (Europe/London).
 **Status:** READY FOR ONE READ-ONLY INDEPENDENT AUDIT. **7/7 visuals owner-approved; scientific audit and site integration NOT complete.**
 **Model (owner selects before Work):** **GPT-6 Luna (Work)**.
