@@ -6,6 +6,12 @@
 **Implementation branch / draft:** `feature/v2-space-research-website` · [PR #5](https://github.com/SymTechVenturesOrg/symtechventures.github.io/pull/5)  
 **Replaces as the next-delivery sequence:** prior proposal to regenerate all 46 images immediately, and the premature assumption that all 28 discussion-paper illustrations require replacement. The original [nine-stage website programme](WEBSITE_V2_WORKPLAN.md) and [Stage 9 release safeguards](V2_STAGE_09_OWNER_RELEASE_CHECKLIST.md) remain in force where consistent.
 
+## Owner image-production override — 20 November 2026 (mandatory for new figure drafts)
+
+**Later owner instructions supersede the earlier selective-only figure-commissioning assumption for current artwork preparation, but NOT the historical audit, source preservation, original paper content protection, or release gates.** The owner has directed preparation of **seven individually reviewed candidate illustrations for each of the four online discussion papers** (28 slots), in the approved cinematic Paper One style. Final figures are **EXACTLY 1920 × 1080 pixels (16:9)**, with one standalone image per figure, a useful **subject title/subtitle and explanatory physics diagrams**, but **NO “Discussion Paper X”, “Paper Three”, “Figure x.x”, or any paper/figure numbering inside the artwork**. Paper/figure identifiers and captions belong in the surrounding HTML below each image. No scientist portraits; no decorative or unchecked equations; distinguish established physics from Rowlands-specific proposals and exploratory SYMMETRIA hypotheses.
+
+**Authoritative detailed specification and per-slot quality gates:** [SYMMETRIA 28-Figure Production Standard — 20 November 2026](reports/V2_PHASE_03_SYMMETRIA_FIGURE_PRODUCTION_STANDARD_20261120.md). Artwork remains **DRAFT** until full-resolution dimensions, scientific meaning, figure-caption correspondence and owner approval all pass; do not silently treat any older draft as compliant. Keep **original 28 WebPs for rollback**, and do not alter implementation PR #5 or deploy merely because this documentation was updated.
+
 ## Owner decisions that determine this workplan
 
 1. **First: get the revised website layout correct and approved.**
