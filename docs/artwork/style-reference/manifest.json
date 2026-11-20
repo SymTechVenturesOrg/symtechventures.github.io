@@ -1,12 +1,12 @@
 {
   "reference_set_id": "SYMMETRIA-OWNER-CINEMATIC-20261120",
-  "status": "UPLOADED_GIT_BLOB_IDENTITIES_MATCH_DIRECT_SHA256_READBACK_PENDING",
+  "status": "DIRECT_GITHUB_SHA256_VERIFIED",
   "reference_role": "STYLE ONLY—NOT PHYSICS APPROVAL",
   "native_width": 1672,
   "native_height": 941,
   "required_new_figure_width": 1920,
   "required_new_figure_height": 1080,
-  "source_check": "VERIFY SHA-256 BEFORE CLAIMING GITHUB ASSET COMMIT",
+  "source_check": "DIRECT_GITHUB_SHA256_VERIFIED_FROM_BINARY_GIT_CHECKOUT",
   "files": [
     {
       "reference_file": "P1_Nilpotent_Operator_STYLE_ONLY.png",
@@ -21,7 +21,9 @@
       "github_blob_sha1": "51831f2a286b7f7dc96524aeb15ca1855c804d52",
       "github_blob_sha1_match_to_original": true,
       "github_uploaded": true,
-      "github_direct_sha256_readback": "PENDING"
+      "github_direct_sha256_readback": "PASS",
+      "github_readback_commit": "b5dc7c60aa7e0644acd2d6dc351f0e8165be2c98",
+      "github_readback_method": "git show from GitHub checkout"
     },
     {
       "reference_file": "P2_Noether_Conservation_STYLE_ONLY.png",
@@ -36,7 +38,9 @@
       "github_blob_sha1": "19fca380f96c8e9ef4bd4a37d396b22658019631",
       "github_blob_sha1_match_to_original": true,
       "github_uploaded": true,
-      "github_direct_sha256_readback": "PENDING"
+      "github_direct_sha256_readback": "PASS",
+      "github_readback_commit": "b5dc7c60aa7e0644acd2d6dc351f0e8165be2c98",
+      "github_readback_method": "git show from GitHub checkout"
     },
     {
       "reference_file": "P2_Broken_Symmetry_STYLE_ONLY.png",
@@ -51,7 +55,9 @@
       "github_blob_sha1": "9064d2a8dcdea6c5256dac690021adcf8e89b0a7",
       "github_blob_sha1_match_to_original": true,
       "github_uploaded": true,
-      "github_direct_sha256_readback": "PENDING"
+      "github_direct_sha256_readback": "PASS",
+      "github_readback_commit": "b5dc7c60aa7e0644acd2d6dc351f0e8165be2c98",
+      "github_readback_method": "git show from GitHub checkout"
     }
   ],
   "verification": {
@@ -61,9 +67,13 @@
     "source_git_blob_sha1": "PASS_ALL_3",
     "github_file_exists": "PASS_ALL_3",
     "github_git_blob_sha1": "PASS_ALL_3",
-    "github_binary_download": "BLOCKED_BY_CONNECTOR",
-    "direct_github_bytes_sha256": "NOT_VERIFIED",
-    "meaning": "Original local bytes hashed SHA-256 and Git's blob-object SHA-1; GitHub returned matching content-object hashes but not retrievable binary. Do not claim direct GitHub SHA-256 re-download.",
-    "independent_validation": "GitHub blob IDs for each path independently confirmed to equal Git blob SHA-1 computed from the attached originals."
-  }
+    "github_binary_download": "PASS_BINARY_GIT_CHECKOUT",
+    "direct_github_bytes_sha256": "PASS_ALL_3",
+    "meaning": "SHA-256 was independently recomputed from each PNG byte stream retrieved from GitHub at the pinned commit using binary-capable git checkout and git show. Counts, PNG signatures, dimensions and Git blob IDs also match.",
+    "independent_validation": "GitHub checkout bytes independently hashed; expected source manifest hashes and Git object IDs match for all three files.",
+    "readback_commit": "b5dc7c60aa7e0644acd2d6dc351f0e8165be2c98",
+    "readback_branch": "docs/symmetria-style-reference-assets-20261120"
+  },
+  "readback_commit": "b5dc7c60aa7e0644acd2d6dc351f0e8165be2c98",
+  "readback_branch": "docs/symmetria-style-reference-assets-20261120"
 }

@@ -22,3 +22,8 @@
 6. Provide a concise **COPY TO CHAT** report: exact source and resulting GitHub SHAs, 3/3 byte and size checks, branch, paths, remaining approvals. Owner reviews and separately authorises a PR/merge. No website code, paper HTML or published images may change.
 
 **Hard stop:** three verified binary reference files and updated manifest status with handback. **Do not merge any PR**, deploy or initiate image generation. The long-term cinematic production standard is in [draft PR #6](https://github.com/SymTechVenturesOrg/symtechventures.github.io/pull/6); no hidden substitution is acceptable.
+
+
+## Follow-on verification erratum — 20 November 2026
+
+This is a later, separate verification pass; the original upload handover and its contemporaneous limitation report remain an accurate record of that earlier attempt. The three already-committed PNGs were subsequently retrieved from GitHub using a binary-capable Git checkout pinned to commit `b5dc7c60aa7e0644acd2d6dc351f0e8165be2c98` on `docs/symmetria-style-reference-assets-20261120`. The independently recomputed byte counts, PNG signatures, 1672 × 941 dimensions and SHA-256 values match `manifest.json` for all three files. Direct GitHub byte readback is therefore **PASS (3/3)**. See `docs/reports/V2_PHASE_03_WORK_CANONICAL_ANCHOR_BINARY_VERIFY_AND_PR_READINESS_20261120.md` for exact commands and evidence. No image bytes were changed in this follow-on pass.
