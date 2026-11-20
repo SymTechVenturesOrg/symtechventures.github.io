@@ -40,3 +40,8 @@ Cinematic AI-rendered navy/cyan/gold look, gold serif heading, volumetric scient
 | Website PR #5 changes / merge / deployment | NONE |
 
 **Next:** owner visual review of this exact PNG, then independent science QA and only later a controlled integration handover. Do not count Figure 4.1 as owner-approved without explicit confirmation.
+
+
+## Subsequent owner visual approval — 20 November 2026
+
+After being shown the Figure 4.1 standalone artwork, the owner explicitly replied **“Approved, continue.”** This records **owner visual acceptance of Figure 4.1**, and authorises continuation of figure production to 5.1. It does **not** mean scientific QA or mobile accessibility is complete, nor does it authorise changes to website PR #5 or deployment. Historical 'PENDING' lines above represent the state at initial image QA; this later statement supersedes them only for owner visual acceptance.
