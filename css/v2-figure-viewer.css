@@ -1,0 +1,27 @@
+:root{color-scheme:dark;--bg:#07101e;--text:#eaf1fa;--cyan:#a7e5fa;--line:#35516a;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;background:var(--bg);color:var(--text);overflow:hidden}
+a{color:var(--cyan)}
+button,a{touch-action:manipulation}
+button:focus-visible,a:focus-visible,.image-stage:focus-visible{outline:3px solid #f4c88b;outline-offset:2px}
+.figure-viewer-shell{height:100vh;height:100dvh;min-height:0;display:flex;flex-direction:column}
+.figure-viewer-header{z-index:2;flex:none;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 20px;padding:10px clamp(12px,2vw,24px);border-bottom:1px solid var(--line);background:#0b1d2d}
+.viewer-title{min-width:0;flex:1 1 240px}
+.viewer-kicker{display:block;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:#8fb9d0;font-weight:700}
+.viewer-title h1{margin:2px 0 0;font-size:clamp(.95rem,1.4vw,1.22rem);line-height:1.3;font-weight:680;overflow-wrap:anywhere}
+.viewer-controls{display:flex;align-items:center;flex-wrap:wrap;gap:7px}
+.viewer-controls button,.viewer-controls a{font:700 .91rem/1.2 Inter,ui-sans-serif,system-ui,sans-serif;display:inline-flex;justify-content:center;align-items:center;min-height:40px;min-width:43px;padding:8px 12px;background:#172b41;border:1px solid #54758d;color:#e5f2fc;border-radius:5px;text-decoration:none;cursor:pointer}
+.viewer-controls button:hover,.viewer-controls a:hover{background:#275273}
+.viewer-controls button:disabled{opacity:.45;cursor:not-allowed}
+.viewer-controls output{font:750 .84rem Inter,ui-sans-serif,system-ui,sans-serif;min-width:50px;text-align:center;color:#f2dbb9}
+.image-stage{position:relative;flex:1 1 auto;min-height:120px;overflow:hidden;touch-action:none;overscroll-behavior:contain;cursor:grab;background:radial-gradient(ellipse at center,#102338 0%,#040a12 76%)}
+.image-stage.is-grabbing{cursor:grabbing}
+.image-stage img{position:absolute;left:50%;top:50%;max-width:none;max-height:none;pointer-events:none;user-select:none;-webkit-user-drag:none;transform-origin:top left;will-change:transform}
+.viewer-help{flex:none;display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 20px;padding:7px clamp(12px,2vw,24px);background:#0b1d2d;border-top:1px solid var(--line);font-size:.72rem;color:#afc7d9;line-height:1.35}
+.viewer-error{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(90%,650px);padding:30px 20px;text-align:center;border:1px solid #54758d;border-radius:9px;background:#12263c;color:#fff}
+@media(max-width:600px){.figure-viewer-header{padding:7px 10px;gap:5px}.viewer-title{flex-basis:100%}.viewer-kicker{font-size:.6rem}.viewer-title h1{font-size:.92rem}.viewer-controls{gap:5px;width:100%}.viewer-controls button,.viewer-controls a{min-height:39px;min-width:40px;padding:7px 9px;font-size:.82rem}.viewer-controls output{min-width:44px}.viewer-help{padding:6px 10px;gap:3px;font-size:.67rem}}
+@media(max-height:450px){.figure-viewer-header{padding-block:4px}.viewer-title{flex-basis:180px}.viewer-help{padding-block:4px}.viewer-controls button,.viewer-controls a{min-height:34px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+/* Honour hidden on controls even when component CSS sets display:inline-flex. */
+[hidden]{display:none!important}

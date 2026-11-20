@@ -1,0 +1,254 @@
+/* SymTech Ventures v2: presentation-only styling for preserved SYMMETRIA papers.
+   The four paper body/figure blocks are intentionally not rewritten. */
+body.symmetria-article-page{
+  background:#07101e;
+  color:#eaf1fa;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  line-height:1.75;
+}
+.symmetria-article-page .site-header{
+  position:relative;
+  background:#091525ee;
+  z-index:10;
+}
+.symmetria-article-page .article-body{
+  background:linear-gradient(180deg,#0b192a,#07101e 400px);
+  padding:clamp(2.3rem,6vw,4.8rem) 0 clamp(3rem,7vw,5rem);
+}
+.symmetria-article-page .article-body>.wrap{
+  width:min(calc(100% - 44px),940px);
+  max-width:940px;
+  margin-inline:auto;
+}
+.symmetria-article-page .article-body .panel.paper-content{
+  display:block;
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+  border-radius:0!important;
+  padding:0!important;
+  color:#d8e4f0;
+  max-width:none;
+}
+.symmetria-article-page .paper-content .paper-document-header{
+  text-align:center;
+  border-bottom:1px solid #294158;
+  padding:0 0 2.1rem;
+  margin:0 0 2.1rem;
+}
+.symmetria-article-page .paper-content .paper-document-header h1{
+  color:#f0f5fb;
+  font:400 clamp(2.25rem,5.3vw,4rem)/1.12 Georgia,"Times New Roman",serif;
+  letter-spacing:-.04em;
+  text-align:center;
+  margin:0 0 1.05rem;
+}
+.symmetria-article-page .paper-content .doc-series,
+.symmetria-article-page .paper-content .doc-author,
+.symmetria-article-page .paper-content .doc-date{
+  text-align:center!important;
+  color:#a9c3d5!important;
+  font-size:.85rem;
+  margin:.35rem auto;
+}
+.symmetria-article-page .paper-content h2,
+.symmetria-article-page .paper-content h3,
+.symmetria-article-page .paper-content h4{
+  color:#f0f4f8;
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:400;
+  letter-spacing:-.025em;
+  line-height:1.25;
+  scroll-margin-top:2rem;
+}
+.symmetria-article-page .paper-content h2{
+  margin:2.7rem 0 1rem;
+  font-size:clamp(1.55rem,3vw,2.15rem);
+  text-align:left!important;
+}
+.symmetria-article-page .paper-content h3{font-size:1.35rem;margin:2rem 0 .8rem}
+.symmetria-article-page .paper-content p,
+.symmetria-article-page .paper-content li{
+  color:#c9d6e3;
+  text-align:justify!important;
+  text-justify:inter-word;
+  hyphens:auto;
+  overflow-wrap:break-word;
+  max-width:100%;
+}
+.symmetria-article-page .paper-content a{
+  color:#9bdef5;
+  text-underline-offset:3px;
+}
+.symmetria-article-page .paper-content img,
+.symmetria-article-page .paper-content .article-image{
+  display:block;
+  max-width:100%;
+  height:auto;
+  margin:1.7rem auto 1.1rem;
+  border-radius:8px;
+  border:1px solid #2b435b;
+}
+.symmetria-article-page .paper-content .figure-caption{
+  color:#9eb4c7!important;
+  font-size:.85rem;
+  font-style:italic;
+  line-height:1.6;
+  text-align:justify!important;
+  margin:.25rem 0 1.7rem;
+}
+.symmetria-article-page .paper-content table{
+  border-collapse:collapse;
+  width:100%;
+  display:block;
+  overflow-x:auto;
+  margin:1.5rem 0;
+}
+.symmetria-article-page .paper-content th,
+.symmetria-article-page .paper-content td{
+  border:1px solid #385168;
+  padding:.7rem;
+  background:#0b1e2d;
+  color:#d8e4f0;
+}
+.symmetria-article-page .paper-content blockquote{
+  border-left:3px solid #8cbed6;
+  background:#10273a;
+  margin:1.6rem 0;
+  padding:1rem 1.4rem;
+}
+.symmetria-article-page .paper-content hr{
+  border:0;
+  border-top:1px solid #2a4359;
+  margin:2.2rem 0;
+}
+.symmetria-article-page .prelude-caution,
+.symmetria-article-page .parent-nav-section{
+  background:#0a1828;
+  padding:2rem 0;
+  border-top:1px solid #294157;
+}
+.symmetria-article-page .prelude-caution>.wrap,
+.symmetria-article-page .parent-nav-section>.wrap{
+  width:min(calc(100% - 44px),940px);
+  margin-inline:auto;
+}
+.symmetria-article-page .prelude-caution .notice{
+  border:1px solid #29465c;
+  background:linear-gradient(150deg,#12283b,#0a1c2d);
+  border-radius:8px;
+  padding:clamp(1.2rem,3vw,2rem);
+  box-shadow:none;
+}
+.symmetria-article-page .prelude-caution h2{
+  font:400 clamp(1.5rem,3vw,2.1rem)/1.2 Georgia,serif;
+  color:#eef4fa;
+}
+.symmetria-article-page .prelude-caution p{
+  color:#b6c8d8;
+  text-align:justify;
+}
+.symmetria-article-page .parent-nav-panel{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.symmetria-article-page .site-footer p{
+  text-align:justify;
+}
+.symmetria-article-page .skip-to-content{
+  position:absolute;
+  z-index:100;
+  top:1rem;
+  left:-10000px;
+  padding:.75rem 1rem;
+  background:#fff;
+  color:#07101e;
+  border:2px solid #07101e;
+}
+.symmetria-article-page .skip-to-content:focus{
+  left:1rem;
+  outline:3px solid #efc38b;
+  outline-offset:3px;
+}
+@media(max-width:740px){
+  .symmetria-article-page .article-body>.wrap,
+  .symmetria-article-page .prelude-caution>.wrap,
+  .symmetria-article-page .parent-nav-section>.wrap{
+    width:min(calc(100% - 34px),940px);
+  }
+  .symmetria-article-page .article-body{padding:2.2rem 0 3rem}
+  .symmetria-article-page .paper-content .paper-document-header h1{font-size:clamp(2rem,9vw,3.1rem)}
+  .symmetria-article-page .paper-content p,
+  .symmetria-article-page .paper-content li{line-height:1.75}
+}
+.symmetria-article-page .paper-content table:focus-visible{outline:3px solid #f4c88b;outline-offset:3px}
+
+/* Restore the current six-link article header against the old AetherOS hard-reset rules. */
+body.symmetria-article-page > header.site-header{display:block!important}
+body.symmetria-article-page{padding-top:0!important;overflow-x:clip!important;overflow-y:visible!important}
+
+/* sticky current-generation paper header must override legacy article layout rules. */
+body.symmetria-article-page > header.site-header{position:sticky;top:0;z-index:100;background:#071522ed}
+
+
+/* Widescreen SYMMETRIA reading layout: use 94% of available width at 100% zoom. */
+@media (min-width:1200px){
+  .symmetria-article-page .article-body>.wrap,
+  .symmetria-article-page .prelude-caution>.wrap,
+  .symmetria-article-page .parent-nav-section>.wrap{
+    width:94vw;
+    max-width:none;
+  }
+  .symmetria-article-page .article-body .panel.paper-content{width:100%;max-width:none}
+  .symmetria-article-page .paper-content p,
+  .symmetria-article-page .paper-content li{
+    font-size:clamp(1.1rem,1.13vw,1.45rem);
+    line-height:1.82;
+  }
+}
+
+/* Widescreen scientific figures scale with their parent article, not just their native pixel dimensions. */
+@media (min-width:1200px){
+  .symmetria-article-page .paper-content img{
+    display:block;
+    width:100%;
+    max-width:100%;
+    height:auto;
+  }
+}
+
+
+/* Image-only new-tab links: browser-native zoom and mobile landscape work without a site lightbox. */
+.symmetria-article-page .paper-content .paper-figure-open{
+  display:block;
+  max-width:100%;
+  margin:1.7rem 0 1.2rem;
+  color:#a9e4ff;
+  text-decoration:none;
+  cursor:zoom-in;
+  border-radius:8px;
+}
+.symmetria-article-page .paper-content .paper-figure-open img{
+  margin:0 auto;
+}
+.symmetria-article-page .paper-content .paper-figure-open-label{
+  display:block;
+  padding:.45rem .25rem .15rem;
+  font:700 .86rem/1.45 Inter,ui-sans-serif,system-ui,sans-serif;
+  text-align:right;
+  color:#a9e4ff;
+  text-decoration:underline;
+  text-underline-offset:3px;
+  letter-spacing:.01em;
+}
+.symmetria-article-page .paper-content .paper-figure-open:hover img{
+  border-color:#9bdcf4;
+}
+.symmetria-article-page .paper-content .paper-figure-open:hover .paper-figure-open-label{
+  color:#fff;
+}
+.symmetria-article-page .paper-content .paper-figure-open:focus-visible{
+  outline:3px solid #f4c88b;
+  outline-offset:5px;
+}

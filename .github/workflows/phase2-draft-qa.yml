@@ -1,0 +1,276 @@
+name: Phase 2 draft-only website QA
+
+on:
+  push:
+    branches:
+      - feature/v2-space-research-website
+    paths:
+      - index.html
+      - css/**
+      - js/**
+      - images/heroes/v2_earthrise_fullbleed.webp
+      - images/logos/symtech_earthrise_emblem.webp
+      - .github/workflows/phase2-draft-qa.yml
+      - docs/reports/scripts/**
+      - articles/symmetria/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Checkout exact feature branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Playwright and headless Chromium
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+          CHROME_PATH=$(python -c 'from playwright.sync_api import sync_playwright; p=sync_playwright().start(); print(p.chromium.executable_path); p.stop()')
+          sudo ln -sf "$CHROME_PATH" /usr/bin/chromium
+      - name: Run full exact-branch website regression
+        run: |
+          set -euo pipefail
+          mkdir -p phase2-qa-artifacts
+          python -u docs/reports/scripts/v2_stage8_qa.py 2>&1 | tee phase2-qa-artifacts/full-regression.log
+      - name: Run detailed full-bleed and navigation breakpoint QA
+        run: |
+          set -euo pipefail
+          python - <<'PY' | tee phase2-qa-artifacts/phase2-breakpoints.json
+          import json, threading
+          from pathlib import Path
+          from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
+          from functools import partial
+          from playwright.sync_api import sync_playwright
+          root=Path('.').resolve()
+          server=ThreadingHTTPServer(('127.0.0.1',0), partial(SimpleHTTPRequestHandler,directory=str(root)))
+          threading.Thread(target=server.serve_forever,daemon=True).start()
+          url=f'http://127.0.0.1:{server.server_port}/'
+          output=root/'phase2-qa-artifacts'
+          widths=[320,390,768,919,920,960,1080,1280,1440]
+          results=[]
+          with sync_playwright() as p:
+            browser=p.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox'])
+            for w in widths:
+              page=browser.new_page(viewport={'width':w,'height':844 if w<500 else 900},reduced_motion='reduce')
+              response=page.goto(url,wait_until='networkidle')
+              page.screenshot(path=str(output/f'home-{w}.png'),full_page=False)
+              data=page.evaluate("""() => {
+                const d=document.documentElement,nav=document.querySelector('.main-nav'),
+                mob=document.querySelector('.mobile-nav'),hero=document.querySelector('.hero'),
+                b= getComputedStyle(document.body,'::before');
+                return {client:d.clientWidth,scroll:d.scrollWidth,
+                  nav:getComputedStyle(nav).display, mobile:getComputedStyle(mob).display,
+                  links:nav.querySelectorAll('a').length,
+                  heroImage:getComputedStyle(hero).backgroundImage,
+                  bodyImage:b.backgroundImage,
+                  heroText:document.querySelector('.hero h1').textContent.trim(),
+                  imageLoad: performance.getEntriesByType('resource').some(x=>x.name.includes('v2_earthrise_fullbleed.webp')),
+                  headerHeight:document.querySelector('.site-header').getBoundingClientRect().height
+                };
+              }""")
+              data.update({'width':w,'status':response.status,'overflow':data['scroll']>data['client']})
+              assert not data['overflow'],(w,data)
+              assert data['links']==6 and data['status']==200,data
+              assert 'v2_earthrise_fullbleed.webp' in data['bodyImage'],(w,data)
+              assert data['imageLoad'],(w,data)
+              if w<=919: assert data['nav']=='none' and data['mobile']!='none',data
+              if w>=920: assert data['nav']!='none' and data['mobile']=='none',data
+              results.append(data)
+              page.close()
+            browser.close()
+          server.shutdown()
+          print(json.dumps({'commit':str(__import__('subprocess').check_output(['git','rev-parse','HEAD']).decode().strip()),'viewports':results},indent=2))
+          PY
+      - name: Verify emblem and programme arrows across pages and widths
+        run: |
+          set -euo pipefail
+          python - <<'PY' | tee phase2-qa-artifacts/brand-arrow-check.json
+          import json,threading
+          from pathlib import Path
+          from functools import partial
+          from http.server import SimpleHTTPRequestHandler,ThreadingHTTPServer
+          from playwright.sync_api import sync_playwright
+          root=Path('.').resolve()
+          server=ThreadingHTTPServer(('127.0.0.1',0),partial(SimpleHTTPRequestHandler,directory=str(root)))
+          threading.Thread(target=server.serve_forever,daemon=True).start()
+          origin=f'http://127.0.0.1:{server.server_port}'
+          checked=[]
+          with sync_playwright() as p:
+            browser=p.chromium.launch(headless=True,executable_path='/usr/bin/chromium',args=['--no-sandbox'])
+            for w in [320,390,768,920,1440]:
+              for route in ['/','/pages/research.html','/pages/about.html','/articles/symmetria/symmetria-paper-01.html']:
+                page=browser.new_page(viewport={'width':w,'height':844 if w<500 else 900})
+                response=page.goto(origin+route,wait_until='networkidle')
+                assert response.status==200,(route,w,response.status)
+                emblem=page.locator('.brand-emblem')
+                assert emblem.count()==1,(route,w,'brand missing')
+                style=emblem.evaluate('(el)=>({bg:getComputedStyle(el).backgroundImage,w:el.getBoundingClientRect().width,h:el.getBoundingClientRect().height,font:getComputedStyle(el).fontSize,display:getComputedStyle(el).display})')
+                assert 'symtech_earthrise_emblem.webp' in style['bg'] and style['w']>=30 and style['h']>=30 and style['font']=='0px',(route,w,style)
+                assert page.evaluate("performance.getEntriesByType('resource').some(r=>r.name.includes('symtech_earthrise_emblem.webp'))"),(route,w,'emblem not requested')
+                if route=='/':
+                  links=page.locator('.programme-card .card-footer a')
+                  assert links.count()==4,(w,'card links')
+                  assert links.all_text_contents()==['Read overview →','See pathway →','Read overview →','Read overview →'],(w,links.all_text_contents())
+                  assert links.evaluate_all("(els)=>els.every(a=>getComputedStyle(a).whiteSpace==='nowrap' && a.getBoundingClientRect().right<=a.closest('.programme-card').getBoundingClientRect().right+1)"),(w,'card link clipped')
+                assert page.evaluate("document.documentElement.scrollWidth===document.documentElement.clientWidth"),(route,w,'horizontal overflow')
+                checked.append([route,w])
+                page.close()
+            browser.close()
+          server.shutdown()
+          print(json.dumps({'status':'PASS','route_width_checks':len(checked),'routes_and_widths':checked}))
+          PY
+      - name: Verify sticky navigation and wide-desktop 16:9 layout
+        run: |
+          set -euo pipefail
+          python - <<'PY' | tee phase2-qa-artifacts/sticky-and-16by9-check.json
+          import json,threading
+          from pathlib import Path
+          from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
+          from functools import partial
+          from playwright.sync_api import sync_playwright
+          root=Path('.').resolve()
+          srv=ThreadingHTTPServer(('127.0.0.1',0),partial(SimpleHTTPRequestHandler,directory=str(root)))
+          threading.Thread(target=srv.serve_forever,daemon=True).start()
+          origin=f'http://127.0.0.1:{srv.server_port}'
+          routes=['/','/pages/research.html','/pages/bridgepoint.html','/pages/discussion-series.html','/pages/about.html','/articles/symmetria/symmetria-paper-01.html','/articles/symmetria/symmetria-paper-02.html']
+          sizes=[(1920,1080),(2560,1440),(1366,768),(390,844),(320,720)]
+          output=root/'phase2-qa-artifacts'
+          tested=[]
+          with sync_playwright() as p:
+            browser=p.chromium.launch(headless=True,executable_path='/usr/bin/chromium',args=['--no-sandbox'])
+            for w,h in sizes:
+              for route in routes:
+                page=browser.new_page(viewport={'width':w,'height':h},device_scale_factor=1,reduced_motion='reduce')
+                response=page.goto(origin+route,wait_until='networkidle')
+                assert response.status==200,(route,w,response.status)
+                info=page.evaluate("""() => {
+                  const head=document.querySelector('header.site-header');
+                  const rect=head.getBoundingClientRect();
+                  const doc=document.documentElement;
+                  return {position:getComputedStyle(head).position,top:rect.top,
+                    height:rect.height,headerWidth:rect.width,
+                    viewport:doc.clientWidth,scrollWidth:doc.scrollWidth,
+                    bodyHeight:doc.scrollHeight,
+                    hero:document.querySelector('.hero')?.getBoundingClientRect().height || null,
+                    contentWidth:document.querySelector('.container')?.getBoundingClientRect().width || null};
+                }""")
+                assert info['position']=='sticky' and abs(info['top'])<=2,(route,w,'initial sticky position',info)
+                assert info['scrollWidth']<=info['viewport'],(route,w,'overflow',info)
+                page.evaluate('window.scrollTo(0,Math.min(850,document.documentElement.scrollHeight-innerHeight-1))')
+                page.wait_for_timeout(150)
+                after=page.evaluate("({scrollY, top:document.querySelector('header.site-header').getBoundingClientRect().top, pos:getComputedStyle(document.querySelector('header.site-header')).position})")
+                if info['bodyHeight']>h+200:
+                  assert after['scrollY']>100,(route,w,'page not scrolling',after)
+                  assert abs(after['top'])<=2,(route,w,'header not fixed at top during scrolling',after)
+                if w<=919:
+                  summary=page.locator('.mobile-nav summary')
+                  assert summary.is_visible(),(route,w,'mobile menu unavailable')
+                  summary.click()
+                  assert page.locator('.mobile-nav').evaluate('(el)=>el.open'),(route,w,'mobile menu not opening after scroll')
+                  page.keyboard.press('Escape')
+                  assert not page.locator('.mobile-nav').evaluate('(el)=>el.open'),(route,w,'mobile menu not closing')
+                else:
+                  assert page.locator('.main-nav').is_visible(),(route,w,'desktop links hidden')
+                if route=='/' and (w,h) in [(1920,1080),(2560,1440),(1366,768),(390,844)]:
+                  page.evaluate('window.scrollTo(0,0)')
+                  page.screenshot(path=str(output/f'home-sticky-{w}x{h}.png'),full_page=False)
+                info.update({'route':route,'width':w,'height':h,'scroll':after})
+                tested.append(info)
+                page.close()
+            browser.close()
+          srv.shutdown()
+          print(json.dumps({'status':'PASS','route_viewport_cases':len(tested),'results':tested},indent=2))
+          PY
+      - name: Verify full-width desktop layout at 100 percent browser zoom
+        run: |
+          set -euo pipefail
+          python - <<'PY' | tee phase2-qa-artifacts/desktop-width-at-100percent.json
+          import json,threading
+          from functools import partial
+          from pathlib import Path
+          from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
+          from playwright.sync_api import sync_playwright
+          root=Path('.').resolve()
+          srv=ThreadingHTTPServer(('127.0.0.1',0),partial(SimpleHTTPRequestHandler,directory=str(root)))
+          threading.Thread(target=srv.serve_forever,daemon=True).start()
+          origin=f'http://127.0.0.1:{srv.server_port}'
+          cases=[(1366,768),(1440,900),(1920,1080),(2560,1440),(390,844),(320,720)]
+          routes=['/','/articles/symmetria/symmetria-paper-01.html','/articles/symmetria/symmetria-paper-02.html','/articles/symmetria/symmetria-paper-03.html','/articles/symmetria/symmetria-paper-04.html']
+          results=[]
+          with sync_playwright() as p:
+            browser=p.chromium.launch(headless=True,executable_path='/usr/bin/chromium',args=['--no-sandbox'])
+            for width,height in cases:
+              for route in routes:
+                page=browser.new_page(viewport={'width':width,'height':height},device_scale_factor=1,reduced_motion='reduce')
+                response=page.goto(origin+route,wait_until='networkidle')
+                assert response.status==200,(width,route,'HTTP',response.status)
+                info=page.evaluate("""() => {
+                  const rect=(selector)=>document.querySelector(selector)?.getBoundingClientRect();
+                  const doc=document.documentElement;
+                  const main=rect('.container');
+                  const article=rect('.symmetria-article-page .article-body>.wrap');
+                  const image=rect('.symmetria-article-page .paper-content img');
+                  const header=rect('header.site-header');
+                  return {viewport:innerWidth,scrollWidth:doc.scrollWidth,content:main?.width,
+                    paper:article?.width,figureWidth:image?.width,headerTop:header?.top,headerPos:getComputedStyle(document.querySelector('header.site-header')).position,
+                    devicePixelRatio:devicePixelRatio,
+                    paperFont:document.querySelector('.symmetria-article-page .paper-content p')?getComputedStyle(document.querySelector('.symmetria-article-page .paper-content p')).fontSize:null};
+                }""")
+                assert info['scrollWidth']<=width,(width,route,'horizontal overflow',info)
+                assert info['headerPos']=='sticky' and abs(info['headerTop'])<2,(width,route,'sticky broken',info)
+                if width>=1200:
+                  assert info['content']/width>=.925,(width,route,'overall content not wide enough',info)
+                  if route!='/':
+                    assert info['paper']/width>=.925,(width,route,'paper column not wide enough',info)
+                    assert info['figureWidth'] and info['figureWidth']/info['paper']>=.92,(width,route,'paper figure still has excessive side gutters',info)
+                if width in [1920,2560] and route in ['/','/articles/symmetria/symmetria-paper-02.html']:
+                  label='homepage' if route=='/' else 'symmetria-paper-02'
+                  page.screenshot(path=str(root/'phase2-qa-artifacts'/f'{label}-100pct-{width}x{height}.png'),full_page=False)
+                if width==390 and route in ['/','/articles/symmetria/symmetria-paper-02.html']:
+                  label='homepage' if route=='/' else 'symmetria-paper-02'
+                  page.screenshot(path=str(root/'phase2-qa-artifacts'/f'{label}-100pct-390x844.png'),full_page=False)
+                results.append({'route':route,'size':[width,height],**info})
+                page.close()
+            browser.close()
+          srv.shutdown()
+          print(json.dumps({'status':'PASS','cases':len(results),'results':results},indent=2))
+          PY
+      - name: Verify interactive full-resolution zoom and independent image viewing
+        run: |
+          set -euo pipefail
+          python -u docs/reports/scripts/v2_figure_zoom_qa.py | tee phase2-qa-artifacts/interactive-figure-zoom-check.json
+      - name: Bundle full draft site for owner offline review
+        if: always()
+        run: |
+          python - <<'PY'
+          from zipfile import ZipFile,ZIP_DEFLATED
+          from pathlib import Path
+          root=Path('.')
+          include=['index.html','CNAME','robots.txt','sitemap.xml']
+          with ZipFile('phase2-qa-artifacts/symtech-v2-draft-website.zip','w',ZIP_DEFLATED,compresslevel=6) as z:
+            for name in include:
+              f=root/name
+              if f.is_file():z.write(f,str(f))
+            for name in ['pages','articles','css','js','images']:
+              for f in (root/name).rglob('*'):
+                if f.is_file():z.write(f,str(f))
+          PY
+      - name: Upload exact-branch screenshots, logs and offline preview
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: symtech-phase2-review-${{ github.sha }}
+          path: phase2-qa-artifacts/
+          if-no-files-found: warn
+          retention-days: 30
