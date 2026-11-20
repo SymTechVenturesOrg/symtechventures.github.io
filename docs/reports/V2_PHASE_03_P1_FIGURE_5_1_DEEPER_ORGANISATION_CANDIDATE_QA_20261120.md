@@ -51,3 +51,8 @@
 ## Subsequent owner visual approval — 20 November 2026
 
 After the new correct-content Figure 5.1 image was shown in Chat, the owner explicitly replied **“Excellent! Approved. Continue.”** This records **owner visual approval of the Figure 5.1 candidate**, and continuation to Figure 6.1. It does **not** mean independent scientific QA or mobile accessibility is complete and does not authorise publishing the image or modifying website PR #5. Earlier references to 'PENDING' above reflect the historical state at initial QA and are superseded **only for owner style approval**.
+
+
+## Owner approval after initial Figure 5.1 QA — 20 November 2026
+
+The owner explicitly responded **“Excellent! Approved. Continue.”** to the displayed standalone Figure 5.1 review master in Chat. This records **owner visual approval of Figure 5.1** and authorises proceeding to Figure 6.1. Scientific peer review, phone accessibility and website integration are **not** approved by this message. The historic 'PENDING' flags above applied when the first QA report was written and are superseded for *owner visual acceptance only*. The final Figure 6.1 production pass is tracked in [its new QA report](V2_PHASE_03_P1_FIGURE_6_1_SCIENTIFIC_RESEARCH_ROADMAP_CANDIDATE_QA_20261120.md).
