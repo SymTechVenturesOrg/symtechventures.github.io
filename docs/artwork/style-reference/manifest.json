@@ -1,0 +1,45 @@
+{
+  "reference_set_id": "SYMMETRIA-OWNER-CINEMATIC-20261120",
+  "status": "PENDING_BINARY_UPLOAD",
+  "reference_role": "STYLE ONLY—NOT PHYSICS APPROVAL",
+  "native_width": 1672,
+  "native_height": 941,
+  "required_new_figure_width": 1920,
+  "required_new_figure_height": 1080,
+  "source_check": "VERIFY SHA-256 BEFORE CLAIMING GITHUB ASSET COMMIT",
+  "files": [
+    {
+      "reference_file": "P1_Nilpotent_Operator_STYLE_ONLY.png",
+      "source_local_basename": "the_nilpotent_operator_infographic.png",
+      "paper_origin": "Paper One",
+      "sha256": "1cb364be9159452134594f3f7e86de5424d82c8738b209d7ebb8622b90e7d9f2",
+      "bytes": 2109047,
+      "width": 1672,
+      "height": 941,
+      "role": "VISUAL STYLE ONLY—not scientific or publication approval",
+      "features": "Cyan/gold luminous central scientific geometry and balanced explanatory panels"
+    },
+    {
+      "reference_file": "P2_Noether_Conservation_STYLE_ONLY.png",
+      "source_local_basename": "noether_s_theorem_symmetry_to_conservation.png",
+      "paper_origin": "Paper Two",
+      "sha256": "1f7515074252b54bf4cbb6ef70683610e528c1f322097090751e1304a5f35593",
+      "bytes": 2276356,
+      "width": 1672,
+      "height": 941,
+      "role": "VISUAL STYLE ONLY—not scientific or publication approval",
+      "features": "Cinematic Noether-science illustration, annotated side panels and progression footer"
+    },
+    {
+      "reference_file": "P2_Broken_Symmetry_STYLE_ONLY.png",
+      "source_local_basename": "broken_symmetry_and_emergence.png",
+      "paper_origin": "Paper Two",
+      "sha256": "484191f41f002cc286938299da77de91b0dac14e8e9ef808ef356cb5b93e5817",
+      "bytes": 2232529,
+      "width": 1672,
+      "height": 941,
+      "role": "VISUAL STYLE ONLY—not scientific or publication approval",
+      "features": "Staged scientific geometry with volumetric glowing blue/gold fields and integrated explanatory annotations"
+    }
+  ]
+}
