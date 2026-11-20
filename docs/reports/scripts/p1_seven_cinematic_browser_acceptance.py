@@ -168,6 +168,27 @@ def browser_case(browser, origin, name, width, height, dpr, touch):
         record["opened_full_resolution"] = popup.url
         check(popup.url.endswith("p1_cover_master_1920x1080.png"), name + ": zoom opens wrong content")
         popup.close()
+        if name == "desktop-1440-dpr1":
+            record["full_resolution_open_checks"] = []
+            for slot in SLOTS[1:]:
+                anchor = page.locator('figure[data-figure-slot="' + slot + '"] a.paper-figure-open')
+                anchor.scroll_into_view_if_needed(timeout=10000)
+                anchor.focus()
+                with page.expect_popup(timeout=12000) as pinfo:
+                    page.keyboard.press("Enter")
+                ppage = pinfo.value
+                ppage.wait_for_load_state("domcontentloaded", timeout=20000)
+                expected = stem_of(slot) + "_master_1920x1080.png"
+                opened_expected = ppage.url.endswith(expected)
+                full = ppage.locator("img")
+                full.wait_for(state="attached", timeout=10000)
+                info = full.evaluate("(im) => ({complete:im.complete,width:im.naturalWidth,height:im.naturalHeight})")
+                if not info["complete"]:
+                    ppage.wait_for_load_state("load", timeout=15000)
+                    info = full.evaluate("(im) => ({complete:im.complete,width:im.naturalWidth,height:im.naturalHeight})")
+                check(opened_expected and info["width"] == 1920 and info["height"] == 1080, name + " " + slot + ": opened wrong or undecodable master")
+                record["full_resolution_open_checks"].append({"slot": slot, "correct_url": opened_expected, "image": info})
+                ppage.close()
         check(not errors, name + ": JS errors: " + repr(errors[:5]))
         record["page_errors"] = errors
     except Exception as exc:
