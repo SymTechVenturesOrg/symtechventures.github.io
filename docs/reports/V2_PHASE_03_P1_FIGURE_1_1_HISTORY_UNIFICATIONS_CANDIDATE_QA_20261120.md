@@ -1,5 +1,8 @@
 # SYMMETRIA — Paper One Figure 1.1: Historical Unifications, Candidate QA
 
+> **UPDATE 20 November 2026:** This is the **initial** image QA snapshot; Newton's curved-grid ambiguity has now been corrected in a **new AI-generated cinematic review candidate**. Use [the revised Newtonian-orbit QA report](V2_PHASE_03_P1_FIGURE_1_1_NEWTONIAN_ORBIT_CORRECTION_QA_20261120.md) and image `P1_Figure_1_1_Orbit_Corrected_Cinematic_1920x1080.png` (SHA-256 `4a16ac9219d3fd46be7291b35d033c19508d8be85f4417510e63bc4373718675`) for owner review. Do not integrate the earlier version or mistake style direction for final scientific approval.
+
+
 **Date:** 20 November 2026 (Europe/London)  
 **Status:** NEW **OWNER REVIEW CANDIDATE**, not approved for integration; preliminary editorial/science inspection only.  
 **Exact source:** `articles/symmetria/symmetria-paper-01.html`, `feature/v2-space-research-website` HTML blob `c235e33bbe3a291343125c94af73fe54a23491fa`.  
