@@ -39,3 +39,8 @@
 | PNG committed to GitHub | NO — report only |
 
 **Next:** show this candidate for owner visual approval; if accepted, retain SHA pin and proceed to isolated Figure 4.1 production. Website PR #5 remains untouched; no merges or deployment.
+
+
+## Owner approval subsequent to initial candidate QA
+
+On 20 November 2026, after Figure 3.1 was presented, the owner explicitly replied **“Approved, continue.”** This approves **the visual/style candidate** and authorises continuation to Figure 4.1. It does **not** constitute scientific peer review or approval to modify draft website PR #5. The earlier “AWAITING OWNER VISUAL APPROVAL” header and table capture the historical moment of first QA and are **superseded only for the owner-style gate**, not for scientific QA. Website integration remains unapproved.
