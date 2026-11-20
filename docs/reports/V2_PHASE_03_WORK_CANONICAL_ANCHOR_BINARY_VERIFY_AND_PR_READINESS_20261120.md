@@ -9,14 +9,14 @@
 
 **Binary verification: PASS (3/3).** The original PNG byte streams were retrieved from GitHub using a Git checkout pinned to commit `b5dc7c60aa7e0644acd2d6dc351f0e8165be2c98` on `docs/symmetria-style-reference-assets-20261120`. Each exact byte count, SHA-256, PNG signature, 1672 × 941 dimensions and Git blob SHA-1 matches the expected manifest entry.
 
-**Documentation:** PR #7 now records direct GitHub SHA-256 verification; PR #6's two standards documents now link to the verified references and have broken internal links and escaped Markdown backticks corrected. PR #6 and #7 remain **open drafts**. Both branches compare cleanly to `main` locally, but GitHub's PR metadata currently reports `mergeable: false` for each; owner should review that state before any merge decision. This pass does not approve or perform a merge.
+**Documentation:** PR #7 now records direct GitHub SHA-256 verification; PR #6's two standards documents now link to the verified references and have broken internal links and escaped Markdown backticks corrected. PR #6 and #7 remain **open drafts**. Both branches compare cleanly to `main` locally. At the final metadata check, GitHub reports **PR #6 mergeable: true** and **PR #7 mergeable: false**; the owner should resolve PR #7's state before any merge decision. This pass does not approve or perform a merge.
 
 ## Pinned PR state
 
-| PR | State | Draft | Branch head | Change scope at review |
+| PR | State | Draft | Branch head at final QA snapshot | Change scope at review |
 |---|---|---:|---|---|
 | #6 | Open | Yes | `a98b846a3fa3c6948673cf0ef362077ee81161f9` | Two Markdown standards files under `docs/reports/` |
-| #7 | Open | Yes | `2ce092b7f3543e3827dcfa0c79434e866d11d36d` | Three PNG style references and five documentation files under `docs/` |
+| #7 | Open | Yes | `c19489751573d2634c2a5d2f82128225cb784991` (report updated in its successor commit) | Three PNG style references and five documentation files under `docs/` |
 
 Both PRs target `main`. The image verification itself was performed against the immutable earlier PR #7 asset commit `b5dc7c60aa7e0644acd2d6dc351f0e8165be2c98`; subsequent commits changed documentation only. PR descriptions were also refreshed to reflect the verified binary status and current handover configuration.
 
