@@ -21,3 +21,24 @@ Explain tentative relevance to matter, energy, spacetime and physical laws using
 Both outputs were cinematic-looking but **wrong content**. Neither is an accepted 1920×1080 review candidate. Do not crop/relabel a panel from either one, silently reuse them as Figure 5.1, or treat attractiveness as content verification.
 
 **Next gate:** isolated Figure 5.1 generation rooted exclusively in its exact website caption and image references (not the previous Figure 4.1 image), then actual-content QA. If automated image generation repeatedly reproduces the Figure 4.1 scene, preserve this BLOCKED finding rather than claim it is ready. Explicit owner visual approval and independent specialist science QA remain mandatory. No website image changes or PR merges.
+
+## Additional isolated generation attempts — 20 November 2026, 19:29–19:32 GMT
+
+**Owner context:** Owner expressly approved Figure 4.1 and said “continue”. Figure 4.1's visual approval was recorded separately; it does NOT imply that Figure 5.1 was accepted.
+
+The exact figure caption and the four mandatory concepts were verified again against the online Paper One HTML before generation. Three additional full-canvas cinematic AI attempts were produced and **all three rejected**:
+
+1. **“An Exploratory Framework for Unification”**: showed symmetry, spacetime, unified fields and emergent reality. **Rejected:** missing the mandatory stand-alone *information* and *constraint* concepts; included a project-name subtitle and implied too direct a path to unification.
+2. **“An Exploratory Symmetry and Organisation Hypothesis”**: showed symmetry, underlying structure, organisation/emergence and a unified mathematics panel containing an undefined formula resembling `ℒ = ℒ_Q + ℒ_G + ℒ_sym`. **Rejected:** missing distinct information/constraint panels and included invented unsupported formula.
+3. **“An Exploratory SYMMETRIA Perspective”**: put `SYMMETRIA` in the principal title AND central icon, featured unified spacetime, information as fundamental and emergent organisation, and omitted *constraint*. **Rejected:** direct violation of permanent project-title restriction, incorrect required four concepts and insufficient conjecture qualifications.
+
+**None of these is a production or owner-review candidate; none has been exported as an accepted 1920×1080 master or added to GitHub website images.** Their visual polish does not override scientific and editorial inaccuracies.
+
+### Revised next-step instruction
+
+- **STOP automated retries in the current mixed-figure context.** The generator repeatedly imports topics from other figures, produces the project name as a title, and substitutes speculative “unified spacetime” for the actual `constraint` concept.
+- Start a **fresh isolated Figure 5.1 image-generation context** with the exact source caption and the verified cinematic style references but without preceding Figure 4.1 visual subject matter. Create exactly one image with exactly four central concept labels: **SYMMETRY, INFORMATION, CONSTRAINT, ORGANISATION**.
+- The heading must be `Could Deeper Organisation Underlie Physics?`; the footer must be `Exploratory hypothesis — not established physics`. If the output lacks either, rejects a concept, includes `SYMMETRIA` as an art heading, adds equations or implies causal proof of emergence, immediately reject it.
+- Only after a correct new image exists should it be exported, checked at 1920×1080, and presented for the owner's individual visual approval, with independent science QA outstanding.
+
+**Figure 5.1 remains BLOCKED; do not advance to 6.1 by treating a rejected image as complete.**
