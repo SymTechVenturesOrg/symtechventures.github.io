@@ -64,7 +64,7 @@ Use the [seven vetted alt-text and longer-description drafts](../artwork/candida
 
 ## 5. Performance and 16:9 layout guard
 
-The seven 1920×1080 reviewed PNG binaries total roughly **21.9 MB uncompressed over the network** as raw PNG files. Serving all eagerly may hurt mobile page performance. Original WebPs are a different size/aspect (typically 3:2 for those inspected). The future implementation must explicitly test:
+The seven 1920×1080 reviewed PNG binaries total **21,896,557 bytes (about 21.9 MB) of existing compressed PNG transfer data**. Serving all eagerly may hurt mobile page performance. Original WebPs are a different size/aspect (typically 3:2 for those inspected). The future implementation must explicitly test:
 
 - No CSS crops/warps: `width:100%;height:auto` or equivalent preserves the new 16:9 composition. Avoid `object-fit:cover` cropping labels or a fixed-height box that would cut captions.
 - `loading=lazy`, `decoding=async` for non-cover figures; preserve a good first-contentful/large-contentful experience for cover without harmful layout shifting (`width=1920 height=1080`).
