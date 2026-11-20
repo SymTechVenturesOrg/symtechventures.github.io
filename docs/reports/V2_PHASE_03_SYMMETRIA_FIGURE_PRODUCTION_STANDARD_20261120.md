@@ -15,6 +15,14 @@
 - Generate/retain a full-resolution lossless master (PNG suitable) and, after approval, a WebP derivative at encoder quality 80 (or documented higher-quality exception if needed for formulas). Check the derivative again for dimensions and text clarity; encoder quality 80 is not a claim about percentage file-size reduction.
 - Any figure failing dimensions, legibility, geometry or scientific checks is **DRAFT / REWORK**, not approved.
 
+## 2A. Mandatory AI-native cinematic illustration method and separate owner style gate (20 November 2026 override)
+
+**New owner decision — takes precedence over generic “diagrams / post-processing” language below:** use the owner-approved **fully AI-generated, rich cinematic scientific infographic style** of the original Papers One and Two. **Do not** substitute programmatically constructed flat diagrams/posters with AI decorations, even when 1920×1080, mathematically corrected, and coloured navy/cyan/gold. Avoid inadvertent generator changes; use original approved visual references or stop if the actual references/generation capability are not available. Generate **one standalone image for each exact figure slot**; reject combined montages, generic science collages, and project-status dashboards. Localised corrections to mathematical glyphs and dimension export are permitted **only if the image remains visually AI-native rather than a scripted reconstruction**. Have the owner explicitly approve **visual/style fidelity separately from scientific accuracy** before release or Work integration; no batch self-certification.
+
+**Authoritative detailed rule, failure history, pass/fail gates, manifest and next steps:** [Locked Cinematic AI-Illustration Style and Acceptance Gate](V2_PHASE_03_SYMMETRIA_LOCKED_CINEMATIC_ARTWORK_GATE_20261120.md).
+
+**WITHDRAWN visual candidate package:** \`SYMMETRIA_28_Figure_Complete_Candidate_Reaudit_Package.zip\`. Its associated 20 November final 28-candidate re-audit handover is **SUPERSEDED**, not a live permission to proceed. Record the original owner-approved visual anchors and hashes before restarting. The scientific audit findings remain useful as a content QA checklist.
+
 ## 2. Locked image style
 
 Use the visual aesthetic approved by the owner for Paper One and subsequently Paper Two:
