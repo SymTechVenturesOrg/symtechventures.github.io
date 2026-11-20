@@ -16,9 +16,9 @@
 | PR | State | Draft | Branch head | Change scope at review |
 |---|---|---:|---|---|
 | #6 | Open | Yes | `a98b846a3fa3c6948673cf0ef362077ee81161f9` | Two Markdown standards files under `docs/reports/` |
-| #7 | Open | Yes | `01430576f5643442f715e0bdfcd6433ddbcee1f4` before this report commit | Three PNG style references and documentation under `docs/` |
+| #7 | Open | Yes | `2ce092b7f3543e3827dcfa0c79434e866d11d36d` | Three PNG style references and five documentation files under `docs/` |
 
-Both PRs target `main`. The image verification itself was performed against the immutable earlier PR #7 asset commit `b5dc7c60aa7e0644acd2d6dc351f0e8165be2c98`; later commits changed documentation only.
+Both PRs target `main`. The image verification itself was performed against the immutable earlier PR #7 asset commit `b5dc7c60aa7e0644acd2d6dc351f0e8165be2c98`; subsequent commits changed documentation only. PR descriptions were also refreshed to reflect the verified binary status and current handover configuration.
 
 ## Three-file byte verification
 
@@ -76,9 +76,9 @@ Updated on `docs/lock-symmetria-cinematic-artwork-20261120` at commit `a98b846a3
 
 Compared both fetched PR heads with `main`. PR #6 contains only its two intended Markdown files. PR #7 contains only the three style-reference PNGs plus documentation/report files. No HTML, JavaScript, CSS, production website assets or deployment changes are present. PR #5 was not accessed for edits.
 
-Both PRs remain **open and draft**. A local `git merge-tree --write-tree` check completed cleanly against the fetched `main` and each branch head. GitHub PR metadata nevertheless reports `mergeable: false` for both at the time checked; treat this as an owner-side review item and do not infer mergeability from the local comparison alone.
+Both PRs remain **open and draft**. A local `git merge-tree --write-tree` check completed cleanly against the fetched `main` and each branch head. Fresh GitHub PR metadata reports **PR #6 mergeable: true** and **PR #7 mergeable: false**. Resolve PR #7's reported state before any merge decision; do not infer its mergeability solely from the clean local comparison.
 
-**Owner merge-review readiness:** content and scope are ready for owner review. Before any merge decision, review the two PRs, resolve GitHub's `mergeable: false` state, and decide whether both documentation and style-reference PRs should be merged. This report is not automatic merge approval.
+**Owner merge-review readiness:** content and scope are ready for owner review. Before any merge decision, review both PRs and resolve GitHub's `mergeable: false` state on PR #7; PR #6 is reported mergeable. Decide whether the documentation and style-reference PRs should be merged. This report is not automatic merge approval.
 
 ## Next proposed step
 
@@ -87,7 +87,7 @@ After owner review of PRs #6 and #7, restart with **one Paper One cinematic cove
 ## DTSU v1.1 completion record
 
 - **Start:** 20 November 2026, approximately 17:20 Europe/London.
-- **Completion:** 20 November 2026, approximately 17:28 Europe/London.
+- **Completion:** 20 November 2026, approximately 17:27 Europe/London.
 - **Final status:** COMPLETE, 100%.
 - **ETA:** met; bounded readback and documentation QA completed within the estimated window.
 - **Blockers:** none for byte verification. GitHub's `mergeable: false` metadata remains for owner review.
