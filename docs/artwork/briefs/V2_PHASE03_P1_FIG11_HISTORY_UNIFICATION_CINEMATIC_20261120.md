@@ -1,5 +1,7 @@
 # SYMMETRIA Paper One — Figure 1.1: Historical Unifications (Production Brief and Generator-Failure Register)
 
+> **UPDATE 20 November 2026 — First correct-topic Figure 1.1 review candidate now generated.** The original three failed images and the original blocked-status narrative below are retained as historical evidence. See [the candidate QA record](../../reports/V2_PHASE_03_P1_FIGURE_1_1_HISTORY_UNIFICATIONS_CANDIDATE_QA_20261120.md): standalone 1920×1080 PNG `P1_Figure_1_1_Unification_Through_the_Ages_1920x1080.png`, SHA-256 `e2fc3bfeacafda81754ccd7a191c68975cf3bdbe4c4f292755b25eb1f13318ff`. **Awaiting owner approval and independent scientific QA**, including possible Newtonian-curvature visual ambiguity. The PNG has **not** been integrated or uploaded to GitHub.
+
 **Date:** 20 November 2026 (Europe/London)  
 **Image slot:** Paper One **Figure 1.1**, first in-text figure after the separately **owner visually approved cover**.  
 **Current state:** **BLOCKED — NO ACCEPTABLE FIGURE 1.1 IMAGE HAS BEEN PRODUCED.** The three AI-generated attempts described below must never enter the candidate or integration set.  
