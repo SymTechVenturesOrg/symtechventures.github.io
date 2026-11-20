@@ -57,3 +57,8 @@ The image matches the broad actual website caption, has no scientist portraits, 
 **Current Paper One visual-owner approval tally:** **6 of 7 visually approved** (Cover; Figures 1.1, 2.1, 3.1, 4.1, 5.1), with Figure 6.1 awaiting specific approval. The owner's Figure 5.1 approval in Chat was recorded separately. Independent scientific review and later explicit website integration authorisation remain outside this approval tally.
 
 **Next:** present the full-resolution Figure 6.1 candidate for owner visual/style approval. If approved, arrange an **independent read-only scientific and cross-image acceptance audit** of all seven original Paper One figures, with actual PNG bytes and checksum manifests, then separately seek website-integration authorisation. Do not merge or deploy anything by implication.
+
+
+## Owner visual acceptance — 20 November 2026
+
+After viewing the final corrected 1920 × 1080 PNG for Figure 6.1, the owner explicitly responded **“Approved, continue.”** This approves the **visual composition and cinematic style** of that exact image, SHA-256 `a1c9c939c6195a97106a3e4c8a49398a48b27baf108a8ef7b21bdc0ed09e896f`. It completes **7 of 7 Paper One visual-owner approvals**. It does **not** certify independent science, correct every mathematical glyph, approve unzoomed mobile readability, or authorise website PR #5 changes, merging or deployment. The initial `PENDING` visual-status statements above are historical and superseded only for the owner's visual gate.
