@@ -69,6 +69,6 @@ Maintain: paper / cover-or-figure-slot; exact section and external caption text;
 2. Rebuild the unsatisfactory artwork **from the proper AI-native full-canvas style**, starting with one Paper One cover as a *style checkpoint*, then one figure at a time. No auto-approval of prior controlled-diagram rounds.
 3. Keep the scientific correction register as a **content risk checklist**, not an instruction to use its rejected artwork.
 4. After owner agrees the style checkpoint, proceed in batches; independent scientific recheck and owner image-by-image acceptance precede a new, separate read-only Work audit and later limited implementation.
-5. For any future **Work handover**, explicitly state the recommended **Luna effort (Medium/High) and Standard Speed**. For a 28-figure scientific audit: **Luna High · Standard Speed**. No merge or deployment without new owner instruction.
+5. For **every future Work handover**, separately state **Model**, **Thinking effort**, and **Execution speed**, for the owner to select **before starting Work**. Suggested default for bounded documentation/verification: **Model: GPT-6 Luna (Work); Effort: Medium; Speed: Standard**. For a technically demanding 28-figure scientific audit: **Model: GPT-6 Luna (Work); Effort: High; Speed: Standard**. **Work cannot set or change these controls itself**; never put the configuration responsibility on Work. No merge or deployment without new owner instruction.
 
 **Summary: the visual production method, the target appearance, and owner style approval are hard gates—not optional preferences.**
