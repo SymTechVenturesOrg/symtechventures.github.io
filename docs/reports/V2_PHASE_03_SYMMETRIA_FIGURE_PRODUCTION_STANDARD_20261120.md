@@ -42,7 +42,8 @@ Use the visual aesthetic approved by the owner for Paper One and subsequently Pa
 - Where needed, explicit distinctions such as “Established physics”, “Proposed interpretation”, and “Exploratory SYMMETRIA hypothesis”.
 
 **Inside the artwork, NEVER include:**
-- “Discussion Paper One/Two/Three/Four”, “Discussion Paper X”, “Paper 3”, “Paper Three”, any other paper sequence number/name as a masthead, or “Figure 4.1”, “Figure x.x”, “Figure Three”, numbered figure badges or other HTML-identification metadata.
+- **No project or series branding as an image title/masthead:** do not put “SYMMETRIA” above, before or alongside the scientific subject title; no “SYMMETRIA — PAPER ONE”, “Paper One”, “Discussion Paper One/Two/Three/Four”, “Discussion Paper X”, “Paper 3”, “Paper Three”, any other paper sequence number/name, “Figure 4.1”, “Figure x.x”, “Figure Three”, numbered figure badges or other HTML-identification metadata. These belong **only in the website chrome and external caption**. A scientifically necessary mention of the SYMMETRIA *hypothesis* in a diagram label (not masthead) may appear only where required by the actual article text.
+- **Paper One cover title must be exactly “Why Physics Still Needs a Unified Framework”.** No additional “SYMMETRIA” nameplate, “PAPER ONE” banner, project logo or series heading anywhere in that cover illustration. Check the top edge and every label at full resolution before presenting a draft.
 - The website’s external caption line; a second unrelated title; scientist portraits; fake claims of publication, peer review, results or validation.
 
 **Outside the artwork:** preserve each existing paper/figure identity and its caption in accessible HTML immediately beneath the image. The visible main title **is** allowed in the picture; the paper number and figure number belong only to the document/page chrome and external caption. Alt text should describe what the actual figure explains, not merely repeat a filename.
