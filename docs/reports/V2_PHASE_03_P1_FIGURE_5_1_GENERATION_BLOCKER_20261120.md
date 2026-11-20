@@ -1,5 +1,8 @@
 # SYMMETRIA — Paper One Figure 5.1: Unsuccessful Generation Attempts
 
+> **FOLLOW-UP 20 November 2026:** Following the report from a different Chat session lacking image tools, the original image-enabled project Chat generated the **first content-compliant Figure 5.1 review candidate**: `P1_Figure_5_1_Deeper_Organisation_Cinematic_1920x1080.png`, SHA-256 `945a5061c67bd52300cc4823f9664579380c85b36363daadcc7ef88496687b1c`. [See new candidate QA record](V2_PHASE_03_P1_FIGURE_5_1_DEEPER_ORGANISATION_CANDIDATE_QA_20261120.md). The five failed attempts below are retained as **historical failures**, not current generation status. **Owner visual approval and independent science review remain pending; no integration.**
+
+
 **Date:** 20 November 2026, Europe/London.
 **State:** **BLOCKED — NO VALID NEW FIGURE 5.1 CANDIDATE**. Generated imagery for this slot is excluded from approval and integration.
 
