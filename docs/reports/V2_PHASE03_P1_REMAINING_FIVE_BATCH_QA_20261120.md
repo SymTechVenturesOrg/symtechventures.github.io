@@ -1,5 +1,8 @@
 # SYMMETRIA Paper One — Remaining Five Figures: Batch Production Attempt QA
 
+> **FOLLOW-UP 20 NOVEMBER 2026:** The owner expressly approved the separate Figure 2.1 cinematic review image (message: “Okay, I approve figure 2.1.”). This is **owner visual approval**, not independent scientific QA or website integration. Figure 3.1 now also has a *new correctly matched standalone* review candidate and [individual QA report](V2_PHASE_03_P1_FIGURE_3_1_MODERN_PHYSICS_CANDIDATE_QA_20261120.md). The blocked/partial batch matrix below is retained as the **historical batch-attempt record** and is superseded by these later individual slot updates; do not treat its figures as the live approval ledger.
+
+
 **Date:** 20 November 2026, Europe/London  
 **Status:** **PARTIAL — ONE review candidate (Figure 2.1); FOUR figure slots BLOCKED**. This is not owner approval, scientific validation, or a 5/5 completed batch.
 **Correct website:** `articles/symmetria/symmetria-paper-01.html`, `feature/v2-space-research-website`, Git blob `c235e33bbe3a291343125c94af73fe54a23491fa`.
