@@ -1,5 +1,8 @@
 # SymTech Ventures v2.0 — Phase-Gated Layout and Imagery Workplan
 
+> **Mandatory cinematic-artwork override (20 November 2026):** The previous complete 28-candidate ZIP and its re-audit handover are **withdrawn for visual/style reasons**. All future SYMMETRIA discussion-paper images must follow the [Locked Cinematic AI-Illustration Style Gate](reports/V2_PHASE_03_SYMMETRIA_LOCKED_CINEMATIC_ARTWORK_GATE_20261120.md) in addition to the [28-figure production standard](reports/V2_PHASE_03_SYMMETRIA_FIGURE_PRODUCTION_STANDARD_20261120.md). Do not substitute flat programmatically assembled diagrams for rich AI-native scientific artwork. Preserve source physics and require explicit owner style acceptance per image before Work integration. Independent re-audit of the rejected 28-image ZIP is no longer the next step.
+
+
 **Date:** 17 November 2026 (GMT)  
 **Status:** **ACTIVE WORKPLAN; Phase 1 layout approved, Phase 2 homepage artwork review active; NOT a merge or deployment approval**  
 **Planning branch / draft:** `planning/space-first-research-website-20261116` · [PR #2](https://github.com/SymTechVenturesOrg/symtechventures.github.io/pull/2)  
