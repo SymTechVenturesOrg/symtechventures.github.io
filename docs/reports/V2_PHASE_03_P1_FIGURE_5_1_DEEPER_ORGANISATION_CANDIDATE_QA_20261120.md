@@ -46,3 +46,8 @@
 | Website integration, PR changes, merge or deployment | **NOT AUTHORISED / NONE** |
 
 **Next:** Present the exact review master to the owner; only record it as owner-visually-approved after explicit confirmation. Then continue to Figure 6.1 with an isolated brief if the owner authorises. Scientific audit and website implementation remain separate follow-up gates.
+
+
+## Subsequent owner visual approval — 20 November 2026
+
+After the new correct-content Figure 5.1 image was shown in Chat, the owner explicitly replied **“Excellent! Approved. Continue.”** This records **owner visual approval of the Figure 5.1 candidate**, and continuation to Figure 6.1. It does **not** mean independent scientific QA or mobile accessibility is complete and does not authorise publishing the image or modifying website PR #5. Earlier references to 'PENDING' above reflect the historical state at initial QA and are superseded **only for owner style approval**.
