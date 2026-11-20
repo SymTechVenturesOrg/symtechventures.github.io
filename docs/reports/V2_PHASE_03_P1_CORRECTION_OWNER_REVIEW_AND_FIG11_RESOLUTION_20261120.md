@@ -41,3 +41,15 @@
 ## D. Explicit approval and preservation boundaries
 
 Owner's visual decision is now sought for **exactly Figures 2.1 and 3.1 candidate PNGs** linked above. Figure 1.1's caption-only alternative also requires **separate scientific reviewer acceptance and later owner authorisation before a website edit**. No original image may be overwritten or silently relabelled approved, no change to site HTML/assets/PR #5, and no merges or deployment. Draft PRs #9 and #10 remain unmerged.
+
+
+## Owner visual approval received — 20 November 2026 (supersedes earlier pending flags for these two images ONLY)
+
+After being shown the specific GitHub image links to the corrected Figure 2.1 and 3.1 candidate PNGs, the owner responded **“Approved, continue.”** This is explicit **visual approval of the exact two corrected candidates**:
+
+- Figure 2.1: `P1_Figure_2_1_SM_Lambda0_Correction_Candidate_1920x1080.png`, SHA-256 `a024ee52cccde7b8acc59dce1d816cfce5c894017808d6ede4337f072037cd3b` — **OWNER VISUALLY APPROVED**.
+- Figure 3.1: `P1_Figure_3_1_QFT_DarkSector_Correction_Candidate_1920x1080.png`, SHA-256 `72bc6b2f086d06678f7a34e3ec980c86016e40ab99724bb4258bd6c0bda72a92` — **OWNER VISUALLY APPROVED**.
+
+The earlier `OWNER VISUAL APPROVAL PENDING` entries in the original inspection table and correction-work report are historical. **They are superseded for visual approval only.** No independent science re-audit, Figure 1.1 caption solution, external website caption update, real-browser mobile test or deployment is approved by this reply. Original seven-image GitHub binaries remain immutable.
+
+Next authorised step: independent GitHub-native **read-only scientific re-audit** of these two corrected image binaries, the proposed Figure 1.1 visible caption qualification, and the Figure 2.1/5.1 proposed web-caption and accessibility texts. A separate scientific reviewer must decide whether the Figure 1.1 caption-only remedy resolves the equation issue or whether a new native-image edit is required. Never silently mark Figure 1.1 ready.
