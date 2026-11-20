@@ -251,6 +251,18 @@ def main():
     }
     dest = OUTPUT / "p1-browser-acceptance.json"
     dest.write_text(json.dumps(output, indent=2, ensure_ascii=False), encoding="utf-8")
+    for case in results:
+        if "network" in case:
+            print("VIEWPORT_NETWORK " + json.dumps({
+                "name": case["name"],
+                "viewport": case["viewport"],
+                "dpr": case["dpr"],
+                "selected_body_bytes": case["network"]["selected_body_bytes"],
+                "selected_transfer_bytes": case["network"]["selected_transfer_bytes"],
+                "selected_webp_variants": [f["src"].rsplit("/", 1)[-1] for f in case["figures"]],
+            }, sort_keys=True))
+        else:
+            print("FALLBACK_TEST " + json.dumps({k: case.get(k) for k in ("name", "imageFailed", "captionVisible", "descriptionVisible")}, sort_keys=True))
     print(json.dumps({
         "result": output["acceptance_status"],
         "commit": sha,
