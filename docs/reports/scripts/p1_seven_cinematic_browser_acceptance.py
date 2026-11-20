@@ -185,8 +185,8 @@ def broken_image_case(browser, origin):
         is_mobile=True,
         has_touch=True,
     )
-    context.route("**/p1_figure_2_1_768w_q93.webp", lambda route: route.abort())
     context.route("**/*", lambda route: route.continue_() if route.request.url.startswith(origin + "/") else route.abort())
+    context.route("**/p1_figure_2_1_768w_q93.webp", lambda route: route.abort())
     page = context.new_page()
     record = {"name": "deliberate-image-failure-figure-2-1"}
     try:
