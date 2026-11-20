@@ -84,11 +84,14 @@ Both PRs remain **open and draft**. A local `git merge-tree --write-tree` check 
 
 After owner review of PRs #6 and #7, restart with **one Paper One cinematic cover as a style checkpoint**, using the original verified reference images and separate scientific/editorial and owner visual-style gates. This pass did not generate that cover.
 
-## DTSU v1.1 completion record
+## DTSU communication record
 
-- **Start:** 20 November 2026, approximately 17:20 Europe/London.
-- **Completion:** 20 November 2026, approximately 17:30 Europe/London.
-- **Final status:** COMPLETE, 100%.
-- **ETA:** met; bounded readback and documentation QA completed within the estimated window.
-- **Blockers:** none for byte verification. GitHub's `mergeable: false` metadata remains for owner review.
-- **No merge, website modification or deployment was performed.**
+**Standard reread:** I read the latest available Library copy, `DTSU_Dr_T_Style_Updates(1).md` (52 lines). It prescribes a one-sentence `[HH:MM:SS] NN% — factual status; ETA …` update, with actual Europe/London clock time, truthful whole-task percentage, remaining ETA, an initial visible 0% before actions, milestone updates, and a final 100% only after validation. The file itself does **not** label a version number; I did not find a separately titled v1.1 copy in the connected Library or SynthTraderOrg repository files.
+
+**Correction to this run:** I failed to send the required 0% DTSU before starting. My first 55% update and the later bulleted update also did not meet the canonical one-sentence format. I am recording that deviation plainly; I have not backfilled or invented timestamps for those messages.
+
+**Corrective update issued:** `[17:32:59] 90% — I’ve reread the DTSU, and I’m correcting the report’s final status and handback before closure; ETA ~4 minutes.`
+
+At the end of this pass, I will issue a properly formatted 100% update only after the final report, branch, PNG and PR-state checks are complete. The latest GitHub metadata check available to this report showed both PRs open/draft and mergeable; the PR #7 mergeability value fluctuated during recalculation, so owners should check it live before deciding on a merge.
+
+No merge, website modification or deployment was performed.
