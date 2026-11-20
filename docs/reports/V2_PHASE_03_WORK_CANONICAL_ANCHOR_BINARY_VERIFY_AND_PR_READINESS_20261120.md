@@ -1,22 +1,22 @@
 # SYMMETRIA Phase 3 — GitHub Binary Verification and Documentation PR QA
 
 **Date:** 20 November 2026 (Europe/London)  
-**DTSU v1.1 status:** COMPLETE — 100%  
-**Work configuration:** GPT-6 Luna (Work), Medium effort, Standard speed (as selected for this pass).  
+**DTSU status:** Corrective closure in progress; final 100% update follows final validation.  
+**Handover configuration:** GPT-6 Luna (Work), Medium effort, Standard speed (assumed from the handover; runtime controls are not independently observable).  
 **Scope:** binary readback of the three canonical style PNGs; documentation-only QA of draft PRs #6 and #7. No merge, website change, or deployment.
 
 ## Executive result
 
 **Binary verification: PASS (3/3).** The original PNG byte streams were retrieved from GitHub using a Git checkout pinned to commit `b5dc7c60aa7e0644acd2d6dc351f0e8165be2c98` on `docs/symmetria-style-reference-assets-20261120`. Each exact byte count, SHA-256, PNG signature, 1672 × 941 dimensions and Git blob SHA-1 matches the expected manifest entry.
 
-**Documentation:** PR #7 now records direct GitHub SHA-256 verification; PR #6's two standards documents now link to the verified references and have broken internal links and escaped Markdown backticks corrected. PR #6 and #7 remain **open drafts**. Both branches compare cleanly to `main` locally. At the latest live metadata check (20 November 2026, approximately 17:29 Europe/London), GitHub reports **PR #6 mergeable: true** and **PR #7 mergeable: true**. PR #7's mergeability value fluctuated during GitHub recalculation after documentation updates; this is the final value observed in this pass, and should be checked live before any merge decision. This pass does not approve or perform a merge.
+**Documentation:** PR #7 now records direct GitHub SHA-256 verification; PR #6's two standards documents now link to the verified references and have broken internal links and escaped Markdown backticks corrected. PR #6 and #7 remain **open drafts**. Both branches compare cleanly to `main` locally. GitHub's mergeability value for PR #7 fluctuated between true and false across successive metadata calls without a change to its branch head; the last PR-state call during this pass returned PR #6 true and PR #7 false. Recheck both live before any merge decision. This pass does not approve or perform a merge.
 
 ## Pinned PR state
 
-| PR | State | Draft | Branch head at metadata snapshot (before final report-only commits) | Change scope at review |
+| PR | State | Draft | Branch head at the latest QA snapshot before this report refresh | Change scope at review |
 |---|---|---:|---|---|
 | #6 | Open | Yes | `a98b846a3fa3c6948673cf0ef362077ee81161f9` | Two Markdown standards files under `docs/reports/` |
-| #7 | Open | Yes | `c19489751573d2634c2a5d2f82128225cb784991` | Three PNG style references and five documentation files under `docs/` |
+| #7 | Open | Yes | `64fbc313d78f7a6a4b61a91733cd93176e5a396c` | Three PNG style references and five documentation files under `docs/` |
 
 Both PRs target `main`. The image verification itself was performed against the immutable earlier PR #7 asset commit `b5dc7c60aa7e0644acd2d6dc351f0e8165be2c98`; subsequent commits changed documentation only. PR descriptions were also refreshed to reflect the verified binary status and current handover configuration. The report was finalized in later documentation-only commits; the final PR #7 branch head is the commit containing this report, and its exact SHA is included in the COPY TO CHAT handback.
 
@@ -76,9 +76,9 @@ Updated on `docs/lock-symmetria-cinematic-artwork-20261120` at commit `a98b846a3
 
 Compared both fetched PR heads with `main`. PR #6 contains only its two intended Markdown files. PR #7 contains only the three style-reference PNGs plus documentation/report files. No HTML, JavaScript, CSS, production website assets or deployment changes are present. PR #5 was not accessed for edits.
 
-Both PRs remain **open and draft**. A local `git merge-tree --write-tree` check completed cleanly against the fetched `main` and each branch head. Fresh GitHub PR metadata at approximately 17:29 Europe/London reports **both PRs mergeable: true**. PR #7's value fluctuated during metadata recalculation; check the current GitHub PRs again before deciding whether to merge. Do not infer mergeability solely from the clean local comparison.
+Both PRs remain **open and draft**. A local `git merge-tree --write-tree` check completed cleanly against the fetched `main` and each branch head. GitHub's `mergeable` flag for PR #7 varied across successive metadata calls while its branch head was unchanged; the last PR-state response during this pass returned PR #6 true and PR #7 false. Recheck live before deciding whether to merge. Do not infer mergeability solely from the clean local comparison.
 
-**Owner merge-review readiness:** content and scope are ready for owner review. Before any merge decision, review both PRs and check that both PRs remain mergeable; the current metadata reports true for both. Decide whether the documentation and style-reference PRs should be merged. This report is not automatic merge approval.
+**Owner merge-review readiness:** content and scope are ready for owner review. Before any merge decision, review both PRs and confirm live GitHub mergeability; the PR #7 flag was unstable during this pass. Decide whether the documentation and style-reference PRs should be merged. This report is not automatic merge approval.
 
 ## Next proposed step
 
@@ -90,8 +90,8 @@ After owner review of PRs #6 and #7, restart with **one Paper One cinematic cove
 
 **Correction to this run:** I failed to send the required 0% DTSU before starting. My first 55% update and the later bulleted update also did not meet the canonical one-sentence format. I am recording that deviation plainly; I have not backfilled or invented timestamps for those messages.
 
-**Corrective update issued:** `[17:32:59] 90% — I’ve reread the DTSU, and I’m correcting the report’s final status and handback before closure; ETA ~4 minutes.`
+**Corrective update issued:** `[17:32:59] 90% — I’ve reread the DTSU, and I’m correcting the report’s final status and handback before closure; ETA ~4 minutes.` This timestamp is copied from the genuinely recorded update.
 
-At the end of this pass, I will issue a properly formatted 100% update only after the final report, branch, PNG and PR-state checks are complete. The latest GitHub metadata check available to this report showed both PRs open/draft and mergeable; the PR #7 mergeability value fluctuated during recalculation, so owners should check it live before deciding on a merge.
+At the end of this pass, I will issue a properly formatted 100% update only after the final report, branch, PNG and PR-state checks are complete. The PRs remain open/draft. GitHub's PR #7 mergeability flag fluctuated while its head was unchanged; the last state response during this pass was false for #7 and true for #6, so owners should check live before deciding on a merge.
 
 No merge, website modification or deployment was performed.
