@@ -1,7 +1,11 @@
 # SymTech Ventures — Work Pass: Verify Canonical Cinematic PNGs and Make Documentation PRs Review-Ready
 
 **Date:** 20 November 2026 (Europe/London)  
-**Specialist:** ChatGPT Work — **Luna Medium · Standard Speed** (select Medium effort when available)  
+**Work configuration — owner must select BEFORE launching Work:**  
+- **Model:** **GPT-6 Luna (Work)**  
+- **Thinking effort:** **Medium**  
+- **Execution speed:** **Standard**  
+**Control ownership:** These are settings for the project owner to choose in the ChatGPT interface. **Work cannot select, change, or verify its own model, effort, or execution speed.** The following assignment assumes these user-selected settings; do not issue instructions asking Work to alter them.  
 **Reporting:** DTSU v1.1 with genuine Europe/London timestamps, honest percentage, grounded ETA; complete report and **COPY TO CHAT**.  
 **Scope:** One finite technical verification and strictly scoped **documentation-only** tidy-up, **no PR merges**.  
 **Repository:** `SymTechVenturesOrg/symtechventures.github.io`  
