@@ -1,6 +1,6 @@
 {
   "schema": "SYMMETRIA-P1-TARGETED-SCIENCE-CORRECTIONS-20261120",
-  "status": "FIGURES_2_1_AND_3_1_OWNER_VISUALLY_APPROVED; FIGURE_1_1_REVIEW_BLOCKED; INDEPENDENT_SCIENCE_REAUDIT_PENDING",
+  "status": "INDEPENDENT_SCIENCE_REAUDIT_2_OF_2_PASSED; FIGURE_1_1_CAPTION_ONLY_CONDITIONAL; WEBSITE_INTEGRATION_NOT_AUTHORISED",
   "source_commit": "c6f60ee180c2f5d401b0f597f512898c010981a9",
   "correction_branch": "docs/symmetria-paper-one-science-corrections-20261120",
   "branch_head_before_candidates": "0f552143c45e2d659be0598ba6031884f6ed0913",
@@ -9,16 +9,19 @@
   "entries": [
     {
       "slot": "1.1",
-      "status": "BLOCKED_NEEDS_NATIVE_IMAGE_EDIT",
+      "status": "CAPTION_ONLY_ACCEPTABLE_PENDING_WEBSITE_IMPLEMENTATION",
       "source_path": "docs/artwork/owner-approved/paper-one/P1_Figure_1_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
       "source_sha256": "4a16ac9219d3fd46be7291b35d033c19508d8be85f4417510e63bc4373718675",
       "candidate_path": null,
       "candidate_sha256": null,
-      "reason": "The Einstein equation capsule has no safe padding for a legible Λ = 0 special case label. Placing it adjacent at a size consistent with the existing hierarchy would overlap the equation/border or require moving/rebuilding surrounding artwork, which exceeds this local repair scope. No substitute was created."
+      "reason": "The Einstein equation capsule has no safe padding for a legible Λ = 0 special case label. Placing it adjacent at a size consistent with the existing hierarchy would overlap the equation/border or require moving/rebuilding surrounding artwork, which exceeds this local repair scope. No substitute was created.",
+      "prior_local_edit_status": "BLOCKED_NEEDS_NATIVE_IMAGE_EDIT",
+      "independent_science_reaudit": "CAPTION_ONLY_ACCEPTABLE_PENDING_WEBSITE_IMPLEMENTATION",
+      "caption_dependency": "Use new canonical approved PNG only; existing website WebP shows general Einstein equation WITH Λ term and must not receive Λ=0 caption."
     },
     {
       "slot": "2.1",
-      "status": "OWNER_VISUALLY_APPROVED_PENDING_INDEPENDENT_SCIENCE_REAUDIT",
+      "status": "OWNER_VISUALLY_APPROVED_AND_PASS_SCIENCE_REAUDIT",
       "source_path": "docs/artwork/owner-approved/paper-one/P1_Figure_2_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
       "source_sha256": "446af968d82601de428bf719aef9c6a18c837d6b91626955edc04e14613f58e4",
       "source_git_blob": "e0e48fc037c9055c90dce090d6b6fe6a33ea858f",
@@ -70,11 +73,13 @@
         "applies_to": "exact correction candidate SHA-256; not the previous original and not scientific acceptance",
         "image_sha256": "a024ee52cccde7b8acc59dce1d816cfce5c894017808d6ede4337f072037cd3b"
       },
-      "independent_science_reaudit": "PENDING"
+      "independent_science_reaudit": "PASS_SCIENCE_REAUDIT",
+      "prior_status": "OWNER_VISUALLY_APPROVED_PENDING_INDEPENDENT_SCIENCE_REAUDIT",
+      "scientific_review_report_commit": "48e071e80d7842518c8ee8847fa5d187b61c262b"
     },
     {
       "slot": "3.1",
-      "status": "OWNER_VISUALLY_APPROVED_PENDING_INDEPENDENT_SCIENCE_REAUDIT",
+      "status": "OWNER_VISUALLY_APPROVED_AND_PASS_SCIENCE_REAUDIT",
       "source_path": "docs/artwork/owner-approved/paper-one/P1_Figure_3_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
       "source_sha256": "62af2ce4790324056dff019c9d1617bd7c9d734b9a9201e40131a0329d1bc317",
       "source_git_blob": "5d9b2daae2405ec1e59200908d8849138f5f5fd3",
@@ -126,11 +131,22 @@
         "applies_to": "exact correction candidate SHA-256; not the previous original and not scientific acceptance",
         "image_sha256": "72bc6b2f086d06678f7a34e3ec980c86016e40ab99724bb4258bd6c0bda72a92"
       },
-      "independent_science_reaudit": "PENDING"
+      "independent_science_reaudit": "PASS_SCIENCE_REAUDIT",
+      "prior_status": "OWNER_VISUALLY_APPROVED_PENDING_INDEPENDENT_SCIENCE_REAUDIT",
+      "scientific_review_report_commit": "48e071e80d7842518c8ee8847fa5d187b61c262b"
     }
   ],
   "original_set_integrity": "All seven source SHA-256 values match the original GitHub manifest in a fresh GitHub checkout. The candidate binary commit adds only the two candidate PNG paths; no owner-approved paths changed.",
   "approval_boundary": "Scientific and visual owner re-approval remain pending; independent science re-audit must be performed in a separate reviewer/session.",
   "owner_visual_approval_date": "2026-11-20",
-  "owner_approval_scope": "New corrected candidate PNGs 2.1 and 3.1 only. Figure 1.1 original previously visual approved, equation caption approach unreviewed; independent science pending for the corrections."
+  "owner_approval_scope": "New corrected candidate PNGs 2.1 and 3.1 only. Figure 1.1 original previously visual approved, equation caption approach unreviewed; independent science pending for the corrections.",
+  "independent_science_reaudit": {
+    "status": "COMPLETE_WITH_CONDITIONS",
+    "source_report": "docs/reports/V2_PHASE_03_P1_FIGURES_2_1_3_1_INDEPENDENT_SCIENCE_REAUDIT_AND_1_1_CAPTION_DECISION_20261120.md",
+    "report_commit": "48e071e80d7842518c8ee8847fa5d187b61c262b",
+    "report_blob_sha": "5c42722a10dd7c0471df9f5e22e7fd536ec77265",
+    "review_date": "2026-11-20",
+    "scope": "Figures 2.1 and 3.1 actual binary images; original Figure 1.1 caption-only conditional decision; no website changes or publication approval"
+  },
+  "website_integration": "NOT_AUTHORISED"
 }
