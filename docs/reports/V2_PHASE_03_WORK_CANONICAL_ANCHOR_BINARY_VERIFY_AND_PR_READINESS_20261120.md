@@ -9,16 +9,16 @@
 
 **Binary verification: PASS (3/3).** The original PNG byte streams were retrieved from GitHub using a Git checkout pinned to commit `b5dc7c60aa7e0644acd2d6dc351f0e8165be2c98` on `docs/symmetria-style-reference-assets-20261120`. Each exact byte count, SHA-256, PNG signature, 1672 × 941 dimensions and Git blob SHA-1 matches the expected manifest entry.
 
-**Documentation:** PR #7 now records direct GitHub SHA-256 verification; PR #6's two standards documents now link to the verified references and have broken internal links and escaped Markdown backticks corrected. PR #6 and #7 remain **open drafts**. Both branches compare cleanly to `main` locally. At the latest live metadata check (20 November 2026, 17:28 Europe/London), GitHub reports **PR #6 mergeable: true** and **PR #7 mergeable: true**. This pass does not approve or perform a merge.
+**Documentation:** PR #7 now records direct GitHub SHA-256 verification; PR #6's two standards documents now link to the verified references and have broken internal links and escaped Markdown backticks corrected. PR #6 and #7 remain **open drafts**. Both branches compare cleanly to `main` locally. At the latest live metadata check (20 November 2026, approximately 17:29 Europe/London), GitHub reports **PR #6 mergeable: true** and **PR #7 mergeable: true**. PR #7's mergeability value fluctuated during GitHub recalculation after documentation updates; this is the final value observed in this pass, and should be checked live before any merge decision. This pass does not approve or perform a merge.
 
 ## Pinned PR state
 
-| PR | State | Draft | Branch head at final QA snapshot | Change scope at review |
+| PR | State | Draft | Branch head at metadata snapshot (before final report-only commits) | Change scope at review |
 |---|---|---:|---|---|
 | #6 | Open | Yes | `a98b846a3fa3c6948673cf0ef362077ee81161f9` | Two Markdown standards files under `docs/reports/` |
-| #7 | Open | Yes | `c19489751573d2634c2a5d2f82128225cb784991` (report updated in its successor commit) | Three PNG style references and five documentation files under `docs/` |
+| #7 | Open | Yes | `c19489751573d2634c2a5d2f82128225cb784991` | Three PNG style references and five documentation files under `docs/` |
 
-Both PRs target `main`. The image verification itself was performed against the immutable earlier PR #7 asset commit `b5dc7c60aa7e0644acd2d6dc351f0e8165be2c98`; subsequent commits changed documentation only. PR descriptions were also refreshed to reflect the verified binary status and current handover configuration.
+Both PRs target `main`. The image verification itself was performed against the immutable earlier PR #7 asset commit `b5dc7c60aa7e0644acd2d6dc351f0e8165be2c98`; subsequent commits changed documentation only. PR descriptions were also refreshed to reflect the verified binary status and current handover configuration. The report was finalized in later documentation-only commits; the final PR #7 branch head is the commit containing this report, and its exact SHA is included in the COPY TO CHAT handback.
 
 ## Three-file byte verification
 
@@ -76,7 +76,7 @@ Updated on `docs/lock-symmetria-cinematic-artwork-20261120` at commit `a98b846a3
 
 Compared both fetched PR heads with `main`. PR #6 contains only its two intended Markdown files. PR #7 contains only the three style-reference PNGs plus documentation/report files. No HTML, JavaScript, CSS, production website assets or deployment changes are present. PR #5 was not accessed for edits.
 
-Both PRs remain **open and draft**. A local `git merge-tree --write-tree` check completed cleanly against the fetched `main` and each branch head. Fresh GitHub PR metadata at 17:28 Europe/London reports **both PRs mergeable: true**. This state is time-sensitive; check the current GitHub PRs again before deciding whether to merge. Do not infer mergeability solely from the clean local comparison.
+Both PRs remain **open and draft**. A local `git merge-tree --write-tree` check completed cleanly against the fetched `main` and each branch head. Fresh GitHub PR metadata at approximately 17:29 Europe/London reports **both PRs mergeable: true**. PR #7's value fluctuated during metadata recalculation; check the current GitHub PRs again before deciding whether to merge. Do not infer mergeability solely from the clean local comparison.
 
 **Owner merge-review readiness:** content and scope are ready for owner review. Before any merge decision, review both PRs and check that both PRs remain mergeable; the current metadata reports true for both. Decide whether the documentation and style-reference PRs should be merged. This report is not automatic merge approval.
 
@@ -87,7 +87,7 @@ After owner review of PRs #6 and #7, restart with **one Paper One cinematic cove
 ## DTSU v1.1 completion record
 
 - **Start:** 20 November 2026, approximately 17:20 Europe/London.
-- **Completion:** 20 November 2026, approximately 17:29 Europe/London.
+- **Completion:** 20 November 2026, approximately 17:30 Europe/London.
 - **Final status:** COMPLETE, 100%.
 - **ETA:** met; bounded readback and documentation QA completed within the estimated window.
 - **Blockers:** none for byte verification. GitHub's `mergeable: false` metadata remains for owner review.
