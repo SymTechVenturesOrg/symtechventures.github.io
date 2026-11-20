@@ -1,6 +1,6 @@
 {
   "schema": "SYMMETRIA-P1-TARGETED-SCIENCE-CORRECTIONS-20261120",
-  "status": "PARTIAL_CANDIDATES_READY; FIGURE_1_1_BLOCKED",
+  "status": "FIGURES_2_1_AND_3_1_OWNER_VISUALLY_APPROVED; FIGURE_1_1_REVIEW_BLOCKED; INDEPENDENT_SCIENCE_REAUDIT_PENDING",
   "source_commit": "c6f60ee180c2f5d401b0f597f512898c010981a9",
   "correction_branch": "docs/symmetria-paper-one-science-corrections-20261120",
   "branch_head_before_candidates": "0f552143c45e2d659be0598ba6031884f6ed0913",
@@ -18,7 +18,7 @@
     },
     {
       "slot": "2.1",
-      "status": "CANDIDATE_READY_FOR_OWNER_VISUAL_REVIEW",
+      "status": "OWNER_VISUALLY_APPROVED_PENDING_INDEPENDENT_SCIENCE_REAUDIT",
       "source_path": "docs/artwork/owner-approved/paper-one/P1_Figure_2_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
       "source_sha256": "446af968d82601de428bf719aef9c6a18c837d6b91626955edc04e14613f58e4",
       "source_git_blob": "e0e48fc037c9055c90dce090d6b6fe6a33ea858f",
@@ -28,7 +28,10 @@
       "candidate_git_blob": "16adf23b9d8f61ec4c47c48ac243cae096b3336a",
       "verified_at_commit": "ef09d41b6b7fcb85efc75618736c234ccc2fa09c",
       "format": "PNG",
-      "dimensions": [1920, 1080],
+      "dimensions": [
+        1920,
+        1080
+      ],
       "mode": "RGB",
       "edits": [
         "Quantum theory of three non-gravitational interactions",
@@ -37,15 +40,41 @@
       "pixel_diff": {
         "outside_authorised_text_regions": 0,
         "regions": [
-          {"bbox_xyxy_exclusive": [243, 191, 709, 281], "changed_pixels": 38419},
-          {"bbox_xyxy_exclusive": [1491, 719, 1664, 748], "changed_pixels": 3184}
+          {
+            "bbox_xyxy_exclusive": [
+              243,
+              191,
+              709,
+              281
+            ],
+            "changed_pixels": 38419
+          },
+          {
+            "bbox_xyxy_exclusive": [
+              1491,
+              719,
+              1664,
+              748
+            ],
+            "changed_pixels": 3184
+          }
         ]
       },
-      "mobile_proxy": "New text nominal glyph sizes 31 px and 22 px at 1920px image width; approximately 6.30/4.47 px high at 390px display width and 5.17/3.67 px at 320px. Not comfortably readable without zoom or accessible HTML copy."
+      "mobile_proxy": "New text nominal glyph sizes 31 px and 22 px at 1920px image width; approximately 6.30/4.47 px high at 390px display width and 5.17/3.67 px at 320px. Not comfortably readable without zoom or accessible HTML copy.",
+      "previous_status": "CANDIDATE_READY_FOR_OWNER_VISUAL_REVIEW",
+      "owner_visual_approval": {
+        "approved": true,
+        "owner_reply": "Approved, continue.",
+        "date": "2026-11-20",
+        "timezone": "Europe/London",
+        "applies_to": "exact correction candidate SHA-256; not the previous original and not scientific acceptance",
+        "image_sha256": "a024ee52cccde7b8acc59dce1d816cfce5c894017808d6ede4337f072037cd3b"
+      },
+      "independent_science_reaudit": "PENDING"
     },
     {
       "slot": "3.1",
-      "status": "CANDIDATE_READY_FOR_OWNER_VISUAL_REVIEW",
+      "status": "OWNER_VISUALLY_APPROVED_PENDING_INDEPENDENT_SCIENCE_REAUDIT",
       "source_path": "docs/artwork/owner-approved/paper-one/P1_Figure_3_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
       "source_sha256": "62af2ce4790324056dff019c9d1617bd7c9d734b9a9201e40131a0329d1bc317",
       "source_git_blob": "5d9b2daae2405ec1e59200908d8849138f5f5fd3",
@@ -55,7 +84,10 @@
       "candidate_git_blob": "4bcafdc4bbd3d068b582dad27735c6554f008700",
       "verified_at_commit": "ef09d41b6b7fcb85efc75618736c234ccc2fa09c",
       "format": "PNG",
-      "dimensions": [1920, 1080],
+      "dimensions": [
+        1920,
+        1080
+      ],
       "mode": "RGB",
       "edits": [
         "A quantum field theory describing electromagnetic, weak and strong interactions",
@@ -64,13 +96,41 @@
       "pixel_diff": {
         "outside_authorised_text_regions": 0,
         "regions": [
-          {"bbox_xyxy_exclusive": [711, 189, 1254, 285], "changed_pixels": 49251},
-          {"bbox_xyxy_exclusive": [511, 684, 1409, 737], "changed_pixels": 43746}
+          {
+            "bbox_xyxy_exclusive": [
+              711,
+              189,
+              1254,
+              285
+            ],
+            "changed_pixels": 49251
+          },
+          {
+            "bbox_xyxy_exclusive": [
+              511,
+              684,
+              1409,
+              737
+            ],
+            "changed_pixels": 43746
+          }
         ]
       },
-      "mobile_proxy": "New text nominal glyph sizes 28 px and 26 px at 1920px image width; approximately 5.69/5.28 px high at 390px display width and 4.67/4.33 px at 320px. Not comfortably readable without zoom or accessible HTML copy."
+      "mobile_proxy": "New text nominal glyph sizes 28 px and 26 px at 1920px image width; approximately 5.69/5.28 px high at 390px display width and 4.67/4.33 px at 320px. Not comfortably readable without zoom or accessible HTML copy.",
+      "previous_status": "CANDIDATE_READY_FOR_OWNER_VISUAL_REVIEW",
+      "owner_visual_approval": {
+        "approved": true,
+        "owner_reply": "Approved, continue.",
+        "date": "2026-11-20",
+        "timezone": "Europe/London",
+        "applies_to": "exact correction candidate SHA-256; not the previous original and not scientific acceptance",
+        "image_sha256": "72bc6b2f086d06678f7a34e3ec980c86016e40ab99724bb4258bd6c0bda72a92"
+      },
+      "independent_science_reaudit": "PENDING"
     }
   ],
   "original_set_integrity": "All seven source SHA-256 values match the original GitHub manifest in a fresh GitHub checkout. The candidate binary commit adds only the two candidate PNG paths; no owner-approved paths changed.",
-  "approval_boundary": "Scientific and visual owner re-approval remain pending; independent science re-audit must be performed in a separate reviewer/session."
+  "approval_boundary": "Scientific and visual owner re-approval remain pending; independent science re-audit must be performed in a separate reviewer/session.",
+  "owner_visual_approval_date": "2026-11-20",
+  "owner_approval_scope": "New corrected candidate PNGs 2.1 and 3.1 only. Figure 1.1 original previously visual approved, equation caption approach unreviewed; independent science pending for the corrections."
 }
