@@ -77,6 +77,10 @@ def browser_case(browser, origin, name, width, height, dpr, touch):
         check(count==7,name+f": expected 7 figures, got {count}")
         order=page.locator("figure.paper-figure--cinematic").evaluate_all("els=>els.map(e=>e.dataset.figureSlot)")
         check(order==SLOTS,name+": figure order/slot mismatch")
+        active_navigation=page.evaluate("""()=>Object.fromEntries(['.site-header .main-nav','.site-header .mobile-list'].map(sel=>[sel,Array.from(document.querySelectorAll(sel+' [aria-current="page"]')).map(a=>({text:a.textContent.trim(),href:a.getAttribute('href')}))]))""")
+        record["active_navigation"]=active_navigation
+        for nav,active in active_navigation.items():
+            check(len(active)==1 and active[0]["text"]=="Discussion Papers" and active[0]["href"]=="../../pages/discussion-series.html",name+f": incorrect or duplicate aria-current page in {nav}")
         dimensions=page.evaluate("()=>({client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth})")
         record["document_dimensions"]=dimensions
         check(dimensions["scroll"]<=dimensions["client"]+1,name+": horizontal overflow")
