@@ -12,6 +12,11 @@ on:
       - css/v2-articles.css
       - images/symmetria/paper-02/approved-20261121/**
 
+  pull_request:
+    branches:
+      - feature/v2-space-research-website
+    types: [opened, synchronize, reopened]
+
 permissions:
   contents: read
 

@@ -102,7 +102,7 @@ def browser_case(browser, origin, name, width, height, dpr, touch):
             check(abs(inf["renderedWidth"]/inf["renderedHeight"]-16/9)<.025,name+f" {slot}: displayed ratio is not 16:9")
             check(inf["loading"]==("eager" if slot=="cover" else "lazy"),name+f" {slot}: wrong loading policy")
             if slot=="cover": check(inf["fetchpriority"]=="high",name+": cover fetch priority is not high")
-            if slot=="figure-1-1": check("Λ = 0" in inf["caption"] and "Λ = 0" in inf["description"],name+": Lambda qualification absent")
+            if slot=="figure-1-1": check("approximate balance" in inf["caption"] and "precise invariance" in inf["caption"] and "different mechanisms" in inf["description"],name+": natural approximation versus ideal invariance qualification absent")
             if slot=="figure-2-1": check("exact golden-ratio" in inf["caption"] and "No golden rectangle" in inf["description"],name+": Figure 2.1 no-exact-fit qualification absent")
             if slot=="figure-3-1": check("not translational invariance" in inf["caption"] and "not invariant at its original position" in inf["description"],name+": translation qualification absent")
             if slot=="figure-4-1": check("no net external torque" in inf["caption"],name+": Noether conditions absent")
