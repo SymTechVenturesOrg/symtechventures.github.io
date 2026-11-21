@@ -7,6 +7,14 @@
 **Source of truth for figure subjects and captions:** the live **source HTML on the specific implementation baseline being reviewed**; filenames and drafts are not sufficient.  
 **Related:** [Locked Cinematic AI-Illustration Style and Acceptance Gate](V2_PHASE_03_SYMMETRIA_LOCKED_CINEMATIC_ARTWORK_GATE_20261120.md); [canonical style-reference registry](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/01430576f5643442f715e0bdfcd6433ddbcee1f4/docs/artwork/style-reference/README.md) at verified draft PR #7. The earlier phased workplan and 28-figure review documents are not present in this branch snapshot, so they are not linked here.
 
+## 21 November 2026 — Owner-agreed candidate-generation workflow addendum
+
+The owner has selected the **four-alternative selection method** as the standard technique for developing each new cinematic science figure: generate four **independent standalone** AI-native compositions (A–D) for one scientifically locked slot, compare each for physics, cinematic fidelity and legibility, recommend a candidate, and record a separate exact-image owner approval before any integration. This replaces repeated open-ended single-image repair cycles, **not** the locked requirement that the final chosen figure be one full-canvas image.
+
+**Operational instructions and the Figure 4.1 case study:** [Four-Candidate Cinematic Physics Image Production Method](V2_PHASE_03_SYMMETRIA_FOUR_CANDIDATE_IMAGE_WORKFLOW_20261121.md).
+
+All existing scientific/style prohibitions, exact **1920×1080** final review geometry, source-image retention, owner approval, and GitHub merge/deployment protection remain mandatory. Generator-native `1672×941` files may be exported at 1920×1080 with documented proportion-preserving resampling and edge handling, **without claiming native 1920×1080 detail**.
+
 ## 1. Non-negotiable output geometry
 
 - Every *final review master* must be **exactly 1920 × 1080 pixels**, **16:9 landscape**. Neither “approximately 16:9” nor 1672 × 941, 1536 × 1024, 1600 × 900, or a contact-sheet tile passes. Final website WebP derivatives must preserve exactly **1920 × 1080** unless the owner explicitly revises this standard in a subsequent recorded decision.
