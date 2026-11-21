@@ -1,5 +1,6 @@
 from __future__ import annotations
 import hashlib
+from io import BytesIO
 import json
 import re
 import subprocess
@@ -9,7 +10,7 @@ from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlsplit
-from PIL import Image
+from PIL import Image, ImageStat
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -107,7 +108,24 @@ def browser_case(browser, origin, name, width, height, dpr, touch):
             if fig.count()!=1: continue
             fig.scroll_into_view_if_needed(timeout=15000)
             page.wait_for_function("sel=>{const i=document.querySelector(sel+' img');return !!i&&i.complete&&i.naturalWidth>0}",arg=selector,timeout=20000)
+            page.locator(selector+" img").evaluate("img=>img.decode()")
+            page.evaluate("()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))")
             inf=fig.evaluate("""f=>{const i=f.querySelector('img'),a=f.querySelector('a.paper-figure-open'),c=f.querySelector('figcaption'),d=f.querySelector('.figure-description'),r=i.getBoundingClientRect();return {slot:f.dataset.figureSlot,src:i.currentSrc,srcWidth:Number((i.currentSrc.match(/_(\\d+)w_q93\\.webp/)||[])[1]||0),renderedWidth:r.width,renderedHeight:r.height,naturalWidth:i.naturalWidth,naturalHeight:i.naturalHeight,alt:i.alt,describedBy:i.getAttribute('aria-describedby'),descriptionId:d?.id,description:d?.textContent.trim(),caption:c?.textContent.trim(),captionVisible:!!c&&c.getBoundingClientRect().width>0,descriptionVisible:!!d&&d.getBoundingClientRect().width>0,captionTextAlign:getComputedStyle(c).textAlign,captionFontSizePx:parseFloat(getComputedStyle(c).fontSize),captionLineHeightPx:parseFloat(getComputedStyle(c).lineHeight),descriptionTextAlign:getComputedStyle(d).textAlign,href:a.href,ariaLabel:a.getAttribute('aria-label'),target:a.target,rel:a.rel,loading:i.loading,fetchpriority:i.fetchPriority,sizes:i.sizes}}""")
+            if width in (320,390) and dpr==1:
+                paint_stddev=0.0
+                paint_attempts=0
+                for attempt in range(1,4):
+                    img_bytes=page.locator(selector+" img").screenshot(animations="disabled")
+                    sample=Image.open(BytesIO(img_bytes)).convert("L")
+                    w,h=sample.size
+                    sample=sample.crop((int(.08*w),int(.08*h),int(.92*w),int(.92*h)))
+                    paint_stddev=round(ImageStat.Stat(sample).stddev[0],2)
+                    paint_attempts=attempt
+                    if paint_stddev>=14: break
+                    page.wait_for_timeout(250)
+                inf["paint_stddev_luma"]=paint_stddev
+                inf["paint_attempts"]=paint_attempts
+                check(paint_stddev>=14,name+f" {slot}: image loaded but did not visibly paint in mobile screenshot")
             record["figures"].append(inf)
             check(inf["naturalWidth"]>0 and inf["naturalHeight"]>0,name+f" {slot}: selected responsive image failed to decode")
             check(inf["srcWidth"] in (768,1280,1920) and inf["srcWidth"]+1>=inf["renderedWidth"]*dpr*.95,name+f" {slot}: responsive candidate undersized or unlisted")
