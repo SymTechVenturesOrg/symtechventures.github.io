@@ -16,6 +16,7 @@
 Read first, and pin exact current source commits:
 - [Paper Two seven-image commissioning/science gates](../artwork/paper-two/P2_CINEMATIC_IMAGE_COMMISSIONING_AND_SCIENCE_GATES_20261121.md).
 - [Seven-slot production manifest](../artwork/paper-two/production_manifest.json).
+- [Three rejected cover attempt QA and historical draft science-risk report](../reports/V2_PHASE_03_P2_INITIAL_COVER_GENERATION_AND_HISTORICAL_DRAFT_QA_20261121.md) — **read this before any new attempt**, do not mistake rejected generated files for assets ready for integration.
 - [Locked owner style gate on main](https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/main/docs/reports/V2_PHASE_03_SYMMETRIA_LOCKED_CINEMATIC_ARTWORK_GATE_20261120.md).
 - Paper Two article: `articles/symmetria/symmetria-paper-02.html` at `feature/v2-space-research-website`, earlier examined blob `060700e8cdac337583c820f044efe80154d59b6c`.
 - Original reference A: `docs/artwork/owner-approved/paper-one/P1_Cover_OWNER_VISUALLY_APPROVED_1920x1080.png` at immutable binary import commit `c6f60ee180c2f5d401b0f597f512898c010981a9`, exact SHA-256 `3eeba0f6bfcefd2a63b5867cad0442ac9a6d356526cc1fed31e057d3de9e95a8`.
