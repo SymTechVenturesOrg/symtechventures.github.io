@@ -4,8 +4,8 @@
   "owner_art_approval_record": "https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/docs/symmetria-paper-two-cinematic-artwork-20261121/docs/reports/V2_PHASE_03_P2_ALL_SEVEN_FINAL_OWNER_APPROVAL_AND_RELEASE_GATE_20261121.md",
   "source_art_pr": 12,
   "source_art_branch": "docs/symmetria-paper-two-cinematic-artwork-20261121",
-  "source_art_manifest_blob": "97b2201e3ff44034a8c538b109d69862caf02e6e",
-  "source_art_pr_head_sha": "e1b6db18490c490bcbe21e56a035077d8e8f1d5b",
+  "source_art_manifest_blob": "fb8d9a67b0e9ce067137bdf418f20260ee85a455",
+  "source_art_pr_head_sha": "a251c5005ebab03793d5b63599ad99118a7c279d",
   "integration_branch": "feature/v2-paper-two-seven-cinematic-webp-20261121",
   "integration_base_branch": "feature/v2-space-research-website",
   "integration_base_article_blob": "060700e8cdac337583c820f044efe80154d59b6c",
@@ -360,7 +360,7 @@
       "source_git_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
       "source_github_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_6_1_ScienceFix_Candidate_1920x1080.png",
       "source_sha256": "e0590636813f7a720ca88b225011a5c2b4122a2ccce79263c9f3563f47c0bcff",
-      "source_git_blob": "babf8cc33ae4542c018b3a99d8b3817728ecc2e",
+      "source_git_blob": "babf8cc33ae4542c018b3a99d8b3817728ecc2e4",
       "source_bytes": 3062952,
       "dimensions": [
         1920,
@@ -403,5 +403,6 @@
       "source_selection": "SCIENCE_CORRECTED_FINAL (superseded original must NOT be used)",
       "status": "APPROVED_MASTER_SOURCE_ONLY_NOT_YET_COPIED_TO_WEBSITE"
     }
-  ]
+  ],
+  "source_blob_id_correction": "P2 Fig 6.1 formerly documented with truncated 39-character Git blob; corrected full Git blob is babf8cc33ae4542c018b3a99d8b3817728ecc2e4. Verified directly in GitHub and with git hash-object; PNG SHA-256/source bytes unchanged."
 }
