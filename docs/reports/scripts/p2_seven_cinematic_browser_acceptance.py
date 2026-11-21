@@ -88,7 +88,7 @@ def browser_case(browser, origin, name, width, height, dpr, touch):
             if fig.count()!=1: continue
             fig.scroll_into_view_if_needed(timeout=15000)
             page.wait_for_function("sel=>{const i=document.querySelector(sel+' img');return !!i&&i.complete&&i.naturalWidth>0}",arg=selector,timeout=20000)
-            inf=fig.evaluate("""f=>{const i=f.querySelector('img'),a=f.querySelector('a.paper-figure-open'),c=f.querySelector('figcaption'),d=f.querySelector('.figure-description'),r=i.getBoundingClientRect();return {slot:f.dataset.figureSlot,src:i.currentSrc,srcWidth:Number((i.currentSrc.match(/_(\\d+)w_q93\\.webp/)||[])[1]||0),renderedWidth:r.width,renderedHeight:r.height,naturalWidth:i.naturalWidth,naturalHeight:i.naturalHeight,alt:i.alt,describedBy:i.getAttribute('aria-describedby'),descriptionId:d?.id,description:d?.textContent.trim(),caption:c?.textContent.trim(),captionVisible:!!c&&c.getBoundingClientRect().width>0,descriptionVisible:!!d&&d.getBoundingClientRect().width>0,href:a.href,ariaLabel:a.getAttribute('aria-label'),target:a.target,rel:a.rel,loading:i.loading,fetchpriority:i.fetchPriority,sizes:i.sizes}}""")
+            inf=fig.evaluate("""f=>{const i=f.querySelector('img'),a=f.querySelector('a.paper-figure-open'),c=f.querySelector('figcaption'),d=f.querySelector('.figure-description'),r=i.getBoundingClientRect();return {slot:f.dataset.figureSlot,src:i.currentSrc,srcWidth:Number((i.currentSrc.match(/_(\\d+)w_q93\\.webp/)||[])[1]||0),renderedWidth:r.width,renderedHeight:r.height,naturalWidth:i.naturalWidth,naturalHeight:i.naturalHeight,alt:i.alt,describedBy:i.getAttribute('aria-describedby'),descriptionId:d?.id,description:d?.textContent.trim(),caption:c?.textContent.trim(),captionVisible:!!c&&c.getBoundingClientRect().width>0,descriptionVisible:!!d&&d.getBoundingClientRect().width>0,captionTextAlign:getComputedStyle(c).textAlign,captionFontSizePx:parseFloat(getComputedStyle(c).fontSize),captionLineHeightPx:parseFloat(getComputedStyle(c).lineHeight),descriptionTextAlign:getComputedStyle(d).textAlign,href:a.href,ariaLabel:a.getAttribute('aria-label'),target:a.target,rel:a.rel,loading:i.loading,fetchpriority:i.fetchPriority,sizes:i.sizes}}""")
             record["figures"].append(inf)
             check(inf["naturalWidth"]>0 and inf["naturalHeight"]>0,name+f" {slot}: selected responsive image failed to decode")
             check(inf["srcWidth"] in (768,1280,1920) and inf["srcWidth"]+1>=inf["renderedWidth"]*dpr*.95,name+f" {slot}: responsive candidate undersized or unlisted")
@@ -97,6 +97,10 @@ def browser_case(browser, origin, name, width, height, dpr, touch):
             check(inf["description"]==item["description_proposed"],name+f" {slot}: accessible description differs from manifest")
             check(inf["describedBy"]==inf["descriptionId"] and inf["descriptionVisible"],name+f" {slot}: missing visible aria-describedby target")
             check(inf["captionVisible"],name+f" {slot}: visible caption missing")
+            if width in (320,390):
+                check(inf["captionTextAlign"]=="left",name+f" {slot}: mobile figure caption is not left-aligned")
+                check(inf["descriptionTextAlign"]=="left",name+f" {slot}: mobile figure description is not left-aligned")
+                check(inf["captionFontSizePx"]>=15 and inf["captionLineHeightPx"]>=24,name+f" {slot}: mobile caption font size or line height is below the readability threshold")
             check(inf["href"].endswith(item["site_master_png"]),name+f" {slot}: full-resolution PNG link wrong")
             check(inf["target"]=="_blank" and "noopener" in inf["rel"] and "full-resolution" in inf["ariaLabel"].lower(),name+f" {slot}: secure/accessibly named new-tab PNG link missing")
             check(abs(inf["renderedWidth"]/inf["renderedHeight"]-16/9)<.025,name+f" {slot}: displayed ratio is not 16:9")
