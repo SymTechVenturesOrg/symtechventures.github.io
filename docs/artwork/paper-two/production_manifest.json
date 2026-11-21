@@ -1,7 +1,7 @@
 {
   "schema": "SYMMETRIA-PAPER-TWO-CINEMATIC-ARTWORK-20261121",
   "date": "2026-11-21",
-  "status": "COVER_OWNER_APPROVED; SIX_SECTION_IMAGES_AUTHORISATION_BATCH_PRODUCTION_IN_CHAT; WORK_BATCH_REVIEW_AT_END",
+  "status": "COVER_OWNER_VISUALLY_APPROVED; SIX_CHAT_1920x1080_CANDIDATES_GENERATED_AND_SPACE_STAGED; FULL_BATCH_WORK_SCIENCE_AND_STYLE_REVIEW_PENDING",
   "branch": "docs/symmetria-paper-two-cinematic-artwork-20261121",
   "source_article_branch": "feature/v2-space-research-website",
   "source_article_git_blob": "060700e8cdac337583c820f044efe80154d59b6c",
@@ -52,67 +52,139 @@
       "slot": "1.1",
       "subject": "Symmetry in Nature and Physics",
       "legacy_webp": "02_symmetry_nature_physics.webp",
-      "production_status": "CHAT_GENERATION_AUTHORISED_BATCH; FINAL_WORK_REVIEW_PENDING",
+      "production_status": "CHAT_FULL_RES_CANDIDATE_STAGED_IN_SPACE_PENDING_WORK_BATCH_REAUDIT",
       "owner_visual_approval": false,
-      "independent_science_review": "NOT_STARTED",
+      "independent_science_review": "NOT_STARTED; SCIENCE_RISK_FLAGS_PENDING",
       "verified_git_binary_path": null,
-      "sha256": null,
-      "final_dimensions": null
+      "sha256": "a53157058eda3e5d594e53284be40f8bb2c58fdb03c399b7401e7fefc525957c",
+      "final_dimensions": [
+        1920,
+        1080
+      ],
+      "full_resolution_preview_filename": "P2_Figure_1_1_ChatCandidate_1920x1080.png",
+      "final_bytes": 3385272,
+      "image_source": "native image_gen 1672x941, Pillow Lanczos export to 1920x1080",
+      "staging_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
+      "staging_library_file_reference": "library-file:fde1_bGliZmlsZV9QdldWY05yUjUwNWFaeG1nelA5dHln_FileDrive_d1bc107702548191a12b79a0f11187bb",
+      "git_binary_verified": false,
+      "review_flags": [
+        "Nature/physics symmetry distinctions"
+      ]
     },
     {
       "slot": "2.1",
       "subject": "Natural Symmetry Patterns",
       "legacy_webp": "02_natural_symmetry_patterns.webp",
-      "production_status": "CHAT_GENERATION_AUTHORISED_BATCH; FINAL_WORK_REVIEW_PENDING",
+      "production_status": "CHAT_FULL_RES_CANDIDATE_STAGED_IN_SPACE_PENDING_WORK_BATCH_REAUDIT",
       "owner_visual_approval": false,
-      "independent_science_review": "NOT_STARTED",
+      "independent_science_review": "NOT_STARTED; SCIENCE_RISK_FLAGS_PENDING",
       "verified_git_binary_path": null,
-      "sha256": null,
-      "final_dimensions": null
+      "sha256": "a44fa0463affeaa486bdb000793c7c3674bae78587e245886e5dd27b7ece97b8",
+      "final_dimensions": [
+        1920,
+        1080
+      ],
+      "full_resolution_preview_filename": "P2_Figure_2_1_ChatCandidate_1920x1080.png",
+      "final_bytes": 3420468,
+      "image_source": "native image_gen 1672x941, Pillow Lanczos export to 1920x1080",
+      "staging_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
+      "staging_library_file_reference": "library-file:fde1_bGliZmlsZV9UV1d3cmw5TEltZzdGN2ZqS1FoWUZB_FileDrive_d1bc107702548191a12b79a0f11187bb",
+      "git_binary_verified": false,
+      "review_flags": [
+        "Golden/Fibonacci spiral overlay is schematic; natural spiral/sunflower may not follow exact golden proportions"
+      ]
     },
     {
       "slot": "3.1",
       "subject": "Mathematical Symmetry and Invariance",
       "legacy_webp": "02_mathematical_symmetry_invariance.webp",
-      "production_status": "CHAT_GENERATION_AUTHORISED_BATCH; FINAL_WORK_REVIEW_PENDING",
+      "production_status": "CHAT_FULL_RES_CANDIDATE_STAGED_IN_SPACE_PENDING_WORK_BATCH_REAUDIT",
       "owner_visual_approval": false,
-      "independent_science_review": "NOT_STARTED",
+      "independent_science_review": "NOT_STARTED; SCIENCE_RISK_FLAGS_PENDING",
       "verified_git_binary_path": null,
-      "sha256": null,
-      "final_dimensions": null
+      "sha256": "715d5b9c70f818381e6fcef3e63149079b6e8f9010308bc386e966e3bb0fa233",
+      "final_dimensions": [
+        1920,
+        1080
+      ],
+      "full_resolution_preview_filename": "P2_Figure_3_1_ChatCandidate_1920x1080.png",
+      "final_bytes": 2910836,
+      "image_source": "native image_gen 1672x941, Pillow Lanczos export to 1920x1080",
+      "staging_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
+      "staging_library_file_reference": "library-file:fde1_bGliZmlsZV9EajItZ1dxRGVWYVprVEo5YUVsakh3_FileDrive_d1bc107702548191a12b79a0f11187bb",
+      "git_binary_verified": false,
+      "review_flags": [
+        "Finite snowflake is not translationally invariant; clarify translation operator vs group symmetry; inspect D6 equation and reflection notation"
+      ]
     },
     {
       "slot": "4.1",
       "subject": "Noether's Theorem and Conservation Laws",
       "legacy_webp": "02_noether_symmetry_conservation.webp",
-      "production_status": "CHAT_GENERATION_AUTHORISED_BATCH; FINAL_WORK_REVIEW_PENDING",
+      "production_status": "CHAT_FULL_RES_CANDIDATE_STAGED_IN_SPACE_PENDING_WORK_BATCH_REAUDIT",
       "owner_visual_approval": false,
-      "independent_science_review": "NOT_STARTED",
+      "independent_science_review": "NOT_STARTED; SCIENCE_RISK_FLAGS_PENDING",
       "verified_git_binary_path": null,
-      "sha256": null,
-      "final_dimensions": null
+      "sha256": "bce9e58d6a5dbb058774051a88f1d76f44e926420f56ca9939440eef7512365c",
+      "final_dimensions": [
+        1920,
+        1080
+      ],
+      "full_resolution_preview_filename": "P2_Figure_4_1_ChatCandidate_1920x1080.png",
+      "final_bytes": 2688456,
+      "image_source": "native image_gen 1672x941, Pillow Lanczos export to 1920x1080",
+      "staging_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
+      "staging_library_file_reference": "library-file:fde1_bGliZmlsZV9FVXBsNmd6b2xVbXRSQXJWNTRXbk5n_FileDrive_d1bc107702548191a12b79a0f11187bb",
+      "git_binary_verified": false,
+      "review_flags": [
+        "Noether conservation follows continuous symmetry of the action and appropriate system assumptions; imagery depicts angular momentum only"
+      ]
     },
     {
       "slot": "5.1",
       "subject": "Broken Symmetry and Emergence",
       "legacy_webp": "02_broken_symmetry_emergence.webp",
-      "production_status": "CHAT_GENERATION_AUTHORISED_BATCH; FINAL_WORK_REVIEW_PENDING",
+      "production_status": "CHAT_FULL_RES_CANDIDATE_STAGED_IN_SPACE_PENDING_WORK_BATCH_REAUDIT",
       "owner_visual_approval": false,
-      "independent_science_review": "NOT_STARTED",
+      "independent_science_review": "NOT_STARTED; SCIENCE_RISK_FLAGS_PENDING",
       "verified_git_binary_path": null,
-      "sha256": null,
-      "final_dimensions": null
+      "sha256": "201f88207b9bd0122a105c59c94b8a17f6d50740c310594718d5b3ababf685cf",
+      "final_dimensions": [
+        1920,
+        1080
+      ],
+      "full_resolution_preview_filename": "P2_Figure_5_1_ChatCandidate_1920x1080.png",
+      "final_bytes": 3062628,
+      "image_source": "native image_gen 1672x941, Pillow Lanczos export to 1920x1080",
+      "staging_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
+      "staging_library_file_reference": "library-file:fde1_bGliZmlsZV9YVkhPdnBOWFJzdWpER0lXbjh6OG9n_FileDrive_d1bc107702548191a12b79a0f11187bb",
+      "git_binary_verified": false,
+      "review_flags": [
+        "Two-well 2D potential schematic versus full circular Mexican-hat; assess consistency of narrative and axes"
+      ]
     },
     {
       "slot": "6.1",
       "subject": "The SYMMETRIA Symmetry Perspective",
       "legacy_webp": "02_symmetria_symmetry_perspective.webp",
-      "production_status": "CHAT_GENERATION_AUTHORISED_BATCH; FINAL_WORK_REVIEW_PENDING",
+      "production_status": "CHAT_FULL_RES_CANDIDATE_STAGED_IN_SPACE_PENDING_WORK_BATCH_REAUDIT",
       "owner_visual_approval": false,
-      "independent_science_review": "NOT_STARTED",
+      "independent_science_review": "NOT_STARTED; SCIENCE_RISK_FLAGS_PENDING",
       "verified_git_binary_path": null,
-      "sha256": null,
-      "final_dimensions": null
+      "sha256": "34d4f861e699cd1ae2f0fa98a6b157aa513544407d778ae111d1b7128f01f4d3",
+      "final_dimensions": [
+        1920,
+        1080
+      ],
+      "full_resolution_preview_filename": "P2_Figure_6_1_ChatCandidate_1920x1080.png",
+      "final_bytes": 3354352,
+      "image_source": "native image_gen 1672x941, Pillow Lanczos export to 1920x1080",
+      "staging_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
+      "staging_library_file_reference": "library-file:fde1_bGliZmlsZV9xejlsVUZhZi1iaDFGbXhlSmV4Q2xR_FileDrive_d1bc107702548191a12b79a0f11187bb",
+      "git_binary_verified": false,
+      "review_flags": [
+        "Untested hypothesis caveat absent from image; ensure accessible caption qualifies SYMMETRIA interpretation; verify title not a prohibited decorative masthead"
+      ]
     }
   ],
   "cover_trial_log": [
@@ -174,5 +246,21 @@
     "owner_visual_approval": false,
     "website_integration_authorised": false
   },
-  "review_workflow": "Owner explicitly changed earlier per-figure stop to a batch workflow: generate Figures 1.1–6.1 in Chat, do provisional science/self-screen per image, then perform one independent Work full-seven-figure re-audit at the end; no intermediate owner sign-offs required. This does not waive individual image science/style acceptance in the final Work review or final owner approval."
+  "review_workflow": "Owner explicitly changed earlier per-figure stop to a batch workflow: generate Figures 1.1–6.1 in Chat, do provisional science/self-screen per image, then perform one independent Work full-seven-figure re-audit at the end; no intermediate owner sign-offs required. This does not waive individual image science/style acceptance in the final Work review or final owner approval.",
+  "six_image_batch": {
+    "slots": 6,
+    "generated": "2026-11-21",
+    "native_dimensions": [
+      1672,
+      941
+    ],
+    "exports_dimensions": [
+      1920,
+      1080
+    ],
+    "source_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
+    "staging": "SIX_IN_SPACE_WITH_SHA256_VERIFIED_UPLOAD; NO_GITHUB_BINARY_CANDIDATES_YET",
+    "review_workflow": "single combined Work independent QA of six after generation; each slot receives its own verdict",
+    "website_integration": "NOT_AUTHORISED"
+  }
 }
