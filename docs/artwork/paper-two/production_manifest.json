@@ -1,7 +1,7 @@
 {
   "schema": "SYMMETRIA-PAPER-TWO-CINEMATIC-ARTWORK-20261121",
   "date": "2026-11-21",
-  "status": "COVER_CANDIDATE_BINARY_VERIFIED_AWAITING_OWNER_VISUAL_APPROVAL",
+  "status": "COVER_OWNER_APPROVED; SIX_SECTION_IMAGES_AUTHORISATION_BATCH_PRODUCTION_IN_CHAT; WORK_BATCH_REVIEW_AT_END",
   "branch": "docs/symmetria-paper-two-cinematic-artwork-20261121",
   "source_article_branch": "feature/v2-space-research-website",
   "source_article_git_blob": "060700e8cdac337583c820f044efe80154d59b6c",
@@ -16,7 +16,7 @@
       "sha256": "945a5061c67bd52300cc4823f9664579380c85b36363daadcc7ef88496687b1c"
     }
   ],
-  "approved_new_image_count": 0,
+  "approved_new_image_count": 1,
   "generated_local_trial_status": "One new native AI cover candidate generated; text and science checks pass for owner review. The three historical attempts remain rejected.",
   "source_image_dimensions_native_in_trials": [
     1672,
@@ -28,9 +28,9 @@
       "slot": "Cover",
       "subject": "Cover illustration",
       "legacy_webp": "02_symmetry_cover.webp",
-      "production_status": "CANDIDATE_BINARY_VERIFIED_AWAITING_OWNER_VISUAL_APPROVAL",
-      "owner_visual_approval": false,
-      "independent_science_review": "PASS_FOR_OWNER_REVIEW",
+      "production_status": "OWNER_VISUALLY_APPROVED; SIX_FIGURE_BATCH_AUTHORISATION_RECEIVED",
+      "owner_visual_approval": true,
+      "independent_science_review": "PASS_FOR_OWNER_REVIEW; BATCH_INDEPENDENT_SCIENCE_REAUDIT_AFTER_ALL_SEVEN",
       "verified_git_binary_path": "docs/artwork/paper-two/candidates/P2_Cover_Cinematic_1920x1080_Candidate.png",
       "sha256": "d1c2d02620c7b595c88dcfadf8e91ac4628f48d6b7770a1a55fa19cdc52b8a02",
       "final_dimensions": [
@@ -45,13 +45,14 @@
       "native_sha256": "e78b0ce289a2019b80f16cc2236c05341b89ec099a62f09caf7ff4718940b4f8",
       "native_bytes": 2640814,
       "final_bytes": 3220866,
-      "git_blob_sha": "ecc305bb758cabd8d0760fc3faef978cf7b05a82"
+      "git_blob_sha": "ecc305bb758cabd8d0760fc3faef978cf7b05a82",
+      "owner_visual_approval_source": "Owner replied on 2026-11-21: 'I approve the design. Can we do the next six images in Chat and only review them at the end in Work though this time?'"
     },
     {
       "slot": "1.1",
       "subject": "Symmetry in Nature and Physics",
       "legacy_webp": "02_symmetry_nature_physics.webp",
-      "production_status": "NOT_STARTED_AWAIT_COVER_STYLE_GATE",
+      "production_status": "CHAT_GENERATION_AUTHORISED_BATCH; FINAL_WORK_REVIEW_PENDING",
       "owner_visual_approval": false,
       "independent_science_review": "NOT_STARTED",
       "verified_git_binary_path": null,
@@ -62,7 +63,7 @@
       "slot": "2.1",
       "subject": "Natural Symmetry Patterns",
       "legacy_webp": "02_natural_symmetry_patterns.webp",
-      "production_status": "NOT_STARTED_AWAIT_COVER_STYLE_GATE",
+      "production_status": "CHAT_GENERATION_AUTHORISED_BATCH; FINAL_WORK_REVIEW_PENDING",
       "owner_visual_approval": false,
       "independent_science_review": "NOT_STARTED",
       "verified_git_binary_path": null,
@@ -73,7 +74,7 @@
       "slot": "3.1",
       "subject": "Mathematical Symmetry and Invariance",
       "legacy_webp": "02_mathematical_symmetry_invariance.webp",
-      "production_status": "NOT_STARTED_AWAIT_COVER_STYLE_GATE",
+      "production_status": "CHAT_GENERATION_AUTHORISED_BATCH; FINAL_WORK_REVIEW_PENDING",
       "owner_visual_approval": false,
       "independent_science_review": "NOT_STARTED",
       "verified_git_binary_path": null,
@@ -84,7 +85,7 @@
       "slot": "4.1",
       "subject": "Noether's Theorem and Conservation Laws",
       "legacy_webp": "02_noether_symmetry_conservation.webp",
-      "production_status": "NOT_STARTED_AWAIT_COVER_STYLE_GATE",
+      "production_status": "CHAT_GENERATION_AUTHORISED_BATCH; FINAL_WORK_REVIEW_PENDING",
       "owner_visual_approval": false,
       "independent_science_review": "NOT_STARTED",
       "verified_git_binary_path": null,
@@ -95,7 +96,7 @@
       "slot": "5.1",
       "subject": "Broken Symmetry and Emergence",
       "legacy_webp": "02_broken_symmetry_emergence.webp",
-      "production_status": "NOT_STARTED_AWAIT_COVER_STYLE_GATE",
+      "production_status": "CHAT_GENERATION_AUTHORISED_BATCH; FINAL_WORK_REVIEW_PENDING",
       "owner_visual_approval": false,
       "independent_science_review": "NOT_STARTED",
       "verified_git_binary_path": null,
@@ -106,7 +107,7 @@
       "slot": "6.1",
       "subject": "The SYMMETRIA Symmetry Perspective",
       "legacy_webp": "02_symmetria_symmetry_perspective.webp",
-      "production_status": "NOT_STARTED_AWAIT_COVER_STYLE_GATE",
+      "production_status": "CHAT_GENERATION_AUTHORISED_BATCH; FINAL_WORK_REVIEW_PENDING",
       "owner_visual_approval": false,
       "independent_science_review": "NOT_STARTED",
       "verified_git_binary_path": null,
@@ -172,5 +173,6 @@
     "scientific_review": "Idealised central sixfold ice-crystal lattice with six primary arms at 60-degree intervals; rotational cue is conceptual and contains no equation or conservation/unification claim. The visible leaf is naturally approximate/asymmetric; the background galaxy is atmospheric, not labelled as a symmetry example.",
     "owner_visual_approval": false,
     "website_integration_authorised": false
-  }
+  },
+  "review_workflow": "Owner explicitly changed earlier per-figure stop to a batch workflow: generate Figures 1.1–6.1 in Chat, do provisional science/self-screen per image, then perform one independent Work full-seven-figure re-audit at the end; no intermediate owner sign-offs required. This does not waive individual image science/style acceptance in the final Work review or final owner approval."
 }
