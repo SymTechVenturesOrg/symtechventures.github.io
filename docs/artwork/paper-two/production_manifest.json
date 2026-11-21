@@ -1,0 +1,675 @@
+{
+  "schema": "SYMMETRIA-PAPER-TWO-CINEMATIC-ARTWORK-20261121",
+  "date": "2026-11-21",
+  "status": "SEVEN_OF_SEVEN_PAPER_TWO_OWNER_APPROVED; SCIENCE_STYLE_PASS; SOURCE_BYTES_VERIFIED; INTEGRATION_DRAFT_PREPARATION_ONLY",
+  "branch": "docs/symmetria-paper-two-cinematic-artwork-20261121",
+  "source_article_branch": "feature/v2-space-research-website",
+  "source_article_git_blob": "060700e8cdac337583c820f044efe80154d59b6c",
+  "locked_style_git_blob": "4d91cb5f9a437f782a1815ea8f91c7ade4c0063a",
+  "anchors": [
+    {
+      "path": "docs/artwork/owner-approved/paper-one/P1_Cover_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "sha256": "3eeba0f6bfcefd2a63b5867cad0442ac9a6d356526cc1fed31e057d3de9e95a8"
+    },
+    {
+      "path": "docs/artwork/owner-approved/paper-one/P1_Figure_5_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "sha256": "945a5061c67bd52300cc4823f9664579380c85b36363daadcc7ef88496687b1c"
+    }
+  ],
+  "approved_new_image_count": 7,
+  "generated_local_trial_status": "One new native AI cover candidate generated; text and science checks pass for owner review. The three historical attempts remain rejected.",
+  "source_image_dimensions_native_in_trials": [
+    1672,
+    941
+  ],
+  "website_integration_authorised": false,
+  "entries": [
+    {
+      "slot": "Cover",
+      "subject": "Cover illustration",
+      "legacy_webp": "02_symmetry_cover.webp",
+      "production_status": "OWNER_VISUALLY_APPROVED; SIX_FIGURE_BATCH_AUTHORISATION_RECEIVED",
+      "owner_visual_approval": true,
+      "independent_science_review": "PASS_FOR_OWNER_REVIEW; BATCH_INDEPENDENT_SCIENCE_REAUDIT_AFTER_ALL_SEVEN",
+      "verified_git_binary_path": "docs/artwork/paper-two/candidates/P2_Cover_Cinematic_1920x1080_Candidate.png",
+      "sha256": "d1c2d02620c7b595c88dcfadf8e91ac4628f48d6b7770a1a55fa19cdc52b8a02",
+      "final_dimensions": [
+        1920,
+        1080
+      ],
+      "reason": "Single AI-native subject-cover candidate committed for owner visual checkpoint. The exact title and subtitle are the only readable in-art text; scientific story is an idealised sixfold crystal with a restrained rotational cue. Owner approval remains pending.",
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "native_sha256": "e78b0ce289a2019b80f16cc2236c05341b89ec099a62f09caf7ff4718940b4f8",
+      "native_bytes": 2640814,
+      "final_bytes": 3220866,
+      "git_blob_sha": "ecc305bb758cabd8d0760fc3faef978cf7b05a82",
+      "owner_visual_approval_source": "Owner replied on 2026-11-21: 'I approve the design. Can we do the next six images in Chat and only review them at the end in Work though this time?'"
+    },
+    {
+      "slot": "1.1",
+      "subject": "Symmetry in Nature and Physics",
+      "legacy_webp": "02_symmetry_nature_physics.webp",
+      "production_status": "OWNER_VISUALLY_APPROVED_AND_INDEPENDENT_QA_PASS; WEBSITE_INTEGRATION_NOT_AUTHORISED",
+      "owner_visual_approval": true,
+      "independent_science_review": "PASS",
+      "verified_git_binary_path": "docs/artwork/paper-two/candidates/P2_Figure_1_1_ChatCandidate_1920x1080.png",
+      "sha256": "a53157058eda3e5d594e53284be40f8bb2c58fdb03c399b7401e7fefc525957c",
+      "final_dimensions": [
+        1920,
+        1080
+      ],
+      "full_resolution_preview_filename": "P2_Figure_1_1_ChatCandidate_1920x1080.png",
+      "final_bytes": 3385272,
+      "image_source": "native image_gen 1672x941, Pillow Lanczos export to 1920x1080",
+      "staging_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
+      "staging_library_file_reference": "library-file:fde1_bGliZmlsZV9QdldWY05yUjUwNWFaeG1nelA5dHln_FileDrive_d1bc107702548191a12b79a0f11187bb",
+      "git_binary_verified": true,
+      "review_flags": [
+        "Nature/physics symmetry distinctions"
+      ],
+      "git_blob_sha": "60056cbfbaafddf025ab68dc0d5c37745764ebba",
+      "github_candidate_commit": "be2985ab59657ac4e631a7b8e0084064167188c4",
+      "cinematic_style_review": "PASS",
+      "independent_qa_decision": "PASS",
+      "independent_qa_finding": "The iris/leaf and butterfly are biological approximations; crystal and lattice motifs communicate ideal periodic order, and the dipole-style field lines are a plausible schematic. This matches the manuscript’s broad introductory caption without stating that living forms are exact mathematical symmetries. Keep the adjacent caption’s ‘approximately’/‘suggests’ framing.",
+      "recommended_follow_up": "No image repair required. Caption must retain the distinction between approximate biological symmetry and ideal mathematical/physical models.",
+      "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md",
+      "owner_visual_approval_source": "Owner replied 'Agreed, approved and authorised. Continue. 😊' on 2026-11-21 to explicit approval request for Figures 1.1, 4.1 and 5.1, plus authorisation to correct 2.1, 3.1 and 6.1."
+    },
+    {
+      "slot": "2.1",
+      "subject": "Natural Symmetry Patterns",
+      "legacy_webp": "02_natural_symmetry_patterns.webp",
+      "production_status": "FINAL_OWNER_APPROVED_CORRECTED_PNG_GITHUB_BYTES_PASS_SCIENCE_STYLE_PASS; NO_WEBSITE_INTEGRATION",
+      "owner_visual_approval": true,
+      "independent_science_review": "PASS_SCIENCE",
+      "verified_git_binary_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_2_1_ScienceFix_Candidate_1920x1080.png",
+      "sha256": "ccea83f05ded4bd9479ff624a65e4bbf8261afd2cbbd5e632ebcf0bcdfc3f421",
+      "final_dimensions": [
+        1920,
+        1080
+      ],
+      "full_resolution_preview_filename": "P2_Figure_2_1_ChatCandidate_1920x1080.png",
+      "final_bytes": 3561649,
+      "image_source": "native image_gen 1672x941, Pillow Lanczos export to 1920x1080",
+      "staging_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
+      "staging_library_file_reference": "library-file:fde1_bGliZmlsZV9UV1d3cmw5TEltZzdGN2ZqS1FoWUZB_FileDrive_d1bc107702548191a12b79a0f11187bb",
+      "git_binary_verified": true,
+      "review_flags": [
+        "Golden/Fibonacci spiral overlay is schematic; natural spiral/sunflower may not follow exact golden proportions"
+      ],
+      "git_blob_sha": "65d8c7a21d68a93f0ae495e0f543f4f7779a100c",
+      "github_candidate_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+      "cinematic_style_review": "PASS",
+      "independent_qa_decision": "PASS",
+      "independent_qa_finding": "Correction independently verified in 2026-11-21 three science-fix Work report",
+      "recommended_follow_up": "Preserve scientific caveats in HTML; full-resolution viewing link and accessible math descriptions necessary on mobile.",
+      "qa_report_path": "docs/reports/V2_PHASE_03_P2_THREE_SCIENCE_FIXES_INDEPENDENT_GITHUB_QA_20261121.md",
+      "replacement_candidate_status": "OWNER_APPROVED_FINAL_SELECTION",
+      "replacement_candidate_sha256": "ccea83f05ded4bd9479ff624a65e4bbf8261afd2cbbd5e632ebcf0bcdfc3f421",
+      "replacement_qa_decision": "PASS_SCIENCE_AND_STYLE",
+      "replacement_candidate_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_2_1_ScienceFix_Candidate_1920x1080.png",
+      "replacement_candidate_bytes": 3561649,
+      "replacement_candidate_git_blob_sha": "65d8c7a21d68a93f0ae495e0f543f4f7779a100c",
+      "replacement_candidate_github_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+      "replacement_candidate_dimensions": [
+        1920,
+        1080
+      ],
+      "replacement_candidate_binary_review": "GITHUB_BYTES_PASS",
+      "replacement_style_review": "PASS_STYLE",
+      "replacement_owner_visual_approval": false,
+      "replacement_mobile_note": "Detailed callout and footer copy too small for comfortable reading at 390px and 320px scale-down; full-resolution access and accessible explanatory text required for later integration.",
+      "replacement_qa_report_path": "docs/reports/V2_PHASE_03_P2_THREE_SCIENCE_FIXES_INDEPENDENT_GITHUB_QA_20261121.md",
+      "replacement_github_binary_verified": true,
+      "superseded_original_candidate": {
+        "path": "docs/artwork/paper-two/candidates/P2_Figure_2_1_ChatCandidate_1920x1080.png",
+        "sha256": "a44fa0463affeaa486bdb000793c7c3674bae78587e245886e5dd27b7ece97b8",
+        "bytes": 3420468,
+        "git_blob_sha": "402d29f6cb83cefa9b58ee5ce6d10e7ccf521197",
+        "independent_qa_decision": "FIX",
+        "provenance": "Immutable original first-batch candidate retained in PR #12; historic QA FIX remains in prior audit."
+      },
+      "owner_visual_approval_source": "User explicitly approved the corrected Figures 2.1, 3.1 and 6.1 as final artwork on 2026-11-21; applies only to the exact corrected SHA-256 identities."
+    },
+    {
+      "slot": "3.1",
+      "subject": "Mathematical Symmetry and Invariance",
+      "legacy_webp": "02_mathematical_symmetry_invariance.webp",
+      "production_status": "FINAL_OWNER_APPROVED_CORRECTED_PNG_GITHUB_BYTES_PASS_SCIENCE_STYLE_PASS; NO_WEBSITE_INTEGRATION",
+      "owner_visual_approval": true,
+      "independent_science_review": "PASS_SCIENCE",
+      "verified_git_binary_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_3_1_ScienceFix_Candidate_1920x1080.png",
+      "sha256": "962c5465b7ed8d599e24688a173b4ec59f12bf9f7c3ce3288c8af5ccb224f07d",
+      "final_dimensions": [
+        1920,
+        1080
+      ],
+      "full_resolution_preview_filename": "P2_Figure_3_1_ChatCandidate_1920x1080.png",
+      "final_bytes": 3041897,
+      "image_source": "native image_gen 1672x941, Pillow Lanczos export to 1920x1080",
+      "staging_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
+      "staging_library_file_reference": "library-file:fde1_bGliZmlsZV9EajItZ1dxRGVWYVprVEo5YUVsakh3_FileDrive_d1bc107702548191a12b79a0f11187bb",
+      "git_binary_verified": true,
+      "review_flags": [
+        "Finite snowflake is not translationally invariant; clarify translation operator vs group symmetry; inspect D6 equation and reflection notation"
+      ],
+      "git_blob_sha": "cb4cd8e072f1fe212d52cf082d782b316ed9ee29",
+      "github_candidate_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+      "cinematic_style_review": "PASS",
+      "independent_qa_decision": "PASS",
+      "independent_qa_finding": "Correction independently verified in 2026-11-21 three science-fix Work report",
+      "recommended_follow_up": "Preserve scientific caveats in HTML; full-resolution viewing link and accessible math descriptions necessary on mobile.",
+      "qa_report_path": "docs/reports/V2_PHASE_03_P2_THREE_SCIENCE_FIXES_INDEPENDENT_GITHUB_QA_20261121.md",
+      "replacement_candidate_status": "OWNER_APPROVED_FINAL_SELECTION",
+      "replacement_candidate_sha256": "962c5465b7ed8d599e24688a173b4ec59f12bf9f7c3ce3288c8af5ccb224f07d",
+      "replacement_qa_decision": "PASS_SCIENCE_AND_STYLE",
+      "replacement_candidate_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_3_1_ScienceFix_Candidate_1920x1080.png",
+      "replacement_candidate_bytes": 3041897,
+      "replacement_candidate_git_blob_sha": "cb4cd8e072f1fe212d52cf082d782b316ed9ee29",
+      "replacement_candidate_github_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+      "replacement_candidate_dimensions": [
+        1920,
+        1080
+      ],
+      "replacement_candidate_binary_review": "GITHUB_BYTES_PASS",
+      "replacement_style_review": "PASS_STYLE",
+      "replacement_owner_visual_approval": false,
+      "replacement_mobile_note": "Equations and explanatory panels too small for comfortable reading at 390px and 320px scale-down; full-resolution access and accessible mathematical explanation required for later integration.",
+      "replacement_qa_report_path": "docs/reports/V2_PHASE_03_P2_THREE_SCIENCE_FIXES_INDEPENDENT_GITHUB_QA_20261121.md",
+      "replacement_github_binary_verified": true,
+      "superseded_original_candidate": {
+        "path": "docs/artwork/paper-two/candidates/P2_Figure_3_1_ChatCandidate_1920x1080.png",
+        "sha256": "715d5b9c70f818381e6fcef3e63149079b6e8f9010308bc386e966e3bb0fa233",
+        "bytes": 2910836,
+        "git_blob_sha": "a176458a65680ea576867d04811b608d526c6a79",
+        "independent_qa_decision": "FIX",
+        "provenance": "Immutable original first-batch candidate retained in PR #12; historic QA FIX remains in prior audit."
+      },
+      "owner_visual_approval_source": "User explicitly approved the corrected Figures 2.1, 3.1 and 6.1 as final artwork on 2026-11-21; applies only to the exact corrected SHA-256 identities."
+    },
+    {
+      "slot": "4.1",
+      "subject": "Noether's Theorem and Conservation Laws",
+      "legacy_webp": "02_noether_symmetry_conservation.webp",
+      "production_status": "OWNER_VISUALLY_APPROVED_AND_INDEPENDENT_QA_PASS; WEBSITE_INTEGRATION_NOT_AUTHORISED",
+      "owner_visual_approval": true,
+      "independent_science_review": "PASS",
+      "verified_git_binary_path": "docs/artwork/paper-two/candidates/P2_Figure_4_1_ChatCandidate_1920x1080.png",
+      "sha256": "bce9e58d6a5dbb058774051a88f1d76f44e926420f56ca9939440eef7512365c",
+      "final_dimensions": [
+        1920,
+        1080
+      ],
+      "full_resolution_preview_filename": "P2_Figure_4_1_ChatCandidate_1920x1080.png",
+      "final_bytes": 2688456,
+      "image_source": "native image_gen 1672x941, Pillow Lanczos export to 1920x1080",
+      "staging_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
+      "staging_library_file_reference": "library-file:fde1_bGliZmlsZV9FVXBsNmd6b2xVbXRSQXJWNTRXbk5n_FileDrive_d1bc107702548191a12b79a0f11187bb",
+      "git_binary_verified": true,
+      "review_flags": [
+        "Noether conservation follows continuous symmetry of the action and appropriate system assumptions; imagery depicts angular momentum only"
+      ],
+      "git_blob_sha": "6e887323f3436799708a6ca62105cf33d04c997d",
+      "github_candidate_commit": "be2985ab59657ac4e631a7b8e0084064167188c4",
+      "cinematic_style_review": "PASS",
+      "independent_qa_decision": "PASS",
+      "independent_qa_finding": "The figure correctly presents one Noether correspondence: continuous rotational invariance → conserved angular momentum, with L = const. It is a schematic, not a derivation. The manuscript caption gives the correct mapping. The visual must not imply angular momentum is conserved for every rotating body regardless of torques.",
+      "recommended_follow_up": "No image repair required. In any final accessible caption, qualify the conserved quantity as applying when the relevant action/system has continuous rotational symmetry (and, for the mechanical example, with no external torque).",
+      "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md",
+      "owner_visual_approval_source": "Owner replied 'Agreed, approved and authorised. Continue. 😊' on 2026-11-21 to explicit approval request for Figures 1.1, 4.1 and 5.1, plus authorisation to correct 2.1, 3.1 and 6.1."
+    },
+    {
+      "slot": "5.1",
+      "subject": "Broken Symmetry and Emergence",
+      "legacy_webp": "02_broken_symmetry_emergence.webp",
+      "production_status": "OWNER_VISUALLY_APPROVED_AND_INDEPENDENT_QA_PASS; WEBSITE_INTEGRATION_NOT_AUTHORISED",
+      "owner_visual_approval": true,
+      "independent_science_review": "PASS",
+      "verified_git_binary_path": "docs/artwork/paper-two/candidates/P2_Figure_5_1_ChatCandidate_1920x1080.png",
+      "sha256": "201f88207b9bd0122a105c59c94b8a17f6d50740c310594718d5b3ababf685cf",
+      "final_dimensions": [
+        1920,
+        1080
+      ],
+      "full_resolution_preview_filename": "P2_Figure_5_1_ChatCandidate_1920x1080.png",
+      "final_bytes": 3062628,
+      "image_source": "native image_gen 1672x941, Pillow Lanczos export to 1920x1080",
+      "staging_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
+      "staging_library_file_reference": "library-file:fde1_bGliZmlsZV9YVkhPdnBOWFJzdWpER0lXbjh6OG9n_FileDrive_d1bc107702548191a12b79a0f11187bb",
+      "git_binary_verified": true,
+      "review_flags": [
+        "Two-well 2D potential schematic versus full circular Mexican-hat; assess consistency of narrative and axes"
+      ],
+      "git_blob_sha": "3634d6375f45321e08cf3aa45ee308b9850bd0bd",
+      "github_candidate_commit": "be2985ab59657ac4e631a7b8e0084064167188c4",
+      "cinematic_style_review": "PASS",
+      "independent_qa_decision": "PASS",
+      "independent_qa_finding": "The lower graph is a labelled one-dimensional double-well V(φ) schematic with two degenerate minima, not a circular Mexican-hat surface. The top-to-bottom imagery is conceptual and broadly fits the article’s transition from a symmetric state to lower-symmetry domains. It does not name a specific Higgs mechanism or claim every mass arises by the same mechanism.",
+      "recommended_follow_up": "No image repair required. Any final caption should explicitly call V(φ) a schematic one-dimensional double-well and avoid naming it a full Mexican-hat potential or universal mass-generation model.",
+      "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md",
+      "owner_visual_approval_source": "Owner replied 'Agreed, approved and authorised. Continue. 😊' on 2026-11-21 to explicit approval request for Figures 1.1, 4.1 and 5.1, plus authorisation to correct 2.1, 3.1 and 6.1."
+    },
+    {
+      "slot": "6.1",
+      "subject": "The SYMMETRIA Symmetry Perspective",
+      "legacy_webp": "02_symmetria_symmetry_perspective.webp",
+      "production_status": "FINAL_OWNER_APPROVED_CORRECTED_PNG_GITHUB_BYTES_PASS_SCIENCE_STYLE_PASS; NO_WEBSITE_INTEGRATION",
+      "owner_visual_approval": true,
+      "independent_science_review": "PASS_SCIENCE",
+      "verified_git_binary_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_6_1_ScienceFix_Candidate_1920x1080.png",
+      "sha256": "e0590636813f7a720ca88b225011a5c2b4122a2ccce79263c9f3563f47c0bcff",
+      "final_dimensions": [
+        1920,
+        1080
+      ],
+      "full_resolution_preview_filename": "P2_Figure_6_1_ChatCandidate_1920x1080.png",
+      "final_bytes": 3062952,
+      "image_source": "native image_gen 1672x941, Pillow Lanczos export to 1920x1080",
+      "staging_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
+      "staging_library_file_reference": "library-file:fde1_bGliZmlsZV9xejlsVUZhZi1iaDFGbXhlSmV4Q2xR_FileDrive_d1bc107702548191a12b79a0f11187bb",
+      "git_binary_verified": true,
+      "review_flags": [
+        "Untested hypothesis caveat absent from image; ensure accessible caption qualifies SYMMETRIA interpretation; verify title not a prohibited decorative masthead"
+      ],
+      "git_blob_sha": "babf8cc33ae4542c018b3a99d8b3817728ecc2e4",
+      "github_candidate_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+      "cinematic_style_review": "PASS",
+      "independent_qa_decision": "PASS",
+      "independent_qa_finding": "Correction independently verified in 2026-11-21 three science-fix Work report",
+      "recommended_follow_up": "Preserve scientific caveats in HTML; full-resolution viewing link and accessible math descriptions necessary on mobile.",
+      "qa_report_path": "docs/reports/V2_PHASE_03_P2_THREE_SCIENCE_FIXES_INDEPENDENT_GITHUB_QA_20261121.md",
+      "replacement_candidate_status": "OWNER_APPROVED_FINAL_SELECTION",
+      "replacement_candidate_sha256": "e0590636813f7a720ca88b225011a5c2b4122a2ccce79263c9f3563f47c0bcff",
+      "replacement_qa_decision": "PASS_SCIENCE_AND_STYLE",
+      "replacement_candidate_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_6_1_ScienceFix_Candidate_1920x1080.png",
+      "replacement_candidate_bytes": 3062952,
+      "replacement_candidate_git_blob_sha": "babf8cc33ae4542c018b3a99d8b3817728ecc2e",
+      "replacement_candidate_github_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+      "replacement_candidate_dimensions": [
+        1920,
+        1080
+      ],
+      "replacement_candidate_binary_review": "GITHUB_BYTES_PASS",
+      "replacement_style_review": "PASS_STYLE",
+      "replacement_owner_visual_approval": false,
+      "replacement_mobile_note": "At 390px and 320px scale-down, main flow labels and the explicit untested-physics qualification remain visible, though small; retain full-resolution access and accessible explanation.",
+      "replacement_qa_report_path": "docs/reports/V2_PHASE_03_P2_THREE_SCIENCE_FIXES_INDEPENDENT_GITHUB_QA_20261121.md",
+      "replacement_github_binary_verified": true,
+      "superseded_original_candidate": {
+        "path": "docs/artwork/paper-two/candidates/P2_Figure_6_1_ChatCandidate_1920x1080.png",
+        "sha256": "34d4f861e699cd1ae2f0fa98a6b157aa513544407d778ae111d1b7128f01f4d3",
+        "bytes": 3354352,
+        "git_blob_sha": "54194990ebd1a4be6fe1cf99649b18166c4644e2",
+        "independent_qa_decision": "FIX",
+        "provenance": "Immutable original first-batch candidate retained in PR #12; historic QA FIX remains in prior audit."
+      },
+      "owner_visual_approval_source": "User explicitly approved the corrected Figures 2.1, 3.1 and 6.1 as final artwork on 2026-11-21; applies only to the exact corrected SHA-256 identities."
+    }
+  ],
+  "cover_trial_log": [
+    {
+      "trial": 1,
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "file_bytes": 2848172,
+      "sha256": "1b9e085d043a1e45bd5a8f0bf92c0cd610f8d0b9ec69d6f4fc56afddb67e41f6",
+      "status": "REJECTED_STYLE_TEXT",
+      "reason": "In-art SYMMETRIA and PAPER TWO mastheads; science-relevance weak/multi-object montage",
+      "git_binary_present": false
+    },
+    {
+      "trial": 2,
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "file_bytes": 2535375,
+      "sha256": "5d55250677e911ea4cac837bdef1c67d9d189dbc70d03a6e36e6d80b4d3fb95e",
+      "status": "REJECTED_STYLE_TEXT",
+      "reason": "In-art SYMMETRIA, A NEW FRAMEWORK FOR FUNDAMENTAL PHYSICS, PAPER TWO mastheads",
+      "git_binary_present": false
+    },
+    {
+      "trial": 3,
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "file_bytes": 2813466,
+      "sha256": "54d39d2722dd19504a99905cc1068f23f9c0650848744c6f2f1d900ada699fca",
+      "status": "REJECTED_STYLE_TEXT",
+      "reason": "In-art SYMMETRIA and PAPER TWO again; general multi-motif collage not a sufficiently focused explanation of invariance",
+      "git_binary_present": false
+    }
+  ],
+  "cover_checkpoint": {
+    "source_generator": "Built-in native image_gen",
+    "native_dimensions": [
+      1672,
+      941
+    ],
+    "native_bytes": 2640814,
+    "native_sha256": "e78b0ce289a2019b80f16cc2236c05341b89ec099a62f09caf7ff4718940b4f8",
+    "final_dimensions": [
+      1920,
+      1080
+    ],
+    "final_bytes": 3220866,
+    "final_sha256": "d1c2d02620c7b595c88dcfadf8e91ac4628f48d6b7770a1a55fa19cdc52b8a02",
+    "final_git_blob": "ecc305bb758cabd8d0760fc3faef978cf7b05a82",
+    "export": "Pillow Lanczos resize from 1672x941; no crop or composition edit",
+    "text_review": "Exact subject title and subtitle only; no extra readable text, logo, project identity, paper/series identifier or watermark found in full-resolution visual inspection.",
+    "scientific_review": "Idealised central sixfold ice-crystal lattice with six primary arms at 60-degree intervals; rotational cue is conceptual and contains no equation or conservation/unification claim. The visible leaf is naturally approximate/asymmetric; the background galaxy is atmospheric, not labelled as a symmetry example.",
+    "owner_visual_approval": true,
+    "website_integration_authorised": false
+  },
+  "review_workflow": "Owner explicitly changed earlier per-figure stop to a batch workflow: generate Figures 1.1–6.1 in Chat, do provisional science/self-screen per image, then perform one independent Work full-seven-figure re-audit at the end; no intermediate owner sign-offs required. This does not waive individual image science/style acceptance in the final Work review or final owner approval.",
+  "six_image_batch": {
+    "slots": 6,
+    "generated": "2026-11-21",
+    "native_dimensions": [
+      1672,
+      941
+    ],
+    "exports_dimensions": [
+      1920,
+      1080
+    ],
+    "source_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
+    "staging": "HISTORICAL_FIRST_BATCH: SIX_PROVISIONAL_ORIGINAL_CANDIDATES; THREE_LATER_CORRECTED_AND_OWNER_APPROVED",
+    "review_workflow": "single combined Work independent QA of six after generation; each slot receives its own verdict",
+    "website_integration": "NOT_AUTHORISED",
+    "github_candidate_paths": [
+      {
+        "slot": "1.1",
+        "path": "docs/artwork/paper-two/candidates/P2_Figure_1_1_ChatCandidate_1920x1080.png"
+      },
+      {
+        "slot": "2.1",
+        "path": "docs/artwork/paper-two/candidates/P2_Figure_2_1_ChatCandidate_1920x1080.png"
+      },
+      {
+        "slot": "3.1",
+        "path": "docs/artwork/paper-two/candidates/P2_Figure_3_1_ChatCandidate_1920x1080.png"
+      },
+      {
+        "slot": "4.1",
+        "path": "docs/artwork/paper-two/candidates/P2_Figure_4_1_ChatCandidate_1920x1080.png"
+      },
+      {
+        "slot": "5.1",
+        "path": "docs/artwork/paper-two/candidates/P2_Figure_5_1_ChatCandidate_1920x1080.png"
+      },
+      {
+        "slot": "6.1",
+        "path": "docs/artwork/paper-two/candidates/P2_Figure_6_1_ChatCandidate_1920x1080.png"
+      }
+    ],
+    "github_candidate_commit": "be2985ab59657ac4e631a7b8e0084064167188c4",
+    "independent_qa_report": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md",
+    "source_article_blob": "060700e8cdac337583c820f044efe80154d59b6c",
+    "locked_style_blob": "4d91cb5f9a437f782a1815ea8f91c7ade4c0063a",
+    "review_date": "2026-11-21"
+  },
+  "owner_approval_record_20261121": "Owner explicitly approved independently PASS figures 1.1, 4.1, 5.1 and authorised three FIX replacements in Chat; six-image final-review preference maintained.",
+  "targeted_science_fixes": {
+    "status": "THREE_CORRECTED_PNGS_OWNER_APPROVED_GITHUB_BYTES_PASS_INDEPENDENT_SCIENCE_STYLE_PASS; WEBSITE_DRAFT_PREPARATION_ONLY",
+    "date": "2026-11-21",
+    "source_report": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md",
+    "approval": "Owner approved exact corrected PNGs for 2.1, 3.1, 6.1 as final on 2026-11-21; originals preserved.",
+    "source_staging_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
+    "native_dimensions": [
+      1672,
+      941
+    ],
+    "export_dimensions": [
+      1920,
+      1080
+    ],
+    "export_method": "Pillow Lanczos resizing, full frame, no crop; original native source hashes separately recorded",
+    "candidates": [
+      {
+        "slot": "2.1",
+        "file": "P2_Figure_2_1_ScienceFix_Candidate_1920x1080.png",
+        "sha256": "ccea83f05ded4bd9479ff624a65e4bbf8261afd2cbbd5e632ebcf0bcdfc3f421",
+        "bytes": 3561649,
+        "native_sha256": "5576a83950d8a069565ffc981daffa83065cde6ad7ccf897a78348bb52992e54",
+        "native_bytes": 2912945,
+        "ref": "library-file:fde1_bGliZmlsZV9PRVU0WmdFUEJXbjJTTGtaT2VsNGpB_FileDrive_d1bc107702548191a12b79a0f11187bb",
+        "summary": "Removed sunflower golden spiral; verify no exact-fit implication elsewhere.",
+        "proposed_github_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_2_1_ScienceFix_Candidate_1920x1080.png",
+        "source_original_candidate_sha256": "a44fa0463affeaa486bdb000793c7c3674bae78587e245886e5dd27b7ece97b8",
+        "owner_visual_approval": true,
+        "independent_science_review": "PASS_SCIENCE",
+        "github_binary_present": true,
+        "cinematic_style_review": "PASS_STYLE",
+        "actual_github_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_2_1_ScienceFix_Candidate_1920x1080.png",
+        "git_blob_sha": "65d8c7a21d68a93f0ae495e0f543f4f7779a100c",
+        "github_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9"
+      },
+      {
+        "slot": "3.1",
+        "file": "P2_Figure_3_1_ScienceFix_Candidate_1920x1080.png",
+        "sha256": "962c5465b7ed8d599e24688a173b4ec59f12bf9f7c3ce3288c8af5ccb224f07d",
+        "bytes": 3041897,
+        "native_sha256": "a793c8e5d0e09553fbda0500778bead66877d5cffa2c813a51f5f793162e7ecd",
+        "native_bytes": 2478714,
+        "ref": "library-file:fde1_bGliZmlsZV92aktXZ0c3LWpLUDRUN0ZlU2xNUFZR_FileDrive_d1bc107702548191a12b79a0f11187bb",
+        "summary": "Separated rotation/reflection invariance from translated congruence of a finite sixfold form; check D6 group notation, 60 degree geometry and coordinates.",
+        "proposed_github_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_3_1_ScienceFix_Candidate_1920x1080.png",
+        "source_original_candidate_sha256": "715d5b9c70f818381e6fcef3e63149079b6e8f9010308bc386e966e3bb0fa233",
+        "owner_visual_approval": true,
+        "independent_science_review": "PASS_SCIENCE",
+        "github_binary_present": true,
+        "cinematic_style_review": "PASS_STYLE",
+        "actual_github_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_3_1_ScienceFix_Candidate_1920x1080.png",
+        "git_blob_sha": "cb4cd8e072f1fe212d52cf082d782b316ed9ee29",
+        "github_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9"
+      },
+      {
+        "slot": "6.1",
+        "file": "P2_Figure_6_1_ScienceFix_Candidate_1920x1080.png",
+        "sha256": "e0590636813f7a720ca88b225011a5c2b4122a2ccce79263c9f3563f47c0bcff",
+        "bytes": 3062952,
+        "native_sha256": "b51ef054025a147c2dbf8a9dda49bd65f0c081a5dc2f64b740f7c2cad054c6f3",
+        "native_bytes": 2511611,
+        "ref": "library-file:fde1_bGliZmlsZV9UejFaNXF1eEkyTlNjS3d0elg0cElR_FileDrive_d1bc107702548191a12b79a0f11187bb",
+        "summary": "Focused hidden-symmetry hypothesis scene and in-art untested qualifier. Scientific explanation unestablished.",
+        "proposed_github_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_6_1_ScienceFix_Candidate_1920x1080.png",
+        "source_original_candidate_sha256": "34d4f861e699cd1ae2f0fa98a6b157aa513544407d778ae111d1b7128f01f4d3",
+        "owner_visual_approval": true,
+        "independent_science_review": "PASS_SCIENCE",
+        "github_binary_present": true,
+        "cinematic_style_review": "PASS_STYLE",
+        "actual_github_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_6_1_ScienceFix_Candidate_1920x1080.png",
+        "git_blob_sha": "babf8cc33ae4542c018b3a99d8b3817728ecc2e4",
+        "github_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9"
+      }
+    ],
+    "github_candidate_import_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+    "fresh_checkout_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+    "independent_qa_report": "docs/reports/V2_PHASE_03_P2_THREE_SCIENCE_FIXES_INDEPENDENT_GITHUB_QA_20261121.md",
+    "re_audit_decisions": {
+      "2.1": {
+        "binary": "GITHUB_BYTES_PASS",
+        "science": "PASS_SCIENCE",
+        "style": "PASS_STYLE",
+        "owner_visual_approval": true,
+        "github_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_2_1_ScienceFix_Candidate_1920x1080.png",
+        "github_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+        "git_blob_sha": "65d8c7a21d68a93f0ae495e0f543f4f7779a100c",
+        "sha256": "ccea83f05ded4bd9479ff624a65e4bbf8261afd2cbbd5e632ebcf0bcdfc3f421",
+        "bytes": 3561649,
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "mode": "RGB",
+        "audit_report": "docs/reports/V2_PHASE_03_P2_THREE_SCIENCE_FIXES_INDEPENDENT_GITHUB_QA_20261121.md",
+        "mobile_note": "Detailed callout and footer copy too small for comfortable reading at 390px and 320px scale-down; full-resolution access and accessible explanatory text required for later integration."
+      },
+      "3.1": {
+        "binary": "GITHUB_BYTES_PASS",
+        "science": "PASS_SCIENCE",
+        "style": "PASS_STYLE",
+        "owner_visual_approval": true,
+        "github_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_3_1_ScienceFix_Candidate_1920x1080.png",
+        "github_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+        "git_blob_sha": "cb4cd8e072f1fe212d52cf082d782b316ed9ee29",
+        "sha256": "962c5465b7ed8d599e24688a173b4ec59f12bf9f7c3ce3288c8af5ccb224f07d",
+        "bytes": 3041897,
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "mode": "RGB",
+        "audit_report": "docs/reports/V2_PHASE_03_P2_THREE_SCIENCE_FIXES_INDEPENDENT_GITHUB_QA_20261121.md",
+        "mobile_note": "Equations and explanatory panels too small for comfortable reading at 390px and 320px scale-down; full-resolution access and accessible mathematical explanation required for later integration."
+      },
+      "6.1": {
+        "binary": "GITHUB_BYTES_PASS",
+        "science": "PASS_SCIENCE",
+        "style": "PASS_STYLE",
+        "owner_visual_approval": true,
+        "github_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_6_1_ScienceFix_Candidate_1920x1080.png",
+        "github_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+        "git_blob_sha": "babf8cc33ae4542c018b3a99d8b3817728ecc2e4",
+        "sha256": "e0590636813f7a720ca88b225011a5c2b4122a2ccce79263c9f3563f47c0bcff",
+        "bytes": 3062952,
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "mode": "RGB",
+        "audit_report": "docs/reports/V2_PHASE_03_P2_THREE_SCIENCE_FIXES_INDEPENDENT_GITHUB_QA_20261121.md",
+        "mobile_note": "At 390px and 320px scale-down, main flow labels and the explicit untested-physics qualification remain visible, though small; retain full-resolution access and accessible explanation."
+      }
+    }
+  },
+  "website_integration_preparation_authorised": true,
+  "website_integration_stage": {
+    "status": "PREPARE_SEPARATE_DRAFT_PR_ONLY; WEBP_NOT_GENERATED; PAPER_TWO_HTML_UNCHANGED",
+    "user_instruction_20261121": "I approve the corrected Paper Two Figures 2.1, 3.1 and 6.1 as the final artwork. Record my approval in GitHub and prepare the next responsive WebP website-integration stage as a separate draft PR. Do not merge or deploy anything.",
+    "source_branch_for_implementation": "feature/v2-space-research-website",
+    "source_image_branch": "docs/symmetria-paper-two-cinematic-artwork-20261121",
+    "webp_quality_target": 93,
+    "responsive_image_widths": [
+      768,
+      1280,
+      1920
+    ],
+    "separate_pr_required": true,
+    "merge_deploy_authorised": false
+  },
+  "final_approved_source_set": [
+    {
+      "slot": "Cover",
+      "path": "docs/artwork/paper-two/candidates/P2_Cover_Cinematic_1920x1080_Candidate.png",
+      "sha256": "d1c2d02620c7b595c88dcfadf8e91ac4628f48d6b7770a1a55fa19cdc52b8a02",
+      "bytes": 3220866,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "owner_visual_approval": true,
+      "Git_blob": "ecc305bb758cabd8d0760fc3faef978cf7b05a82"
+    },
+    {
+      "slot": "1.1",
+      "path": "docs/artwork/paper-two/candidates/P2_Figure_1_1_ChatCandidate_1920x1080.png",
+      "sha256": "a53157058eda3e5d594e53284be40f8bb2c58fdb03c399b7401e7fefc525957c",
+      "bytes": 3385272,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "owner_visual_approval": true,
+      "Git_blob": "60056cbfbaafddf025ab68dc0d5c37745764ebba"
+    },
+    {
+      "slot": "2.1",
+      "path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_2_1_ScienceFix_Candidate_1920x1080.png",
+      "sha256": "ccea83f05ded4bd9479ff624a65e4bbf8261afd2cbbd5e632ebcf0bcdfc3f421",
+      "bytes": 3561649,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "owner_visual_approval": true,
+      "Git_blob": "65d8c7a21d68a93f0ae495e0f543f4f7779a100c"
+    },
+    {
+      "slot": "3.1",
+      "path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_3_1_ScienceFix_Candidate_1920x1080.png",
+      "sha256": "962c5465b7ed8d599e24688a173b4ec59f12bf9f7c3ce3288c8af5ccb224f07d",
+      "bytes": 3041897,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "owner_visual_approval": true,
+      "Git_blob": "cb4cd8e072f1fe212d52cf082d782b316ed9ee29"
+    },
+    {
+      "slot": "4.1",
+      "path": "docs/artwork/paper-two/candidates/P2_Figure_4_1_ChatCandidate_1920x1080.png",
+      "sha256": "bce9e58d6a5dbb058774051a88f1d76f44e926420f56ca9939440eef7512365c",
+      "bytes": 2688456,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "owner_visual_approval": true,
+      "Git_blob": "6e887323f3436799708a6ca62105cf33d04c997d"
+    },
+    {
+      "slot": "5.1",
+      "path": "docs/artwork/paper-two/candidates/P2_Figure_5_1_ChatCandidate_1920x1080.png",
+      "sha256": "201f88207b9bd0122a105c59c94b8a17f6d50740c310594718d5b3ababf685cf",
+      "bytes": 3062628,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "owner_visual_approval": true,
+      "Git_blob": "3634d6375f45321e08cf3aa45ee308b9850bd0bd"
+    },
+    {
+      "slot": "6.1",
+      "path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_6_1_ScienceFix_Candidate_1920x1080.png",
+      "sha256": "e0590636813f7a720ca88b225011a5c2b4122a2ccce79263c9f3563f47c0bcff",
+      "bytes": 3062952,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "owner_visual_approval": true,
+      "Git_blob": "babf8cc33ae4542c018b3a99d8b3817728ecc2e4"
+    }
+  ],
+  "final_approved_total_png_bytes": 22023720,
+  "owner_final_approval_record": {
+    "date": "2026-11-21",
+    "verbatim": "I approve the corrected Paper Two Figures 2.1, 3.1 and 6.1 as the final artwork. Record my approval in GitHub and prepare the next responsive WebP website-integration stage as a separate draft PR. Do not merge or deploy anything.",
+    "applies_to": [
+      "2.1",
+      "3.1",
+      "6.1"
+    ],
+    "combined_owner_approved_total": 7
+  },
+  "git_blob_id_correction_20261121": {
+    "slot": "6.1",
+    "previous_textual_record": "babf8cc33ae4542c018b3a99d8b3817728ecc2e",
+    "correct_sha1_blob": "babf8cc33ae4542c018b3a99d8b3817728ecc2e4",
+    "correction_reason": "Original audit table dropped final hex digit '4'. GitHub fetch_file metadata and independent local git hash-object on the exact SHA-256-verified 3,062,952-byte PNG both confirm the full 40-character Git blob ID.",
+    "no_binary_modified": true,
+    "approved_sha256_unchanged": "e0590636813f7a720ca88b225011a5c2b4122a2ccce79263c9f3563f47c0bcff"
+  }
+}

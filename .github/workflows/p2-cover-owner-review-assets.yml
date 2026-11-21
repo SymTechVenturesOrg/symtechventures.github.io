@@ -1,0 +1,51 @@
+name: P2 cover exact GitHub binary — read-only visual review artifact
+
+on:
+  push:
+    branches:
+      - docs/symmetria-paper-two-cinematic-artwork-20261121
+    paths:
+      - .github/workflows/p2-cover-owner-review-assets.yml
+
+permissions:
+  contents: read
+
+jobs:
+  prepare-exact-art-review:
+    name: Verify immutable GitHub PNGs for visual review
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Checkout exact unmerged draft
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Fetch the immutable owner-approved P1 reference art commit
+        run: git fetch --no-tags origin c6f60ee180c2f5d401b0f597f512898c010981a9
+      - name: Copy and hash exact PNG art bytes
+        run: |
+          set -euo pipefail
+          mkdir -p p2-cover-visual-review-artifact
+          cp docs/artwork/paper-two/candidates/P2_Cover_Cinematic_1920x1080_Candidate.png p2-cover-visual-review-artifact/
+          git show c6f60ee180c2f5d401b0f597f512898c010981a9:docs/artwork/owner-approved/paper-one/P1_Cover_OWNER_VISUALLY_APPROVED_1920x1080.png > p2-cover-visual-review-artifact/P1_Cover_OWNER_VISUALLY_APPROVED_1920x1080.png
+          git show c6f60ee180c2f5d401b0f597f512898c010981a9:docs/artwork/owner-approved/paper-one/P1_Figure_5_1_OWNER_VISUALLY_APPROVED_1920x1080.png > p2-cover-visual-review-artifact/P1_Figure_5_1_OWNER_VISUALLY_APPROVED_1920x1080.png
+          printf '%s\n' 'd1c2d02620c7b595c88dcfadf8e91ac4628f48d6b7770a1a55fa19cdc52b8a02  p2-cover-visual-review-artifact/P2_Cover_Cinematic_1920x1080_Candidate.png' '3eeba0f6bfcefd2a63b5867cad0442ac9a6d356526cc1fed31e057d3de9e95a8  p2-cover-visual-review-artifact/P1_Cover_OWNER_VISUALLY_APPROVED_1920x1080.png' '945a5061c67bd52300cc4823f9664579380c85b36363daadcc7ef88496687b1c  p2-cover-visual-review-artifact/P1_Figure_5_1_OWNER_VISUALLY_APPROVED_1920x1080.png' | sha256sum -c -
+          sha256sum p2-cover-visual-review-artifact/*.png > p2-cover-visual-review-artifact/verified_sha256.txt
+          python - <<'PY'
+          import struct
+          from pathlib import Path
+          for p in sorted(Path("p2-cover-visual-review-artifact").glob("*.png")):
+              b=p.read_bytes()
+              assert b[:8] == b"\x89PNG\r\n\x1a\n", p
+              dimensions=struct.unpack(">II",b[16:24])
+              assert dimensions==(1920,1080),(p,dimensions)
+              print(p.name,dimensions,len(b))
+          PY
+      - name: Upload private QA artifact — NO deployment
+        uses: actions/upload-artifact@v4
+        with:
+          name: symmetria-paper-two-cover-exact-visual-review
+          path: p2-cover-visual-review-artifact/
+          if-no-files-found: error
+          retention-days: 10
