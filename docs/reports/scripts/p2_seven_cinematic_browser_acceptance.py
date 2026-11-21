@@ -90,7 +90,7 @@ def browser_case(browser, origin, name, width, height, dpr, touch):
             page.wait_for_function("sel=>{const i=document.querySelector(sel+' img');return !!i&&i.complete&&i.naturalWidth>0}",arg=selector,timeout=20000)
             inf=fig.evaluate("""f=>{const i=f.querySelector('img'),a=f.querySelector('a.paper-figure-open'),c=f.querySelector('figcaption'),d=f.querySelector('.figure-description'),r=i.getBoundingClientRect();return {slot:f.dataset.figureSlot,src:i.currentSrc,srcWidth:Number((i.currentSrc.match(/_(\\d+)w_q93\\.webp/)||[])[1]||0),renderedWidth:r.width,renderedHeight:r.height,naturalWidth:i.naturalWidth,naturalHeight:i.naturalHeight,alt:i.alt,describedBy:i.getAttribute('aria-describedby'),descriptionId:d?.id,description:d?.textContent.trim(),caption:c?.textContent.trim(),captionVisible:!!c&&c.getBoundingClientRect().width>0,descriptionVisible:!!d&&d.getBoundingClientRect().width>0,href:a.href,ariaLabel:a.getAttribute('aria-label'),target:a.target,rel:a.rel,loading:i.loading,fetchpriority:i.fetchPriority,sizes:i.sizes}}""")
             record["figures"].append(inf)
-            check(inf["naturalWidth"]==1920 and inf["naturalHeight"]==1080,name+f" {slot}: source image not fully decoded")
+            check(inf["naturalWidth"]==inf["srcWidth"] and inf["naturalHeight"]==round(inf["srcWidth"]*9/16),name+f" {slot}: selected responsive image not fully decoded at its declared dimensions")
             check(inf["srcWidth"] in (768,1280,1920) and inf["srcWidth"]+1>=inf["renderedWidth"]*dpr*.95,name+f" {slot}: responsive candidate undersized or unlisted")
             check(inf["alt"]==item["img_alt"],name+f" {slot}: alt differs from approved text")
             check(inf["caption"]==item["figcaption_proposed"],name+f" {slot}: caption differs from qualified manifest text")
@@ -180,3 +180,4 @@ def main():
     print("ACCEPTANCE "+out["acceptance_status"]+" issues="+json.dumps(issues))
     raise SystemExit(0 if not issues else 1)
 if __name__=="__main__":main()
+
