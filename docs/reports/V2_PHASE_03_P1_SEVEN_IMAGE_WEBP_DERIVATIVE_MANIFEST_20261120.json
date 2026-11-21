@@ -1,0 +1,429 @@
+{
+  "title": "SYMMETRIA Paper One 7-image WebP derivative and source identity manifest",
+  "generated_utc": "2026-11-20",
+  "encoder": {
+    "library": "Pillow",
+    "pillow_version": "13.0.0",
+    "libwebp_version": "1.6.0",
+    "format": "WebP",
+    "quality": 93,
+    "method": 6,
+    "resampling": "Pillow Lanczos",
+    "animation": false
+  },
+  "browser_source_selection": {
+    "mobile_320_and_390_css_px_dpr_1": "768w",
+    "tablet_768_css_px_dpr_1": "768w",
+    "desktop_1440_css_px_dpr_2": "1920w",
+    "sizes": "(max-width: 700px) calc(100vw - 2rem), (max-width: 1100px) calc(100vw - 4rem), 860px"
+  },
+  "aggregate": {
+    "source_png_bytes": 21896557,
+    "webp_bytes_by_width": {
+      "768": 985588,
+      "1280": 2246898,
+      "1920": 3924054
+    },
+    "total_all_21_webp_bytes": 7156540,
+    "source_total_comparison_note": "Compression percentage compares each 768/1280/1920 derivative against its matching original 1920x1080 PNG; aggregate viewport estimates sum one derivative per slot and compare those seven files with the seven original PNGs.",
+    "mobile_320_selected_768_webp_bytes": 985588,
+    "mobile_390_selected_768_webp_bytes": 985588,
+    "mobile_saving_vs_7_png_pct": 95.5,
+    "desktop_1440_dpr2_selected_1920_webp_bytes": 3924054,
+    "desktop_saving_vs_7_png_pct": 82.08
+  },
+  "images": [
+    {
+      "slot": "Cover",
+      "source_path": "docs/artwork/owner-approved/paper-one/P1_Cover_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "source_commit": "c6f60ee180c2f5d401b0f597f512898c010981a9",
+      "source_sha256": "3eeba0f6bfcefd2a63b5867cad0442ac9a6d356526cc1fed31e057d3de9e95a8",
+      "source_bytes": 3089586,
+      "master_path": "images/symmetria/paper-01/approved-20261120/p1_cover_master_1920x1080.png",
+      "master_sha256": "3eeba0f6bfcefd2a63b5867cad0442ac9a6d356526cc1fed31e057d3de9e95a8",
+      "master_bytes": 3089586,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "alt": "Three successful approaches to modern physics frame an unresolved question about a deeper unified framework.",
+      "long_description": "Contemporary quantum theory, the Standard Model and general relativity each account for important phenomena. Their rich but different descriptions leave the challenge of a deeper framework unresolved. The artwork's question mark represents a research question, not a solved synthesis.",
+      "webp_variants": [
+        {
+          "path": "images/symmetria/paper-01/approved-20261120/p1_cover_768w_q93.webp",
+          "width": 768,
+          "height": 432,
+          "bytes": 141312,
+          "sha256": "9ad5eecf2da1ad604dee5720390e9c29326fa4804c879945bb8593323c1015dd",
+          "format": "WebP",
+          "quality": 93,
+          "method": 6,
+          "saving_vs_source_png_pct": 95.43,
+          "psnr_vs_lanczos_png_resize_db": 31.49
+        },
+        {
+          "path": "images/symmetria/paper-01/approved-20261120/p1_cover_1280w_q93.webp",
+          "width": 1280,
+          "height": 720,
+          "bytes": 320998,
+          "sha256": "460965df0cb5aae12febbaaa5dd50f1bf21f1704d3241c5a661e8a6e08b0b510",
+          "format": "WebP",
+          "quality": 93,
+          "method": 6,
+          "saving_vs_source_png_pct": 89.61,
+          "psnr_vs_lanczos_png_resize_db": 32.92
+        },
+        {
+          "path": "images/symmetria/paper-01/approved-20261120/p1_cover_1920w_q93.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 551280,
+          "sha256": "7d527ed71907d16b154ccf135af8b7fd5bf5d370bc20879483ee5e785ce5f03b",
+          "format": "WebP",
+          "quality": 93,
+          "method": 6,
+          "saving_vs_source_png_pct": 82.16,
+          "psnr_vs_lanczos_png_resize_db": 35.46
+        }
+      ],
+      "stem": "p1_cover"
+    },
+    {
+      "slot": "Figure 1.1",
+      "source_path": "docs/artwork/owner-approved/paper-one/P1_Figure_1_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "source_commit": "c6f60ee180c2f5d401b0f597f512898c010981a9",
+      "source_sha256": "4a16ac9219d3fd46be7291b35d033c19508d8be85f4417510e63bc4373718675",
+      "source_bytes": 2972672,
+      "master_path": "images/symmetria/paper-01/approved-20261120/p1_figure_1_1_master_1920x1080.png",
+      "master_sha256": "4a16ac9219d3fd46be7291b35d033c19508d8be85f4417510e63bc4373718675",
+      "master_bytes": 2972672,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "alt": "Newtonian orbits, Maxwell electromagnetic waves and Einstein curved spacetime illustrate three historical breakthroughs.",
+      "long_description": "Newton's laws of mechanics and universal gravitation connect terrestrial and celestial motion in the same theoretical description. Maxwell united electricity and magnetism and identified light as electromagnetic. General relativity describes gravity via spacetime geometry. The displayed Einstein equation without a cosmological term is a Λ = 0 special case; its original formulation must not be presented as the most general field equation.",
+      "webp_variants": [
+        {
+          "path": "images/symmetria/paper-01/approved-20261120/p1_figure_1_1_768w_q93.webp",
+          "width": 768,
+          "height": 432,
+          "bytes": 132088,
+          "sha256": "147877fbd200b76053d7af27782ff04facab6d1507fa5616b6db121db697f43d",
+          "format": "WebP",
+          "quality": 93,
+          "method": 6,
+          "saving_vs_source_png_pct": 95.56,
+          "psnr_vs_lanczos_png_resize_db": 29.94
+        },
+        {
+          "path": "images/symmetria/paper-01/approved-20261120/p1_figure_1_1_1280w_q93.webp",
+          "width": 1280,
+          "height": 720,
+          "bytes": 297588,
+          "sha256": "ac1c0107e94df2e221d8ebf367de928ffe3c2de3d783bf225a642012ffc3b470",
+          "format": "WebP",
+          "quality": 93,
+          "method": 6,
+          "saving_vs_source_png_pct": 89.99,
+          "psnr_vs_lanczos_png_resize_db": 31.36
+        },
+        {
+          "path": "images/symmetria/paper-01/approved-20261120/p1_figure_1_1_1920w_q93.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 520560,
+          "sha256": "0df1fd6f6947b3f12c83a3c3f1ae9597da7efeaf928f084017bb79ce2f0043fa",
+          "format": "WebP",
+          "quality": 93,
+          "method": 6,
+          "saving_vs_source_png_pct": 82.49,
+          "psnr_vs_lanczos_png_resize_db": 34.12
+        }
+      ],
+      "stem": "p1_figure_1_1"
+    },
+    {
+      "slot": "Figure 2.1",
+      "source_path": "docs/artwork/candidates/paper-one/science-corrections-20261120/P1_Figure_2_1_SM_Lambda0_Correction_Candidate_1920x1080.png",
+      "source_commit": "ef09d41b6b7fcb85efc75618736c234ccc2fa09c",
+      "source_sha256": "a024ee52cccde7b8acc59dce1d816cfce5c894017808d6ede4337f072037cd3b",
+      "source_bytes": 3088099,
+      "master_path": "images/symmetria/paper-01/approved-20261120/p1_figure_2_1_master_1920x1080.png",
+      "master_sha256": "a024ee52cccde7b8acc59dce1d816cfce5c894017808d6ede4337f072037cd3b",
+      "master_bytes": 3088099,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "alt": "Standard Model particles and quantum interactions face curved relativistic spacetime across an unresolved theory gap.",
+      "long_description": "The Standard Model uses quantum field theory to describe electromagnetic, weak and strong interactions; gravity is not included. General relativity describes gravity as curved spacetime. Their complete reconciliation, especially a validated quantum treatment of gravity, remains an open scientific challenge. The displayed Einstein equation without a cosmological constant represents the Λ = 0 special case.",
+      "webp_variants": [
+        {
+          "path": "images/symmetria/paper-01/approved-20261120/p1_figure_2_1_768w_q93.webp",
+          "width": 768,
+          "height": 432,
+          "bytes": 142166,
+          "sha256": "1718a9ed68effa8f82f8e49f707eff876f7676f5f5eafde4fa8ef08851defd03",
+          "format": "WebP",
+          "quality": 93,
+          "method": 6,
+          "saving_vs_source_png_pct": 95.4,
+          "psnr_vs_lanczos_png_resize_db": 28.33
+        },
+        {
+          "path": "images/symmetria/paper-01/approved-20261120/p1_figure_2_1_1280w_q93.webp",
+          "width": 1280,
+          "height": 720,
+          "bytes": 320660,
+          "sha256": "2fb1dacce26af841bd75357a1a924f7e2ecb7eabe55e433957d2024f07215bd3",
+          "format": "WebP",
+          "quality": 93,
+          "method": 6,
+          "saving_vs_source_png_pct": 89.62,
+          "psnr_vs_lanczos_png_resize_db": 29.76
+        },
+        {
+          "path": "images/symmetria/paper-01/approved-20261120/p1_figure_2_1_1920w_q93.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 550274,
+          "sha256": "4454812965283241c3076f9589d29f98948b95b362b313ad75a60268e4fa4813",
+          "format": "WebP",
+          "quality": 93,
+          "method": 6,
+          "saving_vs_source_png_pct": 82.18,
+          "psnr_vs_lanczos_png_resize_db": 32.4
+        }
+      ],
+      "stem": "p1_figure_2_1"
+    },
+    {
+      "slot": "Figure 3.1",
+      "source_path": "docs/artwork/candidates/paper-one/science-corrections-20261120/P1_Figure_3_1_QFT_DarkSector_Correction_Candidate_1920x1080.png",
+      "source_commit": "ef09d41b6b7fcb85efc75618736c234ccc2fa09c",
+      "source_sha256": "72bc6b2f086d06678f7a34e3ec980c86016e40ab99724bb4258bd6c0bda72a92",
+      "source_bytes": 3348284,
+      "master_path": "images/symmetria/paper-01/approved-20261120/p1_figure_3_1_master_1920x1080.png",
+      "master_sha256": "72bc6b2f086d06678f7a34e3ec980c86016e40ab99724bb4258bd6c0bda72a92",
+      "master_bytes": 3348284,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "alt": "Quantum field theory, the Standard Model and general relativity sit above open questions of quantum gravity and the dark sector.",
+      "long_description": "Quantum field theory is the mathematical framework underlying the Standard Model; the two images illustrate a general approach and one specific highly tested theory, not mutually independent forces. General relativity describes gravity and spacetime geometry. Quantum gravity remains unresolved, while the gravitational and cosmological phenomena attributed to dark matter and dark energy are modelled even though their underlying physical nature remains unknown.",
+      "webp_variants": [
+        {
+          "path": "images/symmetria/paper-01/approved-20261120/p1_figure_3_1_768w_q93.webp",
+          "width": 768,
+          "height": 432,
+          "bytes": 155260,
+          "sha256": "b1232655723813c6d375374144f41f63a3bfc85a4139a6f51e424866cc55cd0c",
+          "format": "WebP",
+          "quality": 93,
+          "method": 6,
+          "saving_vs_source_png_pct": 95.36,
+          "psnr_vs_lanczos_png_resize_db": 28.94
+        },
+        {
+          "path": "images/symmetria/paper-01/approved-20261120/p1_figure_3_1_1280w_q93.webp",
+          "width": 1280,
+          "height": 720,
+          "bytes": 359318,
+          "sha256": "630e13b073ebbcdab281856b69231086a6824323e950cae2fa0a00555d7752aa",
+          "format": "WebP",
+          "quality": 93,
+          "method": 6,
+          "saving_vs_source_png_pct": 89.27,
+          "psnr_vs_lanczos_png_resize_db": 30.19
+        },
+        {
+          "path": "images/symmetria/paper-01/approved-20261120/p1_figure_3_1_1920w_q93.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 632554,
+          "sha256": "f8abfbf513a097152c688c0b693ecca95b17407b99e1f3200131ae4dc58ed75d",
+          "format": "WebP",
+          "quality": 93,
+          "method": 6,
+          "saving_vs_source_png_pct": 81.11,
+          "psnr_vs_lanczos_png_resize_db": 32.93
+        }
+      ],
+      "stem": "p1_figure_3_1"
+    },
+    {
+      "slot": "Figure 4.1",
+      "source_path": "docs/artwork/owner-approved/paper-one/P1_Figure_4_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "source_commit": "c6f60ee180c2f5d401b0f597f512898c010981a9",
+      "source_sha256": "788e68dc507c1e408428380b86816e594301384ed29331a3ab9aa9c29cdb9238",
+      "source_bytes": 3244273,
+      "master_path": "images/symmetria/paper-01/approved-20261120/p1_figure_4_1_master_1920x1080.png",
+      "master_sha256": "788e68dc507c1e408428380b86816e594301384ed29331a3ab9aa9c29cdb9238",
+      "master_bytes": 3244273,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "alt": "Four open questions concern quantum gravity, quantum interpretation, fundamental constants and experimental tests.",
+      "long_description": "The image asks about the quantum treatment of gravity, the measurement and interpretation of quantum theory, parameters used by physical theories, and falsifiable empirical tests. The pictured constants include dimensional quantities such as c, h, G and masses, as well as dimensionless α; their numerical values do not all have the same dependence on measurement units.",
+      "webp_variants": [
+        {
+          "path": "images/symmetria/paper-01/approved-20261120/p1_figure_4_1_768w_q93.webp",
+          "width": 768,
+          "height": 432,
+          "bytes": 144782,
+          "sha256": "a078fb7db4b6ba8c0c8b24553fb4d390c947dbef5d717814815080a4d4efe91e",
+          "format": "WebP",
+          "quality": 93,
+          "method": 6,
+          "saving_vs_source_png_pct": 95.54,
+          "psnr_vs_lanczos_png_resize_db": 29.54
+        },
+        {
+          "path": "images/symmetria/paper-01/approved-20261120/p1_figure_4_1_1280w_q93.webp",
+          "width": 1280,
+          "height": 720,
+          "bytes": 330788,
+          "sha256": "53ae8b3e88096742d4291dcb9450b52164877ffba5c651a0fae480a1f890eb0c",
+          "format": "WebP",
+          "quality": 93,
+          "method": 6,
+          "saving_vs_source_png_pct": 89.8,
+          "psnr_vs_lanczos_png_resize_db": 30.9
+        },
+        {
+          "path": "images/symmetria/paper-01/approved-20261120/p1_figure_4_1_1920w_q93.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 578152,
+          "sha256": "e060b53cb2c9b03b4e2488dd3aa64175e555ac3e791d89b72ccf1a8a8d1bd492",
+          "format": "WebP",
+          "quality": 93,
+          "method": 6,
+          "saving_vs_source_png_pct": 82.18,
+          "psnr_vs_lanczos_png_resize_db": 33.65
+        }
+      ],
+      "stem": "p1_figure_4_1"
+    },
+    {
+      "slot": "Figure 5.1",
+      "source_path": "docs/artwork/owner-approved/paper-one/P1_Figure_5_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "source_commit": "c6f60ee180c2f5d401b0f597f512898c010981a9",
+      "source_sha256": "945a5061c67bd52300cc4823f9664579380c85b36363daadcc7ef88496687b1c",
+      "source_bytes": 3079962,
+      "master_path": "images/symmetria/paper-01/approved-20261120/p1_figure_5_1_master_1920x1080.png",
+      "master_sha256": "945a5061c67bd52300cc4823f9664579380c85b36363daadcc7ef88496687b1c",
+      "master_bytes": 3079962,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "alt": "Symmetry, information, constraint and organisation are pictured as hypothetical deeper concepts, not established mechanisms.",
+      "long_description": "SYMMETRIA raises, but does not establish, the possibility that symmetry, information, constraint and organisation underlie familiar physical descriptions. The figure poses four questions and explicitly labels the proposal exploratory. No emergence law, unified-field derivation or experimental evidence is asserted.",
+      "webp_variants": [
+        {
+          "path": "images/symmetria/paper-01/approved-20261120/p1_figure_5_1_768w_q93.webp",
+          "width": 768,
+          "height": 432,
+          "bytes": 137028,
+          "sha256": "b0aef2a3253995772714b92eb1a0f7501915fac0c28076ec22c8cb58e95d9352",
+          "format": "WebP",
+          "quality": 93,
+          "method": 6,
+          "saving_vs_source_png_pct": 95.55,
+          "psnr_vs_lanczos_png_resize_db": 31.83
+        },
+        {
+          "path": "images/symmetria/paper-01/approved-20261120/p1_figure_5_1_1280w_q93.webp",
+          "width": 1280,
+          "height": 720,
+          "bytes": 310782,
+          "sha256": "f8d37b9a32dea5facf0ad92df991ea9cb3d461b429530a3b252d4536064f3233",
+          "format": "WebP",
+          "quality": 93,
+          "method": 6,
+          "saving_vs_source_png_pct": 89.91,
+          "psnr_vs_lanczos_png_resize_db": 33.33
+        },
+        {
+          "path": "images/symmetria/paper-01/approved-20261120/p1_figure_5_1_1920w_q93.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 547654,
+          "sha256": "59e1ebf921c0a6337a35a32a33fe6aafc0543e0586e6250c8ed7f4c4430930fd",
+          "format": "WebP",
+          "quality": 93,
+          "method": 6,
+          "saving_vs_source_png_pct": 82.22,
+          "psnr_vs_lanczos_png_resize_db": 35.89
+        }
+      ],
+      "stem": "p1_figure_5_1"
+    },
+    {
+      "slot": "Figure 6.1",
+      "source_path": "docs/artwork/owner-approved/paper-one/P1_Figure_6_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "source_commit": "c6f60ee180c2f5d401b0f597f512898c010981a9",
+      "source_sha256": "a1c9c939c6195a97106a3e4c8a49398a48b27baf108a8ef7b21bdc0ed09e896f",
+      "source_bytes": 3073681,
+      "master_path": "images/symmetria/paper-01/approved-20261120/p1_figure_6_1_master_1920x1080.png",
+      "master_sha256": "a1c9c939c6195a97106a3e4c8a49398a48b27baf108a8ef7b21bdc0ed09e896f",
+      "master_bytes": 3073681,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "alt": "Eight proposed research steps lead from mathematical formalisation through prediction and tests, with revision if unsupported.",
+      "long_description": "The figure proposes a future research programme: formalise mathematics; check consistency; compare established physics; perform computational modelling and AI-assisted analysis; investigate through the Nilpotent Symmetry Research Program (NSRP); derive distinctive testable predictions; and seek experimental evaluation. Inconclusive or contrary results should prompt revision or rejection. These steps are planned, not already experimentally validated.",
+      "webp_variants": [
+        {
+          "path": "images/symmetria/paper-01/approved-20261120/p1_figure_6_1_768w_q93.webp",
+          "width": 768,
+          "height": 432,
+          "bytes": 132952,
+          "sha256": "7999656a607da1b7d351fe5578be95d9ba12b5705ef1c0a528fb394c8b43ffc2",
+          "format": "WebP",
+          "quality": 93,
+          "method": 6,
+          "saving_vs_source_png_pct": 95.67,
+          "psnr_vs_lanczos_png_resize_db": 29.54
+        },
+        {
+          "path": "images/symmetria/paper-01/approved-20261120/p1_figure_6_1_1280w_q93.webp",
+          "width": 1280,
+          "height": 720,
+          "bytes": 306764,
+          "sha256": "121ae43c71ab8eae0a379407d99f8ef2d2d25c959d945db13e0e9a496a2c0cce",
+          "format": "WebP",
+          "quality": 93,
+          "method": 6,
+          "saving_vs_source_png_pct": 90.02,
+          "psnr_vs_lanczos_png_resize_db": 30.83
+        },
+        {
+          "path": "images/symmetria/paper-01/approved-20261120/p1_figure_6_1_1920w_q93.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 543580,
+          "sha256": "cfbf21332c532497b07151d5564cba4e22ffde7010445dbe093a2b01d7416b8b",
+          "format": "WebP",
+          "quality": 93,
+          "method": 6,
+          "saving_vs_source_png_pct": 82.32,
+          "psnr_vs_lanczos_png_resize_db": 33.67
+        }
+      ],
+      "stem": "p1_figure_6_1"
+    }
+  ]
+}
