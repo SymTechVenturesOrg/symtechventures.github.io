@@ -109,3 +109,15 @@ Browser transfer figures are measured resource-timing bytes from seven actual se
 ## Handover status
 
 **Implementation QA: PASS. Owner visual/editorial approval of website integration remains pending.** PR #13 is still **DRAFT · OPEN · UNMERGED**, based on the PR #5 website branch at the pinned base SHA. No commits were sent to PR #5, #11 or #12; no merge or deployment occurred. Review the article and screenshots before any release decision.
+
+## Post-review mobile caption readability correction (21 November 2026)
+
+**Result: PASS.** After reviewing the 320px and 390px browser screenshots, overly wide inter-word gaps from justified figure captions were identified and corrected only in PR #13.
+
+- [Presentation fix commit `a536c508`](https://github.com/SymTechVenturesOrg/symtechventures.github.io/commit/a536c5083d4eb50ac69507842db156f4413b2733): the seven cinematic figure captions are explicitly left-aligned, with `0.95rem` font size and `1.65` line height. Their descriptive paragraphs are also left-aligned. The fix changes only `css/v2-articles.css`; no caption wording, article science, HTML, approved artwork or WebP bytes were edited.
+- [Regression test commit `d1711366`](https://github.com/SymTechVenturesOrg/symtechventures.github.io/commit/d1711366021d54666143c317f7e8cff42bacb005): the existing Chromium acceptance script now records computed caption `text-align`, font size and line height, and computed description alignment for every figure. In the 320px and both 390px/DPR configurations, it asserts left alignment, caption font size at least 15px and line height at least 24px.
+- [Post-fix GitHub Actions run 44899270195](https://github.com/SymTechVenturesOrg/symtechventures.github.io/actions/runs/44899270195): **SUCCESS** on exact tested head `d1711366021d54666143c317f7e8cff42bacb005`. Python compilation, binary preflight and the full six-configuration Playwright/Chromium suite passed. That encompasses all seven figures at 320px DPR1, 390px DPR1/DPR2, 768px DPR1 and 1440px DPR1/DPR2, plus full-resolution links and blocked-image fallback.
+- [Post-fix screenshots, browser JSON and network-evidence artifact](https://github.com/SymTechVenturesOrg/symtechventures.github.io/actions/runs/44899270195/artifacts/14705605629), archive SHA-256 `90f3b5c820541a35ee3e3c6b522a15ecd615cb1001c98031f02d630c334b6f66` (reported by GitHub Actions). The browser JSON contains the measured computed alignment and sizing properties for each figure.
+- Tests remain browser-emulated and do not represent physical-handset or real screen-reader testing. The previously recorded limitations on legibility of microtext inside the artwork remain unchanged; full-resolution PNG links and explanatory HTML captions/descriptions remain available.
+
+**Release gate unchanged:** PR #13 is draft, open, unmerged and awaiting owner presentation approval. PRs #5, #11 and #12 remain untouched; nothing was deployed.
