@@ -79,6 +79,25 @@ def browser_case(browser, origin, name, width, height, dpr, touch):
         dimensions=page.evaluate("()=>({client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth})")
         record["document_dimensions"]=dimensions
         check(dimensions["scroll"]<=dimensions["client"]+1,name+": horizontal overflow")
+        if width in (320,390):
+            menu=page.locator(".site-header .mobile-nav summary")
+            header_rects=page.evaluate("""()=>{const menu=document.querySelector('.site-header .mobile-nav summary').getBoundingClientRect(),brand=document.querySelector('.site-header .brand').getBoundingClientRect();return {menuLeft:menu.left,menuRight:menu.right,brandRight:brand.right,viewport:document.documentElement.clientWidth}}""")
+            record["mobile_header"]=header_rects
+            check(header_rects["menuLeft"]>=0 and header_rects["menuRight"]<=width-1,name+": mobile menu button clipped by viewport")
+            check(header_rects["brandRight"]<=header_rects["menuLeft"]+1,name+": brand overlaps mobile menu")
+            menu.click()
+            drawer=page.locator(".site-header .mobile-nav[open] .mobile-list")
+            links=drawer.locator("a")
+            drawer_rect=drawer.bounding_box()
+            record["mobile_menu_open"]={"link_count":links.count(),"drawer_rect":drawer_rect}
+            check(drawer.is_visible() and links.count()==6 and all(links.nth(i).is_visible() for i in range(links.count())),name+": mobile menu links missing or invisible")
+            check(drawer_rect is not None and drawer_rect["x"]>=-1 and drawer_rect["x"]+drawer_rect["width"]<=width+1,name+": mobile navigation drawer clipped")
+            if dpr==1:
+                dest=OUT/(name+"-mobile-menu-open.png")
+                page.screenshot(path=str(dest),full_page=False,animations="disabled")
+                record["screenshots"].append(dest.name)
+            menu.click()
+
         if name in ("mobile-320-dpr1","mobile-390-dpr1","tablet-768-dpr1","desktop-1440-dpr1"):
             record["screenshots"].append("page-top.png")
             page.screenshot(path=str(OUT/(name+"-page-top.png")),full_page=False,animations="disabled")
