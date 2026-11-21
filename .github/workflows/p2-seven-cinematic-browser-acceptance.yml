@@ -1,0 +1,50 @@
+name: Paper Two seven responsive figures — browser acceptance (no deploy)
+
+on:
+  push:
+    branches:
+      - feature/v2-paper-two-seven-cinematic-webp-20261121
+    paths:
+      - .github/workflows/p2-seven-cinematic-browser-acceptance.yml
+      - docs/reports/scripts/p2_seven_cinematic_browser_acceptance.py
+      - docs/reports/V2_PHASE_03_P2_SEVEN_RESPONSIVE_IMAGE_INTEGRATION_PREPARATION_MANIFEST_20261121.json
+      - articles/symmetria/symmetria-paper-02.html
+      - css/v2-articles.css
+      - images/symmetria/paper-02/approved-20261121/**
+
+permissions:
+  contents: read
+
+jobs:
+  paper-two-browser:
+    name: Chromium 320/390/tablet/desktop DPR1/2, captions and PNG links
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Check out exact unmerged PR #13 branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned Playwright and Chromium
+        run: |
+          python -m pip install playwright==1.56.0 pillow==12.0.0
+          python -m playwright install --with-deps chromium
+      - name: Compile browser QA script
+        run: python -m py_compile docs/reports/scripts/p2_seven_cinematic_browser_acceptance.py
+      - name: Run local HTTP browser acceptance; no public preview
+        run: python -u docs/reports/scripts/p2_seven_cinematic_browser_acceptance.py
+      - name: Upload screenshots, network measurements and QA JSON
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: symmetria-p2-pr13-browser-qa
+          path: phase3-p2-browser-qa-artifacts/
+          if-no-files-found: warn
+          retention-days: 30
+
+# No Pages action, public preview, deployment credentials, merge or push token.
