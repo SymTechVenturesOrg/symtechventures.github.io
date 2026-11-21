@@ -1,0 +1,407 @@
+{
+  "schema": "SYMMETRIA-P2-SEVEN-APPROVED-RESPONSIVE-WEBP-PREPARATION-20261121",
+  "status": "DRAFT_PR_PREPARATION_ONLY_NO_BINARIES_NO_SITE_EDITS",
+  "owner_art_approval_record": "https://github.com/SymTechVenturesOrg/symtechventures.github.io/blob/docs/symmetria-paper-two-cinematic-artwork-20261121/docs/reports/V2_PHASE_03_P2_ALL_SEVEN_FINAL_OWNER_APPROVAL_AND_RELEASE_GATE_20261121.md",
+  "source_art_pr": 12,
+  "source_art_branch": "docs/symmetria-paper-two-cinematic-artwork-20261121",
+  "source_art_manifest_blob": "97b2201e3ff44034a8c538b109d69862caf02e6e",
+  "source_art_pr_head_sha": "e1b6db18490c490bcbe21e56a035077d8e8f1d5b",
+  "integration_branch": "feature/v2-paper-two-seven-cinematic-webp-20261121",
+  "integration_base_branch": "feature/v2-space-research-website",
+  "integration_base_article_blob": "060700e8cdac337583c820f044efe80154d59b6c",
+  "integration_base_article_path": "articles/symmetria/symmetria-paper-02.html",
+  "integration_base_css_blob": "72697a65096fcdbc8c762e86215a8ceb14d1be92",
+  "website_master_prefix": "images/symmetria/paper-02/approved-20261121/",
+  "paper_one_reference_pr": 11,
+  "encoder_target": {
+    "format": "WebP",
+    "quality": 93,
+    "method": 6,
+    "resampling": "Pillow Lanczos",
+    "widths": [
+      768,
+      1280,
+      1920
+    ],
+    "source_png_masters_immutable": true,
+    "source_dimensions": [
+      1920,
+      1080
+    ]
+  },
+  "responsive_html_target": {
+    "sizes": "(max-width: 700px) calc(100vw - 2rem), (max-width: 1100px) calc(100vw - 4rem), 860px",
+    "semantics": "picture, source and img inside linked figure, figcaption and descriptive text",
+    "cover_loading": "eager",
+    "figure_loading": "lazy",
+    "master_link": "image/png full 1920x1080 in new tab",
+    "css_note": "Paper One has .paper-figure--cinematic specific rules not yet in base CSS; port minimal rules into integration branch, not to PR #5."
+  },
+  "owner_site_integration_authorisation": "PREPARE_SEPARATE_DRAFT_PR_ONLY",
+  "implementation_approved": false,
+  "webp_images_generated": 0,
+  "website_png_masters_copied": 0,
+  "article_figure_elements_installed": 0,
+  "browser_cases_executed": 0,
+  "total_approved_source_png_bytes": 22023720,
+  "approved_image_count": 7,
+  "images": [
+    {
+      "order": 1,
+      "slot": "Cover",
+      "figure_slot_attr": "cover",
+      "source_github_branch": "docs/symmetria-paper-two-cinematic-artwork-20261121",
+      "source_git_commit": "e1b6db18490c490bcbe21e56a035077d8e8f1d5b",
+      "source_github_path": "docs/artwork/paper-two/candidates/P2_Cover_Cinematic_1920x1080_Candidate.png",
+      "source_sha256": "d1c2d02620c7b595c88dcfadf8e91ac4628f48d6b7770a1a55fa19cdc52b8a02",
+      "source_git_blob": "ecc305bb758cabd8d0760fc3faef978cf7b05a82",
+      "source_bytes": 3220866,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "owner_approved": true,
+      "previous_website_img_src": "../../images/symmetria/paper-02/02_symmetry_cover.webp",
+      "previous_website_caption": "Cover Illustration: Symmetry appears throughout nature, mathematics and physics. From snowflakes and crystals to conservation laws and particle interactions, symmetry provides one of the deepest organising languages through which the universe can be understood.",
+      "site_master_png": "images/symmetria/paper-02/approved-20261121/p2_cover_master_1920x1080.png",
+      "planned_webp_variants": [
+        {
+          "width": 768,
+          "height": 432,
+          "path": "images/symmetria/paper-02/approved-20261121/p2_cover_768w_q93.webp",
+          "status": "NOT_GENERATED",
+          "sha256": null,
+          "bytes": null
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "path": "images/symmetria/paper-02/approved-20261121/p2_cover_1280w_q93.webp",
+          "status": "NOT_GENERATED",
+          "sha256": null,
+          "bytes": null
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "path": "images/symmetria/paper-02/approved-20261121/p2_cover_1920w_q93.webp",
+          "status": "NOT_GENERATED",
+          "sha256": null,
+          "bytes": null
+        }
+      ],
+      "img_alt": "Luminous sixfold crystal illustrates rotational symmetry, with natural forms and abstract physical patterns in a deep-blue cosmic scene.",
+      "figcaption_proposed": "Cover Illustration: Symmetry is visible in nature and expressed mathematically as invariance under transformation. Physical laws often possess important symmetries, while deeper symmetry-based explanations remain an area of research.",
+      "description_proposed": "An idealised six-armed ice-crystal motif is set within gold rotational geometry and a navy/cyan cosmic background. The image introduces symmetry in natural patterns and physical law; it does not establish that all phenomena arise from a single deeper physical mechanism.",
+      "source_selection": "ORIGINAL_OWNER_APPROVED",
+      "status": "APPROVED_MASTER_SOURCE_ONLY_NOT_YET_COPIED_TO_WEBSITE"
+    },
+    {
+      "order": 2,
+      "slot": "1.1",
+      "figure_slot_attr": "figure-1-1",
+      "source_github_branch": "docs/symmetria-paper-two-cinematic-artwork-20261121",
+      "source_git_commit": "be2985ab59657ac4e631a7b8e0084064167188c4",
+      "source_github_path": "docs/artwork/paper-two/candidates/P2_Figure_1_1_ChatCandidate_1920x1080.png",
+      "source_sha256": "a53157058eda3e5d594e53284be40f8bb2c58fdb03c399b7401e7fefc525957c",
+      "source_git_blob": "60056cbfbaafddf025ab68dc0d5c37745764ebba",
+      "source_bytes": 3385272,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "owner_approved": true,
+      "previous_website_img_src": "../../images/symmetria/paper-02/02_symmetry_nature_physics.webp",
+      "previous_website_caption": "Figure 1.1: Symmetry appears across many levels of reality, from biological forms and crystalline structures to mathematical laws and physical interactions. Its recurring presence suggests that symmetry may be more than visual balance; it may represent a deep organising principle within nature.",
+      "site_master_png": "images/symmetria/paper-02/approved-20261121/p2_figure_1_1_master_1920x1080.png",
+      "planned_webp_variants": [
+        {
+          "width": 768,
+          "height": 432,
+          "path": "images/symmetria/paper-02/approved-20261121/p2_figure_1_1_768w_q93.webp",
+          "status": "NOT_GENERATED",
+          "sha256": null,
+          "bytes": null
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "path": "images/symmetria/paper-02/approved-20261121/p2_figure_1_1_1280w_q93.webp",
+          "status": "NOT_GENERATED",
+          "sha256": null,
+          "bytes": null
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "path": "images/symmetria/paper-02/approved-20261121/p2_figure_1_1_1920w_q93.webp",
+          "status": "NOT_GENERATED",
+          "sha256": null,
+          "bytes": null
+        }
+      ],
+      "img_alt": "A butterfly, flower, leaf, snowflake, crystal lattice and magnetic-style field lines illustrate natural and physical symmetry.",
+      "figcaption_proposed": "Figure 1.1: Symmetry appears in biological forms, crystals and idealised physical models. Living structures often display approximate balance, while mathematical symmetry concerns precise invariance under specified transformations.",
+      "description_proposed": "The butterfly and leaf illustrate approximate bilateral patterning, alongside a flower and a stylised sixfold snowflake, a lattice model and idealised dipole-style field lines. These visual similarities arise from different mechanisms and do not themselves demonstrate a unified physical law.",
+      "source_selection": "ORIGINAL_OWNER_APPROVED",
+      "status": "APPROVED_MASTER_SOURCE_ONLY_NOT_YET_COPIED_TO_WEBSITE"
+    },
+    {
+      "order": 3,
+      "slot": "2.1",
+      "figure_slot_attr": "figure-2-1",
+      "source_github_branch": "docs/symmetria-paper-two-cinematic-artwork-20261121",
+      "source_git_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+      "source_github_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_2_1_ScienceFix_Candidate_1920x1080.png",
+      "source_sha256": "ccea83f05ded4bd9479ff624a65e4bbf8261afd2cbbd5e632ebcf0bcdfc3f421",
+      "source_git_blob": "65d8c7a21d68a93f0ae495e0f543f4f7779a100c",
+      "source_bytes": 3561649,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "owner_approved": true,
+      "previous_website_img_src": "../../images/symmetria/paper-02/02_natural_symmetry_patterns.webp",
+      "previous_website_caption": "Figure 2.1: Natural symmetry appears in snowflakes, crystals, biological forms, shells, bubbles and galaxies. These patterns often arise from stability, efficiency and constraint rather than decoration alone.",
+      "site_master_png": "images/symmetria/paper-02/approved-20261121/p2_figure_2_1_master_1920x1080.png",
+      "planned_webp_variants": [
+        {
+          "width": 768,
+          "height": 432,
+          "path": "images/symmetria/paper-02/approved-20261121/p2_figure_2_1_768w_q93.webp",
+          "status": "NOT_GENERATED",
+          "sha256": null,
+          "bytes": null
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "path": "images/symmetria/paper-02/approved-20261121/p2_figure_2_1_1280w_q93.webp",
+          "status": "NOT_GENERATED",
+          "sha256": null,
+          "bytes": null
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "path": "images/symmetria/paper-02/approved-20261121/p2_figure_2_1_1920w_q93.webp",
+          "status": "NOT_GENERATED",
+          "sha256": null,
+          "bytes": null
+        }
+      ],
+      "img_alt": "Sunflower seed pattern, spiral shell, branching tree, sixfold snowflake and concentric water ripples illustrate different natural structures.",
+      "figcaption_proposed": "Figure 2.1: Sunflowers, shells, branching plants, crystals and water ripples display recurring forms created by distinct biological and physical processes. These are illustrative patterns, not measurements proving an exact golden-ratio relationship.",
+      "description_proposed": "The image shows radial seed organisation in a sunflower, shell-like growth, a branched tree, an idealised sixfold ice crystal and spreading circular water waves. No golden rectangle or exact-fit spiral is asserted. Natural specimens are rarely perfectly symmetrical, and similarities of shape do not imply identical causes.",
+      "source_selection": "SCIENCE_CORRECTED_FINAL (superseded original must NOT be used)",
+      "status": "APPROVED_MASTER_SOURCE_ONLY_NOT_YET_COPIED_TO_WEBSITE"
+    },
+    {
+      "order": 4,
+      "slot": "3.1",
+      "figure_slot_attr": "figure-3-1",
+      "source_github_branch": "docs/symmetria-paper-two-cinematic-artwork-20261121",
+      "source_git_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+      "source_github_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_3_1_ScienceFix_Candidate_1920x1080.png",
+      "source_sha256": "962c5465b7ed8d599e24688a173b4ec59f12bf9f7c3ce3288c8af5ccb224f07d",
+      "source_git_blob": "cb4cd8e072f1fe212d52cf082d782b316ed9ee29",
+      "source_bytes": 3041897,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "owner_approved": true,
+      "previous_website_img_src": "../../images/symmetria/paper-02/02_mathematical_symmetry_invariance.webp",
+      "previous_website_caption": "Figure 3.1: In mathematics and physics, symmetry means invariance under transformation. A law or structure possesses symmetry when something essential remains unchanged after reflection, rotation, translation or a more abstract transformation.",
+      "site_master_png": "images/symmetria/paper-02/approved-20261121/p2_figure_3_1_master_1920x1080.png",
+      "planned_webp_variants": [
+        {
+          "width": 768,
+          "height": 432,
+          "path": "images/symmetria/paper-02/approved-20261121/p2_figure_3_1_768w_q93.webp",
+          "status": "NOT_GENERATED",
+          "sha256": null,
+          "bytes": null
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "path": "images/symmetria/paper-02/approved-20261121/p2_figure_3_1_1280w_q93.webp",
+          "status": "NOT_GENERATED",
+          "sha256": null,
+          "bytes": null
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "path": "images/symmetria/paper-02/approved-20261121/p2_figure_3_1_1920w_q93.webp",
+          "status": "NOT_GENERATED",
+          "sha256": null,
+          "bytes": null
+        }
+      ],
+      "img_alt": "An idealised sixfold crystal retains its form after a sixty-degree rotation or mirror reflection, while translation moves it to a new position.",
+      "figcaption_proposed": "Figure 3.1: An idealised sixfold form is unchanged by certain rotations and mirror reflections. Translating a finite form produces a congruent object in a new position; this is a transformation, not translational invariance of the original finite object.",
+      "description_proposed": "The central regular sixfold crystal demonstrates rotations of 60 degrees and mirror reflection as elements of its dihedral group D₆. In the separate translation example, x′ = x + a and y′ = y + b describe a new location; the moved finite shape has the same size and form but is not invariant at its original position. Extended periodic patterns can possess translation symmetry, but this isolated object does not.",
+      "source_selection": "SCIENCE_CORRECTED_FINAL (superseded original must NOT be used)",
+      "status": "APPROVED_MASTER_SOURCE_ONLY_NOT_YET_COPIED_TO_WEBSITE"
+    },
+    {
+      "order": 5,
+      "slot": "4.1",
+      "figure_slot_attr": "figure-4-1",
+      "source_github_branch": "docs/symmetria-paper-two-cinematic-artwork-20261121",
+      "source_git_commit": "be2985ab59657ac4e631a7b8e0084064167188c4",
+      "source_github_path": "docs/artwork/paper-two/candidates/P2_Figure_4_1_ChatCandidate_1920x1080.png",
+      "source_sha256": "bce9e58d6a5dbb058774051a88f1d76f44e926420f56ca9939440eef7512365c",
+      "source_git_blob": "6e887323f3436799708a6ca62105cf33d04c997d",
+      "source_bytes": 2688456,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "owner_approved": true,
+      "previous_website_img_src": "../../images/symmetria/paper-02/02_noether_symmetry_conservation.webp",
+      "previous_website_caption": "Figure 4.1: Noether's theorem links continuous symmetries to conservation laws. Time symmetry corresponds to conservation of energy, spatial symmetry to conservation of momentum, and rotational symmetry to conservation of angular momentum.",
+      "site_master_png": "images/symmetria/paper-02/approved-20261121/p2_figure_4_1_master_1920x1080.png",
+      "planned_webp_variants": [
+        {
+          "width": 768,
+          "height": 432,
+          "path": "images/symmetria/paper-02/approved-20261121/p2_figure_4_1_768w_q93.webp",
+          "status": "NOT_GENERATED",
+          "sha256": null,
+          "bytes": null
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "path": "images/symmetria/paper-02/approved-20261121/p2_figure_4_1_1280w_q93.webp",
+          "status": "NOT_GENERATED",
+          "sha256": null,
+          "bytes": null
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "path": "images/symmetria/paper-02/approved-20261121/p2_figure_4_1_1920w_q93.webp",
+          "status": "NOT_GENERATED",
+          "sha256": null,
+          "bytes": null
+        }
+      ],
+      "img_alt": "A rotating celestial-style schematic and arrows link continuous rotational invariance through Noether's theorem to angular momentum conservation.",
+      "figcaption_proposed": "Figure 4.1: Noether's theorem connects continuous symmetries of a system's action with conserved quantities. The illustration focuses on rotational invariance and angular momentum; in the mechanical example, conservation requires no net external torque.",
+      "description_proposed": "A luminous rotating object and schematic field curves appear beside a sequence reading continuous rotational symmetry, Noether's theorem and conserved angular momentum, represented as L = constant. Time translation and space translation relate to energy and linear momentum conservation, respectively, under the relevant assumptions; this artwork illustrates just the rotational case.",
+      "source_selection": "ORIGINAL_OWNER_APPROVED",
+      "status": "APPROVED_MASTER_SOURCE_ONLY_NOT_YET_COPIED_TO_WEBSITE"
+    },
+    {
+      "order": 6,
+      "slot": "5.1",
+      "figure_slot_attr": "figure-5-1",
+      "source_github_branch": "docs/symmetria-paper-two-cinematic-artwork-20261121",
+      "source_git_commit": "be2985ab59657ac4e631a7b8e0084064167188c4",
+      "source_github_path": "docs/artwork/paper-two/candidates/P2_Figure_5_1_ChatCandidate_1920x1080.png",
+      "source_sha256": "201f88207b9bd0122a105c59c94b8a17f6d50740c310594718d5b3ababf685cf",
+      "source_git_blob": "3634d6375f45321e08cf3aa45ee308b9850bd0bd",
+      "source_bytes": 3062628,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "owner_approved": true,
+      "previous_website_img_src": "../../images/symmetria/paper-02/02_broken_symmetry_emergence.webp",
+      "previous_website_caption": "Figure 5.1: Broken symmetry allows structure to emerge from initially balanced conditions. In physics, phase transitions, particle masses and force separation can all be understood through symmetry breaking processes.",
+      "site_master_png": "images/symmetria/paper-02/approved-20261121/p2_figure_5_1_master_1920x1080.png",
+      "planned_webp_variants": [
+        {
+          "width": 768,
+          "height": 432,
+          "path": "images/symmetria/paper-02/approved-20261121/p2_figure_5_1_768w_q93.webp",
+          "status": "NOT_GENERATED",
+          "sha256": null,
+          "bytes": null
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "path": "images/symmetria/paper-02/approved-20261121/p2_figure_5_1_1280w_q93.webp",
+          "status": "NOT_GENERATED",
+          "sha256": null,
+          "bytes": null
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "path": "images/symmetria/paper-02/approved-20261121/p2_figure_5_1_1920w_q93.webp",
+          "status": "NOT_GENERATED",
+          "sha256": null,
+          "bytes": null
+        }
+      ],
+      "img_alt": "A symmetric field pattern changes into differentiated domains during a phase transition, above a labelled double-well potential.",
+      "figcaption_proposed": "Figure 5.1: Symmetric physical laws can admit lower-symmetry states during transitions. The lower V(φ) sketch is a one-dimensional schematic double-well, not a complete Mexican-hat field potential or a universal mass-generation model.",
+      "description_proposed": "The visual transitions from a more uniform symmetric arrangement through a cooling/phase-change motif to an irregular pattern of distinct domains. Beneath it, a one-dimensional potential V(φ) shows a central high-energy point and two lower minima; this is an illustrative cross-section of state selection, not a complete model of the Higgs mechanism.",
+      "source_selection": "ORIGINAL_OWNER_APPROVED",
+      "status": "APPROVED_MASTER_SOURCE_ONLY_NOT_YET_COPIED_TO_WEBSITE"
+    },
+    {
+      "order": 7,
+      "slot": "6.1",
+      "figure_slot_attr": "figure-6-1",
+      "source_github_branch": "docs/symmetria-paper-two-cinematic-artwork-20261121",
+      "source_git_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+      "source_github_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_6_1_ScienceFix_Candidate_1920x1080.png",
+      "source_sha256": "e0590636813f7a720ca88b225011a5c2b4122a2ccce79263c9f3563f47c0bcff",
+      "source_git_blob": "babf8cc33ae4542c018b3a99d8b3817728ecc2e",
+      "source_bytes": 3062952,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "owner_approved": true,
+      "previous_website_img_src": "../../images/symmetria/paper-02/02_symmetria_symmetry_perspective.webp",
+      "previous_website_caption": "Figure 6.1: The SYMMETRIA perspective explores whether particles, forces, spacetime and physical laws may emerge from deeper symmetry relationships. In this view, symmetry is not merely a feature of nature but a possible organising language beneath observable reality.",
+      "site_master_png": "images/symmetria/paper-02/approved-20261121/p2_figure_6_1_master_1920x1080.png",
+      "planned_webp_variants": [
+        {
+          "width": 768,
+          "height": 432,
+          "path": "images/symmetria/paper-02/approved-20261121/p2_figure_6_1_768w_q93.webp",
+          "status": "NOT_GENERATED",
+          "sha256": null,
+          "bytes": null
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "path": "images/symmetria/paper-02/approved-20261121/p2_figure_6_1_1280w_q93.webp",
+          "status": "NOT_GENERATED",
+          "sha256": null,
+          "bytes": null
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "path": "images/symmetria/paper-02/approved-20261121/p2_figure_6_1_1920w_q93.webp",
+          "status": "NOT_GENERATED",
+          "sha256": null,
+          "bytes": null
+        }
+      ],
+      "img_alt": "A luminous geometric core leads through hypothetical constraints and emergent structures toward observable patterns, labelled as an exploratory hypothesis.",
+      "figcaption_proposed": "Figure 6.1: SYMMETRIA asks whether deeper symmetry and constraints might help explain the emergence of physical structure. This proposed sequence is an exploratory, untested hypothesis—not established physics or experimental evidence of a unified theory.",
+      "description_proposed": "A hypothetical progression is shown from hidden symmetry to constraints, emergent structure and observable patterns. Arrows suggest a proposed direction of explanation, not a demonstrated causal derivation. The artwork explicitly says 'Exploratory hypothesis — not established physics.' No distinctive SYMMETRIA prediction is claimed to have been confirmed.",
+      "source_selection": "SCIENCE_CORRECTED_FINAL (superseded original must NOT be used)",
+      "status": "APPROVED_MASTER_SOURCE_ONLY_NOT_YET_COPIED_TO_WEBSITE"
+    }
+  ]
+}
