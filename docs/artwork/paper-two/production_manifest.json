@@ -1,7 +1,7 @@
 {
   "schema": "SYMMETRIA-PAPER-TWO-CINEMATIC-ARTWORK-20261121",
   "date": "2026-11-21",
-  "status": "COVER_OWNER_VISUALLY_APPROVED; SIX_GITHUB_CANDIDATES_BINARY_VERIFIED; INDEPENDENT_BATCH_QA_COMPLETE; THREE_PASS_THREE_FIX; OWNER_REVIEW_PENDING",
+  "status": "COVER_AND_P2_FIGURES_1_1_4_1_5_1_OWNER_APPROVED; THREE_CORRECTED_IMAGE_CANDIDATES_CHAT_STAGED_FOR_ONE_WORK_REAUDIT; WEBSITE_NOT_AUTHORISED",
   "branch": "docs/symmetria-paper-two-cinematic-artwork-20261121",
   "source_article_branch": "feature/v2-space-research-website",
   "source_article_git_blob": "060700e8cdac337583c820f044efe80154d59b6c",
@@ -16,7 +16,7 @@
       "sha256": "945a5061c67bd52300cc4823f9664579380c85b36363daadcc7ef88496687b1c"
     }
   ],
-  "approved_new_image_count": 1,
+  "approved_new_image_count": 4,
   "generated_local_trial_status": "One new native AI cover candidate generated; text and science checks pass for owner review. The three historical attempts remain rejected.",
   "source_image_dimensions_native_in_trials": [
     1672,
@@ -52,8 +52,8 @@
       "slot": "1.1",
       "subject": "Symmetry in Nature and Physics",
       "legacy_webp": "02_symmetry_nature_physics.webp",
-      "production_status": "PROVISIONAL_CANDIDATE_GITHUB_BINARY_VERIFIED_QA_PASS_OWNER_REVIEW_PENDING",
-      "owner_visual_approval": false,
+      "production_status": "OWNER_VISUALLY_APPROVED_AND_INDEPENDENT_QA_PASS; WEBSITE_INTEGRATION_NOT_AUTHORISED",
+      "owner_visual_approval": true,
       "independent_science_review": "PASS",
       "verified_git_binary_path": "docs/artwork/paper-two/candidates/P2_Figure_1_1_ChatCandidate_1920x1080.png",
       "sha256": "a53157058eda3e5d594e53284be40f8bb2c58fdb03c399b7401e7fefc525957c",
@@ -76,7 +76,8 @@
       "independent_qa_decision": "PASS",
       "independent_qa_finding": "The iris/leaf and butterfly are biological approximations; crystal and lattice motifs communicate ideal periodic order, and the dipole-style field lines are a plausible schematic. This matches the manuscript’s broad introductory caption without stating that living forms are exact mathematical symmetries. Keep the adjacent caption’s ‘approximately’/‘suggests’ framing.",
       "recommended_follow_up": "No image repair required. Caption must retain the distinction between approximate biological symmetry and ideal mathematical/physical models.",
-      "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md"
+      "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md",
+      "owner_visual_approval_source": "Owner replied 'Agreed, approved and authorised. Continue. 😊' on 2026-11-21 to explicit approval request for Figures 1.1, 4.1 and 5.1, plus authorisation to correct 2.1, 3.1 and 6.1."
     },
     {
       "slot": "2.1",
@@ -106,7 +107,10 @@
       "independent_qa_decision": "FIX",
       "independent_qa_finding": "The sunflower is overlaid with a golden rectangle/Fibonacci-style spiral. In this placement the geometry reads as a measured law of this specimen, whereas the manuscript only describes varied spiral organisation arising for different biological/physical reasons. Natural sunflower phyllotaxis can approximate Fibonacci arrangements; this single overlay does not establish an exact golden spiral.",
       "recommended_follow_up": "On a later regenerated candidate, remove the exact-fit overlay or identify it prominently as an illustrative approximation, not a measured fit or universal law. Do not use this image unchanged as evidence for exact golden-ratio organisation.",
-      "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md"
+      "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md",
+      "replacement_candidate_status": "CHAT_1920_PNG_STAGED_PENDING_GITHUB_IMPORT_AND_INDEPENDENT_SCIENCE_AUDIT",
+      "replacement_candidate_sha256": "ccea83f05ded4bd9479ff624a65e4bbf8261afd2cbbd5e632ebcf0bcdfc3f421",
+      "replacement_qa_decision": "NOT_YET_REVIEWED"
     },
     {
       "slot": "3.1",
@@ -136,14 +140,17 @@
       "independent_qa_decision": "FIX",
       "independent_qa_finding": "The rotation/reflection examples are valid for an ideal regular sixfold shape, and the D₆ example contains only rotation/reflection generators, not translation. The translation panel shows an operation, not an equality claiming the snowflake is translation-invariant; however the overall invariance layout encourages that conflation. The T_(a,b) formula has an unstated active/passive convention, the M_x label is ambiguous for the displayed x-coordinate reversal, and duplicated x/y axis glyphs reduce mathematical legibility. A real finite snowflake is not invariant under translation; it moves to a congruent position.",
       "recommended_follow_up": "Regenerate/repair labels: mark the snowflake as idealised; call translation a generic transformation; state that rigid translation preserves shape/area/perimeter but not position/invariance of the finite object; define the translation convention; clarify the reflection axis/subscript and remove duplicate axis glyphs.",
-      "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md"
+      "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md",
+      "replacement_candidate_status": "CHAT_1920_PNG_STAGED_PENDING_GITHUB_IMPORT_AND_INDEPENDENT_SCIENCE_AUDIT",
+      "replacement_candidate_sha256": "962c5465b7ed8d599e24688a173b4ec59f12bf9f7c3ce3288c8af5ccb224f07d",
+      "replacement_qa_decision": "NOT_YET_REVIEWED"
     },
     {
       "slot": "4.1",
       "subject": "Noether's Theorem and Conservation Laws",
       "legacy_webp": "02_noether_symmetry_conservation.webp",
-      "production_status": "PROVISIONAL_CANDIDATE_GITHUB_BINARY_VERIFIED_QA_PASS_OWNER_REVIEW_PENDING",
-      "owner_visual_approval": false,
+      "production_status": "OWNER_VISUALLY_APPROVED_AND_INDEPENDENT_QA_PASS; WEBSITE_INTEGRATION_NOT_AUTHORISED",
+      "owner_visual_approval": true,
       "independent_science_review": "PASS",
       "verified_git_binary_path": "docs/artwork/paper-two/candidates/P2_Figure_4_1_ChatCandidate_1920x1080.png",
       "sha256": "bce9e58d6a5dbb058774051a88f1d76f44e926420f56ca9939440eef7512365c",
@@ -166,14 +173,15 @@
       "independent_qa_decision": "PASS",
       "independent_qa_finding": "The figure correctly presents one Noether correspondence: continuous rotational invariance → conserved angular momentum, with L = const. It is a schematic, not a derivation. The manuscript caption gives the correct mapping. The visual must not imply angular momentum is conserved for every rotating body regardless of torques.",
       "recommended_follow_up": "No image repair required. In any final accessible caption, qualify the conserved quantity as applying when the relevant action/system has continuous rotational symmetry (and, for the mechanical example, with no external torque).",
-      "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md"
+      "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md",
+      "owner_visual_approval_source": "Owner replied 'Agreed, approved and authorised. Continue. 😊' on 2026-11-21 to explicit approval request for Figures 1.1, 4.1 and 5.1, plus authorisation to correct 2.1, 3.1 and 6.1."
     },
     {
       "slot": "5.1",
       "subject": "Broken Symmetry and Emergence",
       "legacy_webp": "02_broken_symmetry_emergence.webp",
-      "production_status": "PROVISIONAL_CANDIDATE_GITHUB_BINARY_VERIFIED_QA_PASS_OWNER_REVIEW_PENDING",
-      "owner_visual_approval": false,
+      "production_status": "OWNER_VISUALLY_APPROVED_AND_INDEPENDENT_QA_PASS; WEBSITE_INTEGRATION_NOT_AUTHORISED",
+      "owner_visual_approval": true,
       "independent_science_review": "PASS",
       "verified_git_binary_path": "docs/artwork/paper-two/candidates/P2_Figure_5_1_ChatCandidate_1920x1080.png",
       "sha256": "201f88207b9bd0122a105c59c94b8a17f6d50740c310594718d5b3ababf685cf",
@@ -196,7 +204,8 @@
       "independent_qa_decision": "PASS",
       "independent_qa_finding": "The lower graph is a labelled one-dimensional double-well V(φ) schematic with two degenerate minima, not a circular Mexican-hat surface. The top-to-bottom imagery is conceptual and broadly fits the article’s transition from a symmetric state to lower-symmetry domains. It does not name a specific Higgs mechanism or claim every mass arises by the same mechanism.",
       "recommended_follow_up": "No image repair required. Any final caption should explicitly call V(φ) a schematic one-dimensional double-well and avoid naming it a full Mexican-hat potential or universal mass-generation model.",
-      "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md"
+      "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md",
+      "owner_visual_approval_source": "Owner replied 'Agreed, approved and authorised. Continue. 😊' on 2026-11-21 to explicit approval request for Figures 1.1, 4.1 and 5.1, plus authorisation to correct 2.1, 3.1 and 6.1."
     },
     {
       "slot": "6.1",
@@ -226,7 +235,10 @@
       "independent_qa_decision": "FIX",
       "independent_qa_finding": "The manuscript caption is explicitly exploratory (‘explores whether’), but that caution is absent in-pixel. Large ‘The SYMMETRIA’ heading reads as a project masthead under the locked gate, despite matching the section’s proper name. The globe-like collage mixes natural forms, Newton’s cradle, a planetary-orbit atom, potential well and abstract geometry; it risks the rejected multi-topic montage and a classical solar-system picture of atoms. No single visual claims a proven unification, but the composition can overstate coherence.",
       "recommended_follow_up": "Regenerate as one cinematic, scientifically specific visual for an explicitly exploratory symmetry hypothesis. Use a non-masthead subject title; avoid a planetary atom and unrelated object gallery; label the proposal as untested in the artwork or keep a prominent adjacent accessible qualifier.",
-      "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md"
+      "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md",
+      "replacement_candidate_status": "CHAT_1920_PNG_STAGED_PENDING_GITHUB_IMPORT_AND_INDEPENDENT_SCIENCE_AUDIT",
+      "replacement_candidate_sha256": "e0590636813f7a720ca88b225011a5c2b4122a2ccce79263c9f3563f47c0bcff",
+      "replacement_qa_decision": "NOT_YET_REVIEWED"
     }
   ],
   "cover_trial_log": [
@@ -335,5 +347,69 @@
     "source_article_blob": "060700e8cdac337583c820f044efe80154d59b6c",
     "locked_style_blob": "4d91cb5f9a437f782a1815ea8f91c7ade4c0063a",
     "review_date": "2026-11-21"
+  },
+  "owner_approval_record_20261121": "Owner explicitly approved independently PASS figures 1.1, 4.1, 5.1 and authorised three FIX replacements in Chat; six-image final-review preference maintained.",
+  "targeted_science_fixes": {
+    "status": "CHAT_EXPORTED_AND_SPACE_STAGED; GITHUB_BINARY_IMPORT_AND_INDEPENDENT_QA_PENDING",
+    "date": "2026-11-21",
+    "source_report": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md",
+    "approval": "Owner authorised replacement of Figures 2.1,3.1,6.1; not preapproval of replacement images.",
+    "source_staging_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
+    "native_dimensions": [
+      1672,
+      941
+    ],
+    "export_dimensions": [
+      1920,
+      1080
+    ],
+    "export_method": "Pillow Lanczos resizing, full frame, no crop; original native source hashes separately recorded",
+    "candidates": [
+      {
+        "slot": "2.1",
+        "file": "P2_Figure_2_1_ScienceFix_Candidate_1920x1080.png",
+        "sha256": "ccea83f05ded4bd9479ff624a65e4bbf8261afd2cbbd5e632ebcf0bcdfc3f421",
+        "bytes": 3561649,
+        "native_sha256": "5576a83950d8a069565ffc981daffa83065cde6ad7ccf897a78348bb52992e54",
+        "native_bytes": 2912945,
+        "ref": "library-file:fde1_bGliZmlsZV9PRVU0WmdFUEJXbjJTTGtaT2VsNGpB_FileDrive_d1bc107702548191a12b79a0f11187bb",
+        "summary": "Removed sunflower golden spiral; verify no exact-fit implication elsewhere.",
+        "proposed_github_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_2_1_ScienceFix_Candidate_1920x1080.png",
+        "source_original_candidate_sha256": "a44fa0463affeaa486bdb000793c7c3674bae78587e245886e5dd27b7ece97b8",
+        "owner_visual_approval": false,
+        "independent_science_review": "PENDING",
+        "github_binary_present": false
+      },
+      {
+        "slot": "3.1",
+        "file": "P2_Figure_3_1_ScienceFix_Candidate_1920x1080.png",
+        "sha256": "962c5465b7ed8d599e24688a173b4ec59f12bf9f7c3ce3288c8af5ccb224f07d",
+        "bytes": 3041897,
+        "native_sha256": "a793c8e5d0e09553fbda0500778bead66877d5cffa2c813a51f5f793162e7ecd",
+        "native_bytes": 2478714,
+        "ref": "library-file:fde1_bGliZmlsZV92aktXZ0c3LWpLUDRUN0ZlU2xNUFZR_FileDrive_d1bc107702548191a12b79a0f11187bb",
+        "summary": "Separated rotation/reflection invariance from translated congruence of a finite sixfold form; check D6 group notation, 60 degree geometry and coordinates.",
+        "proposed_github_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_3_1_ScienceFix_Candidate_1920x1080.png",
+        "source_original_candidate_sha256": "715d5b9c70f818381e6fcef3e63149079b6e8f9010308bc386e966e3bb0fa233",
+        "owner_visual_approval": false,
+        "independent_science_review": "PENDING",
+        "github_binary_present": false
+      },
+      {
+        "slot": "6.1",
+        "file": "P2_Figure_6_1_ScienceFix_Candidate_1920x1080.png",
+        "sha256": "e0590636813f7a720ca88b225011a5c2b4122a2ccce79263c9f3563f47c0bcff",
+        "bytes": 3062952,
+        "native_sha256": "b51ef054025a147c2dbf8a9dda49bd65f0c081a5dc2f64b740f7c2cad054c6f3",
+        "native_bytes": 2511611,
+        "ref": "library-file:fde1_bGliZmlsZV9UejFaNXF1eEkyTlNjS3d0elg0cElR_FileDrive_d1bc107702548191a12b79a0f11187bb",
+        "summary": "Focused hidden-symmetry hypothesis scene and in-art untested qualifier. Scientific explanation unestablished.",
+        "proposed_github_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_6_1_ScienceFix_Candidate_1920x1080.png",
+        "source_original_candidate_sha256": "34d4f861e699cd1ae2f0fa98a6b157aa513544407d778ae111d1b7128f01f4d3",
+        "owner_visual_approval": false,
+        "independent_science_review": "PENDING",
+        "github_binary_present": false
+      }
+    ]
   }
 }
