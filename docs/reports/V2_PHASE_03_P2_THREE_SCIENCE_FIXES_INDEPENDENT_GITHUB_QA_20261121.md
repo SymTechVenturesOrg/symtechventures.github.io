@@ -74,7 +74,7 @@ The reviewed slots map to Paper Two Figures 2.1 (natural pattern examples), 3.1 
 
 ## Scope and final state
 
-PR #12 remains open and draft. The PR contains documentation/artwork candidate changes only; no website source/HTML/CSS was edited. No WebP derivatives were made. The Paper One protected branch/PR #5 and draft PR #11 were not modified. No merge or deployment occurred. The manifest and this report are committed together after the image import commit; the imported PNG bytes remain identical.
+PR #12 remains open and draft. The PR contains documentation/artwork candidate changes and the pre-existing `.github/workflows/p2-cover-owner-review-assets.yml` helper workflow; no website source/HTML/CSS was edited. No WebP derivatives were made. The Paper One protected branch/PR #5 and draft PR #11 were not modified. No merge or deployment occurred. The manifest and this report are committed together after the image import commit; the imported PNG bytes remain identical.
 
 ## COPY TO CHAT — one combined owner review
 
