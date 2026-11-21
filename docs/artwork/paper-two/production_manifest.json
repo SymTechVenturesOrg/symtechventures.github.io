@@ -1,7 +1,7 @@
 {
   "schema": "SYMMETRIA-PAPER-TWO-CINEMATIC-ARTWORK-20261121",
   "date": "2026-11-21",
-  "status": "COVER_OWNER_VISUALLY_APPROVED; SIX_CHAT_1920x1080_CANDIDATES_GENERATED_AND_SPACE_STAGED; FULL_BATCH_WORK_SCIENCE_AND_STYLE_REVIEW_PENDING",
+  "status": "COVER_OWNER_VISUALLY_APPROVED; SIX_PROVISIONAL_GITHUB_CANDIDATES_IMPORTED; FRESH_BINARY_READBACK_AND_INDEPENDENT_QA_PENDING",
   "branch": "docs/symmetria-paper-two-cinematic-artwork-20261121",
   "source_article_branch": "feature/v2-space-research-website",
   "source_article_git_blob": "060700e8cdac337583c820f044efe80154d59b6c",
@@ -52,10 +52,10 @@
       "slot": "1.1",
       "subject": "Symmetry in Nature and Physics",
       "legacy_webp": "02_symmetry_nature_physics.webp",
-      "production_status": "CHAT_FULL_RES_CANDIDATE_STAGED_IN_SPACE_PENDING_WORK_BATCH_REAUDIT",
+      "production_status": "PROVISIONAL_GITHUB_CANDIDATE_IMPORTED_PENDING_BINARY_READBACK_AND_QA",
       "owner_visual_approval": false,
-      "independent_science_review": "NOT_STARTED; SCIENCE_RISK_FLAGS_PENDING",
-      "verified_git_binary_path": null,
+      "independent_science_review": "PENDING_INDEPENDENT_BATCH_AUDIT",
+      "verified_git_binary_path": "docs/artwork/paper-two/candidates/P2_Figure_1_1_ChatCandidate_1920x1080.png",
       "sha256": "a53157058eda3e5d594e53284be40f8bb2c58fdb03c399b7401e7fefc525957c",
       "final_dimensions": [
         1920,
@@ -69,16 +69,18 @@
       "git_binary_verified": false,
       "review_flags": [
         "Nature/physics symmetry distinctions"
-      ]
+      ],
+      "git_blob_sha": "60056cbfbaafddf025ab68dc0d5c37745764ebba",
+      "github_candidate_commit": "PENDING"
     },
     {
       "slot": "2.1",
       "subject": "Natural Symmetry Patterns",
       "legacy_webp": "02_natural_symmetry_patterns.webp",
-      "production_status": "CHAT_FULL_RES_CANDIDATE_STAGED_IN_SPACE_PENDING_WORK_BATCH_REAUDIT",
+      "production_status": "PROVISIONAL_GITHUB_CANDIDATE_IMPORTED_PENDING_BINARY_READBACK_AND_QA",
       "owner_visual_approval": false,
-      "independent_science_review": "NOT_STARTED; SCIENCE_RISK_FLAGS_PENDING",
-      "verified_git_binary_path": null,
+      "independent_science_review": "PENDING_INDEPENDENT_BATCH_AUDIT",
+      "verified_git_binary_path": "docs/artwork/paper-two/candidates/P2_Figure_2_1_ChatCandidate_1920x1080.png",
       "sha256": "a44fa0463affeaa486bdb000793c7c3674bae78587e245886e5dd27b7ece97b8",
       "final_dimensions": [
         1920,
@@ -92,16 +94,18 @@
       "git_binary_verified": false,
       "review_flags": [
         "Golden/Fibonacci spiral overlay is schematic; natural spiral/sunflower may not follow exact golden proportions"
-      ]
+      ],
+      "git_blob_sha": "402d29f6cb83cefa9b58ee5ce6d10e7ccf521197",
+      "github_candidate_commit": "PENDING"
     },
     {
       "slot": "3.1",
       "subject": "Mathematical Symmetry and Invariance",
       "legacy_webp": "02_mathematical_symmetry_invariance.webp",
-      "production_status": "CHAT_FULL_RES_CANDIDATE_STAGED_IN_SPACE_PENDING_WORK_BATCH_REAUDIT",
+      "production_status": "PROVISIONAL_GITHUB_CANDIDATE_IMPORTED_PENDING_BINARY_READBACK_AND_QA",
       "owner_visual_approval": false,
-      "independent_science_review": "NOT_STARTED; SCIENCE_RISK_FLAGS_PENDING",
-      "verified_git_binary_path": null,
+      "independent_science_review": "PENDING_INDEPENDENT_BATCH_AUDIT",
+      "verified_git_binary_path": "docs/artwork/paper-two/candidates/P2_Figure_3_1_ChatCandidate_1920x1080.png",
       "sha256": "715d5b9c70f818381e6fcef3e63149079b6e8f9010308bc386e966e3bb0fa233",
       "final_dimensions": [
         1920,
@@ -115,16 +119,18 @@
       "git_binary_verified": false,
       "review_flags": [
         "Finite snowflake is not translationally invariant; clarify translation operator vs group symmetry; inspect D6 equation and reflection notation"
-      ]
+      ],
+      "git_blob_sha": "a176458a65680ea576867d04811b608d526c6a79",
+      "github_candidate_commit": "PENDING"
     },
     {
       "slot": "4.1",
       "subject": "Noether's Theorem and Conservation Laws",
       "legacy_webp": "02_noether_symmetry_conservation.webp",
-      "production_status": "CHAT_FULL_RES_CANDIDATE_STAGED_IN_SPACE_PENDING_WORK_BATCH_REAUDIT",
+      "production_status": "PROVISIONAL_GITHUB_CANDIDATE_IMPORTED_PENDING_BINARY_READBACK_AND_QA",
       "owner_visual_approval": false,
-      "independent_science_review": "NOT_STARTED; SCIENCE_RISK_FLAGS_PENDING",
-      "verified_git_binary_path": null,
+      "independent_science_review": "PENDING_INDEPENDENT_BATCH_AUDIT",
+      "verified_git_binary_path": "docs/artwork/paper-two/candidates/P2_Figure_4_1_ChatCandidate_1920x1080.png",
       "sha256": "bce9e58d6a5dbb058774051a88f1d76f44e926420f56ca9939440eef7512365c",
       "final_dimensions": [
         1920,
@@ -138,16 +144,18 @@
       "git_binary_verified": false,
       "review_flags": [
         "Noether conservation follows continuous symmetry of the action and appropriate system assumptions; imagery depicts angular momentum only"
-      ]
+      ],
+      "git_blob_sha": "6e887323f3436799708a6ca62105cf33d04c997d",
+      "github_candidate_commit": "PENDING"
     },
     {
       "slot": "5.1",
       "subject": "Broken Symmetry and Emergence",
       "legacy_webp": "02_broken_symmetry_emergence.webp",
-      "production_status": "CHAT_FULL_RES_CANDIDATE_STAGED_IN_SPACE_PENDING_WORK_BATCH_REAUDIT",
+      "production_status": "PROVISIONAL_GITHUB_CANDIDATE_IMPORTED_PENDING_BINARY_READBACK_AND_QA",
       "owner_visual_approval": false,
-      "independent_science_review": "NOT_STARTED; SCIENCE_RISK_FLAGS_PENDING",
-      "verified_git_binary_path": null,
+      "independent_science_review": "PENDING_INDEPENDENT_BATCH_AUDIT",
+      "verified_git_binary_path": "docs/artwork/paper-two/candidates/P2_Figure_5_1_ChatCandidate_1920x1080.png",
       "sha256": "201f88207b9bd0122a105c59c94b8a17f6d50740c310594718d5b3ababf685cf",
       "final_dimensions": [
         1920,
@@ -161,16 +169,18 @@
       "git_binary_verified": false,
       "review_flags": [
         "Two-well 2D potential schematic versus full circular Mexican-hat; assess consistency of narrative and axes"
-      ]
+      ],
+      "git_blob_sha": "3634d6375f45321e08cf3aa45ee308b9850bd0bd",
+      "github_candidate_commit": "PENDING"
     },
     {
       "slot": "6.1",
       "subject": "The SYMMETRIA Symmetry Perspective",
       "legacy_webp": "02_symmetria_symmetry_perspective.webp",
-      "production_status": "CHAT_FULL_RES_CANDIDATE_STAGED_IN_SPACE_PENDING_WORK_BATCH_REAUDIT",
+      "production_status": "PROVISIONAL_GITHUB_CANDIDATE_IMPORTED_PENDING_BINARY_READBACK_AND_QA",
       "owner_visual_approval": false,
-      "independent_science_review": "NOT_STARTED; SCIENCE_RISK_FLAGS_PENDING",
-      "verified_git_binary_path": null,
+      "independent_science_review": "PENDING_INDEPENDENT_BATCH_AUDIT",
+      "verified_git_binary_path": "docs/artwork/paper-two/candidates/P2_Figure_6_1_ChatCandidate_1920x1080.png",
       "sha256": "34d4f861e699cd1ae2f0fa98a6b157aa513544407d778ae111d1b7128f01f4d3",
       "final_dimensions": [
         1920,
@@ -184,7 +194,9 @@
       "git_binary_verified": false,
       "review_flags": [
         "Untested hypothesis caveat absent from image; ensure accessible caption qualifies SYMMETRIA interpretation; verify title not a prohibited decorative masthead"
-      ]
+      ],
+      "git_blob_sha": "54194990ebd1a4be6fe1cf99649b18166c4644e2",
+      "github_candidate_commit": "PENDING"
     }
   ],
   "cover_trial_log": [
@@ -259,8 +271,34 @@
       1080
     ],
     "source_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
-    "staging": "SIX_IN_SPACE_WITH_SHA256_VERIFIED_UPLOAD; NO_GITHUB_BINARY_CANDIDATES_YET",
+    "staging": "SIX_PROVISIONAL_GITHUB_CANDIDATES_IMPORTED; FRESH_BINARY_READBACK_AND_INDEPENDENT_QA_PENDING",
     "review_workflow": "single combined Work independent QA of six after generation; each slot receives its own verdict",
-    "website_integration": "NOT_AUTHORISED"
+    "website_integration": "NOT_AUTHORISED",
+    "github_candidate_paths": [
+      {
+        "slot": "1.1",
+        "path": "docs/artwork/paper-two/candidates/P2_Figure_1_1_ChatCandidate_1920x1080.png"
+      },
+      {
+        "slot": "2.1",
+        "path": "docs/artwork/paper-two/candidates/P2_Figure_2_1_ChatCandidate_1920x1080.png"
+      },
+      {
+        "slot": "3.1",
+        "path": "docs/artwork/paper-two/candidates/P2_Figure_3_1_ChatCandidate_1920x1080.png"
+      },
+      {
+        "slot": "4.1",
+        "path": "docs/artwork/paper-two/candidates/P2_Figure_4_1_ChatCandidate_1920x1080.png"
+      },
+      {
+        "slot": "5.1",
+        "path": "docs/artwork/paper-two/candidates/P2_Figure_5_1_ChatCandidate_1920x1080.png"
+      },
+      {
+        "slot": "6.1",
+        "path": "docs/artwork/paper-two/candidates/P2_Figure_6_1_ChatCandidate_1920x1080.png"
+      }
+    ]
   }
 }
