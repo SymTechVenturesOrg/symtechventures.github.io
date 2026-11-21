@@ -1,7 +1,7 @@
 {
   "schema": "SYMMETRIA-PAPER-TWO-CINEMATIC-ARTWORK-20261121",
   "date": "2026-11-21",
-  "status": "COVER_OWNER_VISUALLY_APPROVED; SIX_PROVISIONAL_GITHUB_CANDIDATES_IMPORTED; FRESH_BINARY_READBACK_AND_INDEPENDENT_QA_PENDING",
+  "status": "COVER_OWNER_VISUALLY_APPROVED; SIX_GITHUB_CANDIDATES_BINARY_VERIFIED; INDEPENDENT_BATCH_QA_COMPLETE; THREE_PASS_THREE_FIX; OWNER_REVIEW_PENDING",
   "branch": "docs/symmetria-paper-two-cinematic-artwork-20261121",
   "source_article_branch": "feature/v2-space-research-website",
   "source_article_git_blob": "060700e8cdac337583c820f044efe80154d59b6c",
@@ -52,9 +52,9 @@
       "slot": "1.1",
       "subject": "Symmetry in Nature and Physics",
       "legacy_webp": "02_symmetry_nature_physics.webp",
-      "production_status": "PROVISIONAL_GITHUB_CANDIDATE_IMPORTED_PENDING_BINARY_READBACK_AND_QA",
+      "production_status": "PROVISIONAL_CANDIDATE_GITHUB_BINARY_VERIFIED_QA_PASS_OWNER_REVIEW_PENDING",
       "owner_visual_approval": false,
-      "independent_science_review": "PENDING_INDEPENDENT_BATCH_AUDIT",
+      "independent_science_review": "PASS",
       "verified_git_binary_path": "docs/artwork/paper-two/candidates/P2_Figure_1_1_ChatCandidate_1920x1080.png",
       "sha256": "a53157058eda3e5d594e53284be40f8bb2c58fdb03c399b7401e7fefc525957c",
       "final_dimensions": [
@@ -66,20 +66,25 @@
       "image_source": "native image_gen 1672x941, Pillow Lanczos export to 1920x1080",
       "staging_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
       "staging_library_file_reference": "library-file:fde1_bGliZmlsZV9QdldWY05yUjUwNWFaeG1nelA5dHln_FileDrive_d1bc107702548191a12b79a0f11187bb",
-      "git_binary_verified": false,
+      "git_binary_verified": true,
       "review_flags": [
         "Nature/physics symmetry distinctions"
       ],
       "git_blob_sha": "60056cbfbaafddf025ab68dc0d5c37745764ebba",
-      "github_candidate_commit": "PENDING"
+      "github_candidate_commit": "be2985ab59657ac4e631a7b8e0084064167188c4",
+      "cinematic_style_review": "PASS",
+      "independent_qa_decision": "PASS",
+      "independent_qa_finding": "The iris/leaf and butterfly are biological approximations; crystal and lattice motifs communicate ideal periodic order, and the dipole-style field lines are a plausible schematic. This matches the manuscript’s broad introductory caption without stating that living forms are exact mathematical symmetries. Keep the adjacent caption’s ‘approximately’/‘suggests’ framing.",
+      "recommended_follow_up": "No image repair required. Caption must retain the distinction between approximate biological symmetry and ideal mathematical/physical models.",
+      "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md"
     },
     {
       "slot": "2.1",
       "subject": "Natural Symmetry Patterns",
       "legacy_webp": "02_natural_symmetry_patterns.webp",
-      "production_status": "PROVISIONAL_GITHUB_CANDIDATE_IMPORTED_PENDING_BINARY_READBACK_AND_QA",
+      "production_status": "PROVISIONAL_CANDIDATE_GITHUB_BINARY_VERIFIED_QA_FIX_OWNER_REVIEW_PENDING",
       "owner_visual_approval": false,
-      "independent_science_review": "PENDING_INDEPENDENT_BATCH_AUDIT",
+      "independent_science_review": "FIX",
       "verified_git_binary_path": "docs/artwork/paper-two/candidates/P2_Figure_2_1_ChatCandidate_1920x1080.png",
       "sha256": "a44fa0463affeaa486bdb000793c7c3674bae78587e245886e5dd27b7ece97b8",
       "final_dimensions": [
@@ -91,20 +96,25 @@
       "image_source": "native image_gen 1672x941, Pillow Lanczos export to 1920x1080",
       "staging_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
       "staging_library_file_reference": "library-file:fde1_bGliZmlsZV9UV1d3cmw5TEltZzdGN2ZqS1FoWUZB_FileDrive_d1bc107702548191a12b79a0f11187bb",
-      "git_binary_verified": false,
+      "git_binary_verified": true,
       "review_flags": [
         "Golden/Fibonacci spiral overlay is schematic; natural spiral/sunflower may not follow exact golden proportions"
       ],
       "git_blob_sha": "402d29f6cb83cefa9b58ee5ce6d10e7ccf521197",
-      "github_candidate_commit": "PENDING"
+      "github_candidate_commit": "be2985ab59657ac4e631a7b8e0084064167188c4",
+      "cinematic_style_review": "PASS",
+      "independent_qa_decision": "FIX",
+      "independent_qa_finding": "The sunflower is overlaid with a golden rectangle/Fibonacci-style spiral. In this placement the geometry reads as a measured law of this specimen, whereas the manuscript only describes varied spiral organisation arising for different biological/physical reasons. Natural sunflower phyllotaxis can approximate Fibonacci arrangements; this single overlay does not establish an exact golden spiral.",
+      "recommended_follow_up": "On a later regenerated candidate, remove the exact-fit overlay or identify it prominently as an illustrative approximation, not a measured fit or universal law. Do not use this image unchanged as evidence for exact golden-ratio organisation.",
+      "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md"
     },
     {
       "slot": "3.1",
       "subject": "Mathematical Symmetry and Invariance",
       "legacy_webp": "02_mathematical_symmetry_invariance.webp",
-      "production_status": "PROVISIONAL_GITHUB_CANDIDATE_IMPORTED_PENDING_BINARY_READBACK_AND_QA",
+      "production_status": "PROVISIONAL_CANDIDATE_GITHUB_BINARY_VERIFIED_QA_FIX_OWNER_REVIEW_PENDING",
       "owner_visual_approval": false,
-      "independent_science_review": "PENDING_INDEPENDENT_BATCH_AUDIT",
+      "independent_science_review": "FIX",
       "verified_git_binary_path": "docs/artwork/paper-two/candidates/P2_Figure_3_1_ChatCandidate_1920x1080.png",
       "sha256": "715d5b9c70f818381e6fcef3e63149079b6e8f9010308bc386e966e3bb0fa233",
       "final_dimensions": [
@@ -116,20 +126,25 @@
       "image_source": "native image_gen 1672x941, Pillow Lanczos export to 1920x1080",
       "staging_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
       "staging_library_file_reference": "library-file:fde1_bGliZmlsZV9EajItZ1dxRGVWYVprVEo5YUVsakh3_FileDrive_d1bc107702548191a12b79a0f11187bb",
-      "git_binary_verified": false,
+      "git_binary_verified": true,
       "review_flags": [
         "Finite snowflake is not translationally invariant; clarify translation operator vs group symmetry; inspect D6 equation and reflection notation"
       ],
       "git_blob_sha": "a176458a65680ea576867d04811b608d526c6a79",
-      "github_candidate_commit": "PENDING"
+      "github_candidate_commit": "be2985ab59657ac4e631a7b8e0084064167188c4",
+      "cinematic_style_review": "PASS",
+      "independent_qa_decision": "FIX",
+      "independent_qa_finding": "The rotation/reflection examples are valid for an ideal regular sixfold shape, and the D₆ example contains only rotation/reflection generators, not translation. The translation panel shows an operation, not an equality claiming the snowflake is translation-invariant; however the overall invariance layout encourages that conflation. The T_(a,b) formula has an unstated active/passive convention, the M_x label is ambiguous for the displayed x-coordinate reversal, and duplicated x/y axis glyphs reduce mathematical legibility. A real finite snowflake is not invariant under translation; it moves to a congruent position.",
+      "recommended_follow_up": "Regenerate/repair labels: mark the snowflake as idealised; call translation a generic transformation; state that rigid translation preserves shape/area/perimeter but not position/invariance of the finite object; define the translation convention; clarify the reflection axis/subscript and remove duplicate axis glyphs.",
+      "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md"
     },
     {
       "slot": "4.1",
       "subject": "Noether's Theorem and Conservation Laws",
       "legacy_webp": "02_noether_symmetry_conservation.webp",
-      "production_status": "PROVISIONAL_GITHUB_CANDIDATE_IMPORTED_PENDING_BINARY_READBACK_AND_QA",
+      "production_status": "PROVISIONAL_CANDIDATE_GITHUB_BINARY_VERIFIED_QA_PASS_OWNER_REVIEW_PENDING",
       "owner_visual_approval": false,
-      "independent_science_review": "PENDING_INDEPENDENT_BATCH_AUDIT",
+      "independent_science_review": "PASS",
       "verified_git_binary_path": "docs/artwork/paper-two/candidates/P2_Figure_4_1_ChatCandidate_1920x1080.png",
       "sha256": "bce9e58d6a5dbb058774051a88f1d76f44e926420f56ca9939440eef7512365c",
       "final_dimensions": [
@@ -141,20 +156,25 @@
       "image_source": "native image_gen 1672x941, Pillow Lanczos export to 1920x1080",
       "staging_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
       "staging_library_file_reference": "library-file:fde1_bGliZmlsZV9FVXBsNmd6b2xVbXRSQXJWNTRXbk5n_FileDrive_d1bc107702548191a12b79a0f11187bb",
-      "git_binary_verified": false,
+      "git_binary_verified": true,
       "review_flags": [
         "Noether conservation follows continuous symmetry of the action and appropriate system assumptions; imagery depicts angular momentum only"
       ],
       "git_blob_sha": "6e887323f3436799708a6ca62105cf33d04c997d",
-      "github_candidate_commit": "PENDING"
+      "github_candidate_commit": "be2985ab59657ac4e631a7b8e0084064167188c4",
+      "cinematic_style_review": "PASS",
+      "independent_qa_decision": "PASS",
+      "independent_qa_finding": "The figure correctly presents one Noether correspondence: continuous rotational invariance → conserved angular momentum, with L = const. It is a schematic, not a derivation. The manuscript caption gives the correct mapping. The visual must not imply angular momentum is conserved for every rotating body regardless of torques.",
+      "recommended_follow_up": "No image repair required. In any final accessible caption, qualify the conserved quantity as applying when the relevant action/system has continuous rotational symmetry (and, for the mechanical example, with no external torque).",
+      "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md"
     },
     {
       "slot": "5.1",
       "subject": "Broken Symmetry and Emergence",
       "legacy_webp": "02_broken_symmetry_emergence.webp",
-      "production_status": "PROVISIONAL_GITHUB_CANDIDATE_IMPORTED_PENDING_BINARY_READBACK_AND_QA",
+      "production_status": "PROVISIONAL_CANDIDATE_GITHUB_BINARY_VERIFIED_QA_PASS_OWNER_REVIEW_PENDING",
       "owner_visual_approval": false,
-      "independent_science_review": "PENDING_INDEPENDENT_BATCH_AUDIT",
+      "independent_science_review": "PASS",
       "verified_git_binary_path": "docs/artwork/paper-two/candidates/P2_Figure_5_1_ChatCandidate_1920x1080.png",
       "sha256": "201f88207b9bd0122a105c59c94b8a17f6d50740c310594718d5b3ababf685cf",
       "final_dimensions": [
@@ -166,20 +186,25 @@
       "image_source": "native image_gen 1672x941, Pillow Lanczos export to 1920x1080",
       "staging_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
       "staging_library_file_reference": "library-file:fde1_bGliZmlsZV9YVkhPdnBOWFJzdWpER0lXbjh6OG9n_FileDrive_d1bc107702548191a12b79a0f11187bb",
-      "git_binary_verified": false,
+      "git_binary_verified": true,
       "review_flags": [
         "Two-well 2D potential schematic versus full circular Mexican-hat; assess consistency of narrative and axes"
       ],
       "git_blob_sha": "3634d6375f45321e08cf3aa45ee308b9850bd0bd",
-      "github_candidate_commit": "PENDING"
+      "github_candidate_commit": "be2985ab59657ac4e631a7b8e0084064167188c4",
+      "cinematic_style_review": "PASS",
+      "independent_qa_decision": "PASS",
+      "independent_qa_finding": "The lower graph is a labelled one-dimensional double-well V(φ) schematic with two degenerate minima, not a circular Mexican-hat surface. The top-to-bottom imagery is conceptual and broadly fits the article’s transition from a symmetric state to lower-symmetry domains. It does not name a specific Higgs mechanism or claim every mass arises by the same mechanism.",
+      "recommended_follow_up": "No image repair required. Any final caption should explicitly call V(φ) a schematic one-dimensional double-well and avoid naming it a full Mexican-hat potential or universal mass-generation model.",
+      "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md"
     },
     {
       "slot": "6.1",
       "subject": "The SYMMETRIA Symmetry Perspective",
       "legacy_webp": "02_symmetria_symmetry_perspective.webp",
-      "production_status": "PROVISIONAL_GITHUB_CANDIDATE_IMPORTED_PENDING_BINARY_READBACK_AND_QA",
+      "production_status": "PROVISIONAL_CANDIDATE_GITHUB_BINARY_VERIFIED_QA_FIX_OWNER_REVIEW_PENDING",
       "owner_visual_approval": false,
-      "independent_science_review": "PENDING_INDEPENDENT_BATCH_AUDIT",
+      "independent_science_review": "FIX",
       "verified_git_binary_path": "docs/artwork/paper-two/candidates/P2_Figure_6_1_ChatCandidate_1920x1080.png",
       "sha256": "34d4f861e699cd1ae2f0fa98a6b157aa513544407d778ae111d1b7128f01f4d3",
       "final_dimensions": [
@@ -191,12 +216,17 @@
       "image_source": "native image_gen 1672x941, Pillow Lanczos export to 1920x1080",
       "staging_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
       "staging_library_file_reference": "library-file:fde1_bGliZmlsZV9xejlsVUZhZi1iaDFGbXhlSmV4Q2xR_FileDrive_d1bc107702548191a12b79a0f11187bb",
-      "git_binary_verified": false,
+      "git_binary_verified": true,
       "review_flags": [
         "Untested hypothesis caveat absent from image; ensure accessible caption qualifies SYMMETRIA interpretation; verify title not a prohibited decorative masthead"
       ],
       "git_blob_sha": "54194990ebd1a4be6fe1cf99649b18166c4644e2",
-      "github_candidate_commit": "PENDING"
+      "github_candidate_commit": "be2985ab59657ac4e631a7b8e0084064167188c4",
+      "cinematic_style_review": "FIX",
+      "independent_qa_decision": "FIX",
+      "independent_qa_finding": "The manuscript caption is explicitly exploratory (‘explores whether’), but that caution is absent in-pixel. Large ‘The SYMMETRIA’ heading reads as a project masthead under the locked gate, despite matching the section’s proper name. The globe-like collage mixes natural forms, Newton’s cradle, a planetary-orbit atom, potential well and abstract geometry; it risks the rejected multi-topic montage and a classical solar-system picture of atoms. No single visual claims a proven unification, but the composition can overstate coherence.",
+      "recommended_follow_up": "Regenerate as one cinematic, scientifically specific visual for an explicitly exploratory symmetry hypothesis. Use a non-masthead subject title; avoid a planetary atom and unrelated object gallery; label the proposal as untested in the artwork or keep a prominent adjacent accessible qualifier.",
+      "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md"
     }
   ],
   "cover_trial_log": [
@@ -271,7 +301,7 @@
       1080
     ],
     "source_page": "https://chatgpt.com/space/page_5b2711f5a6848191b1b0589e41d441d3",
-    "staging": "SIX_PROVISIONAL_GITHUB_CANDIDATES_IMPORTED; FRESH_BINARY_READBACK_AND_INDEPENDENT_QA_PENDING",
+    "staging": "SIX_PROVISIONAL_GITHUB_CANDIDATES_BINARY_VERIFIED; THREE_PASS_THREE_FIX; OWNER_REVIEW_PENDING",
     "review_workflow": "single combined Work independent QA of six after generation; each slot receives its own verdict",
     "website_integration": "NOT_AUTHORISED",
     "github_candidate_paths": [
@@ -299,6 +329,11 @@
         "slot": "6.1",
         "path": "docs/artwork/paper-two/candidates/P2_Figure_6_1_ChatCandidate_1920x1080.png"
       }
-    ]
+    ],
+    "github_candidate_commit": "be2985ab59657ac4e631a7b8e0084064167188c4",
+    "independent_qa_report": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md",
+    "source_article_blob": "060700e8cdac337583c820f044efe80154d59b6c",
+    "locked_style_blob": "4d91cb5f9a437f782a1815ea8f91c7ade4c0063a",
+    "review_date": "2026-11-21"
   }
 }
