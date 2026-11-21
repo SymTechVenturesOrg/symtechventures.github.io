@@ -1,7 +1,7 @@
 {
   "schema": "SYMMETRIA-PAPER-TWO-CINEMATIC-ARTWORK-20261121",
   "date": "2026-11-21",
-  "status": "COVER_AND_P2_FIGURES_1_1_4_1_5_1_OWNER_APPROVED; THREE_CORRECTED_IMAGE_CANDIDATES_CHAT_STAGED_FOR_ONE_WORK_REAUDIT; WEBSITE_NOT_AUTHORISED",
+  "status": "COVER_AND_P2_FIGURES_1_1_4_1_5_1_OWNER_APPROVED; THREE_SCIENCE_FIX_CANDIDATES_GITHUB_VERIFIED_AND_INDEPENDENT_SCIENCE_STYLE_PASS_PENDING_OWNER_VISUAL_REVIEW; WEBSITE_NOT_AUTHORISED",
   "branch": "docs/symmetria-paper-two-cinematic-artwork-20261121",
   "source_article_branch": "feature/v2-space-research-website",
   "source_article_git_blob": "060700e8cdac337583c820f044efe80154d59b6c",
@@ -108,9 +108,23 @@
       "independent_qa_finding": "The sunflower is overlaid with a golden rectangle/Fibonacci-style spiral. In this placement the geometry reads as a measured law of this specimen, whereas the manuscript only describes varied spiral organisation arising for different biological/physical reasons. Natural sunflower phyllotaxis can approximate Fibonacci arrangements; this single overlay does not establish an exact golden spiral.",
       "recommended_follow_up": "On a later regenerated candidate, remove the exact-fit overlay or identify it prominently as an illustrative approximation, not a measured fit or universal law. Do not use this image unchanged as evidence for exact golden-ratio organisation.",
       "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md",
-      "replacement_candidate_status": "CHAT_1920_PNG_STAGED_PENDING_GITHUB_IMPORT_AND_INDEPENDENT_SCIENCE_AUDIT",
+      "replacement_candidate_status": "GITHUB_BINARY_VERIFIED_INDEPENDENT_SCIENCE_AND_STYLE_PASS_OWNER_VISUAL_REVIEW_PENDING",
       "replacement_candidate_sha256": "ccea83f05ded4bd9479ff624a65e4bbf8261afd2cbbd5e632ebcf0bcdfc3f421",
-      "replacement_qa_decision": "NOT_YET_REVIEWED"
+      "replacement_qa_decision": "PASS_SCIENCE",
+      "replacement_candidate_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_2_1_ScienceFix_Candidate_1920x1080.png",
+      "replacement_candidate_bytes": 3561649,
+      "replacement_candidate_git_blob_sha": "65d8c7a21d68a93f0ae495e0f543f4f7779a100c",
+      "replacement_candidate_github_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+      "replacement_candidate_dimensions": [
+        1920,
+        1080
+      ],
+      "replacement_candidate_binary_review": "GITHUB_BYTES_PASS",
+      "replacement_style_review": "PASS_STYLE",
+      "replacement_owner_visual_approval": false,
+      "replacement_mobile_note": "Detailed callout and footer copy too small for comfortable reading at 390px and 320px scale-down; full-resolution access and accessible explanatory text required for later integration.",
+      "replacement_qa_report_path": "docs/reports/V2_PHASE_03_P2_THREE_SCIENCE_FIXES_INDEPENDENT_GITHUB_QA_20261121.md",
+      "replacement_github_binary_verified": true
     },
     {
       "slot": "3.1",
@@ -141,9 +155,23 @@
       "independent_qa_finding": "The rotation/reflection examples are valid for an ideal regular sixfold shape, and the D₆ example contains only rotation/reflection generators, not translation. The translation panel shows an operation, not an equality claiming the snowflake is translation-invariant; however the overall invariance layout encourages that conflation. The T_(a,b) formula has an unstated active/passive convention, the M_x label is ambiguous for the displayed x-coordinate reversal, and duplicated x/y axis glyphs reduce mathematical legibility. A real finite snowflake is not invariant under translation; it moves to a congruent position.",
       "recommended_follow_up": "Regenerate/repair labels: mark the snowflake as idealised; call translation a generic transformation; state that rigid translation preserves shape/area/perimeter but not position/invariance of the finite object; define the translation convention; clarify the reflection axis/subscript and remove duplicate axis glyphs.",
       "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md",
-      "replacement_candidate_status": "CHAT_1920_PNG_STAGED_PENDING_GITHUB_IMPORT_AND_INDEPENDENT_SCIENCE_AUDIT",
+      "replacement_candidate_status": "GITHUB_BINARY_VERIFIED_INDEPENDENT_SCIENCE_AND_STYLE_PASS_OWNER_VISUAL_REVIEW_PENDING",
       "replacement_candidate_sha256": "962c5465b7ed8d599e24688a173b4ec59f12bf9f7c3ce3288c8af5ccb224f07d",
-      "replacement_qa_decision": "NOT_YET_REVIEWED"
+      "replacement_qa_decision": "PASS_SCIENCE",
+      "replacement_candidate_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_3_1_ScienceFix_Candidate_1920x1080.png",
+      "replacement_candidate_bytes": 3041897,
+      "replacement_candidate_git_blob_sha": "cb4cd8e072f1fe212d52cf082d782b316ed9ee29",
+      "replacement_candidate_github_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+      "replacement_candidate_dimensions": [
+        1920,
+        1080
+      ],
+      "replacement_candidate_binary_review": "GITHUB_BYTES_PASS",
+      "replacement_style_review": "PASS_STYLE",
+      "replacement_owner_visual_approval": false,
+      "replacement_mobile_note": "Equations and explanatory panels too small for comfortable reading at 390px and 320px scale-down; full-resolution access and accessible mathematical explanation required for later integration.",
+      "replacement_qa_report_path": "docs/reports/V2_PHASE_03_P2_THREE_SCIENCE_FIXES_INDEPENDENT_GITHUB_QA_20261121.md",
+      "replacement_github_binary_verified": true
     },
     {
       "slot": "4.1",
@@ -236,9 +264,23 @@
       "independent_qa_finding": "The manuscript caption is explicitly exploratory (‘explores whether’), but that caution is absent in-pixel. Large ‘The SYMMETRIA’ heading reads as a project masthead under the locked gate, despite matching the section’s proper name. The globe-like collage mixes natural forms, Newton’s cradle, a planetary-orbit atom, potential well and abstract geometry; it risks the rejected multi-topic montage and a classical solar-system picture of atoms. No single visual claims a proven unification, but the composition can overstate coherence.",
       "recommended_follow_up": "Regenerate as one cinematic, scientifically specific visual for an explicitly exploratory symmetry hypothesis. Use a non-masthead subject title; avoid a planetary atom and unrelated object gallery; label the proposal as untested in the artwork or keep a prominent adjacent accessible qualifier.",
       "qa_report_path": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md",
-      "replacement_candidate_status": "CHAT_1920_PNG_STAGED_PENDING_GITHUB_IMPORT_AND_INDEPENDENT_SCIENCE_AUDIT",
+      "replacement_candidate_status": "GITHUB_BINARY_VERIFIED_INDEPENDENT_SCIENCE_AND_STYLE_PASS_OWNER_VISUAL_REVIEW_PENDING",
       "replacement_candidate_sha256": "e0590636813f7a720ca88b225011a5c2b4122a2ccce79263c9f3563f47c0bcff",
-      "replacement_qa_decision": "NOT_YET_REVIEWED"
+      "replacement_qa_decision": "PASS_SCIENCE",
+      "replacement_candidate_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_6_1_ScienceFix_Candidate_1920x1080.png",
+      "replacement_candidate_bytes": 3062952,
+      "replacement_candidate_git_blob_sha": "babf8cc33ae4542c018b3a99d8b3817728ecc2e",
+      "replacement_candidate_github_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+      "replacement_candidate_dimensions": [
+        1920,
+        1080
+      ],
+      "replacement_candidate_binary_review": "GITHUB_BYTES_PASS",
+      "replacement_style_review": "PASS_STYLE",
+      "replacement_owner_visual_approval": false,
+      "replacement_mobile_note": "At 390px and 320px scale-down, main flow labels and the explicit untested-physics qualification remain visible, though small; retain full-resolution access and accessible explanation.",
+      "replacement_qa_report_path": "docs/reports/V2_PHASE_03_P2_THREE_SCIENCE_FIXES_INDEPENDENT_GITHUB_QA_20261121.md",
+      "replacement_github_binary_verified": true
     }
   ],
   "cover_trial_log": [
@@ -350,7 +392,7 @@
   },
   "owner_approval_record_20261121": "Owner explicitly approved independently PASS figures 1.1, 4.1, 5.1 and authorised three FIX replacements in Chat; six-image final-review preference maintained.",
   "targeted_science_fixes": {
-    "status": "CHAT_EXPORTED_AND_SPACE_STAGED; GITHUB_BINARY_IMPORT_AND_INDEPENDENT_QA_PENDING",
+    "status": "GITHUB_BINARY_VERIFIED; ALL_THREE_PASS_INDEPENDENT_SCIENCE_AND_STYLE_REAUDIT; OWNER_VISUAL_REVIEW_PENDING; WEBSITE_INTEGRATION_NOT_AUTHORISED",
     "date": "2026-11-21",
     "source_report": "docs/reports/V2_PHASE_03_P2_SIX_CHAT_IMAGES_BATCH_INDEPENDENT_QA_20261121.md",
     "approval": "Owner authorised replacement of Figures 2.1,3.1,6.1; not preapproval of replacement images.",
@@ -410,6 +452,65 @@
         "independent_science_review": "PENDING",
         "github_binary_present": false
       }
-    ]
+    ],
+    "github_candidate_import_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+    "fresh_checkout_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+    "independent_qa_report": "docs/reports/V2_PHASE_03_P2_THREE_SCIENCE_FIXES_INDEPENDENT_GITHUB_QA_20261121.md",
+    "re_audit_decisions": {
+      "2.1": {
+        "binary": "GITHUB_BYTES_PASS",
+        "science": "PASS_SCIENCE",
+        "style": "PASS_STYLE",
+        "owner_visual_approval": false,
+        "github_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_2_1_ScienceFix_Candidate_1920x1080.png",
+        "github_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+        "git_blob_sha": "65d8c7a21d68a93f0ae495e0f543f4f7779a100c",
+        "sha256": "ccea83f05ded4bd9479ff624a65e4bbf8261afd2cbbd5e632ebcf0bcdfc3f421",
+        "bytes": 3561649,
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "mode": "RGB",
+        "audit_report": "docs/reports/V2_PHASE_03_P2_THREE_SCIENCE_FIXES_INDEPENDENT_GITHUB_QA_20261121.md",
+        "mobile_note": "Detailed callout and footer copy too small for comfortable reading at 390px and 320px scale-down; full-resolution access and accessible explanatory text required for later integration."
+      },
+      "3.1": {
+        "binary": "GITHUB_BYTES_PASS",
+        "science": "PASS_SCIENCE",
+        "style": "PASS_STYLE",
+        "owner_visual_approval": false,
+        "github_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_3_1_ScienceFix_Candidate_1920x1080.png",
+        "github_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+        "git_blob_sha": "cb4cd8e072f1fe212d52cf082d782b316ed9ee29",
+        "sha256": "962c5465b7ed8d599e24688a173b4ec59f12bf9f7c3ce3288c8af5ccb224f07d",
+        "bytes": 3041897,
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "mode": "RGB",
+        "audit_report": "docs/reports/V2_PHASE_03_P2_THREE_SCIENCE_FIXES_INDEPENDENT_GITHUB_QA_20261121.md",
+        "mobile_note": "Equations and explanatory panels too small for comfortable reading at 390px and 320px scale-down; full-resolution access and accessible mathematical explanation required for later integration."
+      },
+      "6.1": {
+        "binary": "GITHUB_BYTES_PASS",
+        "science": "PASS_SCIENCE",
+        "style": "PASS_STYLE",
+        "owner_visual_approval": false,
+        "github_path": "docs/artwork/paper-two/candidates/science-corrections-20261121/P2_Figure_6_1_ScienceFix_Candidate_1920x1080.png",
+        "github_commit": "ef470351fa6409c34098448c4ac47462cf1aeed9",
+        "git_blob_sha": "babf8cc33ae4542c018b3a99d8b3817728ecc2e",
+        "sha256": "e0590636813f7a720ca88b225011a5c2b4122a2ccce79263c9f3563f47c0bcff",
+        "bytes": 3062952,
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "mode": "RGB",
+        "audit_report": "docs/reports/V2_PHASE_03_P2_THREE_SCIENCE_FIXES_INDEPENDENT_GITHUB_QA_20261121.md",
+        "mobile_note": "At 390px and 320px scale-down, main flow labels and the explicit untested-physics qualification remain visible, though small; retain full-resolution access and accessible explanation."
+      }
+    }
   }
 }
