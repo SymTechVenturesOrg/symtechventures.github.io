@@ -1,3 +1,5 @@
+> **Metadata erratum — 21 November 2026:** The Figure 6.1 **Git blob SHA-1** string in the historical table below omitted its last hex digit. The correct complete, independently GitHub-verified and locally `git hash-object`-verified 40-character blob ID is `babf8cc33ae4542c018b3a99d8b3817728ecc2e4`. The exact PNG SHA-256 `e0590636813f7a720ca88b225011a5c2b4122a2ccce79263c9f3563f47c0bcff`, approved image contents, byte count and science/style PASS are **unchanged**. The historical report body is retained for traceability; the authoritative seven-image approval manifest has been corrected.
+
 # SYMMETRIA — Paper Two three corrected figures: independent GitHub QA
 
 **Date:** 21 November 2026 (Europe/London)  
