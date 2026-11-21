@@ -1,7 +1,7 @@
 {
   "schema": "SYMMETRIA-PAPER-TWO-CINEMATIC-ARTWORK-20261121",
   "date": "2026-11-21",
-  "status": "COVER_CHECKPOINT_IN_PROGRESS_WITH_2_REJECTED_LOCAL_TRIALS; NO_IMAGES_APPROVED_OR_COMMITTED",
+  "status": "COVER_STYLE_TEXT_BLOCKED_AFTER_THREE_NATIVE_GENERATION_TRIALS; ZERO_NEW_IMAGES_APPROVED_OR_COMMITTED",
   "branch": "docs/symmetria-paper-two-cinematic-artwork-20261121",
   "source_article_branch": "feature/v2-space-research-website",
   "source_article_git_blob": "060700e8cdac337583c820f044efe80154d59b6c",
@@ -28,12 +28,13 @@
       "slot": "Cover",
       "subject": "Cover illustration",
       "legacy_webp": "02_symmetry_cover.webp",
-      "production_status": "STYLE_TEXT_BLOCKED_REGENERATE",
+      "production_status": "STYLE_TEXT_BLOCKED_AFTER_THREE_REJECTED_TRIALS",
       "owner_visual_approval": false,
       "independent_science_review": "NOT_STARTED",
       "verified_git_binary_path": null,
       "sha256": null,
-      "final_dimensions": null
+      "final_dimensions": null,
+      "reason": "Image-generation output continues to introduce prohibited in-art identity mastheads. Stop and use a capability with genuinely controllable subject-only text or native inpainting. No accepted candidate exists."
     },
     {
       "slot": "1.1",
@@ -100,6 +101,44 @@
       "verified_git_binary_path": null,
       "sha256": null,
       "final_dimensions": null
+    }
+  ],
+  "cover_trial_log": [
+    {
+      "trial": 1,
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "file_bytes": 2848172,
+      "sha256": "1b9e085d043a1e45bd5a8f0bf92c0cd610f8d0b9ec69d6f4fc56afddb67e41f6",
+      "status": "REJECTED_STYLE_TEXT",
+      "reason": "In-art SYMMETRIA and PAPER TWO mastheads; science-relevance weak/multi-object montage",
+      "git_binary_present": false
+    },
+    {
+      "trial": 2,
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "file_bytes": 2535375,
+      "sha256": "5d55250677e911ea4cac837bdef1c67d9d189dbc70d03a6e36e6d80b4d3fb95e",
+      "status": "REJECTED_STYLE_TEXT",
+      "reason": "In-art SYMMETRIA, A NEW FRAMEWORK FOR FUNDAMENTAL PHYSICS, PAPER TWO mastheads",
+      "git_binary_present": false
+    },
+    {
+      "trial": 3,
+      "native_dimensions": [
+        1672,
+        941
+      ],
+      "file_bytes": 2813466,
+      "sha256": "54d39d2722dd19504a99905cc1068f23f9c0650848744c6f2f1d900ada699fca",
+      "status": "REJECTED_STYLE_TEXT",
+      "reason": "In-art SYMMETRIA and PAPER TWO again; general multi-motif collage not a sufficiently focused explanation of invariance",
+      "git_binary_present": false
     }
   ]
 }
