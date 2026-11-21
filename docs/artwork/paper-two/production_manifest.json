@@ -1,0 +1,105 @@
+{
+  "schema": "SYMMETRIA-PAPER-TWO-CINEMATIC-ARTWORK-20261121",
+  "date": "2026-11-21",
+  "status": "COVER_CHECKPOINT_IN_PROGRESS_WITH_2_REJECTED_LOCAL_TRIALS; NO_IMAGES_APPROVED_OR_COMMITTED",
+  "branch": "docs/symmetria-paper-two-cinematic-artwork-20261121",
+  "source_article_branch": "feature/v2-space-research-website",
+  "source_article_git_blob": "060700e8cdac337583c820f044efe80154d59b6c",
+  "locked_style_git_blob": "4d91cb5f9a437f782a1815ea8f91c7ade4c0063a",
+  "anchors": [
+    {
+      "path": "docs/artwork/owner-approved/paper-one/P1_Cover_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "sha256": "3eeba0f6bfcefd2a63b5867cad0442ac9a6d356526cc1fed31e057d3de9e95a8"
+    },
+    {
+      "path": "docs/artwork/owner-approved/paper-one/P1_Figure_5_1_OWNER_VISUALLY_APPROVED_1920x1080.png",
+      "sha256": "945a5061c67bd52300cc4823f9664579380c85b36363daadcc7ef88496687b1c"
+    }
+  ],
+  "approved_new_image_count": 0,
+  "generated_local_trial_status": "REJECTED_STYLE: in-art SYMMETRIA and/or PAPER TWO mastheads contrary to locked style",
+  "source_image_dimensions_native_in_trials": [
+    1672,
+    941
+  ],
+  "website_integration_authorised": false,
+  "entries": [
+    {
+      "slot": "Cover",
+      "subject": "Cover illustration",
+      "legacy_webp": "02_symmetry_cover.webp",
+      "production_status": "STYLE_TEXT_BLOCKED_REGENERATE",
+      "owner_visual_approval": false,
+      "independent_science_review": "NOT_STARTED",
+      "verified_git_binary_path": null,
+      "sha256": null,
+      "final_dimensions": null
+    },
+    {
+      "slot": "1.1",
+      "subject": "Symmetry in Nature and Physics",
+      "legacy_webp": "02_symmetry_nature_physics.webp",
+      "production_status": "NOT_STARTED_AWAIT_COVER_STYLE_GATE",
+      "owner_visual_approval": false,
+      "independent_science_review": "NOT_STARTED",
+      "verified_git_binary_path": null,
+      "sha256": null,
+      "final_dimensions": null
+    },
+    {
+      "slot": "2.1",
+      "subject": "Natural Symmetry Patterns",
+      "legacy_webp": "02_natural_symmetry_patterns.webp",
+      "production_status": "NOT_STARTED_AWAIT_COVER_STYLE_GATE",
+      "owner_visual_approval": false,
+      "independent_science_review": "NOT_STARTED",
+      "verified_git_binary_path": null,
+      "sha256": null,
+      "final_dimensions": null
+    },
+    {
+      "slot": "3.1",
+      "subject": "Mathematical Symmetry and Invariance",
+      "legacy_webp": "02_mathematical_symmetry_invariance.webp",
+      "production_status": "NOT_STARTED_AWAIT_COVER_STYLE_GATE",
+      "owner_visual_approval": false,
+      "independent_science_review": "NOT_STARTED",
+      "verified_git_binary_path": null,
+      "sha256": null,
+      "final_dimensions": null
+    },
+    {
+      "slot": "4.1",
+      "subject": "Noether's Theorem and Conservation Laws",
+      "legacy_webp": "02_noether_symmetry_conservation.webp",
+      "production_status": "NOT_STARTED_AWAIT_COVER_STYLE_GATE",
+      "owner_visual_approval": false,
+      "independent_science_review": "NOT_STARTED",
+      "verified_git_binary_path": null,
+      "sha256": null,
+      "final_dimensions": null
+    },
+    {
+      "slot": "5.1",
+      "subject": "Broken Symmetry and Emergence",
+      "legacy_webp": "02_broken_symmetry_emergence.webp",
+      "production_status": "NOT_STARTED_AWAIT_COVER_STYLE_GATE",
+      "owner_visual_approval": false,
+      "independent_science_review": "NOT_STARTED",
+      "verified_git_binary_path": null,
+      "sha256": null,
+      "final_dimensions": null
+    },
+    {
+      "slot": "6.1",
+      "subject": "The SYMMETRIA Symmetry Perspective",
+      "legacy_webp": "02_symmetria_symmetry_perspective.webp",
+      "production_status": "NOT_STARTED_AWAIT_COVER_STYLE_GATE",
+      "owner_visual_approval": false,
+      "independent_science_review": "NOT_STARTED",
+      "verified_git_binary_path": null,
+      "sha256": null,
+      "final_dimensions": null
+    }
+  ]
+}
