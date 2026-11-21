@@ -6,8 +6,8 @@
 
 ## Evidence and method
 
-- Integration commit tested by GitHub Actions: [`361ae0d`](https://github.com/SymTechVenturesOrg/symtechventures.github.io/commit/361ae0d06b1f16ae48f12625abd90d7c863d17d7).
-- Successful non-deploying Chromium run: [Actions run 44896981262](https://github.com/SymTechVenturesOrg/symtechventures.github.io/actions/runs/{run}) (push event; conclusion `success`).
+- Integration commit tested by GitHub Actions: [`361ae0d`](https://github.com/SymTechVenturesOrg/symtechventures.github.io/commit/d0391237ae250d71b61600fd3a5bb895406dfc287).
+- Successful non-deploying Chromium run: [Actions run 44897246061](https://github.com/SymTechVenturesOrg/symtechventures.github.io/actions/runs/{run}) (push event; conclusion `success`).
 - [QA screenshots and raw browser JSON artifact](https://github.com/SymTechVenturesOrg/symtechventures.github.io/actions/runs/{run}/artifacts/{artifact}) — artifact SHA-256 `{artifact_digest}`, JSON SHA-256 `{json_sha}`; 30-day retention to 21 December 2026.
 - The Work runtime blocked Chromium launch with `socket() failed: Operation not permitted`. Following the handover, a read-only PR #13 GitHub Actions workflow ran Playwright 1.56.0 / Chromium on Ubuntu 24.04 with `contents: read`, no deployment credentials, no page publishing and no write token.
 - The runner checked out PR #13 as a binary-capable Git checkout and independently recomputed PNG/WebP SHA-256 values, sizes, Git blob IDs, decodes, formats and dimensions. All seven PNG master bytes matched the seven approved PR #12 source SHA-256 values and Git blobs.
